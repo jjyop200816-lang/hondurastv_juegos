@@ -64,7 +64,7 @@
     <div class="date-group">Vie, 28 de ago</div>
 
     <!-- Juticalpa vs Lobos UPNFM -->
-    <div class="card" data-start="2026/08/28 21:00:00" data-end="2026/08/28 23:00:00">
+    <div class="card" data-start="2026-08-28T21:00:00" data-end="2026-08-28T23:00:00">
         <div class="match-info">
             <span class="date-time">9:00 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
@@ -85,7 +85,7 @@
     <div class="date-group">Sáb, 29 de ago</div>
 
     <!-- Genesis FC vs CD Marathon -->
-    <div class="card" data-start="2026/08/29 17:00:00" data-end="2026/08/29 19:00:00">
+    <div class="card" data-start="2026-08-29T17:00:00" data-end="2026-08-29T19:00:00">
         <div class="match-info">
             <span class="date-time">5:00 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
@@ -103,7 +103,7 @@
     </div>
 
     <!-- Platense FC vs Atletico Independiente (Sula TV) -->
-    <div class="card" data-start="2026/08/29 19:15:00" data-end="2026/08/29 21:15:00">
+    <div class="card" data-start="2026-08-29T19:15:00" data-end="2026-08-29T21:15:00">
         <div class="match-info">
             <span class="date-time">7:15 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
@@ -121,7 +121,7 @@
     </div>
 
     <!-- FC Motagua vs Olancho FC -->
-    <div class="card" data-start="2026/08/29 21:30:00" data-end="2026/08/29 23:30:00">
+    <div class="card" data-start="2026-08-29T21:30:00" data-end="2026-08-29T23:30:00">
         <div class="match-info">
             <span class="date-time">9:30 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
@@ -142,7 +142,7 @@
     <div class="date-group">Dom, 30 de ago</div>
 
     <!-- Estrella Roja vs CD Olimpia -->
-    <div class="card" data-start="2026/08/30 17:00:00" data-end="2026/08/30 19:00:00">
+    <div class="card" data-start="2026-08-30T17:00:00" data-end="2026-08-30T19:00:00">
         <div class="match-info">
             <span class="date-time">5:00 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
@@ -160,7 +160,7 @@
     </div>
 
     <!-- Real España vs CD Choloma -->
-    <div class="card" data-start="2026/08/30 19:15:00" data-end="2026/08/30 21:15:00">
+    <div class="card" data-start="2026-08-30T19:15:00" data-end="2026-08-30T21:15:00">
         <div class="match-info">
             <span class="date-time">7:15 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
@@ -182,21 +182,23 @@
 <script>
     function actualizarRelojes() {
         const ahora = new Date().getTime();
-        const PREVIA_MS = 15 * 60 * 1000; // 15 minutos antes abre el canal
-        const GRacia_Fin_MS = 10 * 60 * 1000; // 10 minutos después del pitazo final para marcar como terminado
+        const PREVIA_MS = 15 * 60 * 1000;
+        const GRACIA_FIN_MS = 10 * 60 * 1000;
         
         let hayPartidosEnVivo = false;
 
         document.querySelectorAll('.card').forEach(card => {
             const inicio = new Date(card.getAttribute('data-start')).getTime();
             const finOficial = new Date(card.getAttribute('data-end')).getTime();
-            const finConGracia = finOficial + GRacia_Fin_MS;
+            
+            if (isNaN(inicio) || isNaN(finOficial)) return;
+
+            const finConGracia = finOficial + GRACIA_FIN_MS;
             const inicioPrevia = inicio - PREVIA_MS;
 
             card.classList.remove('active', 'finished', 'is-live', 'waiting', 'upcoming');
 
             if (ahora < inicioPrevia) {
-                // Estado 1: Falta bastante, muestra cuenta regresiva
                 card.classList.add('waiting');
                 const diff = inicio - ahora;
                 const h = Math.floor(diff / 3600000);
@@ -210,21 +212,17 @@
                 card.querySelector('.timer').textContent = `Inicia en: ${hStr}h ${mStr}m ${sStr}s`;
             } 
             else if (ahora >= inicioPrevia && ahora < inicio) {
-                // Estado 2: 15 minutos antes (Previa - Canal abierto)
                 card.classList.add('active', 'upcoming');
             } 
             else if (ahora >= inicio && ahora <= finConGracia) {
-                // Estado 3: Durante el juego y los 10 minutos posteriores
                 card.classList.add('active', 'is-live');
                 hayPartidosEnVivo = true;
             } 
             else {
-                // Estado 4: Partido finalizado (pasaron los 10 min de gracia)
                 card.classList.add('finished');
             }
         });
 
-        // Controlar el banner superior dinámico de EN VIVO
         const banner = document.getElementById('liveBanner');
         if (hayPartidosEnVivo) {
             banner.classList.add('show');
