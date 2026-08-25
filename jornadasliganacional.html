@@ -9,33 +9,32 @@
         body { background-color: #0b1120; color: #ffffff; padding: 16px; display: flex; justify-content: center; }
         .container { width: 100%; max-width: 480px; }
         
-        .header-main { text-align: center; margin-bottom: 16px; }
+        .header-main { text-align: center; margin-bottom: 24px; }
         .header-main h1 { font-size: 1.8rem; color: #00c853; text-transform: uppercase; letter-spacing: 1px; }
-
-        /* Barra de alerta superior dinámica */
-        .live-global-banner { background: #e11d48; color: white; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; font-size: 0.95rem; margin-bottom: 20px; display: none; animation: pulse 1.5s infinite; box-shadow: 0 0 12px rgba(225, 29, 72, 0.5); }
-        .live-global-banner.show { display: block; }
         
         .date-group { font-size: 1rem; color: #94a3b8; margin: 18px 0 10px 4px; font-weight: 700; text-transform: capitalize; border-left: 3px solid #00c853; padding-left: 8px; }
 
         .card { background: #1e293b; border-radius: 14px; padding: 16px; margin-bottom: 12px; border: 1px solid #334155; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3); transition: all 0.3s ease; }
         .card.active { border: 2px solid #00c853; background: linear-gradient(145deg, #1e293b, #092617); box-shadow: 0 0 15px rgba(0, 200, 83, 0.2); }
-        .card.finished { opacity: 0.7; }
+        .card.finished { opacity: 0.75; }
 
         .match-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 8px; }
         .date-time { font-size: 0.85rem; color: #cbd5e1; font-weight: 600; }
         
         .status-badge { font-size: 0.7rem; padding: 3px 10px; border-radius: 20px; font-weight: 800; letter-spacing: 0.5px; display: none; }
         .card.waiting .badge-wait { display: inline-block; background-color: #334155; color: #94a3b8; }
-        .card.active.upcoming .badge-pre { display: inline-block; background-color: #0284c7; color: #ffffff; }
+        .card.active.upcoming .badge-pre { display: inline-block; background-color: #0284c7; color: #ffffff; animation: pulse 2s infinite; }
         .card.active.is-live .badge-live { display: inline-block; background-color: #e11d48; color: #ffffff; animation: pulse 1.5s infinite; }
         .card.finished .badge-ended { display: inline-block; background-color: #475569; color: #cbd5e1; }
 
-        .teams { display: flex; justify-content: space-between; align-items: center; margin: 12px 0; font-size: 1rem; font-weight: 700; text-align: center; }
-        .team { flex: 1; }
-        .vs-container { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 50px; }
+        .teams { display: flex; justify-content: space-between; align-items: center; margin: 12px 0; }
+        .team { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px; font-size: 0.9rem; font-weight: 600; }
+        .team-crest { width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.05); border-radius: 50%; padding: 4px; }
+        .team-crest svg { width: 100%; height: 100%; }
+
+        .vs-container { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 60px; }
         .vs { font-size: 0.85rem; color: #64748b; font-weight: 800; }
-        .score { font-size: 1.3rem; color: #00c853; font-weight: 900; display: none; background: rgba(0, 200, 83, 0.1); padding: 2px 8px; border-radius: 6px; }
+        .score { font-size: 1.4rem; color: #00c853; font-weight: 900; display: none; background: rgba(0, 200, 83, 0.1); padding: 2px 10px; border-radius: 6px; }
         .card.is-live .score { display: block; }
         .card.is-live .vs { display: none; }
 
@@ -49,16 +48,13 @@
         .play-btn { width: 52px; height: 52px; border-radius: 50%; background: #00c853; color: white; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 22px; box-shadow: 0 4px 12px rgba(0, 200, 83, 0.4); transition: transform 0.2s; }
         .play-btn:active { transform: scale(0.95); }
 
-        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
     </style>
 </head>
 <body>
 
 <div class="container">
     <div class="header-main"><h1>Jornada 5</h1></div>
-
-    <!-- Alerta Dinámica Superior -->
-    <div id="liveBanner" class="live-global-banner">🔴 ¡PARTIDOS EN VIVO AHORA MISMO!</div>
 
     <!-- VIERNES 28 DE AGOSTO -->
     <div class="date-group">Vie, 28 de ago</div>
@@ -68,14 +64,20 @@
         <div class="match-info">
             <span class="date-time">9:00 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
+            <span class="status-badge badge-pre">PREVIA</span>
             <span class="status-badge badge-live">EN VIVO</span>
             <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
-            <div class="team">Juticalpa</div>
+            <div class="team">
+                <div class="team-crest"><svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v12M6 12h12"/></svg></div>
+                <span>Juticalpa</span>
+            </div>
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
-            <div class="team">Lobos UPNFM</div>
+            <div class="team">
+                <div class="team-crest"><svg viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+                <span>Lobos UPNFM</span>
+            </div>
         </div>
         <div class="countdown-container"><div class="timer">--:--:--</div></div>
         <div class="actions"><a href="go:opciontvc" class="play-btn">▶</a></div>
@@ -89,32 +91,44 @@
         <div class="match-info">
             <span class="date-time">5:00 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
+            <span class="status-badge badge-pre">PREVIA</span>
             <span class="status-badge badge-live">EN VIVO</span>
             <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
-            <div class="team">Genesis FC</div>
+            <div class="team">
+                <div class="team-crest"><svg viewBox="0 0 24 24" fill="none" stroke="#eab308" stroke-width="2"><path d="M12 2l9 4.9v6.1c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V6.9L12 2z"/></svg></div>
+                <span>Genesis FC</span>
+            </div>
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
-            <div class="team">CD Marathon</div>
+            <div class="team">
+                <div class="team-crest"><svg viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg></div>
+                <span>CD Marathon</span>
+            </div>
         </div>
         <div class="countdown-container"><div class="timer">--:--:--</div></div>
         <div class="actions"><a href="go:opciontvc" class="play-btn">▶</a></div>
     </div>
 
-    <!-- Platense FC vs Atletico Independiente (Sula TV) -->
+    <!-- Platense FC vs Atletico Independiente (Canal Sula TV) -->
     <div class="card" data-start="2026/08/29 19:15:00" data-end="2026/08/29 21:15:00">
         <div class="match-info">
             <span class="date-time">7:15 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
+            <span class="status-badge badge-pre">PREVIA</span>
             <span class="status-badge badge-live">EN VIVO</span>
             <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
-            <div class="team">Platense FC</div>
+            <div class="team">
+                <div class="team-crest"><svg viewBox="0 0 24 24" fill="none" stroke="#15803d" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                <span>Platense FC</span>
+            </div>
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
-            <div class="team">Atletico Indep.</div>
+            <div class="team">
+                <div class="team-crest"><svg viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+                <span>Atletico Indep.</span>
+            </div>
         </div>
         <div class="countdown-container"><div class="timer">--:--:--</div></div>
         <div class="actions"><a href="go:sula" class="play-btn">▶</a></div>
@@ -125,14 +139,20 @@
         <div class="match-info">
             <span class="date-time">9:30 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
+            <span class="status-badge badge-pre">PREVIA</span>
             <span class="status-badge badge-live">EN VIVO</span>
             <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
-            <div class="team">FC Motagua</div>
+            <div class="team">
+                <div class="team-crest"><svg viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+                <span>FC Motagua</span>
+            </div>
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
-            <div class="team">Olancho FC</div>
+            <div class="team">
+                <div class="team-crest"><svg viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+                <span>Olancho FC</span>
+            </div>
         </div>
         <div class="countdown-container"><div class="timer">--:--:--</div></div>
         <div class="actions"><a href="go:opciontvc" class="play-btn">▶</a></div>
@@ -146,14 +166,20 @@
         <div class="match-info">
             <span class="date-time">5:00 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
+            <span class="status-badge badge-pre">PREVIA</span>
             <span class="status-badge badge-live">EN VIVO</span>
             <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
-            <div class="team">Estrella Roja</div>
+            <div class="team">
+                <div class="team-crest"><svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                <span>Estrella Roja</span>
+            </div>
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
-            <div class="team">CD Olimpia</div>
+            <div class="team">
+                <div class="team-crest"><svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6l2.5 6.5H21l-5.5 4 2 6.5-5.5-4-5.5 4 2-6.5-5.5-4h6.5z"/></svg></div>
+                <span>CD Olimpia</span>
+            </div>
         </div>
         <div class="countdown-container"><div class="timer">--:--:--</div></div>
         <div class="actions"><a href="go:opciontvc" class="play-btn">▶</a></div>
@@ -164,14 +190,20 @@
         <div class="match-info">
             <span class="date-time">7:15 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
+            <span class="status-badge badge-pre">PREVIA</span>
             <span class="status-badge badge-live">EN VIVO</span>
             <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
-            <div class="team">Real España</div>
+            <div class="team">
+                <div class="team-crest"><svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+                <span>Real España</span>
+            </div>
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
-            <div class="team">CD Choloma</div>
+            <div class="team">
+                <div class="team-crest"><svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 10 10"/></svg></div>
+                <span>CD Choloma</span>
+            </div>
         </div>
         <div class="countdown-container"><div class="timer">--:--:--</div></div>
         <div class="actions"><a href="go:opciontvc" class="play-btn">▶</a></div>
@@ -182,21 +214,17 @@
 <script>
     function actualizarRelojes() {
         const ahora = new Date().getTime();
-        const PREVIA_MS = 15 * 60 * 1000; // 15 minutos antes abre el canal
-        const GRacia_Fin_MS = 10 * 60 * 1000; // 10 minutos después del pitazo final para marcar como terminado
-        
-        let hayPartidosEnVivo = false;
+        const PREVIA_MS = 15 * 60 * 1000; // 15 minutos en ms
 
         document.querySelectorAll('.card').forEach(card => {
             const inicio = new Date(card.getAttribute('data-start')).getTime();
-            const finOficial = new Date(card.getAttribute('data-end')).getTime();
-            const finConGracia = finOficial + GRacia_Fin_MS;
+            const fin = new Date(card.getAttribute('data-end')).getTime();
             const inicioPrevia = inicio - PREVIA_MS;
 
             card.classList.remove('active', 'finished', 'is-live', 'waiting', 'upcoming');
 
             if (ahora < inicioPrevia) {
-                // Estado 1: Falta bastante, muestra cuenta regresiva
+                // Estado 1: Faltan más de 15 minutos para abrir el canal
                 card.classList.add('waiting');
                 const diff = inicio - ahora;
                 const h = Math.floor(diff / 3600000);
@@ -210,27 +238,18 @@
                 card.querySelector('.timer').textContent = `Inicia en: ${hStr}h ${mStr}m ${sStr}s`;
             } 
             else if (ahora >= inicioPrevia && ahora < inicio) {
-                // Estado 2: 15 minutos antes (Previa - Canal abierto)
+                // Estado 2: En ventana previa (15 min antes). Abre el canal, muestra botón Play
                 card.classList.add('active', 'upcoming');
             } 
-            else if (ahora >= inicio && ahora <= finConGracia) {
-                // Estado 3: Durante el juego y los 10 minutos posteriores
+            else if (ahora >= inicio && ahora <= fin) {
+                // Estado 3: Partido en vivo. Abre el canal y activa el marcador
                 card.classList.add('active', 'is-live');
-                hayPartidosEnVivo = true;
             } 
             else {
-                // Estado 4: Partido finalizado (pasaron los 10 min de gracia)
+                // Estado 4: Partido finalizado
                 card.classList.add('finished');
             }
         });
-
-        // Controlar el banner superior dinámico de EN VIVO
-        const banner = document.getElementById('liveBanner');
-        if (hayPartidosEnVivo) {
-            banner.classList.add('show');
-        } else {
-            banner.classList.remove('show');
-        }
     }
 
     setInterval(actualizarRelojes, 1000);
