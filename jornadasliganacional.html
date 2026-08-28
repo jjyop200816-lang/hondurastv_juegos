@@ -46,8 +46,13 @@
         .card.active .actions { display: flex; }
         .card.active .countdown-container, .card.finished .countdown-container { display: none; }
         
-        .play-btn { width: 52px; height: 52px; border-radius: 50%; background: #00c853; color: white; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 22px; box-shadow: 0 4px 12px rgba(0, 200, 83, 0.4); transition: transform 0.2s; }
+        .play-btn { width: 52px; height: 52px; border-radius: 50%; background: #00c853; color: white; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 22px; box-shadow: 0 4px 12px rgba(0, 200, 83, 0.4); transition: transform 0.2s; cursor: pointer; border: none; }
         .play-btn:active { transform: scale(0.95); }
+
+        /* Contenedor del Reproductor de Video */
+        .player-box { display: none; margin-top: 12px; position: relative; width: 100%; padding-top: 56.25%; background: #000; border-radius: 8px; overflow: hidden; }
+        .player-box iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        .close-btn { display: none; margin: 10px auto 0 auto; background: #e11d48; color: #fff; border: none; padding: 6px 14px; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 0.8rem; }
 
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
     </style>
@@ -63,7 +68,7 @@
     <!-- VIERNES 28 DE AGOSTO -->
     <div class="date-group">Vie, 28 de ago</div>
 
-    <!-- Juticalpa vs Lobos UPNFM -->
+    <!-- Juticalpa vs Lobos UPNFM con Reproductor Integrado -->
     <div class="card" data-start="2026-08-28 21:00:00" data-end="2026-08-28 23:00:00">
         <div class="match-info">
             <span class="date-time">9:00 p.m.</span>
@@ -78,7 +83,15 @@
             <div class="team">Lobos UPNFM</div>
         </div>
         <div class="countdown-container"><div class="timer">--:--:--</div></div>
-        <div class="actions"><a href="go:opciontvc" class="play-btn">▶</a></div>
+        
+        <!-- Botón de Reproducción -->
+        <div class="actions">
+            <button class="play-btn" onclick="cargarVideo(this, 'https://sflix.today/v1/live/proxy/deportes-tvc')">▶</button>
+        </div>
+
+        <!-- Marcos del Reproductor Directo -->
+        <div class="player-box"></div>
+        <button class="close-btn" onclick="cerrarVideo(this)">✕ Cerrar Reproductor</button>
     </div>
 
     <!-- SÁBADO 29 DE AGOSTO -->
@@ -102,7 +115,7 @@
         <div class="actions"><a href="go:opciontvc" class="play-btn">▶</a></div>
     </div>
 
-    <!-- Platense FC vs Atletico Independiente (Sula TV) -->
+    <!-- Platense FC vs Atletico Independiente -->
     <div class="card" data-start="2026-08-29 19:15:00" data-end="2026-08-29 21:15:00">
         <div class="match-info">
             <span class="date-time">7:15 p.m.</span>
@@ -180,7 +193,31 @@
 </div>
 
 <script>
-    // Función robusta para convertir "YYYY-MM-DD HH:MM:SS" a tiempo Unix en milisegundos
+    // Función para inyectar el iframe del stream en la tarjeta
+    function cargarVideo(btn, streamUrl) {
+        const card = btn.closest('.card');
+        const playerBox = card.querySelector('.player-box');
+        const closeBtn = card.querySelector('.close-btn');
+
+        playerBox.innerHTML = `<iframe src="${streamUrl}" allowfullscreen allow="autoplay"></iframe>`;
+        playerBox.style.display = 'block';
+        closeBtn.style.display = 'block';
+        btn.parentElement.style.display = 'none';
+    }
+
+    // Función para detener y cerrar el reproductor
+    function cerrarVideo(btn) {
+        const card = btn.closest('.card');
+        const playerBox = card.querySelector('.player-box');
+        const actions = card.querySelector('.actions');
+
+        playerBox.innerHTML = '';
+        playerBox.style.display = 'none';
+        btn.style.display = 'none';
+        actions.style.display = 'flex';
+    }
+
+    // Función para convertir "YYYY-MM-DD HH:MM:SS" a tiempo Unix
     function parseFecha(str) {
         if (!str) return NaN;
         var partes = str.split(' ');
