@@ -12,7 +12,6 @@
         .header-main { text-align: center; margin-bottom: 16px; }
         .header-main h1 { font-size: 1.8rem; color: #00c853; text-transform: uppercase; letter-spacing: 1px; }
 
-        /* Barra de alerta superior dinámica */
         .live-global-banner { background: #e11d48; color: white; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; font-size: 0.95rem; margin-bottom: 20px; display: none; animation: pulse 1.5s infinite; box-shadow: 0 0 12px rgba(225, 29, 72, 0.5); }
         .live-global-banner.show { display: block; }
         
@@ -36,23 +35,14 @@
         .vs-container { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 50px; }
         .vs { font-size: 0.85rem; color: #64748b; font-weight: 800; }
         .score { font-size: 1.3rem; color: #00c853; font-weight: 900; display: none; background: rgba(0, 200, 83, 0.1); padding: 2px 8px; border-radius: 6px; }
-        .card.is-live .score { display: block; }
-        .card.is-live .vs { display: none; }
+        .card.is-live .score, .card.finished .score { display: block; }
+        .card.is-live .vs, .card.finished .vs { display: none; }
 
-        .countdown-container { text-align: center; margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(255, 255, 255, 0.1); }
-        .timer { font-size: 0.95rem; font-weight: 700; color: #38bdf8; font-family: 'Courier New', Courier, monospace; }
-        
-        .actions { display: none; justify-content: center; align-items: center; margin-top: 12px; }
-        .card.active .actions { display: flex; }
-        .card.active .countdown-container, .card.finished .countdown-container { display: none; }
+        .actions { display: flex; justify-content: center; align-items: center; margin-top: 12px; }
+        .card.finished .actions { display: none; }
         
         .play-btn { width: 52px; height: 52px; border-radius: 50%; background: #00c853; color: white; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 22px; box-shadow: 0 4px 12px rgba(0, 200, 83, 0.4); transition: transform 0.2s; cursor: pointer; border: none; }
         .play-btn:active { transform: scale(0.95); }
-
-        /* Contenedor del Reproductor de Video */
-        .player-box { display: none; margin-top: 12px; position: relative; width: 100%; padding-top: 56.25%; background: #000; border-radius: 8px; overflow: hidden; }
-        .player-box iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-        .close-btn { display: none; margin: 10px auto 0 auto; background: #e11d48; color: #fff; border: none; padding: 6px 14px; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 0.8rem; }
 
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
     </style>
@@ -62,36 +52,22 @@
 <div class="container">
     <div class="header-main"><h1>Jornada 5</h1></div>
 
-    <!-- Alerta Dinámica Superior -->
     <div id="liveBanner" class="live-global-banner">🔴 ¡PARTIDOS EN VIVO AHORA MISMO!</div>
 
     <!-- VIERNES 28 DE AGOSTO -->
     <div class="date-group">Vie, 28 de ago</div>
 
-    <!-- Juticalpa vs Lobos UPNFM con Reproductor Integrado -->
-    <div class="card" data-start="2026-08-28 21:00:00" data-end="2026-08-28 23:00:00">
+    <!-- Juticalpa vs Lobos UPNFM (MARCADO COMO FINALIZADO) -->
+    <div class="card finished" data-start="2026-08-28 21:00:00" data-end="2026-08-28 23:00:00">
         <div class="match-info">
             <span class="date-time">9:00 p.m.</span>
-            <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
-            <span class="status-badge badge-live">EN VIVO</span>
             <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
             <div class="team">Juticalpa</div>
-            <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
+            <div class="vs-container"><span class="score">1 - 0</span></div>
             <div class="team">Lobos UPNFM</div>
         </div>
-        <div class="countdown-container"><div class="timer">--:--:--</div></div>
-        
-        <!-- Botón de Reproducción -->
-        <div class="actions">
-            <button class="play-btn" onclick="cargarVideo(this, 'https://sflix.today/v1/live/proxy/deportes-tvc')">▶</button>
-        </div>
-
-        <!-- Marcos del Reproductor Directo -->
-        <div class="player-box"></div>
-        <button class="close-btn" onclick="cerrarVideo(this)">✕ Cerrar Reproductor</button>
     </div>
 
     <!-- SÁBADO 29 DE AGOSTO -->
@@ -111,8 +87,7 @@
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
             <div class="team">CD Marathon</div>
         </div>
-        <div class="countdown-container"><div class="timer">--:--:--</div></div>
-        <div class="actions"><a href="go:opciontvc" class="play-btn">▶</a></div>
+        <div class="actions"><button onclick="openAction('opciontvc')" class="play-btn">▶</button></div>
     </div>
 
     <!-- Platense FC vs Atletico Independiente -->
@@ -129,8 +104,7 @@
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
             <div class="team">Atletico Indep.</div>
         </div>
-        <div class="countdown-container"><div class="timer">--:--:--</div></div>
-        <div class="actions"><a href="go:sula" class="play-btn">▶</a></div>
+        <div class="actions"><button onclick="openAction('sula')" class="play-btn">▶</button></div>
     </div>
 
     <!-- FC Motagua vs Olancho FC -->
@@ -147,8 +121,7 @@
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
             <div class="team">Olancho FC</div>
         </div>
-        <div class="countdown-container"><div class="timer">--:--:--</div></div>
-        <div class="actions"><a href="go:opciontvc" class="play-btn">▶</a></div>
+        <div class="actions"><button onclick="openAction('opciontvc')" class="play-btn">▶</button></div>
     </div>
 
     <!-- DOMINGO 30 DE AGOSTO -->
@@ -168,8 +141,7 @@
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
             <div class="team">CD Olimpia</div>
         </div>
-        <div class="countdown-container"><div class="timer">--:--:--</div></div>
-        <div class="actions"><a href="go:opciontvc" class="play-btn">▶</a></div>
+        <div class="actions"><button onclick="openAction('opciontvc')" class="play-btn">▶</button></div>
     </div>
 
     <!-- Real España vs CD Choloma -->
@@ -186,38 +158,22 @@
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
             <div class="team">CD Choloma</div>
         </div>
-        <div class="countdown-container"><div class="timer">--:--:--</div></div>
-        <div class="actions"><a href="go:opciontvc" class="play-btn">▶</a></div>
+        <div class="actions"><button onclick="openAction('opciontvc')" class="play-btn">▶</button></div>
     </div>
 
 </div>
 
 <script>
-    // Función para inyectar el iframe del stream en la tarjeta
-    function cargarVideo(btn, streamUrl) {
-        const card = btn.closest('.card');
-        const playerBox = card.querySelector('.player-box');
-        const closeBtn = card.querySelector('.close-btn');
-
-        playerBox.innerHTML = `<iframe src="${streamUrl}" allowfullscreen allow="autoplay"></iframe>`;
-        playerBox.style.display = 'block';
-        closeBtn.style.display = 'block';
-        btn.parentElement.style.display = 'none';
+    function openAction(target) {
+        // Ejecución para Sketchware Pro mediante JavaScriptInterface
+        if (window.Android && window.Android.openStream) {
+            window.Android.openStream(target);
+        } else {
+            // Fallback estándar por esquema URI
+            window.location.href = "go:" + target;
+        }
     }
 
-    // Función para detener y cerrar el reproductor
-    function cerrarVideo(btn) {
-        const card = btn.closest('.card');
-        const playerBox = card.querySelector('.player-box');
-        const actions = card.querySelector('.actions');
-
-        playerBox.innerHTML = '';
-        playerBox.style.display = 'none';
-        btn.style.display = 'none';
-        actions.style.display = 'flex';
-    }
-
-    // Función para convertir "YYYY-MM-DD HH:MM:SS" a tiempo Unix
     function parseFecha(str) {
         if (!str) return NaN;
         var partes = str.split(' ');
@@ -226,7 +182,7 @@
         return new Date(fecha[0], fecha[1] - 1, fecha[2], hora[0], hora[1], hora[2]).getTime();
     }
 
-    function actualizarRelojes() {
+    function actualizarEstados() {
         const ahora = new Date().getTime();
         const PREVIA_MS = 15 * 60 * 1000;
         const GRACIA_FIN_MS = 10 * 60 * 1000;
@@ -234,6 +190,8 @@
         let hayPartidosEnVivo = false;
 
         document.querySelectorAll('.card').forEach(card => {
+            if (card.classList.contains('finished')) return;
+
             const inicio = parseFecha(card.getAttribute('data-start'));
             const finOficial = parseFecha(card.getAttribute('data-end'));
             
@@ -246,17 +204,6 @@
 
             if (ahora < inicioPrevia) {
                 card.classList.add('waiting');
-                const diff = inicio - ahora;
-                
-                const h = Math.floor(diff / (1000 * 60 * 60));
-                const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-                const s = Math.floor((diff % (1000 * 60)) / 1000);
-                
-                const hStr = h < 10 ? '0' + h : h;
-                const mStr = m < 10 ? '0' + m : m;
-                const sStr = s < 10 ? '0' + s : s;
-                
-                card.querySelector('.timer').textContent = `Inicia en: ${hStr}h ${mStr}m ${sStr}s`;
             } 
             else if (ahora >= inicioPrevia && ahora < inicio) {
                 card.classList.add('active', 'upcoming');
@@ -278,8 +225,8 @@
         }
     }
 
-    setInterval(actualizarRelojes, 1000);
-    actualizarRelojes();
+    actualizarEstados();
+    setInterval(actualizarEstados, 30000);
 </script>
 </body>
 </html>
