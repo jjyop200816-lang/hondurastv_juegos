@@ -38,10 +38,10 @@
         .card.is-live .score, .card.finished .score { display: block; }
         .card.is-live .vs, .card.finished .vs { display: none; }
 
-        .actions { display: flex; justify-content: center; align-items: center; margin-top: 12px; }
+        .actions { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
         .card.finished .actions { display: none; }
         
-        .play-btn { width: 52px; height: 52px; border-radius: 50%; background: #00c853; color: white; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 22px; box-shadow: 0 4px 12px rgba(0, 200, 83, 0.4); transition: transform 0.2s; cursor: pointer; border: none; }
+        .play-btn { height: 40px; padding: 0 14px; border-radius: 20px; background: #00c853; color: white; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 12px; font-weight: 800; box-shadow: 0 4px 12px rgba(0, 200, 83, 0.4); transition: transform 0.2s; cursor: pointer; border: none; }
         .play-btn:active { transform: scale(0.95); }
 
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
@@ -87,7 +87,11 @@
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
             <div class="team">CD Marathon</div>
         </div>
-        <div class="actions"><button onclick="openAction('deportestvc')" class="play-btn">▶</button></div>
+        <div class="actions">
+            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
+            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
+            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
+        </div>
     </div>
 
     <!-- Platense FC vs Atletico Independiente -->
@@ -104,7 +108,9 @@
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
             <div class="team">Atletico Indep.</div>
         </div>
-        <div class="actions"><button onclick="openAction('sula')" class="play-btn">▶</button></div>
+        <div class="actions">
+            <button onclick="openAction('sula')" class="play-btn">▶ REPRODUCIR</button>
+        </div>
     </div>
 
     <!-- FC Motagua vs Olancho FC -->
@@ -121,7 +127,11 @@
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
             <div class="team">Olancho FC</div>
         </div>
-        <div class="actions"><button onclick="openAction('deportestvc')" class="play-btn">▶</button></div>
+        <div class="actions">
+            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
+            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
+            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
+        </div>
     </div>
 
     <!-- DOMINGO 30 DE AGOSTO -->
@@ -141,7 +151,11 @@
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
             <div class="team">CD Olimpia</div>
         </div>
-        <div class="actions"><button onclick="openAction('deportestvc')" class="play-btn">▶</button></div>
+        <div class="actions">
+            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
+            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
+            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
+        </div>
     </div>
 
     <!-- Real España vs CD Choloma -->
@@ -158,7 +172,11 @@
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
             <div class="team">CD Choloma</div>
         </div>
-        <div class="actions"><button onclick="openAction('deportestvc')" class="play-btn">▶</button></div>
+        <div class="actions">
+            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
+            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
+            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
+        </div>
     </div>
 
 </div>
