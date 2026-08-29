@@ -38,8 +38,10 @@
         .card.is-live .score, .card.finished .score { display: block; }
         .card.is-live .vs, .card.finished .vs { display: none; }
 
-        .actions { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
-        .card.finished .actions { display: none; }
+        /* Ocultar opciones por defecto en estado de espera y finalizado */
+        .actions { display: none; justify-content: center; align-items: center; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+        .card.active .actions { display: flex; }
+        .card.finished .actions, .card.waiting .actions { display: none !important; }
         
         .play-btn { height: 40px; padding: 0 14px; border-radius: 20px; background: #00c853; color: white; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 12px; font-weight: 800; box-shadow: 0 4px 12px rgba(0, 200, 83, 0.4); transition: transform 0.2s; cursor: pointer; border: none; }
         .play-btn:active { transform: scale(0.95); }
@@ -74,7 +76,7 @@
     <div class="date-group">Sáb, 29 de ago</div>
 
     <!-- Genesis FC vs CD Marathon (Transmite HCH) -->
-    <div class="card" data-start="2026-08-29 17:00:00" data-end="2026-08-29 19:00:00">
+    <div class="card waiting" data-start="2026-08-29 17:00:00" data-end="2026-08-29 19:00:00">
         <div class="match-info">
             <span class="date-time">5:00 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
@@ -93,7 +95,7 @@
     </div>
 
     <!-- Platense FC vs Atletico Independiente (Transmite Deportes TVC) -->
-    <div class="card" data-start="2026-08-29 19:15:00" data-end="2026-08-29 21:15:00">
+    <div class="card waiting" data-start="2026-08-29 19:15:00" data-end="2026-08-29 21:15:00">
         <div class="match-info">
             <span class="date-time">7:15 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
@@ -114,7 +116,7 @@
     </div>
 
     <!-- FC Motagua vs Olancho FC -->
-    <div class="card" data-start="2026-08-29 21:30:00" data-end="2026-08-29 23:30:00">
+    <div class="card waiting" data-start="2026-08-29 21:30:00" data-end="2026-08-29 23:30:00">
         <div class="match-info">
             <span class="date-time">9:30 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
@@ -138,7 +140,7 @@
     <div class="date-group">Dom, 30 de ago</div>
 
     <!-- Estrella Roja vs CD Olimpia -->
-    <div class="card" data-start="2026-08-30 17:00:00" data-end="2026-08-30 19:00:00">
+    <div class="card waiting" data-start="2026-08-30 17:00:00" data-end="2026-08-30 19:00:00">
         <div class="match-info">
             <span class="date-time">5:00 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
@@ -159,7 +161,7 @@
     </div>
 
     <!-- Real España vs CD Choloma -->
-    <div class="card" data-start="2026-08-30 19:15:00" data-end="2026-08-30 21:15:00">
+    <div class="card waiting" data-start="2026-08-30 19:15:00" data-end="2026-08-30 21:15:00">
         <div class="match-info">
             <span class="date-time">7:15 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
@@ -201,17 +203,13 @@
     function actualizarEstados() {
         const ahora = new Date().getTime();
         
-        // 20 minutos antes del inicio (20 * 60 * 1000 = 1,200,000 ms)
+        // Reglas de tiempo: 20 minutos antes y 20 minutos después
         const PREVIA_MS = 20 * 60 * 1000;
-        
-        // 20 minutos de tiempo extra después del fin (20 * 60 * 1000 = 1,200,000 ms)
         const GRACIA_FIN_MS = 20 * 60 * 1000;
         
         let hayPartidosEnVivo = false;
 
         document.querySelectorAll('.card').forEach(card => {
-            if (card.classList.contains('finished')) return;
-
             const inicio = parseFecha(card.getAttribute('data-start'));
             const finOficial = parseFecha(card.getAttribute('data-end'));
             
@@ -223,20 +221,20 @@
             card.classList.remove('active', 'finished', 'is-live', 'waiting', 'upcoming');
 
             if (ahora < inicioPrevia) {
-                // Faltan más de 20 minutos -> Oculto/En espera
+                // Faltan más de 20 minutos
                 card.classList.add('waiting');
             } 
             else if (ahora >= inicioPrevia && ahora < inicio) {
-                // Faltan 20 minutos o menos para empezar -> Muestra botones (Previa)
+                // Faltan 20 minutos o menos: Abre la previa y habilita botones
                 card.classList.add('active', 'upcoming');
             } 
             else if (ahora >= inicio && ahora <= finConGracia) {
-                // En transmisión en vivo hasta 20 min después de finalizar
+                // Partido en curso y hasta 20 minutos tras finalizar
                 card.classList.add('active', 'is-live');
                 hayPartidosEnVivo = true;
             } 
             else {
-                // Pasaron los 20 min tras el final -> Oculta botones y marca FINALIZADO
+                // Pasados los 20 minutos después de terminar: Cierra y marca como FINALIZADO
                 card.classList.add('finished');
             }
         });
@@ -250,7 +248,7 @@
     }
 
     actualizarEstados();
-    setInterval(actualizarEstados, 30000);
+    setInterval(actualizarEstados, 10000); // Se actualiza cada 10 segundos
 </script>
 </body>
 </html>
