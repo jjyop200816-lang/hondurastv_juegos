@@ -57,7 +57,7 @@
     <!-- VIERNES 28 DE AGOSTO -->
     <div class="date-group">Vie, 28 de ago</div>
 
-    <!-- Juticalpa vs Lobos UPNFM (MARCADO COMO FINALIZADO) -->
+    <!-- Juticalpa vs Lobos UPNFM (FINALIZADO) -->
     <div class="card finished" data-start="2026-08-28 21:00:00" data-end="2026-08-28 23:00:00">
         <div class="match-info">
             <span class="date-time">9:00 p.m.</span>
@@ -87,7 +87,7 @@
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
             <div class="team">CD Marathon</div>
         </div>
-        <div class="actions"><button onclick="openAction('opciontvc')" class="play-btn">▶</button></div>
+        <div class="actions"><button onclick="openAction('deportestvc')" class="play-btn">▶</button></div>
     </div>
 
     <!-- Platense FC vs Atletico Independiente -->
@@ -121,7 +121,7 @@
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
             <div class="team">Olancho FC</div>
         </div>
-        <div class="actions"><button onclick="openAction('opciontvc')" class="play-btn">▶</button></div>
+        <div class="actions"><button onclick="openAction('deportestvc')" class="play-btn">▶</button></div>
     </div>
 
     <!-- DOMINGO 30 DE AGOSTO -->
@@ -141,7 +141,7 @@
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
             <div class="team">CD Olimpia</div>
         </div>
-        <div class="actions"><button onclick="openAction('opciontvc')" class="play-btn">▶</button></div>
+        <div class="actions"><button onclick="openAction('deportestvc')" class="play-btn">▶</button></div>
     </div>
 
     <!-- Real España vs CD Choloma -->
@@ -158,18 +158,16 @@
             <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
             <div class="team">CD Choloma</div>
         </div>
-        <div class="actions"><button onclick="openAction('opciontvc')" class="play-btn">▶</button></div>
+        <div class="actions"><button onclick="openAction('deportestvc')" class="play-btn">▶</button></div>
     </div>
 
 </div>
 
 <script>
     function openAction(target) {
-        // Ejecución para Sketchware Pro mediante JavaScriptInterface
         if (window.Android && window.Android.openStream) {
             window.Android.openStream(target);
         } else {
-            // Fallback estándar por esquema URI
             window.location.href = "go:" + target;
         }
     }
