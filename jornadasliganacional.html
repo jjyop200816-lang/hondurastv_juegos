@@ -1,267 +1,826 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jornada 6 - Liga de Honduras</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
-        body { background-color: #0b1120; color: #ffffff; padding: 16px; display: flex; justify-content: center; }
-        .container { width: 100%; max-width: 480px; }
-        
-        .header-main { text-align: center; margin-bottom: 16px; }
-        .header-main h1 { font-size: 1.8rem; color: #00c853; text-transform: uppercase; letter-spacing: 1px; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda Deportiva</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --accent: #38bdf8;
+      --accent-hover: #0284c7;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: #334155;
+    }
 
-        .live-global-banner { background: #e11d48; color: white; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; font-size: 0.95rem; margin-bottom: 20px; display: none; animation: pulse 1.5s infinite; box-shadow: 0 0 12px rgba(225, 29, 72, 0.5); }
-        .live-global-banner.show { display: block; }
-        
-        .date-group { font-size: 1rem; color: #94a3b8; margin: 18px 0 10px 4px; font-weight: 700; text-transform: capitalize; border-left: 3px solid #00c853; padding-left: 8px; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
 
-        .card { background: #1e293b; border-radius: 14px; padding: 16px; margin-bottom: 12px; border: 1px solid #334155; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3); transition: all 0.3s ease; }
-        .card.active { border: 2px solid #00c853; background: linear-gradient(145deg, #1e293b, #092617); box-shadow: 0 0 15px rgba(0, 200, 83, 0.2); }
-        .card.finished { opacity: 0.7; }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-        .match-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 8px; }
-        .date-time { font-size: 0.85rem; color: #cbd5e1; font-weight: 600; }
-        
-        .status-badge { font-size: 0.7rem; padding: 3px 10px; border-radius: 20px; font-weight: 800; letter-spacing: 0.5px; display: none; }
-        .card.waiting .badge-wait { display: inline-block; background-color: #334155; color: #94a3b8; }
-        .card.active.upcoming .badge-pre { display: inline-block; background-color: #0284c7; color: #ffffff; }
-        .card.active.is-live .badge-live { display: inline-block; background-color: #e11d48; color: #ffffff; animation: pulse 1.5s infinite; }
-        .card.finished .badge-ended { display: inline-block; background-color: #475569; color: #cbd5e1; }
+    header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
 
-        .teams { display: flex; justify-content: space-between; align-items: center; margin: 12px 0; font-size: 1rem; font-weight: 700; text-align: center; }
-        .team { flex: 1; }
-        .vs-container { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 50px; }
-        .vs { font-size: 0.85rem; color: #64748b; font-weight: 800; }
-        .score { font-size: 1.3rem; color: #00c853; font-weight: 900; display: none; background: rgba(0, 200, 83, 0.1); padding: 2px 8px; border-radius: 6px; }
-        .card.is-live .score, .card.finished .score { display: block; }
-        .card.is-live .vs, .card.finished .vs { display: none; }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: var(--accent);
+    }
 
-        /* Ocultar opciones por defecto en estado de espera y finalizado */
-        .actions { display: none; justify-content: center; align-items: center; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
-        .card.active .actions { display: flex; }
-        .card.finished .actions, .card.waiting .actions { display: none !important; }
-        
-        .play-btn { height: 40px; padding: 0 14px; border-radius: 20px; background: #00c853; color: white; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 12px; font-weight: 800; box-shadow: 0 4px 12px rgba(0, 200, 83, 0.4); transition: transform 0.2s; cursor: pointer; border: none; }
-        .play-btn:active { transform: scale(0.95); }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 25px;
+    }
 
-        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
-    </style>
+    .search-bar {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px 16px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      color: var(--text-main);
+      outline: none;
+    }
+
+    .filter-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--accent);
+      color: #000;
+      border-color: var(--accent);
+      font-weight: bold;
+    }
+
+    .date-group {
+      margin-bottom: 30px;
+    }
+
+    .date-title {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 15px;
+    }
+
+    .event-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 15px;
+      transition: transform 0.2s;
+    }
+
+    .event-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .event-time {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .event-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .options-btn {
+      width: 100%;
+      background: var(--border);
+      color: var(--text-main);
+      border: none;
+      padding: 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .channels-list {
+      display: none;
+      margin-top: 10px;
+      grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+      gap: 8px;
+    }
+
+    .channel-btn {
+      background: #0284c7;
+      color: white;
+      text-align: center;
+      padding: 6px 10px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      border: none;
+    }
+
+    .channel-btn:hover {
+      background: var(--accent);
+      color: black;
+    }
+
+    /* Modal / Reproductor con bloqueo de publicidad */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.85);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .modal-content {
+      position: relative;
+      width: 90%;
+      max-width: 900px;
+      height: 70vh;
+      background: #000;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: -35px;
+      right: 0;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="header-main"><h1>Jornada 6</h1></div>
-
-    <div id="liveBanner" class="live-global-banner">🔴 ¡PARTIDOS EN VIVO AHORA MISMO!</div>
-
-    <!-- JUEVES 3 DE SEPTIEMBRE -->
-    <div class="date-group">Jue, 3 de sept</div>
-
-    <!-- CD Olimpia vs Platense FC -->
-    <div class="card waiting" data-start="2026-09-03 21:00:00" data-end="2026-09-03 23:00:00">
-        <div class="match-info">
-            <span class="date-time">9:00 p.m.</span>
-            <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
-            <span class="status-badge badge-live">EN VIVO</span>
-            <span class="status-badge badge-ended">FINALIZADO</span>
-        </div>
-        <div class="teams">
-            <div class="team">CD Olimpia</div>
-            <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
-            <div class="team">Platense FC</div>
-        </div>
-        <div class="actions">
-            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
-            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
-            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
-        </div>
+  <header>
+    <h1>Agenda Deportiva</h1>
+    <div class="controls">
+      <input type="text" id="search" class="search-bar" placeholder="Buscar evento, equipo o deporte..." onkeyup="filterEvents()">
+      <button class="filter-btn active" onclick="filterDay('all')">Todos</button>
+      <button class="filter-btn" onclick="filterDay('Thursday')">Jueves 3</button>
+      <button class="filter-btn" onclick="filterDay('Friday')">Viernes 4</button>
+      <button class="filter-btn" onclick="filterDay('Saturday')">Sábado 5</button>
+      <button class="filter-btn" onclick="filterDay('Sunday')">Domingo 6</button>
+      <button class="filter-btn" onclick="filterDay('Otros')">Otros</button>
     </div>
+  </header>
 
-    <!-- VIERNES 4 DE SEPTIEMBRE -->
-    <div class="date-group">Vie, 4 de sept</div>
+  <main id="events-container"></main>
 
-    <!-- CD Choloma vs Olancho FC -->
-    <div class="card waiting" data-start="2026-09-04 21:00:00" data-end="2026-09-04 23:00:00">
-        <div class="match-info">
-            <span class="date-time">9:00 p.m.</span>
-            <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
-            <span class="status-badge badge-live">EN VIVO</span>
-            <span class="status-badge badge-ended">FINALIZADO</span>
-        </div>
-        <div class="teams">
-            <div class="team">CD Choloma</div>
-            <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
-            <div class="team">Olancho FC</div>
-        </div>
-        <div class="actions">
-            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
-            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
-            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
-        </div>
+  <!-- Player Modal -->
+  <div id="playerModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closePlayer()">&times; Cerrar reproductor</span>
+      <!-- Atributo sandbox activa el bloqueo estricto de popups y anuncios externos -->
+      <iframe id="videoPlayer" src="" sandbox="allow-scripts allow-same-origin allow-forms" allowfullscreen></iframe>
     </div>
+  </div>
 
-    <!-- SÁBADO 5 DE SEPTIEMBRE -->
-    <div class="date-group">Sáb, 5 de sept</div>
+  <script>
+    const rawData = `
+Thursday, 3 September 2026 18:00 Tennis US Open https://asiria.is/espn.php https://asiria.is/espn2.php https://asiria.is/movistar1.php https://asiria.is/movistar2.php https://asiria.is/movistar3.php https://asiria.is/movistar4.php https://asiria.is/movistar5.php https://asiria.is/skymain.php https://asiria.is/tennis1.php https://asiria.is/tennis2.php https://asiria.is/tennis3.php 
+---------------------------------------------- 
+21:00 Panathinaikos vs Niki Volos https://abisnews.com/skay.php 
+------------------------------------------------ 
+19:00 Palermo vs Mantova https://asiria.is/match1.php https://asiria.is/cbsgolazo.php https://asiria.is/viaplay1.php https://asiria.is/dazn1de.php https://asiria.is/megogosport.php https://asiria.is/dazn1de.php https://asiria.is/arenasport2hr.php https://asiria.is/arena1premiumserbia.php 
+----------------------------------------------------- 
+19:00 Raków Czestochowa vs Górnik Zabrze https://asiria.is/arenasport4hr.php https://asiria.is/arena5premiumserbia.php https://asiria.is/arena1premiumbosnia.php https://asiria.is/canalsportplus3pl.php 
+-------------------------------------------------------- 
+19:30 Dynamo Moscow vs Akhmat Grozny https://asiria.is/match.php https://asiria.is/matchpremier.php https://asiria.is/belarus5.php 
+-------------------------------------------------------- 
+20:00 Mjällby vs Djurgården https://asiria.is/tv4fotboll.php 
+-------------------------------------------------------- 
+20:30 Hapoel Tel Aviv vs Beitar Jerusalem https://asiria.is/sport5il.php 
+-------------------------------------------------------- 
+21:45 Toulouse vs Lille https://asiria.is/beinsportusa.php https://asiria.is/setantasport2.php https://asiria.is/setantasport1georgia.php https://asiria.is/okkosport2.php https://asiria.is/okkofutbol.php https://asiria.is/megogosport.php https://asiria.is/dazn1de.php https://asiria.is/arenasport2hr.php https://asiria.is/arena1premiumbosnia.php https://asiria.is/sport1pt.php 
+---------------------------------------------------- 
+21:00 FC Copenhagen vs Nordsjælland https://asiria.is/tv3plusdk.php 
+---------------------------------------------------- 
+21:30 Basel vs Sion https://asiria.is/bluesport1d.php https://asiria.is/arena4premiumserbia.php 
+---------------------------------------------------- 
+21:30 Lugano vs Servette https://asiria.is/bluesportlive1.php 
+----------------------------------------------------- 
+21:30 Lech Poznan vs Jagiellonia https://asiria.is/sport1ukr.php https://asiria.is/arenasport3hr.php https://asiria.is/arena5premiumserbia.php https://asiria.is/canalsportplus3pl.php 
+----------------------------------------------------- 
+22:00 Real Sociedad vs. Celta https://asiria.is/viaplay2.php https://asiria.is/belarus5.php https://asiria.is/go3sport1.php https://asiria.is/match.php https://asiria.is/match2.php https://asiria.is/setantasport1.php https://asiria.is/arena1premiumserbia.php 
+--------------------------------------------------- 
+22:00 Cagliari vs Verona https://asiria.is/match1.php https://asiria.is/cbsgolazo.php https://asiria.is/arena2premiumserbia.php https://asiria.is/arenasport1hr.php https://asiria.is/sport2pt.php 
+----------------------------------------------------- 
+Friday, 4 September 2026 06:00 Boxing: Lenar Perez vs Thabiso Mchunu https://asiria.is/dazn1ppv.php 
+----------------------------------------------------- 
+18:30 Hockey Liiga Finland: KalPa vs Jukurit https://asiria.is/liiga1.php 
+--------------------------------------------------- 
+18:30 Hockey Liiga Finland: Pelicans vs Sport https://asiria.is/liiga2.php 
+--------------------------------------------------- 
+19:00 Hockey Liiga Finland: Ässät vs Ilves https://asiria.is/liiga3.php 
+--------------------------------------------------- 
+19:30 Hockey Liiga Finland: HIFK vs HPK https://asiria.is/liiga4.php 
+--------------------------------------------------- 
+12:30 Basketball Women's World Championships: Japan vs. Mali 
+--------------------------------------------------- 
+12:30 Basketball Women's World Championships: Australia vs. Puerto Rico https://asiria.is/okkosport2.php https://asiria.is/bein2fr.php 
+----------------------------------------------------- 
+15:00 Basketball Women's World Championships: USA vs. China https://asiria.is/tnt.php https://asiria.is/trutv.php https://asiria.is/bein2fr.php https://asiria.is/okkosport2.php 
+----------------------------------------------------- 
+15:30 Basketball Women's World Championships: Korea vs. Nigeria 
+----------------------------------------------------- 
+18:30 Basketball Women's World Championships: Belgium vs. Turkey 
+----------------------------------------------------- 
+18:30 Basketball Women's World Championships: Spain vs. Germany https://asiria.is/trutv.php https://asiria.is/bein2fr.php 
+---------------------------------------------------- 
+21:15 Basketball Women's World Championships: Czechia vs. Italy https://asiria.is/okkosport.php 
+---------------------------------------------------- 
+21:45 Basketball Women's World Championships: Hungary vs. France 
+------------------------------------------------------- 
+19:30 Arminia Bielefeld vs St Pauli https://asiria.is/arena5premiumserbia.php https://asiria.is/skycalcio.php 
+------------------------------------------------------- 
+19:30 Hannover 96 vs Karlsruhe https://asiria.is/arena2premiumserbia.php 
+------------------------------------------------------- 
+20:00 Istanbul Basaksehir vs Galatasaray https://asiria.is/beinsport1tr.php https://asiria.is/match3.php https://asiria.is/sport5pt.php 
+------------------------------------------------------ 
+20:00 Olympique Lyonnais vs. Auxerre https://asiria.is/beinsportusa.php https://asiria.is/setantasport1georgia.php https://asiria.is/setantasport1latvia.php https://asiria.is/arena3premiumserbia.php https://asiria.is/dazn1de.php https://asiria.is/setantasport2.php https://asiria.is/megogosport.php https://asiria.is/arenasport2hr.php https://asiria.is/sport3pt.php 
+--------------------------------------------------- 
+21:00 Al Shabab vs Al Hilal https://asiria.is/sport4pt.php 
+--------------------------------------------------- 
+21:00 Varaždin vs Istra 1961 https://asiria.is/maxsport1croatia.php 
+--------------------------------------------------- 
+21:15 Winterthur vs Neuchâtel Xamax https://asiria.is/bluesport1d.php 
+--------------------------------------------------- 
+21:30 Stuttgart vs. Cologne https://asiria.is/sky1de.php https://asiria.is/okkofutbol.php https://asiria.is/sportvbelarus.php https://asiria.is/nbcuniverso.php https://asiria.is/setantaukraineplus.php 
+---------------------------------------------------- 
+21:30 Las Palmas vs Leganés https://asiria.is/liga1.php https://asiria.is/match3.php 
+---------------------------------------------------- 
+21:30 Piast Gliwice vs GKS Katowice https://asiria.is/arenasport6hr.php https://asiria.is/canalsportplus3pl.php 
+-------------------------------------------------- 
+21:45 Genoa vs Como https://asiria.is/match1.php https://asiria.is/arenasport3hr.php https://asiria.is/sport2pt.php 
+---------------------------------------------------- 
+22:05 PSG vs AS Monaco https://asiria.is/beinsportusa.php https://asiria.is/setantasport1georgia.php https://asiria.is/setantasport2latvia.php https://asiria.is/dazn1de.php https://asiria.is/setantakazakstan.php https://asiria.is/arenasport2hr.php https://asiria.is/go3sport2.php https://asiria.is/sport3pt.php https://asiria.is/sport5il.php https://asiria.is/arena3premiumserbia.php 
+---------------------------------------------------- 
+22:00 Real Betis vs Real Madrid https://asiria.is/viaplay1.php https://asiria.is/belarus5.php https://asiria.is/setantasport1latvia.php https://asiria.is/match.php https://asiria.is/match2.php https://asiria.is/dazn2de.php https://asiria.is/go3sport1.php https://asiria.is/espndeportes.php https://asiria.is/dazn1pt.php https://asiria.is/setantasport2.php https://asiria.is/arena2premiumserbia.php 
+--------------------------------------------------- 
+22:00 Ipswich Town vs Liverpool https://asiria.is/usa.php https://asiria.is/astropremier.php https://asiria.is/skymain.php https://asiria.is/sky8nz.php https://asiria.is/setantasport1.php https://asiria.is/setantaukraine.php https://asiria.is/arena1premiumserbia.php https://asiria.is/arena1premiumbosnia.php https://asiria.is/arenasport1hr.php https://asiria.is/skycalcio.php 
+---------------------------------------------------- 
+22:15 FC Porto vs Moreirense https://asiria.is/sport1pt.php 
+---------------------------------------------------- 
+Saturday, 5 September 2026 06:00 Boxing: Andy Ruiz Jr vs Damian Knyba https://asiria.is/dazn1ppv.php 
+---------------------------------------------------- 
+17:00 Hockey Liiga Finland: Jukurit vs Sport https://asiria.is/liiga1.php 
+---------------------------------------------------- 
+17:00 Hockey Liiga Finland: K-Espoo vs Pelicans https://asiria.is/liiga2.php 
+---------------------------------------------------- 
+17:00 Hockey Liiga Finland: Kärpät vs JYP https://asiria.is/liiga3.php 
+---------------------------------------------------- 
+17:00 Hockey Liiga Finland: Lukko vs Jokerit https://asiria.is/liiga4.php https://asiria.is/vijusportplus.php 
+---------------------------------------------------- 
+17:00 Hockey Liiga Finland: TPS vs HIFK https://asiria.is/liiga5.php 
+---------------------------------------------------- 
+12:30 Basketball Women's World Championships: Mali vs. Spain https://asiria.is/bein3fr.php https://asiria.is/okkosport2.php 
+------------------------------------------------------ 
+15:15 Basketball Women's World Championships: Nigeria vs. Hungary 
+------------------------------------------------------ 
+18:45 Basketball Women's World Championships: Germany vs. Japan 
+------------------------------------------------------ 
+21:30 Basketball Women's World Championships: France vs. Korea 
+------------------------------------------------------ 
+17:00 Formula 1 Italian Grand Prix. Qualifying https://asiria.is/skyf1.php https://asiria.is/daznf1.php https://asiria.is/sky3nz.php https://asiria.is/skyf1it.php https://asiria.is/setantasport2.php https://asiria.is/setantaukraineplus.php 
+---------------------------------------------------- 
+21:00 Ajax vs PSV https://asiria.is/espn1nl.php https://asiria.is/setantasport2latvia.php https://asiria.is/setantakazakstan.php https://asiria.is/sportdigital.php https://asiria.is/sport2il.php 
+--------------------------------------------------- 
+14:30 Preston North End vs. Blackburn Rovers https://asiria.is/setantaukraineplus.php 
+--------------------------------------------------- 
+14:30 Lincoln City vs Southampton https://asiria.is/live1.php 
+--------------------------------------------------- 
+14:30 Stoke City vs Charlton Athletic https://asiria.is/live2.php 
+--------------------------------------------------- 
+17:00 Burnley vs Bristol City https://asiria.is/cbssports.php 
+--------------------------------------------------- 
+17:00 Millwall vs Bolton Wanderers https://asiria.is/live3.php 
+--------------------------------------------------- 
+17:00 Portsmouth vs Cardiff City https://asiria.is/live4.php 
+--------------------------------------------------- 
+17:00 Queens Park Rangers vs Middlesbrough https://asiria.is/cbsgolazo.php 
+--------------------------------------------------- 
+17:00 Sheffield United vs Norwich City https://asiria.is/live5.php 
+--------------------------------------------------- 
+17:00 West Bromwich Albion vs Watford https://asiria.is/live6.php 
+--------------------------------------------------- 
+17:00 West Ham United vs Derby County https://asiria.is/live7.php 
+--------------------------------------------------- 
+22:00 Swansea City vs. Wrexham https://asiria.is/setantasport1georgia.php https://asiria.is/setantaukraine.php 
+------------------------------------------------------ 
+14:30 Newcastle United vs AFC Bournemouth https://asiria.is/maxtnt1.php https://asiria.is/usa.php https://asiria.is/setantasport1georgia.php https://asiria.is/nbcuniverso.php https://asiria.is/setantasport1.php https://asiria.is/arenasport1hr.php https://asiria.is/setantaukraine.php https://asiria.is/sport1il.php https://asiria.is/arena1premiumserbia.php 
+---------------------------------------------------- 
+17:00 Simulcast English Premier League https://asiria.is/sky8nz.php 
+------------------------------------------------- 
+17:00 Brentford vs Sunderland https://asiria.is/astropremier4.php https://asiria.is/skyselectnz.php https://asiria.is/arenasport7hr.php 
+--------------------------------------------------- 
+17:00 Brighton & Hove Albion vs Leeds United https://asiria.is/astropremier3.php https://asiria.is/sky9nz.php https://asiria.is/arenasport3hr.php 
+---------------------------------------------------- 
+17:00 Fulham vs Crystal Palace https://asiria.is/sky7nz.php https://asiria.is/arenasport9hr.php https://asiria.is/sport2il.php 
+--------------------------------------------------- 
+17:00 Manchester City vs Coventry City https://asiria.is/astropremier2.php https://asiria.is/sky8nz.php https://asiria.is/usa.php https://asiria.is/telemundo.php https://asiria.is/setantasport1georgia.php https://asiria.is/setantasport1.php https://asiria.is/setantaukraine.php https://asiria.is/arenasport1hr.php https://asiria.is/sport4il.php https://asiria.is/arena1premiumserbia.php 
+---------------------------------------------------- 
+17:00 Nottingham Forest vs Tottenham Hotspur https://asiria.is/astropremier.php https://asiria.is/sky6nz.php https://asiria.is/arenasport5hr.php https://asiria.is/setantakazakstan.php https://asiria.is/arena3premiumserbia.php 
+--------------------------------------------------- 
+19:30 Hull City vs Aston Villa https://asiria.is/astropremier.php https://asiria.is/sky8nz.php https://asiria.is/skymain.php https://asiria.is/nbc.php https://asiria.is/setantasport1georgia.php https://asiria.is/setantasport1.php https://asiria.is/setantaukraine.php https://asiria.is/arenasport1hr.php https://asiria.is/sport1il.php https://asiria.is/arena2premiumserbia.php 
+---------------------------------------------------- 
+22:00 UFC Fight Night Paris, France: Dan Hooker vs. Saladin Parnasse https://asiria.is/setantasport1.php https://asiria.is/maxtnt2.php https://asiria.is/setantaukraineplus.php 
+---------------------------------------------------- 
+16:30 Hoffenheim vs Borussia Dortmund https://asiria.is/sky1de.php https://asiria.is/nbcuniverso.php https://asiria.is/setantasport2latvia.php 
+----------------------------------------------------- 
+16:30 Bayer Leverkusen vs Union Berlin https://asiria.is/sky4de.php https://asiria.is/sportvbelarus.php 
+-------------------------------------------------- 
+16:30 Werder Bremen vs RB Leipzig https://asiria.is/sky3de.php 
+-------------------------------------------------- 
+16:30 Paderborn vs Freiburg https://asiria.is/sky5de.php 
+--------------------------------------------------- 
+16:30 Borussia M'gladbach vs Elversberg https://asiria.is/sky2de.php 
+--------------------------------------------------- 
+19:30 Schalke 04 vs Bayern Munich https://asiria.is/sky1de.php https://asiria.is/usa.php https://asiria.is/telemundo.php https://asiria.is/setantasport1latvia.php https://asiria.is/go3sport1.php https://asiria.is/setantasport2.php https://asiria.is/setantaukraineplus.php 
+---------------------------------------------------- 
+20:00 Marítimo vs Benfica https://asiria.is/sport1pt.php 
+----------------------------------------------------- 
+20:00 Alverca vs Sporting Braga https://asiria.is/sport4pt.php 
+----------------------------------------------------- 
+22:30 Sporting CP vs Nacional https://asiria.is/sport2pt.php 
+----------------------------------------------------- 
+20:30 Dinamo București vs FCSB https://asiria.is/digisport1.php https://asiria.is/arenasport8hr.php 
+----------------------------------------------------- 
+17:15 Athletic Club vs Atlético Madrid https://asiria.is/espndeportes.php https://asiria.is/setantasport1latvia.php https://asiria.is/go3sport1.php https://asiria.is/dazn2de.php 
+----------------------------------------------------- 
+19:30 Rayo Vallecano vs Racing Santander https://asiria.is/espndeportes.php https://asiria.is/belarus5.php 
+----------------------------------------------------- 
+22:00 Villarreal vs Deportivo La Coruña https://asiria.is/espndeportes.php https://asiria.is/setantasport2.php https://asiria.is/belarus5.php 
+--------------------------------------------------- 
+16:00 Fiorentina vs Torino https://asiria.is/dazn1it.php https://asiria.is/go3sport2.php https://asiria.is/arenasport2hr.php https://asiria.is/sport1pt.php 
+----------------------------------------------------- 
+19:00 Internazionale vs Napoli https://asiria.is/cbs.php https://asiria.is/sportvbelarus.php https://asiria.is/setantasport2latvia.php https://asiria.is/maxtnt2.php https://asiria.is/dazn1it.php https://asiria.is/go3sport2.php https://asiria.is/dazn2de.php https://asiria.is/arena1premiumserbia.php https://asiria.is/arenasport3hr.php https://asiria.is/sport3pt.php 
+----------------------------------------------------- 
+21:45 Roma vs Atalanta https://asiria.is/cbsgolazo.php https://asiria.is/sportvbelarus.php https://asiria.is/setantasport1latvia.php https://asiria.is/arena1premiumserbia.php https://asiria.is/go3sport1.php https://asiria.is/telemundo.php https://asiria.is/dazn2de.php https://asiria.is/arenasport1hr.php https://asiria.is/sport1il.php https://asiria.is/ssport3pt.php 
+------------------------------------------------- 
+21:00 Al-Ittihad vs. Al-Nassr https://asiria.is/okkofutbol.php 
+--------------------------------------------------- 
+18:15 Lens vs Lorient https://asiria.is/beinsportusa.php https://asiria.is/okkofutbol.php https://asiria.is/arenasport10hr.php 
+------------------------------------------------- 
+20:00 Fenerbahçe vs Beşiktaş https://asiria.is/beinsportusa.php https://asiria.is/beinsport1tr.php https://asiria.is/sport2pt.php https://asiria.is/match3.php https://asiria.is/arenasport1sr.php 
+------------------------------------------------ 
+21:45 Le Havre vs Brest https://asiria.is/arenasport7hr.php 
+------------------------------------------------- 
+21:45 Nice vs Le Mans https://asiria.is/beinsportusa.php https://asiria.is/arenasport3hr.php 
+------------------------------------------------- 
+15:00 Real Sociedad II vs Tenerife https://asiria.is/liga1.php 
+------------------------------------------------- 
+17:15 Sporting Gijón vs Girona https://asiria.is/liga1.php 
+------------------------------------------------- 
+19:30 Real Valladolid vs FC Andorra https://asiria.is/liga1.php 
+------------------------------------------------- 
+19:30 Ceuta vs Celta de Vigo II https://asiria.is/liga2.php 
+------------------------------------------------- 
+22:00 Eldense vs Mallorca https://asiria.is/liga1.php 
+------------------------------------------------- 
+13:30 BSK Banja Luka vs Čelik https://asiria.is/arena1premiumbosnia.php 
+------------------------------------------------ 
+20:45 Radnik Bijeljina vs Sloga Doboj https://asiria.is/arena1premiumbosnia.php 
+------------------------------------------------ 
+21:15 Levski Sofia vs CSKA 1948 https://asiria.is/diemasport.php 
+------------------------------------------------ 
+19:00 Dinamo Zagreb vs Gorica https://asiria.is/maxport1croatia.php 
+------------------------------------------------ 
+22:00 Rijeka vs Osijek https://asiria.is/maxport1croatia.php 
+------------------------------------------------ 
+19:00 AGF vs Silkeborg https://asiria.is/sport1ukr.php 
+------------------------------------------------ 
+19:00 Vaduz vs Lausanne Sport https://asiria.is/bluesportlive1.php 
+----------------------------------------------- 
+19:00 Young Boys vs Luzern https://asiria.is/bluesportd1.php 
+------------------------------------------------ 
+21:30 Grasshopper vs Zürich https://asiria.is/bluesportd1.php https://asiria.is/sport1ukr.php https://asiria.is/rsila2.php https://asiria.is/srf2.php https://asiria.is/rts2.php 
+------------------------------------------------ 
+20:30 Maccabi Haifa vs Hapoel Petah Tikva https://asiria.is/sport4il.php 
+------------------------------------------------ 
+19:00 Volos NFC vs Olympiakos Piraeus https://asiria.is/cosmote9.php https://asiria.is/arenasport3sr.php 
+------------------------------------------------ 
+21:00 AEK Athens vs Aris https://asiria.is/cosmote8.php https://asiria.is/arenasport3sr.php 
+-------------------------------------------------- 
+15:45 Widzew Łódź vs Radomiak Radom https://asiria.is/canalsportplus3pl.php https://asiria.is/arenasport6hr.php 
+--------------------------------------------------- 
+18:30 Korona Kielce vs Wisła Kraków https://asiria.is/canalsportplus3pl.php https://asiria.is/arenasport8hr.php 
+-------------------------------------------------- 
+21:15 Motor Lublin vs Legia Warszawa https://asiria.is/canalsportplus3pl.php https://asiria.is/arenasport5hr.php 
+----------------------------------------------------- 
+14:00 Krylya Sovetov vs Krasnodar https://asiria.is/matchpremier.php 
+----------------------------------------------------- 
+16:30 Zenit vs CSKA Moskva https://asiria.is/matchpremier.php 
+----------------------------------------------------- 19:00 Rostov vs Fakel https://asiria.is/matchpremier.php 
+----------------------------------------------------- 
+18:00 Karpaty vs Shakhtar Donetsk https://asiria.is/upltv.php 
+----------------------------------------------------- 
+Sunday, 6 September 2026 17:30 Santa Clara vs Rio Ave https://asiria.is/sport1pt.php 
+----------------------------------------------------- 
+20:00 Vitória Guimarães vs Casa Pia https://asiria.is/sport2pt.php 
+----------------------------------------------------- 
+22:30 Gil Vicente vs Academico Viseu https://asiria.is/sport1pt.php 
+----------------------------------------------------- 
+15:00 Eibar vs Granada https://asiria.is/liga1.php 
+----------------------------------------------------- 
+17:15 Real Oviedo vs Burgos https://asiria.is/liga1.php 
+----------------------------------------------------- 
+19:30 CD Castellon vs Albacete https://asiria.is/liga1.php 
+----------------------------------------------------- 
+22:00 Almería vs Cádiz https://asiria.is/liga1.php 
+----------------------------------------------------- 
+17:00 Çorum Belediyespor vs Eyüpspor https://asiria.is/beinsport1tr.php 
+----------------------------------------------------- 
+20:00 Trabzonspor vs Gençlerbirliği https://asiria.is/beinsport1tr.php 
+----------------------------------------------------- 
+21:15 Lokomotiv Sofia 1929 vs Ludogorets https://asiria.is/diemasport.php 
+----------------------------------------------------- 
+19:00 Rudeš vs Hajduk Split https://asiria.is/maxport1croatia.php 
+----------------------------------------------------- 
+22:00 Slaven Koprivnica vs Lokomotiva Zagreb https://asiria.is/maxport1croatia.php 
+----------------------------------------------------- 
+13:00 Dynamo Kyiv vs LNZ Cherkasy https://asiria.is/2+2ukr.php https://asiria.is/upltv.php 
+----------------------------------------------------- 
+15:30 Veres Rivne vs Zorya https://asiria.is/upltv.php 
+----------------------------------------------- 
+18:00 Epitsentr Dunayivtsi vs Bukovyna https://asiria.is/upltv.php 
+----------------------------------------------- 
+15:00 Örgryte vs Hammarby https://asiria.is/tv4fotboll.php 
+-------------------------------------------------- 
+14:00 Orenburg vs Akron https://asiria.is/matchpremier.php 
+-------------------------------------------------- 
+16:15 Dynamo Makhachkala vs Rodina Moskva https://asiria.is/matchpremier.php 
+------------------------------------------------ 
+18:30 Dinamo Moskva vs Spartak Moskva https://asiria.is/matchpremier.php 
+-------------------------------------------------- 
+20:45 Baltika vs Lokomotiv Moskva https://asiria.is/matchpremier.php 
+-------------------------------------------------- 
+17:00 St. Johnstone vs Hibernian https://asiria.is/viaplay1.php 
+-------------------------------------------------- 
+19:00 Atromitos vs Kalamata https://asiria.is/novasport2gr.php 
+----------------------------------------------------- 
+19:30 OFI vs Kifisia https://asiria.is/cosmote8.php 
+----------------------------------------------------- 
+20:00 Levadiakos vs Panaitolikos https://asiria.is/novasportprime.php 
+----------------------------------------------------- 
+21:30 Panathinaikos vs PAOK https://asiria.is/skay.php 
+----------------------------------------------------- 
+19:00 Hradec Králové vs Sparta Praha https://asiria.is/sportdigital.php 
+----------------------------------------------------- 
+15:00 SønderjyskE vs Horsens https://asiria.is/tv2sportxdk.php 
+----------------------------------------------------- 
+17:00 OB vs København https://asiria.is/tv2sportxdk.php 
+------------------------------------------------------ 
+19:00 Brøndby vs Randers https://asiria.is/tv3plusdk.php 
+----------------------------------------------------- 
+20:00 Crvena Zvezda vs Partizan https://asiria.is/arena1premiumserbia.php https://asiria.is/match3.php 
+--------------------------------------------------------- 
+15:45 Cracovia Kraków vs Górnik Zabrze https://asiria.is/canalsportplus3pl.php 
+-------------------------------------------------------- 
+18:30 Lech Poznań vs Raków Częstochowa https://asiria.is/canalsportplus3pl.php 
+--------------------------------------------------------- 
+21:15 Jagiellonia Białystok vs Śląsk Wrocław https://asiria.is/canalsportplus3pl.php 
+------------------------------------------------------- 
+15:00 Servette vs St. Gallen https://asiria.is/bluesport1d.php 
+--------------------------------------------------------- 
+17:30 Basel vs Lugano https://asiria.is/sport1ukr.php 
+------------------------------------------------ 
+18:30 Sarajevo vs Borac Banja Luka https://asiria.is/arena1premiumbosnia.php 
+------------------------------------------------ 
+21:15 Kranjska vs Široki Brijeg https://asiria.is/arena1premiumbosnia.php 
+------------------------------------------------ 
+04:00 Boxing: Alan Abel Chaves vs Eridson Garcia https://asiria.is/dazn1ppv.php 
+------------------------------------------------- 
+12:30 Basketball Women's World Championships: Turkey vs. Australia https://asiria.is/bein1fr.php https://asiria.is/okkosport2.php 
+--------------------------------------------------- 
+15:30 Basketball Women's World Championships: China vs. Czechia https://asiria.is/bein3fr.php https://asiria.is/okkosport.php 
+--------------------------------------------------- 
+18:30 Basketball Women's World Championships: Puerto Rico vs. Belgium https://asiria.is/trutv.php https://asiria.is/bein3fr.php https://asiria.is/okkosport.php 
+------------------------------------------------- 
+21:30 Basketball Women's World Championships: Italy vs. USA https://asiria.is/tnt.php https://asiria.is/bein1fr.php https://asiria.is/okkosport.php 
+----------------------------------------------------- 
+16:00 Formula 1 Italian Grand Prix. Qualifying https://asiria.is/skyf1.php https://asiria.is/daznf1.php https://asiria.is/sky1nz.php https://asiria.is/skyf1it.php https://asiria.is/setantasport2.php https://asiria.is/setantaukraineplus.php 
+---------------------------------------------------- 
+14:00 Birmingham City vs. Wolverhampton Wanderers https://asiria.is/cbsgolazo.php https://asiria.is/setantasport1.php https://asiria.is/setantasport1georgia.php https://asiria.is/setantasport2latvia.php 
+---------------------------------------------------- 
+19:00 Bologna vs Sassuolo https://asiria.is/cbsgolazo.php https://asiria.is/arenasport2hr.php https://asiria.is/skycalcio.php https://asiria.is/sport4pt.php 
+------------------------------------------------------ 
+16:00 Frosinone vs Venezia https://asiria.is/arenasport4hr.php https://asiria.is/arena1premiumserbia.php 
+----------------------------------------------------- 
+16:00 Parma vs Monza https://asiria.is/dazn1it.php https://asiria.is/astrofootball.php https://asiria.is/arenasport6hr.php https://asiria.is/match1.php https://asiria.is/sport2pt.php 
+-------------------------------------------------------- 
+21:00 Pumas UNAM vs León https://asiria.is/cbsgolazo.php 
+------------------------------------------------ 
+16:00 Everton vs Manchester United https://asiria.is/astropremier.php https://asiria.is/sky8nz.php https://asiria.is/usa.php https://asiria.is/skymain.php https://asiria.is/setantasport1georgia.php https://asiria.is/telemundo.php https://asiria.is/setantasport1.php https://asiria.is/setantaukraine.php https://asiria.is/arenasport1hr.php https://asiria.is/sport1il.php https://asiria.is/arena1premiumserbia.php https://asiria.is/dazn1pt.php 
+---------------------------------------------------- 
+18:30 Arsenal vs Chelsea https://asiria.is/astropremier.php https://asiria.is/sky8nz.php https://asiria.is/usa.php https://asiria.is/skymain.php https://asiria.is/setantasport1georgia.php https://asiria.is/telemundo.php https://asiria.is/setantasport1.php https://asiria.is/setantaukraine.php https://asiria.is/arenasport1hr.php https://asiria.is/arena1premiumserbia.php https://asiria.is/sport1il.php https://asiria.is/dazn1pt.php 
+---------------------------------------------------- 
+17:15 Valencia vs Barcelona https://asiria.is/match2.php https://asiria.is/espndeportes.php https://asiria.is/go3sport1.php https://asiria.is/setantasport1latvia.php https://asiria.is/arena3premiumserbia.php 
+-------------------------------------------------- 
+19:30 Málaga vs Levante https://asiria.is/belarus5.php https://asiria.is/dazn1de.php https://asiria.is/match3.php https://asiria.is/setantasport1latvia.php https://asiria.is/setantakazakstan.php 
+-------------------------------------------------- 
+19:30 Deportivo Alavés vs Osasuna https://asiria.is/espndeportes.php https://asiria.is/match2.php https://asiria.is/arena3premiumserbia.php 
+-------------------------------------------------- 
+22:00 Espanyol vs Sevilla https://asiria.is/espndeportes.php https://asiria.is/match2.php https://asiria.is/setantasport1.php https://asiria.is/setantasport1georgia.php https://asiria.is/setantasport2latvia.php https://asiria.is/belarus5.php https://asiria.is/dazn1pt.php 
+-------------------------------------------------- 
+16:30 Hamburger SV vs Mainz 05 https://asiria.is/dazn1de.php https://asiria.is/sportvbelarus.php https://asiria.is/setantasport2latvia.php https://asiria.is/nbcuniverso.php https://asiria.is/setantakazakstan.php 
+-------------------------------------------------- 
+18:30 Eintracht Frankfurt vs. Augsburg https://asiria.is/dazn2de.php https://asiria.is/sportvbelarus.php https://asiria.is/setantasport2latvia.php https://asiria.is/setantasport2.php https://asiria.is/setantaukraineplus.php 
+---------------------------------------------------- 
+21:45 Juventus vs Milan https://asiria.is/maxtnt1.php https://asiria.is/dazn1it.php https://asiria.is/sportvbelarus.php https://asiria.is/setantasport1latvia.php https://asiria.is/dazn1de.php https://asiria.is/telemundo.php https://asiria.is/go3sport1.php https://asiria.is/arenasport1hr.php https://asiria.is/sport1il.php https://asiria.is/sport3pt.php https://asiria.is/arena2premiumserbia.php 
+-------------------------------------------------- 
+16:00 Troyes vs Strasbourg https://asiria.is/beinsportusa.php https://asiria.is/okkofutbol.php https://asiria.is/sport5pt.php 
+-------------------------------------------------- 
+18:15 Angers SCO vs Rennes https://asiria.is/beinsportusa.php https://asiria.is/okkofutbol.php 
+------------------------------------------------- 
+21:45 Olympique Marseille vs. Paris https://asiria.is/beinsportusa.php https://asiria.is/okkofutbol.php https://asiria.is/setantasport1georgia.php https://asiria.is/setantasport2.php https://asiria.is/dazn2de.php 
+---------------------------------------------------- 
+Monday, 7 September 2026 19:00 Wieczysta Kraków vs Zagłębie Lubin https://asiria.is/canalsportplus3pl.php 
+--------------------------------------------------------- 
+21:30 Pogoń Szczecin vs Wisła Płock https://asiria.is/canalsportplus3pl.php 
+--------------------------------------------------------- 
+12:30 Basketball Women's World Championships: Belgium vs. Australia https://asiria.is/bein1fr.php 
+------------------------------------------------------ 
+12:30 Basketball Women's World Championships: Puerto Rico vs. Turkey 
+----------------------------------------------------- 
+15:15 Basketball Women's World Championships: Nigeria vs. France https://asiria.is/trutv.php 
+----------------------------------------------------- 
+15:30 Basketball Women's World Championships: Hungary vs. Korea 
+----------------------------------------------------- 
+18:30 Basketball Women's World Championships: Japan vs. Spain https://asiria.is/trutv.php 
+----------------------------------------------------- 
+18:45 Basketball Women's World Championships: Germany vs. Mali https://asiria.is/bein3fr.php 
+------------------------------------------------------ 
+21:30 Basketball Women's World Championships: USA vs. Czechia https://asiria.is/tnt.php https://asiria.is/trutv.php https://asiria.is/bein3fr.php 
+------------------------------------------------------- 
+21:45 Basketball Women's World Championships: Italy vs. China 
+------------------------------------------------------- 
+20:00 Midtjylland vs Nordsjælland https://asiria.is/sport1ukr.php 
+-------------------------------------------------------- 
+19:30 Cagliari vs Lecce https://asiria.is/cbsgolazo.php https://asiria.is/nbcuniverso.php https://asiria.is/sportvbelarus.php 
+------------------------------------------------------ 
+21:45 Udinese vs Lazio https://asiria.is/cbsgolazo.php https://asiria.is/nbcuniverso.php https://asiria.is/sportvbelarus.php https://asiria.is/setantasport1latvia.php https://asiria.is/go3sport1.php 
+------------------------------------------------------ 
+Tuesday, 8 September 2026 18:30 Hockey Liiga Finland: HPK vs Ilves Tampere https://asiria.is/liiga1.php 
+------------------------------------------------------ 
+19:45 Club Brugge vs Aston Villa https://asiria.is/cbssports.php https://asiria.is/arena1premiumserbia.php 
+------------------------------------------------------ 
+22:00 Borussia Dortmund vs Villarreal https://asiria.is/cbssports.php 
+-------------------------------------------------------- 
+22:00 Real Madrid vs Internazionale https://asiria.is/arena1premiumserbia.php 
+------------------------------------------------------ 
+Wednesday, 9 September 2026 18:30 Hockey Liiga Finland: Jukurit vs HIFK https://asiria.is/liiga1.php 
+------------------------------------------------------ 
+18:30 Hockey Liiga Finland: K-Espoo vs KooKoo https://asiria.is/liiga2.php 
+------------------------------------------------------ 
+18:30 Hockey Liiga Finland: Lukko vs JYP https://asiria.is/liiga3.php 
+------------------------------------------------------ 
+18:30 Hockey Liiga Finland: Pelicans vs KalPa https://asiria.is/liiga4.php 
+------------------------------------------------------ 
+18:30 Hockey Liiga Finland: Sport vs TPS https://asiria.is/liiga5.php 
+------------------------------------------------------ 
+18:30 Hockey Liiga Finland: Ässät vs Jokerit https://asiria.is/liiga5.php 
+------------------------------------------------------ 
+19:45 Stuttgart vs Viking https://asiria.is/cbssports.php 
+----------------------------------------------------- 
+22:00 Sporting CP vs Galatasaray https://asiria.is/cbssports.php 
+----------------------------------------------------- 
+Thursday, 10 September 2026 19:45 Fenerbahçe vs Roma https://asiria.is/cbssports.php 
+------------------------------------------------------ 
+22:00 Como vs RB Leipzig https://asiria.is/cbssports.php 
+---------------------------------------------------- 
+Sunday, 13 September 2026 06:00 Boxing: Ryan Garcia vs Conor Benn https://asiria.is/dazn1ppv.php 
+------------------------------------------------------ 
+Tuesday, 15 September 2026 18:30 Hockey Liiga Finland: KalPa vs HPK https://asiria.is/liiga1.php 
+------------------------------------------------------ 
+18:30 Hockey Liiga Finland: Pelicans vs Tappara https://asiria.is/liiga2.php 
+------------------------------------------------------ 
+18:30 Hockey Liiga Finland: SaiPa vs K-Espoo https://asiria.is/liiga3.php 
+------------------------------------------------------ 
+18:30 Hockey Liiga Finland: TPS vs Jukurit https://asiria.is/liiga4.php 
+------------------------------------------------------ 
+18:30 Hockey Liiga Finland: Ässät vs Sport https://asiria.is/liiga5.php 
+------------------------------------------------------ 
+Sunday, 20 September 2026 05:00 Boxing: Jesus Ramos vs Meiirim Nursultanov https://asiria.is/dazn1ppv.php 
+------------------------------------------------------ 
+Saturday, 17 October 2026 21:00 Boxing: Daniel Dubois vs Fabio Wardley https://asiria.is/dazn1ppv.php 
+------------------------------------------------ 
+Sunday, 26 September 2026 00:00 Boxing: Liam Davies vs Nathaniel Collins https://asiria.is/dazn1ppv.php 
+------------------------------------------------ 
+Sunday, 21 November 2026 00:00 Boxing: Anthony Joshua vs Tyson Fury https://asiria.is/netflix.php 
+------------------------------------------------
+    `;
 
-    <!-- Atletico Independiente vs FC Motagua -->
-    <div class="card waiting" data-start="2026-09-05 19:15:00" data-end="2026-09-05 21:15:00">
-        <div class="match-info">
-            <span class="date-time">7:15 p.m.</span>
-            <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
-            <span class="status-badge badge-live">EN VIVO</span>
-            <span class="status-badge badge-ended">FINALIZADO</span>
-        </div>
-        <div class="teams">
-            <div class="team">Atletico Indep.</div>
-            <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
-            <div class="team">FC Motagua</div>
-        </div>
-        <div class="actions">
-            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
-            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
-            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
-        </div>
-    </div>
+    let parsedEvents = [];
 
-    <!-- CD Marathon vs Estrella Roja -->
-    <div class="card waiting" data-start="2026-09-05 21:30:00" data-end="2026-09-05 23:30:00">
-        <div class="match-info">
-            <span class="date-time">9:30 p.m.</span>
-            <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
-            <span class="status-badge badge-live">EN VIVO</span>
-            <span class="status-badge badge-ended">FINALIZADO</span>
-        </div>
-        <div class="teams">
-            <div class="team">CD Marathon</div>
-            <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
-            <div class="team">Estrella Roja</div>
-        </div>
-        <div class="actions">
-            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
-            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
-            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
-        </div>
-    </div>
+    function parseData() {
+      const blocks = rawData.split('------------------------------------------------');
+      let currentDay = 'Otros';
 
-    <!-- DOMINGO 6 DE SEPTIEMBRE -->
-    <div class="date-group">Dom, 6 de sept</div>
+      blocks.forEach(block => {
+        const lines = block.trim().split('\n').filter(l => l.trim() !== '');
+        if (lines.length === 0) return;
 
-    <!-- Real España vs Lobos UPNFM -->
-    <div class="card waiting" data-start="2026-09-06 19:15:00" data-end="2026-09-06 21:15:00">
-        <div class="match-info">
-            <span class="date-time">7:15 p.m.</span>
-            <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
-            <span class="status-badge badge-live">EN VIVO</span>
-            <span class="status-badge badge-ended">FINALIZADO</span>
-        </div>
-        <div class="teams">
-            <div class="team">Real España</div>
-            <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
-            <div class="team">Lobos UPNFM</div>
-        </div>
-        <div class="actions">
-            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
-            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
-            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
-        </div>
-    </div>
+        let lineIndex = 0;
+        let line = lines[lineIndex];
 
-    <!-- Juticalpa vs Genesis FC -->
-    <div class="card waiting" data-start="2026-09-06 21:30:00" data-end="2026-09-06 23:30:00">
-        <div class="match-info">
-            <span class="date-time">9:30 p.m.</span>
-            <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
-            <span class="status-badge badge-live">EN VIVO</span>
-            <span class="status-badge badge-ended">FINALIZADO</span>
-        </div>
-        <div class="teams">
-            <div class="team">Juticalpa</div>
-            <div class="vs-container"><span class="vs">VS</span><span class="score">0 - 0</span></div>
-            <div class="team">Genesis FC</div>
-        </div>
-        <div class="actions">
-            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
-            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
-            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
-        </div>
-    </div>
-
-</div>
-
-<script>
-    function openAction(target) {
-        if (window.Android && window.Android.openStream) {
-            window.Android.openStream(target);
-        } else {
-            window.location.href = "go:" + target;
+        // Comprobar si inicia con un día
+        const days = ['Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday'];
+        const foundDay = days.find(d => line.startsWith(d));
+        
+        if (foundDay) {
+          currentDay = foundDay;
+          // Si la línea contiene el evento después de la fecha
+          const dateMatch = line.match(/^([A-Za-z]+,\s\d+\s[A-Za-z]+\s\d{4})\s*(.*)/);
+          if (dateMatch && dateMatch[2]) {
+            processEventLine(currentDay, dateMatch[2]);
+          }
+          lineIndex++;
         }
+
+        while (lineIndex < lines.length) {
+          processEventLine(currentDay, lines[lineIndex]);
+          lineIndex++;
+        }
+      });
     }
 
-    function parseFecha(str) {
-        if (!str) return NaN;
-        var partes = str.split(' ');
-        var fecha = partes[0].split('-');
-        var hora = partes[1].split(':');
-        return new Date(fecha[0], fecha[1] - 1, fecha[2], hora[0], hora[1], hora[2]).getTime();
+    function processEventLine(day, textLine) {
+      if (!textLine.trim()) return;
+      
+      const timeMatch = textLine.match(/^(\d{2}:\d{2})/);
+      const time = timeMatch ? timeMatch[1] : 'TBD';
+      
+      // Separar links
+      const urlRegex = /(https?:\/\/[^\s]+)/g;
+      const links = textLine.match(urlRegex) || [];
+      
+      // Nombre del evento
+      let title = textLine.replace(urlRegex, '').replace(/^(\d{2}:\d{2})/, '').trim();
+
+      if (title) {
+        parsedEvents.push({
+          day: day,
+          time: time,
+          title: title,
+          links: links
+        });
+      }
     }
 
-    function actualizarEstados() {
-        const ahora = new Date().getTime();
+    function renderEvents(eventsToRender) {
+      const container = document.getElementById('events-container');
+      container.innerHTML = '';
+
+      if (eventsToRender.length === 0) {
+        container.innerHTML = '<p style="text-align:center; color: var(--text-muted);">No se encontraron eventos.</p>';
+        return;
+      }
+
+      // Agrupar por días
+      const grouped = {};
+      eventsToRender.forEach(ev => {
+        if (!grouped[ev.day]) grouped[ev.day] = [];
+        grouped[ev.day].push(ev);
+      });
+
+      for (const [day, events] of Object.entries(grouped)) {
+        const daySection = document.createElement('div');
+        daySection.className = 'date-group';
         
-        // Reglas de tiempo: 20 minutos antes y 20 minutos después
-        const PREVIA_MS = 20 * 60 * 1000;
-        const GRACIA_FIN_MS = 20 * 60 * 1000;
-        
-        let hayPartidosEnVivo = false;
+        let dayTitleHTML = `<h2 class="date-title">${translateDay(day)}</h2>`;
+        let gridHTML = `<div class="events-grid">`;
 
-        document.querySelectorAll('.card').forEach(card => {
-            const inicio = parseFecha(card.getAttribute('data-start'));
-            const finOficial = parseFecha(card.getAttribute('data-end'));
-            
-            if (isNaN(inicio) || isNaN(finOficial)) return;
+        events.forEach((ev, index) => {
+          let optionsHTML = '';
+          if (ev.links.length > 0) {
+            optionsHTML = `
+              <button class="options-btn" onclick="toggleChannels('chan-${day}-${index}')">
+                Opciones (${ev.links.length})
+              </button>
+              <div id="chan-${day}-${index}" class="channels-list">
+                ${ev.links.map((link, i) => `<button class="channel-btn" onclick="openPlayer('${link}')">Opción ${i + 1}</button>`).join('')}
+              </div>
+            `;
+          } else {
+            optionsHTML = `<p style="font-size:0.8rem; color:var(--text-muted); text-align:center;">Sin enlaces disponibles</p>`;
+          }
 
-            const finConGracia = finOficial + GRACIA_FIN_MS;
-            const inicioPrevia = inicio - PREVIA_MS;
-
-            card.classList.remove('active', 'finished', 'is-live', 'waiting', 'upcoming');
-
-            if (ahora < inicioPrevia) {
-                // Faltan más de 20 minutos
-                card.classList.add('waiting');
-            } 
-            else if (ahora >= inicioPrevia && ahora < inicio) {
-                // Faltan 20 minutos o menos: Abre la previa y habilita botones
-                card.classList.add('active', 'upcoming');
-            } 
-            else if (ahora >= inicio && ahora <= finConGracia) {
-                // Partido en curso y hasta 20 minutos tras finalizar
-                card.classList.add('active', 'is-live');
-                hayPartidosEnVivo = true;
-            } 
-            else {
-                // Pasados los 20 minutos después de terminar: Cierra y marca como FINALIZADO
-                card.classList.add('finished');
-            }
+          gridHTML += `
+            <div class="event-card">
+              <div class="event-time">⏰ ${ev.time}</div>
+              <div class="event-title">${ev.title}</div>
+              ${optionsHTML}
+            </div>
+          `;
         });
 
-        const banner = document.getElementById('liveBanner');
-        if (hayPartidosEnVivo) {
-            banner.classList.add('show');
-        } else {
-            banner.classList.remove('show');
-        }
+        gridHTML += `</div>`;
+        daySection.innerHTML = dayTitleHTML + gridHTML;
+        container.appendChild(daySection);
+      }
     }
 
-    actualizarEstados();
-    setInterval(actualizarEstados, 10000); // Se actualiza cada 10 segundos
-</script>
+    function translateDay(day) {
+      const map = {
+        'Thursday': 'Jueves 3 de Septiembre',
+        'Friday': 'Viernes 4 de Septiembre',
+        'Saturday': 'Sábado 5 de Septiembre',
+        'Sunday': 'Domingo 6 de Septiembre',
+        'Monday': 'Lunes 7 de Septiembre',
+        'Tuesday': 'Martes 8 de Septiembre',
+        'Wednesday': 'Miércoles 9 de Septiembre',
+        'Otros': 'Próximos Eventos'
+      };
+      return map[day] || day;
+    }
+
+    function toggleChannels(id) {
+      const el = document.getElementById(id);
+      el.style.display = (el.style.display === 'grid') ? 'none' : 'grid';
+    }
+
+    function filterDay(day) {
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      if (day === 'all') {
+        renderEvents(parsedEvents);
+      } else {
+        const filtered = parsedEvents.filter(e => e.day === day);
+        renderEvents(filtered);
+      }
+    }
+
+    function filterEvents() {
+      const query = document.getElementById('search').value.toLowerCase();
+      const filtered = parsedEvents.filter(e => e.title.toLowerCase().includes(query));
+      renderEvents(filtered);
+    }
+
+    function openPlayer(url) {
+      const modal = document.getElementById('playerModal');
+      const iframe = document.getElementById('videoPlayer');
+      iframe.src = url;
+      modal.style.display = 'flex';
+    }
+
+    function closePlayer() {
+      const modal = document.getElementById('playerModal');
+      const iframe = document.getElementById('videoPlayer');
+      iframe.src = '';
+      modal.style.display = 'none';
+    }
+
+    // Inicializar
+    parseData();
+    renderEvents(parsedEvents);
+  </script>
 </body>
 </html>
