@@ -1,0 +1,21 @@
+[
+  {
+    "fecha": "Hoy | 3:00 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Ipswich",
+    "equipo2": "Liverpool",
+    "opciones": [
+      { "nombre": "Opción 1 (m3u8)", "stream": "https://bein-esp-xumo.amagi.tv/playlistR720P.m3u8" },
+      { "nombre": "Opción 2 (HTML)", "stream": "roxie1.html" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 3:00 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Real Betis",
+    "equipo2": "Real Madrid",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "roxie5.html" }
+    ]
+  }
+]
