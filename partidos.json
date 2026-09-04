@@ -6,16 +6,16 @@
     "equipo2": "Liverpool",
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://bein-esp-xumo.amagi.tv/playlistR720P.m3u8" },
-      { "nombre": "Opción 2", "stream": "roxie7.html.html" }
+      { "nombre": "Opción 2", "stream": "roxie7.html" }
     ]
   },
   {
     "fecha": "Hoy | 3:00 p.m.",
     "estado": "DISPONIBLE",
-    "equipo1": "Real Betis",
-    "equipo2": "Real Madrid",
+    "equipo1": "Juarez",
+    "equipo2": "Pachuca",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "roxie5.html" }
+      { "nombre": "Opción 1", "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8" }
     ]
   },
   {
