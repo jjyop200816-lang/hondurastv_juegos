@@ -12,19 +12,19 @@
   {
     "fecha": "Hoy | 3:00 p.m.",
     "estado": "DISPONIBLE",
-    "equipo1": "Juarez",
-    "equipo2": "Pachuca",
+    "equipo1": "Real Betis",
+    "equipo2": "Real Madrid",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8" }
+      { "nombre": "Opción 1", "stream": "roxie5.html" }
     ]
   },
   {
     "fecha": "Hoy | 6:00 p.m.",
     "estado": "DISPONIBLE",
-    "equipo1": "Olimpia",
-    "equipo2": "Motagua",
+    "equipo1": "Juarez",
+    "equipo2": "Pachuca",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://servidor.com/canal.m3u8" },
+      { "nombre": "Opción 1", "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8" },
       { "nombre": "Opción 2", "stream": "asiria2.html" }
     ]
   }
