@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partidos de Hoy</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #ffffff;
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 1.6rem;
+            color: #38bdf8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 0.95rem;
+            color: #94a3b8;
+        }
+
+        .card {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border: 2px solid #0284c7;
+            background: linear-gradient(145deg, #1e293b, #0b2545);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .match-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 8px;
+        }
+
+        .date-time {
+            font-size: 0.9rem;
+            color: #cbd5e1;
+            font-weight: 600;
+        }
+
+        .status-badge {
+            font-size: 0.75rem;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: #2563eb;
+            color: #fff;
+            animation: pulse 2s infinite;
+        }
+
+        .teams {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .team {
+            flex: 1;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .vs {
+            font-size: 0.9rem;
+            color: #64748b;
+            font-weight: bold;
+            padding: 0 15px;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 12px;
+            flex-direction: column;
+        }
+
+        .play-btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #0284c7;
+            color: white;
+            text-decoration: none;
+            font-size: 26px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.5);
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .play-btn:active {
+            transform: scale(0.95);
+            background: #0369a1;
+        }
+
+        .channel-name {
+            font-size: 0.8rem;
+            color: #38bdf8;
+            text-align: center;
+            margin-top: 6px;
+            font-weight: bold;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.6; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Partidos de Hoy</h1>
+        <p>Transmisión en Vivo</p>
+    </div>
+
+    <!-- PARTIDO 1: Lech Poznań vs Jagiellonia Białystok (Link m3u8) -->
+    <div class="card">
+        <div class="match-info">
+            <span class="date-time">📅 Hoy | 2:30 p.m.</span>
+            <span class="status-badge">DISPONIBLE</span>
+        </div>
+        
+        <div class="teams">
+            <div class="team">Lech Poznań</div>
+            <div class="vs">VS</div>
+            <div class="team">Jagiellonia Białystok</div>
+        </div>
+
+        <div class="actions">
+            <button onclick="Android.openStream('bein')" class="play-btn">▶</button>
+            <div class="channel-name">beIN SPORTS</div>
+        </div>
+    </div>
+
+    <!-- PARTIDO 2: Lugano vs Servette (Asset: roxie1.html) -->
+    <div class="card">
+        <div class="match-info">
+            <span class="date-time">📅 Hoy | 2:30 p.m.</span>
+            <span class="status-badge">DISPONIBLE</span>
+        </div>
+        
+        <div class="teams">
+            <div class="team">Lugano</div>
+            <div class="vs">VS</div>
+            <div class="team">Servette</div>
+        </div>
+
+        <div class="actions">
+            <button onclick="Android.openStream('roxie1')" class="play-btn">▶</button>
+            <div class="channel-name">EN VIVO</div>
+        </div>
+    </div>
+
+    <!-- PARTIDO 3: Real Sociedad vs Celta Vigo (Asset: roxie5.html) -->
+    <div class="card">
+        <div class="match-info">
+            <span class="date-time">📅 Hoy | 3:00 p.m. (LaLiga)</span>
+            <span class="status-badge">DISPONIBLE</span>
+        </div>
+        
+        <div class="teams">
+            <div class="team">Real Sociedad</div>
+            <div class="vs">VS</div>
+            <div class="team">Celta Vigo</div>
+        </div>
+
+        <div class="actions">
+            <button onclick="Android.openStream('roxie5')" class="play-btn">▶</button>
+            <div class="channel-name">EN VIVO</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
