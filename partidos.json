@@ -1,5 +1,45 @@
 [
   {
+    "fecha": "Hoy | 10:00 a.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Man City",
+    "equipo2": "Coventry",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "asiria1.html" },
+      { "nombre": "Opción 2", "stream": "roxie1.html" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 10:15 a.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Athletic Club",
+    "equipo2": "Atlético Madrid",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "asiria2.html" },
+      { "nombre": "Opción 2", "stream": "roxie2.html" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 12:00 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Inter",
+    "equipo2": "Napoli",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "asiria3.html" },
+      { "nombre": "Opción 2", "stream": "roxie3.html" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 12:30 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Hull",
+    "equipo2": "Aston Villa",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "http://stream.bottledesk.net/p/AAxBRQEBc2c/index.m3u8" },
+      { "nombre": "Opción 2", "stream": "roxie4.html" }
+    ]
+  },
+  {
     "fecha": "Hoy | 3:00 p.m.",
     "estado": "DISPONIBLE",
     "equipo1": "Ipswich",
@@ -20,13 +60,49 @@
     ]
   },
   {
+    "fecha": "Hoy | 3:00 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Villarreal",
+    "equipo2": "Deportivo A Coruña",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "asiria5.html" },
+      { "nombre": "Opción 2", "stream": "roxie5.html" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 3:30 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Gimnasia Mendoza",
+    "equipo2": "Boca Juniors",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "asiria6.html" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 9:00 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Tigres",
+    "equipo2": "Necaxa",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "asiria7.html" }
+    ]
+  },
+  {
     "fecha": "Hoy | 11:00 p.m.",
     "estado": "DISPONIBLE",
     "equipo1": "Juarez",
     "equipo2": "Pachuca",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8" },
-      { "nombre": "Opción 2", "stream": "roxie11.html" }
+      { "nombre": "Opción 1", "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 11:00 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Atlas",
+    "equipo2": "Atlante",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "roxie11.html" }
     ]
   }
 ]
