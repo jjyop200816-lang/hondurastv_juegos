@@ -25,8 +25,8 @@
     "equipo1": "Inter",
     "equipo2": "Napoli",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "asiria3.html" },
-      { "nombre": "Opción 2", "stream": "roxie3.html" }
+      { "nombre": "Opción 1", "stream": "asiria1.html" },
+      { "nombre": "Opción 2", "stream": "espnar.html" }
     ]
   },
   {
@@ -64,7 +64,7 @@
     "equipo1": "Tigres",
     "equipo2": "Necaxa",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "asiria7.html" }
+      { "nombre": "Opción 1", "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8" }
     ]
   },
   {
