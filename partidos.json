@@ -55,7 +55,7 @@
     "equipo1": "Gimnasia Mendoza",
     "equipo2": "Boca Juniors",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "asiria6.html" }
+      { "nombre": "Opción 1", "stream": "http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8" }
     ]
   },
   {
