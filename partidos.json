@@ -1,32 +1,140 @@
-[
-  {
-    "fecha": "Hoy | 1:00 p.m.",
-    "estado": "DISPONIBLE",
-    "equipo1": "Getafe",
-    "equipo2": "Celta Vigo",
-    "opciones": [
-      { "nombre": "Opción 1 (M3U8 ExoPlayer)", "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8" },
-      { "nombre": "Opción 2 (Web)", "stream": "asiria1.html" }
-    ]
-  },
-  {
-    "fecha": "Hoy | 2:45 p.m.",
-    "estado": "DISPONIBLE",
-    "equipo1": "Udinese",
-    "equipo2": "Lazio",
-    "opciones": [
-      { "nombre": "Opción 1 (M3U8 ExoPlayer)", "stream": "http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8" },
-      { "nombre": "Opción 2 (Web)", "stream": "roxie2.html" }
-    ]
-  },
-  {
-    "fecha": "Hoy | 3:30 p.m.",
-    "estado": "DISPONIBLE",
-    "equipo1": "Elche",
-    "equipo2": "Real Sociedad",
-    "opciones": [
-      { "nombre": "Opción 1 (M3U8 ExoPlayer)", "stream": "https://live.streamhch.com/live/streams/hch1.m3u8" },
-      { "nombre": "Opción 2 (Web)", "stream": "asiria5.html" }
-    ]
-  }
-]
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos En Vivo</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85em;
+            color: #aaa;
+            margin-bottom: 8px;
+        }
+        .badge {
+            background-color: #2e7d32;
+            color: #fff;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .match {
+            font-size: 1.1em;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .options {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .btn-option {
+            flex: 1;
+            min-width: 120px;
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #444;
+            padding: 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .btn-option:active {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="eventos-container"></div>
+
+    <script>
+        // 1. Datos JSON con los partidos e imágenes provistas
+        const eventosData = [
+          {
+            "fecha": "Hoy | 1:00 p.m.",
+            "estado": "DISPONIBLE",
+            "equipo1": "Getafe",
+            "equipo2": "Celta Vigo",
+            "opciones": [
+              { "nombre": "Opción 1 (ExoPlayer)", "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8" },
+              { "nombre": "Opción 2 (Web)", "stream": "asiria1.html" }
+            ]
+          },
+          {
+            "fecha": "Hoy | 2:45 p.m.",
+            "estado": "DISPONIBLE",
+            "equipo1": "Udinese",
+            "equipo2": "Lazio",
+            "opciones": [
+              { "nombre": "Opción 1 (ExoPlayer)", "stream": "http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8" },
+              { "nombre": "Opción 2 (Web)", "stream": "roxie2.html" }
+            ]
+          },
+          {
+            "fecha": "Hoy | 3:30 p.m.",
+            "estado": "DISPONIBLE",
+            "equipo1": "Elche",
+            "equipo2": "Real Sociedad",
+            "opciones": [
+              { "nombre": "Opción 1 (ExoPlayer)", "stream": "https://live.streamhch.com/live/streams/hch1.m3u8" },
+              { "nombre": "Opción 2 (Web)", "stream": "asiria5.html" }
+            ]
+          }
+        ];
+
+        // 2. Función clave para forzar la navegación y activar el 'shouldOverrideUrlLoading' en la App
+        function abrirStream(streamUrl) {
+            window.location.href = streamUrl;
+        }
+
+        // 3. Renderizar la lista de eventos dinámicamente
+        function renderEventos() {
+            const container = document.getElementById('eventos-container');
+            container.innerHTML = '';
+
+            eventosData.forEach(evento => {
+                const card = document.createElement('div');
+                card.className = 'card';
+
+                let opcionesHTML = '';
+                evento.opciones.forEach(opc => {
+                    opcionesHTML += `<button class="btn-option" onclick="abrirStream('${opc.stream}')">${opc.nombre}</button>`;
+                });
+
+                card.innerHTML = `
+                    <div class="header">
+                        <span>${evento.fecha}</span>
+                        <span class="badge">${evento.estado}</span>
+                    </div>
+                    <div class="match">${evento.equipo1} vs ${evento.equipo2}</div>
+                    <div class="options">${opcionesHTML}</div>
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
+        // Cargar eventos al iniciar
+        renderEventos();
+    </script>
+</body>
+</html>
