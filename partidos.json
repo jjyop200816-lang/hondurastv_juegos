@@ -1,79 +1,32 @@
 [
   {
-    "fecha": "Hoy | 10:00 a.m.",
+    "fecha": "Hoy | 1:00 p.m.",
     "estado": "DISPONIBLE",
-    "equipo1": "Man City",
-    "equipo2": "Coventry",
+    "equipo1": "Getafe",
+    "equipo2": "Celta Vigo",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "asiria1.html" },
-      { "nombre": "Opción 2", "stream": "telemundo.html" }
+      { "nombre": "Opción 1 (M3U8 ExoPlayer)", "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8" },
+      { "nombre": "Opción 2 (Web)", "stream": "asiria1.html" }
     ]
   },
   {
-    "fecha": "Hoy | 10:15 a.m.",
+    "fecha": "Hoy | 2:45 p.m.",
     "estado": "DISPONIBLE",
-    "equipo1": "Athletic Club",
-    "equipo2": "Atlético Madrid",
+    "equipo1": "Udinese",
+    "equipo2": "Lazio",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "asiria2.html" },
-      { "nombre": "Opción 2", "stream": "roxie2.html" }
-    ]
-  },
-  {
-    "fecha": "Hoy | 12:00 p.m.",
-    "estado": "DISPONIBLE",
-    "equipo1": "Inter",
-    "equipo2": "Napoli",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "asiria1.html" },
-      { "nombre": "Opción 2", "stream": "espnar.html" }
-    ]
-  },
-  {
-    "fecha": "Hoy | 12:30 p.m.",
-    "estado": "DISPONIBLE",
-    "equipo1": "Hull",
-    "equipo2": "Aston Villa",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "http://stream.bottledesk.net/p/AAxBRQEBc2c/index.m3u8" },
-      { "nombre": "Opción 2", "stream": "https://sflix.today/v1/live/proxy/daddy-dazn-1-spain-daddylive" }
-    ]
-  },
-  {
-    "fecha": "Hoy | 3:00 p.m.",
-    "estado": "DISPONIBLE",
-    "equipo1": "Villarreal",
-    "equipo2": "Deportivo A Coruña",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "asiria5.html" },
-      { "nombre": "Opción 2", "stream": "roxie5.html" }
+      { "nombre": "Opción 1 (M3U8 ExoPlayer)", "stream": "http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8" },
+      { "nombre": "Opción 2 (Web)", "stream": "roxie2.html" }
     ]
   },
   {
     "fecha": "Hoy | 3:30 p.m.",
     "estado": "DISPONIBLE",
-    "equipo1": "Gimnasia Mendoza",
-    "equipo2": "Boca Juniors",
+    "equipo1": "Elche",
+    "equipo2": "Real Sociedad",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8" }
-    ]
-  },
-  {
-    "fecha": "Hoy | 9:00 p.m.",
-    "estado": "DISPONIBLE",
-    "equipo1": "Tigres",
-    "equipo2": "Necaxa",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8" }
-    ]
-  },
-  {
-    "fecha": "Hoy | 11:00 p.m.",
-    "estado": "DISPONIBLE",
-    "equipo1": "Atlas",
-    "equipo2": "Atlante",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" }
+      { "nombre": "Opción 1 (M3U8 ExoPlayer)", "stream": "https://live.streamhch.com/live/streams/hch1.m3u8" },
+      { "nombre": "Opción 2 (Web)", "stream": "asiria5.html" }
     ]
   }
 ]
