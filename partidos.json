@@ -5,7 +5,7 @@
     "equipo1": "Getafe",
     "equipo2": "Celta Vigo",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "http://latintvplus.com:8000/live/MyBOXXTV2024/SILVERsat173929HH/4303.ts" },
+      { "nombre": "Opción 1", "stream": "http://latintvplus.com:8000/live/MyBOXXTV2024/SILVERsat173929HH/4303.m3u8" },
       { "nombre": "Opción 2", "stream": "asiria1.html" }
     ]
   },
@@ -15,7 +15,7 @@
     "equipo1": "Udinese",
     "equipo2": "Lazio",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491511.ts" },
+      { "nombre": "Opción 1", "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491511.m3u8" },
       { "nombre": "Opción 2", "stream": "roxie2.html" }
     ]
   },
@@ -25,7 +25,7 @@
     "equipo1": "Elche",
     "equipo2": "Real Sociedad",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "http://latintvplus.com:8000/live/MyBOXXTV2024/SILVERsat173929HH/4303.ts" },
+      { "nombre": "Opción 1", "stream": "http://latintvplus.com:8000/live/MyBOXXTV2024/SILVERsat173929HH/4303.m3u8" },
       { "nombre": "Opción 2", "stream": "asiria5.html" }
     ]
   }
