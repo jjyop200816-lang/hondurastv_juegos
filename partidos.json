@@ -68,9 +68,10 @@
     "equipo1": "Real Madrid",
     "equipo2": "Inter",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://apps.spandaman.co.uk/spandaman/current/live/anything/anything/107163.m3u8" },
+      { "nombre": "Opción 1", "stream": "espnar.html" },
       { "nombre": "Opción 2", "stream": "asiria1.html" },
-      { "nombre": "Opción 3", "stream": "https://sflix.today/v1/live/proxy/daddy-movistar-liga-de-campeones-daddylive" }
+      { "nombre": "Opción 3", "stream": "https://sflix.today/v1/live/proxy/daddy-movistar-liga-de-campeones-daddylive" },
+      { "nombre": "Opción 4", "stream": "http://181.78.8.199:8000/play/a0b1/index.m3u8" }
     ]
   },
   {
@@ -79,7 +80,7 @@
     "equipo1": "Boca Juniors",
     "equipo2": "São Paulo",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "asiria1.html" }
+      { "nombre": "Opción 1", "stream": "asiria2.html" }
     ]
   }
 ]
