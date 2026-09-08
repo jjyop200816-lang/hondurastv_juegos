@@ -1,32 +1,85 @@
 [
   {
-    "fecha": "Hoy | 1:00 p.m.",
+    "fecha": "Hoy | 12:45 p.m.",
     "estado": "DISPONIBLE",
-    "equipo1": "Getafe",
-    "equipo2": "Celta Vigo",
+    "equipo1": "AEK Athens",
+    "equipo2": "LASK",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "http://latintvplus.com:8000/live/MyBOXXTV2024/SILVERsat173929HH/4303.m3u8" },
-      { "nombre": "Opción 2", "stream": "asiria1.html" }
+      { "nombre": "Opción 1", "stream": "http://38.226.49.253:8000/play/a07g/index.m3u8" }
     ]
   },
   {
-    "fecha": "Hoy | 2:45 p.m.",
+    "fecha": "Hoy | 12:45 p.m.",
     "estado": "DISPONIBLE",
-    "equipo1": "Udinese",
-    "equipo2": "Lazio",
+    "equipo1": "Club Brugge",
+    "equipo2": "Aston Villa",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491511.m3u8" },
-      { "nombre": "Opción 2", "stream": "roxie2.html" }
+      { "nombre": "Opción 1", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" }
     ]
   },
   {
-    "fecha": "Hoy | 3:30 p.m.",
+    "fecha": "Hoy | 3:00 p.m.",
     "estado": "DISPONIBLE",
-    "equipo1": "Elche",
-    "equipo2": "Real Sociedad",
+    "equipo1": "Bolton",
+    "equipo2": "West Ham",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "http://latintvplus.com:8000/live/MyBOXXTV2024/SILVERsat173929HH/4303.m3u8" },
-      { "nombre": "Opción 2", "stream": "https://sflix.today/v1/live/proxy/daddy-sky-sport-1-nz-daddylive" }
+      { "nombre": "Opción 1", "stream": "https://sflix.today/v1/live/proxy/daddy-sky-sports-football-uk-daddylive" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 3:00 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Millwall",
+    "equipo2": "Newcastle",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://sflix.today/v1/live/proxy/daddy-sky-sports-main-event-daddylive" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 3:00 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Dortmund",
+    "equipo2": "Villarreal",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "http://38.226.49.253:8000/play/a07g/index.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 3:00 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "FC Porto",
+    "equipo2": "Man City",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 3:00 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Lille",
+    "equipo2": "Real Betis",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "http://38.226.49.253:8000/play/a065/index.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 3:00 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Real Madrid",
+    "equipo2": "Inter",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://apps.spandaman.co.uk/spandaman/current/live/anything/anything/107163.m3u8" },
+      { "nombre": "Opción 2", "stream": "asiria1.html" },
+      { "nombre": "Opción 3", "stream": "https://sflix.today/v1/live/proxy/daddy-movistar-liga-de-campeones-daddylive" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 8:30 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Boca Juniors",
+    "equipo2": "São Paulo",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "asiria1.html" }
     ]
   }
 ]
