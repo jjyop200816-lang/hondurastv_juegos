@@ -1,65 +1,29 @@
 [
   {
-    "fecha": "Hoy | 12:45 p.m.",
-    "estado": "FINALIZADO",
-    "equipo1": "AEK Athens",
-    "equipo2": "LASK",
-    "opciones": []
+    "fecha": "Hoy | 9:06 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "CD Marathón",
+    "equipo2": "LD Alajuelense",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "" }
+    ]
   },
   {
-    "fecha": "Hoy | 12:45 p.m.",
-    "estado": "FINALIZADO",
-    "equipo1": "Club Brugge",
-    "equipo2": "Aston Villa",
-    "opciones": []
+    "fecha": "Hoy | 11:05 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Pumas",
+    "equipo2": "León",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "" }
+    ]
   },
   {
-    "fecha": "Hoy | 3:00 p.m.",
-    "estado": "FINALIZADO",
-    "equipo1": "Bolton",
-    "equipo2": "West Ham",
-    "opciones": []
-  },
-  {
-    "fecha": "Hoy | 3:00 p.m.",
-    "estado": "FINALIZADO",
-    "equipo1": "Millwall",
-    "equipo2": "Newcastle",
-    "opciones": []
-  },
-  {
-    "fecha": "Hoy | 3:00 p.m.",
-    "estado": "FINALIZADO",
-    "equipo1": "Dortmund",
-    "equipo2": "Villarreal",
-    "opciones": []
-  },
-  {
-    "fecha": "Hoy | 3:00 p.m.",
-    "estado": "FINALIZADO",
-    "equipo1": "FC Porto",
-    "equipo2": "Man City",
-    "opciones": []
-  },
-  {
-    "fecha": "Hoy | 3:00 p.m.",
-    "estado": "FINALIZADO",
-    "equipo1": "Lille",
-    "equipo2": "Real Betis",
-    "opciones": []
-  },
-  {
-    "fecha": "Hoy | 3:00 p.m.",
-    "estado": "FINALIZADO",
-    "equipo1": "Real Madrid",
-    "equipo2": "Inter",
-    "opciones": []
-  },
-  {
-    "fecha": "Hoy | 8:30 p.m.",
-    "estado": "FINALIZADO",
-    "equipo1": "Boca Juniors",
-    "equipo2": "São Paulo",
-    "opciones": []
+    "fecha": "Hoy | 11:06 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Firpo",
+    "equipo2": "CD Olimpia",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "" }
+    ]
   }
 ]
