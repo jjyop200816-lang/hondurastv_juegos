@@ -14,7 +14,7 @@
     "equipo1": "Pumas",
     "equipo2": "León",
     "opciones": [
-      { "nombre": "Opción 1", "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx": "" }
+      { "nombre": "Opción 1", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" }
     ]
   },
   {
