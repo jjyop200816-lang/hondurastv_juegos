@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jornada 6 - Liga de Honduras</title>
+    <title>Jornada 7 - Liga de Honduras</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
         body { background-color: #0b1120; color: #ffffff; padding: 16px; display: flex; justify-content: center; }
@@ -12,33 +12,24 @@
         .header-main { text-align: center; margin-bottom: 16px; }
         .header-main h1 { font-size: 1.8rem; color: #00c853; text-transform: uppercase; letter-spacing: 1px; }
 
-        .live-global-banner { background: #e11d48; color: white; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; font-size: 0.95rem; margin-bottom: 20px; display: none; animation: pulse 1.5s infinite; box-shadow: 0 0 12px rgba(225, 29, 72, 0.5); }
-        .live-global-banner.show { display: block; }
+        .live-global-banner { background: #e11d48; color: white; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; font-size: 0.95rem; margin-bottom: 20px; display: block; animation: pulse 1.5s infinite; box-shadow: 0 0 12px rgba(225, 29, 72, 0.5); }
         
         .date-group { font-size: 1rem; color: #94a3b8; margin: 18px 0 10px 4px; font-weight: 700; text-transform: capitalize; border-left: 3px solid #00c853; padding-left: 8px; }
 
-        .card { background: #1e293b; border-radius: 14px; padding: 16px; margin-bottom: 12px; border: 1px solid #334155; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3); transition: all 0.3s ease; }
-        .card.active { border: 2px solid #00c853; background: linear-gradient(145deg, #1e293b, #092617); box-shadow: 0 0 15px rgba(0, 200, 83, 0.2); }
-        .card.finished { opacity: 0.7; }
+        .card { background: #1e293b; border-radius: 14px; padding: 16px; margin-bottom: 12px; border: 2px solid #00c853; background: linear-gradient(145deg, #1e293b, #092617); box-shadow: 0 0 15px rgba(0, 200, 83, 0.2); transition: all 0.3s ease; }
 
         .match-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 8px; }
         .date-time { font-size: 0.85rem; color: #cbd5e1; font-weight: 600; }
         
-        .status-badge { font-size: 0.7rem; padding: 3px 10px; border-radius: 20px; font-weight: 800; letter-spacing: 0.5px; display: none; }
-        .card.waiting .badge-wait { display: inline-block; background-color: #334155; color: #94a3b8; }
-        .card.active.upcoming .badge-pre { display: inline-block; background-color: #0284c7; color: #ffffff; }
-        .card.active.is-live .badge-live { display: inline-block; background-color: #e11d48; color: #ffffff; animation: pulse 1.5s infinite; }
-        .card.finished .badge-ended { display: inline-block; background-color: #475569; color: #cbd5e1; }
+        .status-badge { font-size: 0.7rem; padding: 3px 10px; border-radius: 20px; font-weight: 800; letter-spacing: 0.5px; }
+        .badge-live { display: inline-block; background-color: #e11d48; color: #ffffff; animation: pulse 1.5s infinite; }
 
         .teams { display: flex; justify-content: space-between; align-items: center; margin: 12px 0; font-size: 1rem; font-weight: 700; text-align: center; }
         .team { flex: 1; }
         .vs-container { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 50px; }
         .vs { font-size: 0.85rem; color: #64748b; font-weight: 800; }
 
-        /* Ocultar opciones por defecto en estado de espera y finalizado */
-        .actions { display: none; justify-content: center; align-items: center; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
-        .card.active .actions { display: flex; }
-        .card.finished .actions, .card.waiting .actions { display: none !important; }
+        .actions { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
         
         .play-btn { height: 40px; padding: 0 14px; border-radius: 20px; background: #00c853; color: white; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 12px; font-weight: 800; box-shadow: 0 4px 12px rgba(0, 200, 83, 0.4); transition: transform 0.2s; cursor: pointer; border: none; }
         .play-btn:active { transform: scale(0.95); }
@@ -49,24 +40,21 @@
 <body>
 
 <div class="container">
-    <div class="header-main"><h1>Jornada 6</h1></div>
+    <div class="header-main"><h1>Jornada 7</h1></div>
 
     <div id="liveBanner" class="live-global-banner">🔴 ¡PARTIDOS EN VIVO AHORA MISMO!</div>
 
-    <!-- JUEVES 3 DE SEPTIEMBRE -->
-    <div class="date-group">Jue, 3 de sept</div>
+    <!-- HOY -->
+    <div class="date-group">Hoy</div>
 
-    <!-- CD Olimpia vs Platense FC -->
-    <div class="card waiting" data-start="2026-09-03 21:00:00" data-end="2026-09-03 23:00:00">
+    <!-- Estrella Roja vs Platense FC -->
+    <div class="card active is-live">
         <div class="match-info">
-            <span class="date-time">9:00 p.m.</span>
-            <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
+            <span class="date-time">9:30 p.m.</span>
             <span class="status-badge badge-live">EN VIVO</span>
-            <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
-            <div class="team">CD Olimpia</div>
+            <div class="team">Estrella Roja</div>
             <div class="vs-container"><span class="vs">VS</span></div>
             <div class="team">Platense FC</div>
         </div>
@@ -77,91 +65,19 @@
         </div>
     </div>
 
-    <!-- VIERNES 4 DE SEPTIEMBRE -->
-    <div class="date-group">Vie, 4 de sept</div>
+    <!-- MAÑANA -->
+    <div class="date-group">Mañana</div>
 
-    <!-- CD Choloma vs Olancho FC -->
-    <div class="card waiting" data-start="2026-09-04 21:00:00" data-end="2026-09-04 23:00:00">
+    <!-- Olancho FC vs Real España -->
+    <div class="card active is-live">
         <div class="match-info">
-            <span class="date-time">9:00 p.m.</span>
-            <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
+            <span class="date-time">7:15 p.m.</span>
             <span class="status-badge badge-live">EN VIVO</span>
-            <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
-            <div class="team">CD Choloma</div>
-            <div class="vs-container"><span class="vs">VS</span></div>
             <div class="team">Olancho FC</div>
-        </div>
-        <div class="actions">
-            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
-            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
-            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
-        </div>
-    </div>
-
-    <!-- SÁBADO 5 DE SEPTIEMBRE -->
-    <div class="date-group">Sáb, 5 de sept</div>
-
-    <!-- Atletico Independiente vs FC Motagua -->
-    <div class="card waiting" data-start="2026-09-05 19:15:00" data-end="2026-09-05 21:15:00">
-        <div class="match-info">
-            <span class="date-time">7:15 p.m.</span>
-            <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
-            <span class="status-badge badge-live">EN VIVO</span>
-            <span class="status-badge badge-ended">FINALIZADO</span>
-        </div>
-        <div class="teams">
-            <div class="team">Atletico Indep.</div>
             <div class="vs-container"><span class="vs">VS</span></div>
-            <div class="team">FC Motagua</div>
-        </div>
-        <div class="actions">
-            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
-            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
-            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
-        </div>
-    </div>
-
-    <!-- CD Marathon vs Estrella Roja -->
-    <div class="card waiting" data-start="2026-09-05 21:30:00" data-end="2026-09-05 23:30:00">
-        <div class="match-info">
-            <span class="date-time">9:30 p.m.</span>
-            <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
-            <span class="status-badge badge-live">EN VIVO</span>
-            <span class="status-badge badge-ended">FINALIZADO</span>
-        </div>
-        <div class="teams">
-            <div class="team">CD Marathon</div>
-            <div class="vs-container"><span class="vs">VS</span></div>
-            <div class="team">Estrella Roja</div>
-        </div>
-        <div class="actions">
-            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
-            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
-            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
-        </div>
-    </div>
-
-    <!-- DOMINGO 6 DE SEPTIEMBRE -->
-    <div class="date-group">Dom, 6 de sept</div>
-
-    <!-- Real España vs Lobos UPNFM -->
-    <div class="card waiting" data-start="2026-09-06 19:15:00" data-end="2026-09-06 21:15:00">
-        <div class="match-info">
-            <span class="date-time">7:15 p.m.</span>
-            <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
-            <span class="status-badge badge-live">EN VIVO</span>
-            <span class="status-badge badge-ended">FINALIZADO</span>
-        </div>
-        <div class="teams">
             <div class="team">Real España</div>
-            <div class="vs-container"><span class="vs">VS</span></div>
-            <div class="team">Lobos UPNFM</div>
         </div>
         <div class="actions">
             <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
@@ -170,17 +86,14 @@
         </div>
     </div>
 
-    <!-- Juticalpa vs Genesis FC -->
-    <div class="card waiting" data-start="2026-09-06 21:30:00" data-end="2026-09-06 23:30:00">
+    <!-- FC Motagua vs Genesis FC -->
+    <div class="card active is-live">
         <div class="match-info">
             <span class="date-time">9:30 p.m.</span>
-            <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
             <span class="status-badge badge-live">EN VIVO</span>
-            <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
-            <div class="team">Juticalpa</div>
+            <div class="team">FC Motagua</div>
             <div class="vs-container"><span class="vs">VS</span></div>
             <div class="team">Genesis FC</div>
         </div>
@@ -188,6 +101,63 @@
             <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
             <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
             <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
+        </div>
+    </div>
+
+    <!-- DOMINGO 13 DE SEPTIEMBRE -->
+    <div class="date-group">Dom, 13 de sept</div>
+
+    <!-- Lobos UPNFM vs CD Choloma -->
+    <div class="card active is-live">
+        <div class="match-info">
+            <span class="date-time">5:00 p.m.</span>
+            <span class="status-badge badge-live">EN VIVO</span>
+        </div>
+        <div class="teams">
+            <div class="team">Lobos UPNFM</div>
+            <div class="vs-container"><span class="vs">VS</span></div>
+            <div class="team">CD Choloma</div>
+        </div>
+        <div class="actions">
+            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
+            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
+            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
+        </div>
+    </div>
+
+    <!-- CD Marathón vs CD Olimpia -->
+    <div class="card active is-live">
+        <div class="match-info">
+            <span class="date-time">7:15 p.m.</span>
+            <span class="status-badge badge-live">EN VIVO</span>
+        </div>
+        <div class="teams">
+            <div class="team">CD Marathón</div>
+            <div class="vs-container"><span class="vs">VS</span></div>
+            <div class="team">CD Olimpia</div>
+        </div>
+        <div class="actions">
+            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
+            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
+            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
+        </div>
+    </div>
+
+    <!-- Atletico Independiente vs Juticalpa -->
+    <div class="card active is-live">
+        <div class="match-info">
+            <span class="date-time">9:30 p.m.</span>
+            <span class="status-badge badge-live">EN VIVO</span>
+        </div>
+        <div class="teams">
+            <div class="team">Atletico Independiente</div>
+            <div class="vs-container"><span class="vs">VS</span></div>
+            <div class="team">Juticalpa</div>
+        </div>
+        <div class="actions">
+            <button onclick="openAction('multicable_1')" class="play-btn">▶ OPCIÓN 1</button>
+            <button onclick="openAction('multicable_2')" class="play-btn">▶ OPCIÓN 2</button>
+            <button onclick="openAction('multicable_3')" class="play-btn">▶ OPCIÓN 3</button>
         </div>
     </div>
 
@@ -201,64 +171,6 @@
             window.location.href = "go:" + target;
         }
     }
-
-    function parseFecha(str) {
-        if (!str) return NaN;
-        var partes = str.split(' ');
-        var fecha = partes[0].split('-');
-        var hora = partes[1].split(':');
-        return new Date(fecha[0], fecha[1] - 1, fecha[2], hora[0], hora[1], hora[2]).getTime();
-    }
-
-    function actualizarEstados() {
-        const ahora = new Date().getTime();
-        
-        // Reglas de tiempo: 20 minutos antes y 20 minutos después
-        const PREVIA_MS = 20 * 60 * 1000;
-        const GRACIA_FIN_MS = 20 * 60 * 1000;
-        
-        let hayPartidosEnVivo = false;
-
-        document.querySelectorAll('.card').forEach(card => {
-            const inicio = parseFecha(card.getAttribute('data-start'));
-            const finOficial = parseFecha(card.getAttribute('data-end'));
-            
-            if (isNaN(inicio) || isNaN(finOficial)) return;
-
-            const finConGracia = finOficial + GRACIA_FIN_MS;
-            const inicioPrevia = inicio - PREVIA_MS;
-
-            card.classList.remove('active', 'finished', 'is-live', 'waiting', 'upcoming');
-
-            if (ahora < inicioPrevia) {
-                // Faltan más de 20 minutos
-                card.classList.add('waiting');
-            } 
-            else if (ahora >= inicioPrevia && ahora < inicio) {
-                // Faltan 20 minutos o menos: Abre la previa y habilita botones
-                card.classList.add('active', 'upcoming');
-            } 
-            else if (ahora >= inicio && ahora <= finConGracia) {
-                // Partido en curso y hasta 20 minutos tras finalizar
-                card.classList.add('active', 'is-live');
-                hayPartidosEnVivo = true;
-            } 
-            else {
-                // Pasados los 20 minutos después de terminar: Cierra y marca como FINALIZADO
-                card.classList.add('finished');
-            }
-        });
-
-        const banner = document.getElementById('liveBanner');
-        if (hayPartidosEnVivo) {
-            banner.classList.add('show');
-        } else {
-            banner.classList.remove('show');
-        }
-    }
-
-    actualizarEstados();
-    setInterval(actualizarEstados, 10000); // Se actualiza cada 10 segundos
 </script>
 </body>
 </html>
