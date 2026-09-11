@@ -32,7 +32,7 @@
     "equipo1": "Atlante",
     "equipo2": "Pachuca",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "" }
+      { "nombre": "Opción 1", "stream": "asiria2.html" }
     ]
   }
 ]
