@@ -155,7 +155,7 @@
             <div class="team">Juticalpa</div>
         </div>
         <div class="actions">
-            <button onclick="openAction('vallevision')" class="play-btn">▶ VER EN VIVO</button>
+            <button type="button" onclick="openAction('vallevision')" class="play-btn">▶ OPCIÓN ÚNICA</button>
         </div>
     </div>
 
@@ -163,7 +163,7 @@
 
 <script>
     function openAction(target) {
-        if (window.Android && window.Android.openStream) {
+        if (window.Android && typeof window.Android.openStream === 'function') {
             window.Android.openStream(target);
         } else {
             window.location.href = "go:" + target;
