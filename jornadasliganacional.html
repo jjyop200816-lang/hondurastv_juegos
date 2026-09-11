@@ -12,24 +12,33 @@
         .header-main { text-align: center; margin-bottom: 16px; }
         .header-main h1 { font-size: 1.8rem; color: #00c853; text-transform: uppercase; letter-spacing: 1px; }
 
-        .live-global-banner { background: #e11d48; color: white; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; font-size: 0.95rem; margin-bottom: 20px; display: block; animation: pulse 1.5s infinite; box-shadow: 0 0 12px rgba(225, 29, 72, 0.5); }
+        .live-global-banner { background: #e11d48; color: white; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; font-size: 0.95rem; margin-bottom: 20px; display: none; animation: pulse 1.5s infinite; box-shadow: 0 0 12px rgba(225, 29, 72, 0.5); }
+        .live-global-banner.show { display: block; }
         
         .date-group { font-size: 1rem; color: #94a3b8; margin: 18px 0 10px 4px; font-weight: 700; text-transform: capitalize; border-left: 3px solid #00c853; padding-left: 8px; }
 
-        .card { background: #1e293b; border-radius: 14px; padding: 16px; margin-bottom: 12px; border: 2px solid #00c853; background: linear-gradient(145deg, #1e293b, #092617); box-shadow: 0 0 15px rgba(0, 200, 83, 0.2); transition: all 0.3s ease; }
+        .card { background: #1e293b; border-radius: 14px; padding: 16px; margin-bottom: 12px; border: 1px solid #334155; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3); transition: all 0.3s ease; }
+        .card.active { border: 2px solid #00c853; background: linear-gradient(145deg, #1e293b, #092617); box-shadow: 0 0 15px rgba(0, 200, 83, 0.2); }
+        .card.finished { opacity: 0.7; }
 
         .match-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 8px; }
         .date-time { font-size: 0.85rem; color: #cbd5e1; font-weight: 600; }
         
-        .status-badge { font-size: 0.7rem; padding: 3px 10px; border-radius: 20px; font-weight: 800; letter-spacing: 0.5px; }
-        .badge-live { display: inline-block; background-color: #e11d48; color: #ffffff; animation: pulse 1.5s infinite; }
+        .status-badge { font-size: 0.7rem; padding: 3px 10px; border-radius: 20px; font-weight: 800; letter-spacing: 0.5px; display: none; }
+        .card.waiting .badge-wait { display: inline-block; background-color: #334155; color: #94a3b8; }
+        .card.active.upcoming .badge-pre { display: inline-block; background-color: #0284c7; color: #ffffff; }
+        .card.active.is-live .badge-live { display: inline-block; background-color: #e11d48; color: #ffffff; animation: pulse 1.5s infinite; }
+        .card.finished .badge-ended { display: inline-block; background-color: #475569; color: #cbd5e1; }
 
         .teams { display: flex; justify-content: space-between; align-items: center; margin: 12px 0; font-size: 1rem; font-weight: 700; text-align: center; }
         .team { flex: 1; }
         .vs-container { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 50px; }
         .vs { font-size: 0.85rem; color: #64748b; font-weight: 800; }
 
-        .actions { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+        /* Ocultar acciones si está en espera o finalizado */
+        .actions { display: none; justify-content: center; align-items: center; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+        .card.active .actions { display: flex; }
+        .card.finished .actions, .card.waiting .actions { display: none !important; }
         
         .play-btn { height: 40px; padding: 0 14px; border-radius: 20px; background: #00c853; color: white; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 12px; font-weight: 800; box-shadow: 0 4px 12px rgba(0, 200, 83, 0.4); transition: transform 0.2s; cursor: pointer; border: none; }
         .play-btn:active { transform: scale(0.95); }
@@ -48,10 +57,13 @@
     <div class="date-group">Hoy</div>
 
     <!-- Estrella Roja vs Platense FC -->
-    <div class="card active is-live">
+    <div class="card waiting" data-start="2026-09-11 21:30:00" data-end="2026-09-11 23:30:00">
         <div class="match-info">
             <span class="date-time">9:30 p.m.</span>
+            <span class="status-badge badge-wait">PRÓXIMO</span>
+            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
             <span class="status-badge badge-live">EN VIVO</span>
+            <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
             <div class="team">Estrella Roja</div>
@@ -69,10 +81,13 @@
     <div class="date-group">Mañana</div>
 
     <!-- Olancho FC vs Real España -->
-    <div class="card active is-live">
+    <div class="card waiting" data-start="2026-09-12 19:15:00" data-end="2026-09-12 21:15:00">
         <div class="match-info">
             <span class="date-time">7:15 p.m.</span>
+            <span class="status-badge badge-wait">PRÓXIMO</span>
+            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
             <span class="status-badge badge-live">EN VIVO</span>
+            <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
             <div class="team">Olancho FC</div>
@@ -87,10 +102,13 @@
     </div>
 
     <!-- FC Motagua vs Genesis FC -->
-    <div class="card active is-live">
+    <div class="card waiting" data-start="2026-09-12 21:30:00" data-end="2026-09-12 23:30:00">
         <div class="match-info">
             <span class="date-time">9:30 p.m.</span>
+            <span class="status-badge badge-wait">PRÓXIMO</span>
+            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
             <span class="status-badge badge-live">EN VIVO</span>
+            <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
             <div class="team">FC Motagua</div>
@@ -108,10 +126,13 @@
     <div class="date-group">Dom, 13 de sept</div>
 
     <!-- Lobos UPNFM vs CD Choloma -->
-    <div class="card active is-live">
+    <div class="card waiting" data-start="2026-09-13 17:00:00" data-end="2026-09-13 19:00:00">
         <div class="match-info">
             <span class="date-time">5:00 p.m.</span>
+            <span class="status-badge badge-wait">PRÓXIMO</span>
+            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
             <span class="status-badge badge-live">EN VIVO</span>
+            <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
             <div class="team">Lobos UPNFM</div>
@@ -126,10 +147,13 @@
     </div>
 
     <!-- CD Marathón vs CD Olimpia -->
-    <div class="card active is-live">
+    <div class="card waiting" data-start="2026-09-13 19:15:00" data-end="2026-09-13 21:15:00">
         <div class="match-info">
             <span class="date-time">7:15 p.m.</span>
+            <span class="status-badge badge-wait">PRÓXIMO</span>
+            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
             <span class="status-badge badge-live">EN VIVO</span>
+            <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
             <div class="team">CD Marathón</div>
@@ -144,10 +168,13 @@
     </div>
 
     <!-- Atletico Independiente vs Juticalpa -->
-    <div class="card active is-live">
+    <div class="card waiting" data-start="2026-09-13 21:30:00" data-end="2026-09-13 23:30:00">
         <div class="match-info">
             <span class="date-time">9:30 p.m.</span>
+            <span class="status-badge badge-wait">PRÓXIMO</span>
+            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
             <span class="status-badge badge-live">EN VIVO</span>
+            <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
             <div class="team">Atletico Independiente</div>
@@ -169,6 +196,64 @@
             window.location.href = "go:" + target;
         }
     }
+
+    function parseFecha(str) {
+        if (!str) return NaN;
+        var partes = str.split(' ');
+        var fecha = partes[0].split('-');
+        var hora = partes[1].split(':');
+        return new Date(fecha[0], fecha[1] - 1, fecha[2], hora[0], hora[1], hora[2]).getTime();
+    }
+
+    function actualizarEstados() {
+        const ahora = new Date().getTime();
+        
+        // Ventana de 20 minutos antes y 20 minutos después
+        const PREVIA_MS = 20 * 60 * 1000;
+        const GRACIA_FIN_MS = 20 * 60 * 1000;
+        
+        let hayPartidosEnVivo = false;
+
+        document.querySelectorAll('.card').forEach(card => {
+            const inicio = parseFecha(card.getAttribute('data-start'));
+            const finOficial = parseFecha(card.getAttribute('data-end'));
+            
+            if (isNaN(inicio) || isNaN(finOficial)) return;
+
+            const finConGracia = finOficial + GRACIA_FIN_MS;
+            const inicioPrevia = inicio - PREVIA_MS;
+
+            card.classList.remove('active', 'finished', 'is-live', 'waiting', 'upcoming');
+
+            if (ahora < inicioPrevia) {
+                // Faltan más de 20 minutos (Cerrado)
+                card.classList.add('waiting');
+            } 
+            else if (ahora >= inicioPrevia && ahora < inicio) {
+                // Faltan 20 minutos o menos: Abre la previa y activa botones
+                card.classList.add('active', 'upcoming');
+            } 
+            else if (ahora >= inicio && ahora <= finConGracia) {
+                // Partido en curso y hasta 20 min después del final: Abierto y En Vivo
+                card.classList.add('active', 'is-live');
+                hayPartidosEnVivo = true;
+            } 
+            else {
+                // Pasados los 20 minutos tras finalizar: Cierra y marca FINALIZADO
+                card.classList.add('finished');
+            }
+        });
+
+        const banner = document.getElementById('liveBanner');
+        if (hayPartidosEnVivo) {
+            banner.classList.add('show');
+        } else {
+            banner.classList.remove('show');
+        }
+    }
+
+    actualizarEstados();
+    setInterval(actualizarEstados, 10000); // Revisa y actualiza el estado cada 10 segundos
 </script>
 </body>
 </html>
