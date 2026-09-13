@@ -14,7 +14,7 @@
     "equipo1": "Chivas",
     "equipo2": "Pumas",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "asiria1.html" }
+      { "nombre": "Opción 1", "stream": "http://45.228.234.62:8000/play/a01s/index.m3u8" }
     ]
   }
 ]
