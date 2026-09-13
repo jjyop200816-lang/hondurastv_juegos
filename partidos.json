@@ -1,38 +1,20 @@
 [
   {
-    "fecha": "Hoy | 3:00 p.m.",
-    "estado": "DISPONIBLE",
-    "equipo1": "Sevilla",
-    "equipo2": "Valencia",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "asiria1.html" }
-    ]
-  },
-  {
-    "fecha": "Hoy | 8:30 p.m.",
-    "estado": "DISPONIBLE",
-    "equipo1": "Boca Juniors",
-    "equipo2": "Central Córdoba de Santiago",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "http://181.224.255.210:8001/play/a0pr/index.m3u8?hls" }
-    ]
-  },
-  {
     "fecha": "Hoy | 9:00 p.m.",
     "estado": "DISPONIBLE",
-    "equipo1": "Necaxa",
-    "equipo2": "Puebla",
+    "equipo1": "Santos",
+    "equipo2": "Juárez",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8" }
+      { "nombre": "Opción 1", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" }
     ]
   },
   {
-    "fecha": "Hoy | 11:00 p.m.",
+    "fecha": "Hoy | 9:07 p.m.",
     "estado": "DISPONIBLE",
-    "equipo1": "Atlante",
-    "equipo2": "Pachuca",
+    "equipo1": "Chivas",
+    "equipo2": "Pumas",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://sflix.today/v1/live/proxy/daddy-azteca-7-mx-daddylive" }
+      { "nombre": "Opción 1", "stream": "asiria1.html" }
     ]
   }
 ]
