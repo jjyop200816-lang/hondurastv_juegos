@@ -13,7 +13,7 @@ html, body {
     overflow: hidden;
 }
 
-/* Contenedor que ajusta la vista al marco de la pantalla */
+/* Contenedor principal que ocupa toda la pantalla */
 .container {
     position: fixed;
     top: 0;
@@ -23,13 +23,13 @@ html, body {
     overflow: hidden;
 }
 
-/* iframe ajustado para centrar la transmisión en la pantalla vertical */
+/* iframe con menos zoom y alineado hacia la izquierda */
 iframe {
     position: absolute;
-    top: -35%;     /* Sube un poco la vista para centrar el video verticalmente */
-    left: -10%;    /* Centra la transmisión horizontalmente */
-    width: 170%;   /* Escala óptima para cubrir el ancho de la pantalla */
-    height: 170%;  /* Escala óptima de alto */
+    top: -18%;     /* Ajuste vertical para centrar el video */
+    left: -18%;    /* Mueve la vista hacia la izquierda para quitar la barra lateral */
+    width: 135%;   /* Zoom reducido horizontalmente */
+    height: 135%;  /* Zoom reducido verticalmente */
     border: none;
 }
 </style>
