@@ -1,20 +1,47 @@
 [
   {
-    "fecha": "Hoy | 9:00 p.m.",
+    "fecha": "Hoy | 12:30 p.m.",
     "estado": "DISPONIBLE",
-    "equipo1": "Santos",
-    "equipo2": "Juárez",
+    "equipo1": "Como",
+    "equipo2": "Parma",
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" }
     ]
   },
   {
-    "fecha": "Hoy | 9:07 p.m.",
+    "fecha": "Hoy | 2:45 p.m.",
     "estado": "DISPONIBLE",
-    "equipo1": "Chivas",
-    "equipo2": "Pumas",
+    "equipo1": "Inter",
+    "equipo2": "Udinese",
     "opciones": [
       { "nombre": "Opción 1", "stream": "http://45.228.234.62:8000/play/a01s/index.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 3:00 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Villarreal",
+    "equipo2": "Real Betis",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "asiria1.html" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 3:00 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "Leeds",
+    "equipo2": "Newcastle",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 9:00 p.m.",
+    "estado": "DISPONIBLE",
+    "equipo1": "León",
+    "equipo2": "San Luis",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://sflix.today/v1/live/proxy/daddy-azteca-7-mx-daddylive" }
     ]
   }
 ]
