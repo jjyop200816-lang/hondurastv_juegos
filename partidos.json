@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos en Vivo</title>
+    <title>Partidos de Hoy</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; }
         body { background-color: #0b132b; color: #ffffff; padding: 16px; display: flex; justify-content: center; }
         .container { width: 100%; max-width: 480px; }
         .header { text-align: center; margin-bottom: 20px; }
         .header h1 { font-size: 1.6rem; color: #38bdf8; text-transform: uppercase; margin-bottom: 5px; }
+        .header p { font-size: 0.95rem; color: #94a3b8; }
         .card { background: #1c2541; border-radius: 12px; padding: 16px; margin-bottom: 14px; border: 1px solid #2a3a5e; transition: all 0.3s ease; }
         .card.active { border: 2px solid #0284c7; background: linear-gradient(145deg, #1c2541, #0b2545); }
         .match-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 8px; }
@@ -35,13 +36,13 @@
 
 <div class="container">
     <div class="header">
-        <h1>Partidos de Hoy</h1>
+        <h1>PARTIDOS DE HOY</h1>
+        <p>Transmisión en Vivo</p>
     </div>
     <div id="matches-list"></div>
 </div>
 
 <script>
-    // LISTA DE PARTIDOS CON SUS HORAS exactas ISO (Año-Mes-DíaTHora:Minuto:Segundo)
     const eventos = [
       {
         "fecha": "Hoy | 12:30 p.m.",
@@ -128,14 +129,14 @@
 
     function actualizarRelojes() {
         const ahora = new Date().getTime();
-        const MARGEN_TIEMPO = 20 * 60 * 1000; // Exactamente 20 minutos de margen
+        const MARGEN_TIEMPO = 20 * 60 * 1000; // 20 minutos antes y después
 
         document.querySelectorAll('.card').forEach((card) => {
             const inicio = new Date(card.getAttribute('data-start')).getTime();
             const fin = new Date(card.getAttribute('data-end')).getTime();
             
-            const inicioApertura = inicio - MARGEN_TIEMPO; // Abre 20 min antes
-            const finCierre = fin + MARGEN_TIEMPO;         // Cierra 20 min después
+            const inicioApertura = inicio - MARGEN_TIEMPO;
+            const finCierre = fin + MARGEN_TIEMPO;
             const timerDisplay = card.querySelector('.timer');
 
             if (ahora < inicioApertura) {
