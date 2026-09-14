@@ -1,170 +1,42 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Partidos de Hoy</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; }
-        body { background-color: #0b132b; color: #ffffff; padding: 16px; display: flex; justify-content: center; }
-        .container { width: 100%; max-width: 480px; }
-        .header { text-align: center; margin-bottom: 20px; }
-        .header h1 { font-size: 1.6rem; color: #38bdf8; text-transform: uppercase; margin-bottom: 5px; }
-        .header p { font-size: 0.95rem; color: #94a3b8; }
-        .card { background: #1c2541; border-radius: 12px; padding: 16px; margin-bottom: 14px; border: 1px solid #2a3a5e; transition: all 0.3s ease; }
-        .card.active { border: 2px solid #0284c7; background: linear-gradient(145deg, #1c2541, #0b2545); }
-        .match-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 8px; }
-        .date-time { font-size: 0.9rem; color: #cbd5e1; font-weight: 600; }
-        .status-badge { font-size: 0.75rem; padding: 3px 10px; border-radius: 12px; font-weight: bold; text-transform: uppercase; display: none; }
-        .card.active .badge-live { display: inline-block; background-color: #2563eb; color: #fff; animation: pulse 2s infinite; }
-        .card.finished .badge-ended { display: inline-block; background-color: #334155; color: #94a3b8; }
-        .teams { display: flex; justify-content: space-between; align-items: center; margin: 15px 0; }
-        .team { flex: 1; text-align: center; font-weight: bold; font-size: 1.1rem; }
-        .vs { font-size: 0.9rem; color: #64748b; font-weight: bold; padding: 0 15px; }
-        .countdown-container { text-align: center; margin-top: 10px; padding-top: 8px; border-top: 1px dashed rgba(255, 255, 255, 0.1); }
-        .countdown-label { font-size: 0.75rem; color: #94a3b8; margin-bottom: 2px; text-transform: uppercase; }
-        .timer { font-size: 1.05rem; font-weight: bold; color: #38bdf8; letter-spacing: 1px; font-family: monospace; }
-        .actions { display: none; justify-content: center; align-items: center; margin-top: 12px; flex-direction: column; gap: 8px; }
-        .card.active .actions { display: flex; }
-        .card.active .countdown-container, .card.finished .countdown-container { display: none; }
-        .play-btn { display: inline-flex; justify-content: center; align-items: center; padding: 10px 20px; border-radius: 20px; background: #0284c7; color: white; text-decoration: none; font-size: 14px; font-weight: bold; border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.5); }
-        .play-btn:active { transform: scale(0.95); background: #0369a1; }
-        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.6; } 100% { opacity: 1; } }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <div class="header">
-        <h1>PARTIDOS DE HOY</h1>
-        <p>Transmisión en Vivo</p>
-    </div>
-    <div id="matches-list"></div>
-</div>
-
-<script>
-    const eventos = [
-      {
-        "fecha": "Hoy | 12:30 p.m.",
-        "start": "2026-09-14T12:30:00",
-        "end": "2026-09-14T14:30:00",
-        "equipo1": "Como",
-        "equipo2": "Parma",
-        "opciones": [{ "nombre": "Opción 1", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" }]
-      },
-      {
-        "fecha": "Hoy | 2:45 p.m.",
-        "start": "2026-09-14T14:45:00",
-        "end": "2026-09-14T16:45:00",
-        "equipo1": "Inter",
-        "equipo2": "Udinese",
-        "opciones": [{ "nombre": "Opción 1", "stream": "http://45.228.234.62:8000/play/a01s/index.m3u8" }]
-      },
-      {
-        "fecha": "Hoy | 3:00 p.m.",
-        "start": "2026-09-14T15:00:00",
-        "end": "2026-09-14T17:00:00",
-        "equipo1": "Villarreal",
-        "equipo2": "Real Betis",
-        "opciones": [{ "nombre": "Opción 1", "stream": "asiria1.html" }]
-      },
-      {
-        "fecha": "Hoy | 3:00 p.m.",
-        "start": "2026-09-14T15:00:00",
-        "end": "2026-09-14T17:00:00",
-        "equipo1": "Leeds",
-        "equipo2": "Newcastle",
-        "opciones": [{ "nombre": "Opción 1", "stream": "http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8" }]
-      },
-      {
-        "fecha": "Hoy | 9:00 p.m.",
-        "start": "2026-09-14T21:00:00",
-        "end": "2026-09-14T23:00:00",
-        "equipo1": "León",
-        "equipo2": "San Luis",
-        "opciones": [{ "nombre": "Opción 1", "stream": "https://sflix.today/v1/live/proxy/daddy-azteca-7-mx-daddylive" }]
-      }
-    ];
-
-    function openAction(target) {
-        if (window.Android && window.Android.openStream) {
-            window.Android.openStream(target);
-        } else {
-            window.location.href = "go:" + target;
-        }
-    }
-
-    function renderizarEventos() {
-        const container = document.getElementById('matches-list');
-        container.innerHTML = '';
-
-        eventos.forEach((item, index) => {
-            let btnsHtml = '';
-            item.opciones.forEach(op => {
-                btnsHtml += `<button class="play-btn" onclick="openAction('${op.stream}')">▶ ${op.nombre}</button>`;
-            });
-
-            const cardHtml = `
-                <div class="card" id="card-${index}" data-start="${item.start}" data-end="${item.end}">
-                    <div class="match-info">
-                        <span class="date-time">📅 ${item.fecha}</span>
-                        <span class="status-badge badge-live">EN VIVO</span>
-                        <span class="status-badge badge-ended">FINALIZADO</span>
-                    </div>
-                    <div class="teams">
-                        <div class="team">${item.equipo1}</div>
-                        <div class="vs">VS</div>
-                        <div class="team">${item.equipo2}</div>
-                    </div>
-                    <div class="countdown-container">
-                        <div class="countdown-label">Inicia en:</div>
-                        <div class="timer">--:--:--</div>
-                    </div>
-                    <div class="actions">${btnsHtml}</div>
-                </div>
-            `;
-            container.innerHTML += cardHtml;
-        });
-    }
-
-    function actualizarRelojes() {
-        const ahora = new Date().getTime();
-        const MARGEN_TIEMPO = 20 * 60 * 1000; // 20 minutos antes y después
-
-        document.querySelectorAll('.card').forEach((card) => {
-            const inicio = new Date(card.getAttribute('data-start')).getTime();
-            const fin = new Date(card.getAttribute('data-end')).getTime();
-            
-            const inicioApertura = inicio - MARGEN_TIEMPO;
-            const finCierre = fin + MARGEN_TIEMPO;
-            const timerDisplay = card.querySelector('.timer');
-
-            if (ahora < inicioApertura) {
-                card.classList.remove('active', 'finished');
-                const diferencia = inicio - ahora;
-                const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-                const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
-
-                const h = horas < 10 ? '0' + horas : horas;
-                const m = minutos < 10 ? '0' + minutos : minutos;
-                const s = segundos < 10 ? '0' + segundos : segundos;
-                timerDisplay.textContent = `${h}h ${m}m ${s}s`;
-
-            } else if (ahora >= inicioApertura && ahora <= finCierre) {
-                card.classList.add('active');
-                card.classList.remove('finished');
-            } else {
-                card.classList.remove('active');
-                card.classList.add('finished');
-            }
-        });
-    }
-
-    renderizarEventos();
-    actualizarRelojes();
-    setInterval(actualizarRelojes, 1000);
-</script>
-
-</body>
-</html>
+[
+  {
+    "fecha": "Hoy | 12:30 p.m.",
+    "start": "2026-09-14T12:30:00",
+    "end": "2026-09-14T14:30:00",
+    "equipo1": "Como",
+    "equipo2": "Parma",
+    "opciones": [{ "nombre": "Opción 1", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" }]
+  },
+  {
+    "fecha": "Hoy | 2:45 p.m.",
+    "start": "2026-09-14T14:45:00",
+    "end": "2026-09-14T16:45:00",
+    "equipo1": "Inter",
+    "equipo2": "Udinese",
+    "opciones": [{ "nombre": "Opción 1", "stream": "http://45.228.234.62:8000/play/a01s/index.m3u8" }]
+  },
+  {
+    "fecha": "Hoy | 3:00 p.m.",
+    "start": "2026-09-14T15:00:00",
+    "end": "2026-09-14T17:00:00",
+    "equipo1": "Villarreal",
+    "equipo2": "Real Betis",
+    "opciones": [{ "nombre": "Opción 1", "stream": "asiria1.html" }]
+  },
+  {
+    "fecha": "Hoy | 3:00 p.m.",
+    "start": "2026-09-14T15:00:00",
+    "end": "2026-09-14T17:00:00",
+    "equipo1": "Leeds",
+    "equipo2": "Newcastle",
+    "opciones": [{ "nombre": "Opción 1", "stream": "http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8" }]
+  },
+  {
+    "fecha": "Hoy | 9:00 p.m.",
+    "start": "2026-09-14T21:00:00",
+    "end": "2026-09-14T23:00:00",
+    "equipo1": "León",
+    "equipo2": "San Luis",
+    "opciones": [{ "nombre": "Opción 1", "stream": "https://sflix.today/v1/live/proxy/daddy-azteca-7-mx-daddylive" }]
+  }
+]
