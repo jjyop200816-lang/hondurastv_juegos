@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Solo Player</title><style>
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+    background:black;
+    overflow:hidden;
+}
+
+/* contenedor que recorta */
+.container {
+    position:fixed;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+/* iframe escalado */
+iframe {
+    position:absolute;
+    top:-158px;   /* ajusta vertical */
+    left:-20px;  /* ajusta horizontal */
+    width:112%;   /* zoom */
+    height:140%;
+    border:none;
+}
+</style></head><body><div class="container">
+    <iframe 
+        src="https://roxiestreams.info/soccer-streams-1"
+        sandbox="allow-scripts allow-same-origin allow-forms"
+        allowfullscreen>
+    </iframe>
+</div></body>
+</html>
