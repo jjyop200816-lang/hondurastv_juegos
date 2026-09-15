@@ -45,7 +45,11 @@
     "end": "2026-09-15T17:50:00",
     "equipo1": "Elche",
     "equipo2": "Real Madrid",
-    "opciones": [{ "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html" }]
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html" },
+      { "nombre": "Opción 2", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html" },
+      { "nombre": "Opción 3", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html" }
+    ]
   },
   {
     "fecha": "Hoy | 8:30 p.m.",
