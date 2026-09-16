@@ -77,7 +77,11 @@
     "end": "2026-09-16T17:50:00",
     "equipo1": "Barcelona",
     "equipo2": "Racing Santander",
-    "opciones": [{ "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria10.html" }]
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria10.html" },
+      { "nombre": "Opción 2", "stream": "" },
+      { "nombre": "Opción 3", "stream": "" }
+    ]
   },
   {
     "fecha": "Hoy | 3:30 p.m.",
@@ -101,6 +105,9 @@
     "end": "2026-09-18T01:35:00",
     "equipo1": "Alianza FC",
     "equipo2": "FC Motagua",
-    "opciones": [{ "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria13.html" }]
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria13.html" },
+      { "nombre": "Opción 2", "stream": "" }
+    ]
   }
 ]
