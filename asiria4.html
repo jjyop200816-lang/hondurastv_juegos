@@ -1,53 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Solo Player</title>
-<style>
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background: black;
-    overflow: hidden; /* Evita cualquier desplazamiento o scroll lateral */
-    touch-action: none; /* Bloquea gestos de arrastre en dispositivos táctiles */
-}
-
-/* Contenedor rígido de recorte */
-.container {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
-
-/* iframe con tus medidas originales + Zoom fijo de acercamiento */
-iframe {
-    position: absolute;
-    top: -158px;   /* Tus medidas exactas */
-    left: -20px;  
-    width: 112%;   
-    height: 140%;
-    border: none;
-    
-    /* Zoom de acercamiento manteniendo el centro */
-    transform: scale(1.15); 
-    transform-origin: center center;
-    pointer-events: auto;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Player - Direct Stream</title>
+    <!-- Librería Clappr Player -->
+    <script src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            overflow: hidden;
+        }
+        #player {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
 
-<div class="container">
-    <iframe 
-        src="https://roxiestreams.biz/soccer-streams-1"
-        sandbox="allow-scripts allow-same-origin allow-forms allow-fullscreen"
-        allow="fullscreen"
-        allowfullscreen>
-    </iframe>
-</div>
+    <div id="player"></div>
+
+    <script>
+        // Configuración del reproductor limpio
+        var player = new Clappr.Player({
+            source: "TU_ENLACE_DIRECTO_M3U8_AQUI", // Remplaza esto con la URL .m3u8 que obtengas
+            parentId: "#player",
+            width: "100%",
+            height: "100%",
+            autoPlay: true,
+            mute: false,
+            playback: {
+                playInline: true
+            }
+        });
+    </script>
 
 </body>
 </html>
