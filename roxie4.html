@@ -1,46 +1,37 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Solo Player</title>
-<style>
+<title>Solo Player</title><style>
 html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    overflow: hidden;
+    margin:0;
+    padding:0;
+    height:100%;
+    background:black;
+    overflow:hidden;
 }
 
-/* Contenedor que ajusta la vista al marco de la pantalla */
+/* contenedor que recorta */
 .container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    position:fixed;
+    width:100%;
+    height:100%;
+    overflow:hidden;
 }
 
-/* iframe escalado y reubicado para centrar el video */
+/* iframe escalado */
 iframe {
-    position: absolute;
-    top: -120%;   /* Ajuste vertical: desplaza hacia arriba */
-    left: -20%;   /* Ajuste horizontal: desplaza hacia la izquierda para ocultar el chat */
-    width: 320%;  /* Aumenta el zoom general */
-    height: 320%;
-    border: none;
+    position:absolute;
+    top:-158px;   /* ajusta vertical */
+    left:-20px;  /* ajusta horizontal */
+    width:112%;   /* zoom */
+    height:140%;
+    border:none;
 }
-</style>
-</head>
-<body>
-<div class="container">
+</style></head><body><div class="container">
     <iframe 
         src="https://roxiestreams.info/soccer-streams-4"
         sandbox="allow-scripts allow-same-origin allow-forms"
         allowfullscreen>
     </iframe>
-</div>
-</body>
+</div></body>
 </html>
