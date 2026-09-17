@@ -1,113 +1,96 @@
 [
   {
-    "fecha": "Hoy | 12:45 p.m.",
-    "start": "2026-09-16T12:25:00",
-    "end": "2026-09-16T15:05:00",
-    "equipo1": "Omonia Nicosia",
-    "equipo2": "Celta Vigo",
-    "opciones": [{ "nombre": "Opción 1", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" }]
-  },
-  {
     "fecha": "Hoy | 1:00 p.m.",
     "start": "2026-09-16T12:40:00",
     "end": "2026-09-16T15:20:00",
-    "equipo1": "Atlético Madrid",
-    "equipo2": "Osasuna",
-    "opciones": [{ "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html" }]
-  },
-  {
-    "fecha": "Hoy | 1:00 p.m.",
-    "start": "2026-09-16T12:40:00",
-    "end": "2026-09-16T15:20:00",
-    "equipo1": "Deportivo A Coruña",
-    "equipo2": "Sevilla",
-    "opciones": [{ "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html" }]
-  },
-  {
-    "fecha": "Hoy | 1:00 p.m.",
-    "start": "2026-09-16T12:40:00",
-    "end": "2026-09-16T15:20:00",
-    "equipo1": "Lugano",
-    "equipo2": "St. Gallen",
-    "opciones": [{ "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria7.html" }]
-  },
-  {
-    "fecha": "Hoy | 2:45 p.m.",
-    "start": "2026-09-16T14:25:00",
-    "end": "2026-09-16T17:05:00",
-    "equipo1": "Everton",
-    "equipo2": "Wolves",
-    "opciones": [{ "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html" }]
-  },
-  {
-    "fecha": "Hoy | 3:00 p.m.",
-    "start": "2026-09-16T14:40:00",
-    "end": "2026-09-16T17:20:00",
-    "equipo1": "Man United",
-    "equipo2": "Brighton",
-    "opciones": [{ "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html" }]
-  },
-  {
-    "fecha": "Hoy | 3:00 p.m.",
-    "start": "2026-09-16T14:40:00",
-    "end": "2026-09-16T17:20:00",
-    "equipo1": "Milan",
-    "equipo2": "Benfica",
-    "opciones": [{ "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8" }]
-  },
-  {
-    "fecha": "Hoy | 3:00 p.m.",
-    "start": "2026-09-16T14:40:00",
-    "end": "2026-09-16T17:20:00",
-    "equipo1": "Olympiacos",
-    "equipo2": "Jagiellonia Białystok",
-    "opciones": [{ "nombre": "Opción 1", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" }]
-  },
-  {
-    "fecha": "Hoy | 3:00 p.m.",
-    "start": "2026-09-16T14:40:00",
-    "end": "2026-09-16T17:20:00",
-    "equipo1": "Sunderland",
-    "equipo2": "AZ Alkmaar",
-    "opciones": [{ "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo12/tracks-v4a1/mono.ts.m3u8" }]
-  },
-  {
-    "fecha": "Hoy | 3:30 p.m.",
-    "start": "2026-09-16T15:10:00",
-    "end": "2026-09-16T17:50:00",
-    "equipo1": "Barcelona",
-    "equipo2": "Racing Santander",
+    "equipo1": "Real Betis",
+    "equipo2": "Getafe",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria8.html" },
-      { "nombre": "Opción 2", "stream": "http://186.148.184.22:8000/play/a0i6/index.m3u8" },
-      { "nombre": "Opción 3", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html" }
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 2:30 p.m.",
+    "start": "2026-09-16T14:10:00",
+    "end": "2026-09-16T16:50:00",
+    "equipo1": "Man City",
+    "equipo2": "Norwich",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 3:00 p.m.",
+    "start": "2026-09-16T14:40:00",
+    "end": "2026-09-16T17:20:00",
+    "equipo1": "Celtic",
+    "equipo2": "Ferencváros",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 3:00 p.m.",
+    "start": "2026-09-16T14:40:00",
+    "end": "2026-09-16T17:20:00",
+    "equipo1": "Crystal Palace",
+    "equipo2": "Lech Poznań",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 3:00 p.m.",
+    "start": "2026-09-16T14:40:00",
+    "end": "2026-09-16T17:20:00",
+    "equipo1": "Juventus",
+    "equipo2": "NEC Nijmegen",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria5.html" }
+    ]
+  },
+  {
+    "fecha": "Hoy | 3:00 p.m.",
+    "start": "2026-09-16T14:40:00",
+    "end": "2026-09-16T17:20:00",
+    "equipo1": "Real Sociedad",
+    "equipo2": "Bournemouth",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria6.html" }
     ]
   },
   {
     "fecha": "Hoy | 3:30 p.m.",
     "start": "2026-09-16T15:10:00",
     "end": "2026-09-16T17:50:00",
-    "equipo1": "Levante",
-    "equipo2": "Athletic Club",
-    "opciones": [{ "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8" }]
+    "equipo1": "Málaga",
+    "equipo2": "Villarreal",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria7.html" }
+    ]
   },
   {
     "fecha": "Hoy | 8:30 p.m.",
     "start": "2026-09-16T20:10:00",
     "end": "2026-09-16T22:50:00",
-    "equipo1": "C.S. Cartaginés",
-    "equipo2": "Deportivo Saprissa",
-    "opciones": [{ "nombre": "Opción 1", "stream": "https://dto4p9su9kcif.cloudfront.net/out/v1/9215529a621947689739a7671e6dd0d3/index.m3u8" }]
+    "equipo1": "LD Alajuelense",
+    "equipo2": "CD Marathón",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://dto4p9su9kcif.cloudfront.net/out/v1/9215529a621947689739a7671e6dd0d3/index.m3u8" },
+      { "nombre": "Opción 2", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria8.html" },
+      { "nombre": "Opción 3", "stream": "http://186.148.184.22:8000/play/a0i6/index.m3u8" }
+    ]
   },
   {
     "fecha": "Mañana | 11:15 p.m.",
     "start": "2026-09-16T22:55:00",
     "end": "2026-09-18T01:35:00",
-    "equipo1": "Alianza FC",
-    "equipo2": "FC Motagua",
+    "equipo1": "CD Olimpia",
+    "equipo2": "Firpo",
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://d29uu6lcvq8u18.cloudfront.net/out/v1/0fc428527c0b4981900340462bc9e390/index_22.m3u8" },
-      { "nombre": "Opción 2", "stream": "http://200.35.176.154:8000/play/a03a/index.m3u8" }
+      { "nombre": "Opción 2", "stream": "http://200.35.176.154:8000/play/a03a/index.m3u8" },
+      { "nombre": "Opción 3", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria9.html" }
     ]
   }
 ]
