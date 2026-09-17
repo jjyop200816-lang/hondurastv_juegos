@@ -106,8 +106,8 @@
     "equipo1": "Alianza FC",
     "equipo2": "FC Motagua",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria13.html" },
-      { "nombre": "Opción 2", "stream": "" }
+      { "nombre": "Opción 1", "stream": "https://d29uu6lcvq8u18.cloudfront.net/out/v1/0fc428527c0b4981900340462bc9e390/index_22.m3u8" },
+      { "nombre": "Opción 2", "stream": "ok" }
     ]
   }
 ]
