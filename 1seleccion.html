@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Honduras - Próximos Partidos</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        
+        /* Tema Azul y Blanco Deportivo */
+        body { background-color: #081b33; color: #ffffff; padding: 16px; display: flex; justify-content: center; }
+        .container { width: 100%; max-width: 480px; }
+        
+        .header-main { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #00a8ff; padding-bottom: 12px; }
+        .header-main h1 { font-size: 1.6rem; color: #ffffff; text-transform: uppercase; letter-spacing: 1px; font-weight: 800; }
+        .header-main p { font-size: 0.85rem; color: #00a8ff; font-weight: 600; text-transform: uppercase; margin-top: 4px; }
+
+        /* Barra de alerta superior dinámica */
+        .live-global-banner { background: #e11d48; color: white; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; font-size: 0.95rem; margin-bottom: 20px; display: none; animation: pulse 1.5s infinite; box-shadow: 0 0 15px rgba(225, 29, 72, 0.6); }
+        .live-global-banner.show { display: block; }
+        
+        .date-group { display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: #94a3b8; margin: 18px 0 10px 4px; font-weight: 700; border-left: 3px solid #00a8ff; padding-left: 8px; }
+        .tournament-tag { font-size: 0.65rem; background: rgba(0, 168, 255, 0.15); color: #00a8ff; padding: 3px 8px; border-radius: 4px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; border: 1px solid rgba(0, 168, 255, 0.3); }
+
+        /* Tarjeta con temática Azul e Iluminación */
+        .card { background: #0f2744; border-radius: 14px; padding: 16px; margin-bottom: 14px; border: 1px solid #1e3a5f; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); transition: all 0.3s ease; }
+        .card.active { border: 2px solid #00a8ff; background: linear-gradient(145deg, #0f2744, #002b55); box-shadow: 0 0 18px rgba(0, 168, 255, 0.3); }
+        .card.finished { opacity: 0.6; filter: grayscale(30%); }
+
+        .match-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 8px; }
+        .date-time { font-size: 0.85rem; color: #e2e8f0; font-weight: 700; }
+        
+        .status-badge { font-size: 0.7rem; padding: 3px 10px; border-radius: 20px; font-weight: 800; letter-spacing: 0.5px; display: none; }
+        .card.waiting .badge-wait { display: inline-block; background-color: #1e293b; color: #94a3b8; }
+        .card.active.upcoming .badge-pre { display: inline-block; background-color: #00a8ff; color: #ffffff; }
+        .card.active.is-live .badge-live { display: inline-block; background-color: #e11d48; color: #ffffff; animation: pulse 1.5s infinite; }
+        .card.finished .badge-ended { display: inline-block; background-color: #334155; color: #94a3b8; }
+
+        /* Equipos y Banderas Redondas */
+        .teams { display: flex; justify-content: space-between; align-items: center; margin: 10px 0; font-size: 0.95rem; font-weight: 700; }
+        .team { flex: 1; display: flex; align-items: center; gap: 8px; }
+        .team.home { justify-content: flex-end; text-align: right; }
+        .team.away { justify-content: flex-start; text-align: left; }
+        
+        .flag { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; border: 1.5px solid rgba(255, 255, 255, 0.2); box-shadow: 0 2px 5px rgba(0,0,0,0.2); flex-shrink: 0; }
+        
+        .vs-container { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 60px; }
+        .vs { font-size: 0.8rem; color: #64748b; font-weight: 800; }
+        .score { font-size: 1.2rem; color: #00a8ff; font-weight: 900; display: none; background: rgba(0, 168, 255, 0.1); padding: 2px 8px; border-radius: 6px; }
+        .card.is-live .score { display: block; }
+        .card.is-live .vs { display: none; }
+
+        .countdown-container { text-align: center; margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(255, 255, 255, 0.1); }
+        .timer { font-size: 0.9rem; font-weight: 700; color: #38bdf8; font-family: 'Courier New', Courier, monospace; }
+        
+        .actions { display: none; justify-content: center; align-items: center; margin-top: 12px; }
+        .card.active .actions { display: flex; }
+        .card.active .countdown-container, .card.finished .countdown-container { display: none; }
+        
+        .play-btn { width: 50px; height: 50px; border-radius: 50%; background: #00a8ff; color: white; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 20px; box-shadow: 0 4px 12px rgba(0, 168, 255, 0.4); transition: transform 0.2s, background-color 0.2s; }
+        .play-btn:active { transform: scale(0.95); background: #0086cc; }
+
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-main">
+        <h1>Próximos Partidos</h1>
+        <p>Selección de Honduras</p>
+    </div>
+
+    <!-- Alerta Dinámica Superior -->
+    <div id="liveBanner" class="live-global-banner">🔴 ¡HONDURAS JUGANDO EN VIVO!</div>
+
+    <!-- VIERNES 25 DE SEPTIEMBRE -->
+    <div class="date-group">
+        <span>vie, 25 de sept</span>
+        <span class="tournament-tag">Concacaf Nations League</span>
+    </div>
+
+    <!-- Honduras vs Surinam -->
+    <div class="card" data-start="2026-09-25 16:00:00" data-end="2026-09-25 18:00:00">
+        <div class="match-info">
+            <span class="date-time">4:00 p.m.</span>
+            <span class="status-badge badge-wait">PRÓXIMO</span>
+            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
+            <span class="status-badge badge-live">EN VIVO</span>
+            <span class="status-badge badge-ended">FINALIZADO</span>
+        </div>
+        <div class="teams">
+            <div class="team home">
+                <span>Honduras</span>
+                <img class="flag" src="https://flagcdn.com/hn.svg" alt="Honduras">
+            </div>
+            <div class="vs-container">
+                <span class="vs">VS</span>
+                <span class="score">0 - 0</span>
+            </div>
+            <div class="team away">
+                <img class="flag" src="https://flagcdn.com/sr.svg" alt="Surinam">
+                <span>Surinam</span>
+            </div>
+        </div>
+        <div class="countdown-container"><div class="timer">--:--:--</div></div>
+        <div class="actions"><a href="go:opciontvc" class="play-btn">▶</a></div>
+    </div>
+
+    <!-- LUNES 28 DE SEPTIEMBRE -->
+    <div class="date-group">
+        <span>lun, 28 de sept</span>
+        <span class="tournament-tag">Concacaf Nations League</span>
+    </div>
+
+    <!-- Jamaica vs Honduras -->
+    <div class="card" data-start="2026-09-28 16:00:00" data-end="2026-09-28 18:00:00">
+        <div class="match-info">
+            <span class="date-time">4:00 p.m.</span>
+            <span class="status-badge badge-wait">PRÓXIMO</span>
+            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
+            <span class="status-badge badge-live">EN VIVO</span>
+            <span class="status-badge badge-ended">FINALIZADO</span>
+        </div>
+        <div class="teams">
+            <div class="team home">
+                <span>Jamaica</span>
+                <img class="flag" src="https://flagcdn.com/jm.svg" alt="Jamaica">
+            </div>
+            <div class="vs-container">
+                <span class="vs">VS</span>
+                <span class="score">0 - 0</span>
+            </div>
+            <div class="team away">
+                <img class="flag" src="https://flagcdn.com/hn.svg" alt="Honduras">
+                <span>Honduras</span>
+            </div>
+        </div>
+        <div class="countdown-container"><div class="timer">--:--:--</div></div>
+        <div class="actions"><a href="go:opciontvc" class="play-btn">▶</a></div>
+    </div>
+
+    <!-- VIERNES 2 DE OCTUBRE -->
+    <div class="date-group">
+        <span>vie, 2 de oct</span>
+        <span class="tournament-tag">Concacaf Nations League</span>
+    </div>
+
+    <!-- Martinica vs Honduras -->
+    <div class="card" data-start="2026-10-02 16:00:00" data-end="2026-10-02 18:00:00">
+        <div class="match-info">
+            <span class="date-time">4:00 p.m.</span>
+            <span class="status-badge badge-wait">PRÓXIMO</span>
+            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
+            <span class="status-badge badge-live">EN VIVO</span>
+            <span class="status-badge badge-ended">FINALIZADO</span>
+        </div>
+        <div class="teams">
+            <div class="team home">
+                <span>Martinica</span>
+                <img class="flag" src="https://flagcdn.com/mq.svg" alt="Martinica">
+            </div>
+            <div class="vs-container">
+                <span class="vs">VS</span>
+                <span class="score">0 - 0</span>
+            </div>
+            <div class="team away">
+                <img class="flag" src="https://flagcdn.com/hn.svg" alt="Honduras">
+                <span>Honduras</span>
+            </div>
+        </div>
+        <div class="countdown-container"><div class="timer">--:--:--</div></div>
+        <div class="actions"><a href="go:opciontvc" class="play-btn">▶</a></div>
+    </div>
+
+    <!-- LUNES 5 DE OCTUBRE -->
+    <div class="date-group">
+        <span>lun, 5 de oct</span>
+        <span class="tournament-tag">Concacaf Nations League</span>
+    </div>
+
+    <!-- Honduras vs Jamaica -->
+    <div class="card" data-start="2026-10-05 16:00:00" data-end="2026-10-05 18:00:00">
+        <div class="match-info">
+            <span class="date-time">4:00 p.m.</span>
+            <span class="status-badge badge-wait">PRÓXIMO</span>
+            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
+            <span class="status-badge badge-live">EN VIVO</span>
+            <span class="status-badge badge-ended">FINALIZADO</span>
+        </div>
+        <div class="teams">
+            <div class="team home">
+                <span>Honduras</span>
+                <img class="flag" src="https://flagcdn.com/hn.svg" alt="Honduras">
+            </div>
+            <div class="vs-container">
+                <span class="vs">VS</span>
+                <span class="score">0 - 0</span>
+            </div>
+            <div class="team away">
+                <img class="flag" src="https://flagcdn.com/jm.svg" alt="Jamaica">
+                <span>Jamaica</span>
+            </div>
+        </div>
+        <div class="countdown-container"><div class="timer">--:--:--</div></div>
+        <div class="actions"><a href="go:opciontvc" class="play-btn">▶</a></div>
+    </div>
+
+</div>
+
+<script>
+    // Parseo seguro de fechas para evitar problemas de NaN en móviles
+    function parseFecha(str) {
+        if (!str) return NaN;
+        var partes = str.split(' ');
+        var fecha = partes[0].split('-');
+        var hora = partes[1].split(':');
+        return new Date(fecha[0], fecha[1] - 1, fecha[2], hora[0], hora[1], hora[2]).getTime();
+    }
+
+    function actualizarRelojes() {
+        const ahora = new Date().getTime();
+        const PREVIA_MS = 15 * 60 * 1000;
+        const GRACIA_FIN_MS = 10 * 60 * 1000;
+        
+        let hayPartidosEnVivo = false;
+
+        document.querySelectorAll('.card').forEach(card => {
+            const inicio = parseFecha(card.getAttribute('data-start'));
+            const finOficial = parseFecha(card.getAttribute('data-end'));
+            
+            if (isNaN(inicio) || isNaN(finOficial)) return;
+
+            const finConGracia = finOficial + GRACIA_FIN_MS;
+            const inicioPrevia = inicio - PREVIA_MS;
+
+            card.classList.remove('active', 'finished', 'is-live', 'waiting', 'upcoming');
+
+            if (ahora < inicioPrevia) {
+                card.classList.add('waiting');
+                const diff = inicio - ahora;
+                
+                const h = Math.floor(diff / (1000 * 60 * 60));
+                const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const s = Math.floor((diff % (1000 * 60)) / 1000);
+                
+                const hStr = h < 10 ? '0' + h : h;
+                const mStr = m < 10 ? '0' + m : m;
+                const sStr = s < 10 ? '0' + s : s;
+                
+                card.querySelector('.timer').textContent = `Inicia en: ${hStr}h ${mStr}m ${sStr}s`;
+            } 
+            else if (ahora >= inicioPrevia && ahora < inicio) {
+                card.classList.add('active', 'upcoming');
+            } 
+            else if (ahora >= inicio && ahora <= finConGracia) {
+                card.classList.add('active', 'is-live');
+                hayPartidosEnVivo = true;
+            } 
+            else {
+                card.classList.add('finished');
+            }
+        });
+
+        const banner = document.getElementById('liveBanner');
+        if (hayPartidosEnVivo) {
+            banner.classList.add('show');
+        } else {
+            banner.classList.remove('show');
+        }
+    }
+
+    setInterval(actualizarRelojes, 1000);
+    actualizarRelojes();
+</script>
+</body>
+</html>
