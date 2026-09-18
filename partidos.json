@@ -1,78 +1,42 @@
 [
   {
-    "fecha": "Finalizado",
-    "start": "2026-09-17T12:40:00",
-    "end": "2026-09-17T15:20:00",
-    "equipo1": "Real Betis",
-    "equipo2": "Getafe",
-    "opciones": []
-  },
-  {
-    "fecha": "Finalizado",
-    "start": "2026-09-17T14:10:00",
-    "end": "2026-09-17T16:50:00",
-    "equipo1": "Man City",
-    "equipo2": "Norwich",
-    "opciones": []
-  },
-  {
-    "fecha": "Finalizado",
-    "start": "2026-09-17T14:40:00",
-    "end": "2026-09-17T17:20:00",
-    "equipo1": "Celtic",
-    "equipo2": "Ferencváros",
-    "opciones": []
-  },
-  {
-    "fecha": "Finalizado",
-    "start": "2026-09-17T14:40:00",
-    "end": "2026-09-17T17:20:00",
-    "equipo1": "Crystal Palace",
-    "equipo2": "Lech Poznań",
-    "opciones": []
-  },
-  {
-    "fecha": "Finalizado",
-    "start": "2026-09-17T14:40:00",
-    "end": "2026-09-17T17:20:00",
-    "equipo1": "Juventus",
-    "equipo2": "NEC Nijmegen",
-    "opciones": []
-  },
-  {
-    "fecha": "Finalizado",
-    "start": "2026-09-17T14:40:00",
-    "end": "2026-09-17T17:20:00",
-    "equipo1": "Real Sociedad",
-    "equipo2": "Bournemouth",
-    "opciones": []
-  },
-  {
-    "fecha": "Finalizado",
-    "start": "2026-09-17T15:10:00",
-    "end": "2026-09-17T17:50:00",
-    "equipo1": "Málaga",
-    "equipo2": "Villarreal",
-    "opciones": []
-  },
-  {
-    "fecha": "Finalizado",
-    "start": "2026-09-17T20:10:00",
-    "end": "2026-09-17T22:50:00",
-    "equipo1": "LD Alajuelense",
-    "equipo2": "CD Marathón",
-    "opciones": []
-  },
-  {
-    "fecha": "En Vivo | 11:15 p.m.",
-    "start": "2026-09-17T00:00:00",
-    "end": "2026-09-19T23:59:59",
-    "equipo1": "CD Olimpia",
-    "equipo2": "Firpo",
+    "fecha": "Por jugar | 2:30 p.m.",
+    "start": "2026-09-18T14:30:00",
+    "end": "2026-09-18T16:30:00",
+    "equipo1": "Bayern München",
+    "equipo2": "Union Berlin",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://d395pc32ur2dpc.cloudfront.net/out/v1/97d5c45eb4b241db9400b97215ad5531/index.m3u8" },
-      { "nombre": "Opción 2", "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8?imafw__fw_us_privacy=1YNY&attmas=not_determined&am.originUrl=https%3A%2F%2Fdai.google.com%2Flinear%2Fhls%2Fevent%2F7f3Wv6f7QEKfQna22jHqLQ%2Fmaster.m3u8&imafw_csid=desktop_web&imafw__fw_did=&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=&app_version=0.0.0&height=1080&ip_addr=195.179.200.80&page_url=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&width=1920" },
-      { "nombre": "Opción 3", "stream": "http://181.119.177.253:8000/play/a0ck/index.m3u8" }
+      { "nombre": "Opción 1", "stream": "https://d395pc32ur2dpc.cloudfront.net/out/v1/97d5c45eb4b241db9400b97215ad5531/index.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 3:00 p.m.",
+    "start": "2026-09-18T15:00:00",
+    "end": "2026-09-18T17:00:00",
+    "equipo1": "Brentford",
+    "equipo2": "Chelsea",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "http://181.119.177.253:8000/play/a0ck/index.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 3:00 p.m.",
+    "start": "2026-09-18T15:00:00",
+    "end": "2026-09-18T17:00:00",
+    "equipo1": "Espanyol",
+    "equipo2": "Elche",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8?imafw__fw_us_privacy=1YNY&attmas=not_determined&am.originUrl=https%3A%2F%2Fdai.google.com%2Flinear%2Fhls%2Fevent%2F7f3Wv6f7QEKfQna22jHqLQ%2Fmaster.m3u8&imafw_csid=desktop_web&imafw__fw_did=&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=&app_version=0.0.0&height=1080&ip_addr=195.179.200.80&page_url=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&width=1920" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 11:00 p.m.",
+    "start": "2026-09-18T23:00:00",
+    "end": "2026-09-19T01:00:00",
+    "equipo1": "Juárez",
+    "equipo2": "Tigres",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "http://181.119.177.253:8000/play/a0ck/index.m3u8" }
     ]
   }
 ]
