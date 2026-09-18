@@ -50,12 +50,12 @@
         .card.is-live .score { display: block; }
         .card.is-live .vs { display: none; }
 
-        .countdown-container { text-align: center; margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(255, 255, 255, 0.1); }
+        /* Contenedor del reloj siempre visible */
+        .countdown-container { text-align: center; margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(255, 255, 255, 0.1); display: block; }
         .timer { font-size: 0.9rem; font-weight: 700; color: #38bdf8; font-family: 'Courier New', Courier, monospace; }
         
         .actions { display: none; justify-content: center; align-items: center; margin-top: 12px; }
         .card.active .actions { display: flex; }
-        .card.active .countdown-container, .card.finished .countdown-container { display: none; }
         
         .play-btn { width: 50px; height: 50px; border-radius: 50%; background: #00a8ff; color: white; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 20px; box-shadow: 0 4px 12px rgba(0, 168, 255, 0.4); transition: transform 0.2s, background-color 0.2s; }
         .play-btn:active { transform: scale(0.95); background: #0086cc; }
@@ -209,13 +209,25 @@
 </div>
 
 <script>
-    // Parseo seguro de fechas para evitar problemas de NaN en móviles
     function parseFecha(str) {
         if (!str) return NaN;
         var partes = str.split(' ');
         var fecha = partes[0].split('-');
         var hora = partes[1].split(':');
         return new Date(fecha[0], fecha[1] - 1, fecha[2], hora[0], hora[1], hora[2]).getTime();
+    }
+
+    function formatearTiempo(ms) {
+        const d = Math.floor(ms / (1000 * 60 * 60 * 24));
+        const h = Math.floor((ms % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((ms % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((ms % (1000 * 60)) / 1000);
+
+        const hStr = h < 10 ? '0' + h : h;
+        const mStr = m < 10 ? '0' + m : m;
+        const sStr = s < 10 ? '0' + s : s;
+
+        return d > 0 ? `${d}d ${hStr}h ${mStr}m ${sStr}s` : `${hStr}h ${mStr}m ${sStr}s`;
     }
 
     function actualizarRelojes() {
@@ -228,6 +240,7 @@
         document.querySelectorAll('.card').forEach(card => {
             const inicio = parseFecha(card.getAttribute('data-start'));
             const finOficial = parseFecha(card.getAttribute('data-end'));
+            const timerEl = card.querySelector('.timer');
             
             if (isNaN(inicio) || isNaN(finOficial)) return;
 
@@ -237,28 +250,32 @@
             card.classList.remove('active', 'finished', 'is-live', 'waiting', 'upcoming');
 
             if (ahora < inicioPrevia) {
+                // Partido en espera
                 card.classList.add('waiting');
                 const diff = inicio - ahora;
-                
-                const h = Math.floor(diff / (1000 * 60 * 60));
-                const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-                const s = Math.floor((diff % (1000 * 60)) / 1000);
-                
-                const hStr = h < 10 ? '0' + h : h;
-                const mStr = m < 10 ? '0' + m : m;
-                const sStr = s < 10 ? '0' + s : s;
-                
-                card.querySelector('.timer').textContent = `Inicia en: ${hStr}h ${mStr}m ${sStr}s`;
+                timerEl.textContent = `Inicia en: ${formatearTiempo(diff)}`;
             } 
             else if (ahora >= inicioPrevia && ahora < inicio) {
+                // En Previa
                 card.classList.add('active', 'upcoming');
+                const diff = inicio - ahora;
+                timerEl.textContent = `Previa - Inicia en: ${formatearTiempo(diff)}`;
             } 
             else if (ahora >= inicio && ahora <= finConGracia) {
+                // En Vivo
                 card.classList.add('active', 'is-live');
                 hayPartidosEnVivo = true;
+                const diff = finOficial - ahora;
+                if (diff > 0) {
+                    timerEl.textContent = `En juego - Restan: ${formatearTiempo(diff)}`;
+                } else {
+                    timerEl.textContent = `Tiempo extra / Finalizando...`;
+                }
             } 
             else {
+                // Finalizado
                 card.classList.add('finished');
+                timerEl.textContent = `Partido Finalizado`;
             }
         });
 
