@@ -139,7 +139,7 @@
     "equipo1": "River Plate",
     "equipo2": "Huracán",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8" }
+      { "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo7/tracks-v4a1/mono.ts.m3u8" }
     ]
   },
   {
@@ -149,7 +149,7 @@
     "equipo1": "Atlas",
     "equipo2": "Pumas",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8" }
+      { "nombre": "Opción 1", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" }
     ]
   },
   {
@@ -169,7 +169,7 @@
     "equipo1": "Monterrey",
     "equipo2": "Cruz Azul",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html" }
+      { "nombre": "Opción 1", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" }
     ]
   },
   {
@@ -179,7 +179,7 @@
     "equipo1": "América",
     "equipo2": "Chivas",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8" }
+      { "nombre": "Opción 1", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" }
     ]
   }
 ]
