@@ -128,7 +128,8 @@
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8" },
       { "nombre": "Opción 2", "stream": "https://sflix.today/v1/live/proxy/daddy-espn-deportes-daddylive" },
-      { "nombre": "Opción 3", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/roxie4.html" }
+      { "nombre": "Opción 3", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/roxie4.html" },
+      { "nombre": "Opción 4", "stream": "URL_DEL_STREAM_AQUI" }
     ]
   },
   {
