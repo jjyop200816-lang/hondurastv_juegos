@@ -128,7 +128,7 @@
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8" },
       { "nombre": "Opción 2", "stream": "https://sflix.today/v1/live/proxy/daddy-espn-deportes-daddylive" },
-      { "nombre": "Opción 3", "stream": "https://admin2.formaturamaxi.com.br/sevilla.m3u8" },
+      { "nombre": "Opción 3", "stream": "https://player.online909.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo155.com%2Flive%2Fsd-1-4565427.m3u8%3FtxSecret%3Dd2bdff664bdba25b00f3f60414203e58%26txTime%3D6AAF0022" },
       { "nombre": "Opción 4", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/roxie4.html" }
     ]
   },
