@@ -3,37 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reproductor a Pantalla Completa</title>
+  <title>Reproductor Pantalla Completa</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    /* Elimina márgenes y barras de desplazamiento de la página principal */
     html, body {
       width: 100%;
       height: 100%;
-      overflow: hidden;
+      margin: 0;
+      padding: 0;
       background-color: #000;
+      overflow: hidden;
     }
-    iframe {
+
+    /* Contenedor a pantalla completa que recorta el sobrante */
+    .player-container {
       width: 100vw;
       height: 100vh;
-      border: none;
-      display: block;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Iframe ajustado para recortar la parte superior */
+    .player-container iframe {
+      width: 100%;
+      height: 130vh; /* Le damos más altura para desplazar la parte superior fuera de vista */
+      border: 0;
+      margin-top: -15vh; /* Ajuste relativo que desplaza la franja superior hacia arriba */
     }
   </style>
 </head>
 <body>
 
-  <iframe 
-    src="https://embed.ksdjugfssddeports.com/embed2/skysportslaliga.php" 
-    allowfullscreen="true" 
-    webkitallowfullscreen="true" 
-    mozallowfullscreen="true"
-    scrolling="no"
-    sandbox="allow-scripts allow-same-origin allow-forms">
-  </iframe>
+  <div class="player-container">
+    <iframe 
+      src="https://asiria.is/movistarliga1.php" 
+      sandbox="allow-scripts allow-same-origin allow-forms"
+      scrolling="no"
+      allowfullscreen="true"
+      webkitallowfullscreen="true"
+      mozallowfullscreen="true">
+    </iframe>
+  </div>
 
 </body>
 </html>
