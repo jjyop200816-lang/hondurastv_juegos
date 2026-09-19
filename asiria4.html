@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solo Player - Direct Stream</title>
-    <!-- Librería Clappr Player -->
-    <script src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #000;
-            overflow: hidden;
-        }
-        #player {
-            width: 100vw;
-            height: 100vh;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor a Pantalla Completa</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #000;
+    }
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      display: block;
+    }
+  </style>
 </head>
 <body>
 
-    <div id="player"></div>
-
-    <script>
-        // Configuración del reproductor limpio
-        var player = new Clappr.Player({
-            source: "TU_ENLACE_DIRECTO_M3U8_AQUI", // Remplaza esto con la URL .m3u8 que obtengas
-            parentId: "#player",
-            width: "100%",
-            height: "100%",
-            autoPlay: true,
-            mute: false,
-            playback: {
-                playInline: true
-            }
-        });
-    </script>
+  <iframe 
+    src="https://embedindia.st/embed/pl/2026-09-19/eve-ips" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"
+    scrolling="no"
+    sandbox="allow-scripts allow-same-origin allow-forms">
+  </iframe>
 
 </body>
 </html>
