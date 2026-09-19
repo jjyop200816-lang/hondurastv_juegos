@@ -1,40 +1,182 @@
 [
   {
-    "fecha": "Por jugar | 2:30 p.m.",
-    "start": "2026-09-18T14:30:00",
-    "end": "2026-09-18T16:30:00",
-    "equipo1": "Bayern München",
-    "equipo2": "Union Berlin",
+    "fecha": "Por jugar | 7:30 a.m.",
+    "start": "2026-09-19T07:10:00",
+    "end": "2026-09-19T09:50:00",
+    "equipo1": "Tottenham",
+    "equipo2": "Aston Villa",
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8" }
     ]
   },
   {
-    "fecha": "Por jugar | 3:00 p.m.",
-    "start": "2026-09-18T15:00:00",
-    "end": "2026-09-18T17:00:00",
-    "equipo1": "Brentford",
-    "equipo2": "Chelsea",
+    "fecha": "Por jugar | 7:30 a.m.",
+    "start": "2026-09-19T07:10:00",
+    "end": "2026-09-19T09:50:00",
+    "equipo1": "Millwall",
+    "equipo2": "West Ham",
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8" }
     ]
   },
   {
-    "fecha": "Por jugar | 3:00 p.m.",
-    "start": "2026-09-18T15:00:00",
-    "end": "2026-09-18T17:00:00",
-    "equipo1": "Espanyol",
-    "equipo2": "Elche",
+    "fecha": "Por jugar | 8:00 a.m.",
+    "start": "2026-09-19T07:40:00",
+    "end": "2026-09-19T10:20:00",
+    "equipo1": "Osasuna",
+    "equipo2": "Rayo Vallecano",
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html" }
     ]
   },
   {
-    "fecha": "Por jugar | 11:00 p.m.",
-    "start": "2026-09-18T23:00:00",
-    "end": "2026-09-19T01:00:00",
-    "equipo1": "Juárez",
-    "equipo2": "Tigres",
+    "fecha": "Por jugar | 10:00 a.m.",
+    "start": "2026-09-19T09:40:00",
+    "end": "2026-09-19T12:20:00",
+    "equipo1": "Brighton",
+    "equipo2": "Arsenal",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 10:00 a.m.",
+    "start": "2026-09-19T09:40:00",
+    "end": "2026-09-19T12:20:00",
+    "equipo1": "Everton",
+    "equipo2": "Ipswich",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 10:00 a.m.",
+    "start": "2026-09-19T09:40:00",
+    "end": "2026-09-19T12:20:00",
+    "equipo1": "Newcastle",
+    "equipo2": "Hull",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 10:15 a.m.",
+    "start": "2026-09-19T09:55:00",
+    "end": "2026-09-19T12:35:00",
+    "equipo1": "Athletic Club",
+    "equipo2": "Deportivo Alavés",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 12:00 p.m.",
+    "start": "2026-09-19T11:40:00",
+    "end": "2026-09-19T14:20:00",
+    "equipo1": "Roma",
+    "equipo2": "Inter",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 12:30 p.m.",
+    "start": "2026-09-19T12:10:00",
+    "end": "2026-09-19T14:50:00",
+    "equipo1": "Nottm Forest",
+    "equipo2": "Coventry",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 12:30 p.m.",
+    "start": "2026-09-19T12:10:00",
+    "end": "2026-09-19T14:50:00",
+    "equipo1": "Celta Vigo",
+    "equipo2": "Racing Santander",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 12:30 p.m.",
+    "start": "2026-09-19T12:10:00",
+    "end": "2026-09-19T14:50:00",
+    "equipo1": "VfB Stuttgart",
+    "equipo2": "Dortmund",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 2:45 p.m.",
+    "start": "2026-09-19T14:25:00",
+    "end": "2026-09-19T17:05:00",
+    "equipo1": "Venezia",
+    "equipo2": "Lazio",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 3:00 p.m.",
+    "start": "2026-09-19T14:40:00",
+    "end": "2026-09-19T17:20:00",
+    "equipo1": "Sevilla",
+    "equipo2": "Barcelona",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8" },
+      { "nombre": "Opción 2", "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8" },
+      { "nombre": "Opción 3", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 6:00 p.m.",
+    "start": "2026-09-19T17:40:00",
+    "end": "2026-09-19T20:20:00",
+    "equipo1": "River Plate",
+    "equipo2": "Huracán",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 7:00 p.m.",
+    "start": "2026-09-19T18:40:00",
+    "end": "2026-09-19T21:20:00",
+    "equipo1": "Atlas",
+    "equipo2": "Pumas",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 7:00 p.m.",
+    "start": "2026-09-19T18:40:00",
+    "end": "2026-09-19T21:20:00",
+    "equipo1": "San Luis",
+    "equipo2": "Necaxa",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 9:10 p.m.",
+    "start": "2026-09-19T20:50:00",
+    "end": "2026-09-19T23:30:00",
+    "equipo1": "Monterrey",
+    "equipo2": "Cruz Azul",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 11:15 p.m.",
+    "start": "2026-09-19T22:55:00",
+    "end": "2026-09-20T01:35:00",
+    "equipo1": "América",
+    "equipo2": "Chivas",
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8" }
     ]
