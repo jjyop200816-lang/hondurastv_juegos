@@ -99,7 +99,7 @@
     "equipo1": "San Lorenzo",
     "equipo2": "Boca Juniors",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo13/tracks-v4a1/mono.ts.m3u8" }
+      { "nombre": "Opción 1", "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8" }
     ]
   },
   {
