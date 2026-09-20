@@ -99,7 +99,7 @@
     "equipo1": "San Lorenzo",
     "equipo2": "Boca Juniors",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8" }
+      { "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo13/tracks-v4a1/mono.ts.m3u8" }
     ]
   },
   {
@@ -109,7 +109,7 @@
     "equipo1": "Lech Poznań",
     "equipo2": "Radomiak Radom",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdsports.html" }
+      { "nombre": "Opción 1", "stream": "https://bein-esp-xumo.amagi.tv/playlistR720P.m3u8" }
     ]
   },
   {
