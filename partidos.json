@@ -132,5 +132,35 @@
       { "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8" },
       { "nombre": "Opción 2", "stream": "https://live.dyrur1.com/live/527r3i4zp9jt47e_a949c073f4422f3e0332434a3b7ba9b2_1080p.m3u8?auth_key=1789948033-0-0-7719b1f5001397de69de5c579c26b170" }
     ]
+  },
+  {
+    "fecha": "Por jugar | 8:00 p.m.",
+    "start": "2026-09-20T19:40:00",
+    "end": "2026-09-20T22:20:00",
+    "equipo1": "Pachuca",
+    "equipo2": "Tijuana",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 8:00 p.m.",
+    "start": "2026-09-20T19:40:00",
+    "end": "2026-09-20T22:20:00",
+    "equipo1": "Toluca",
+    "equipo2": "Santos",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 10:10 p.m.",
+    "start": "2026-09-20T21:50:00",
+    "end": "2026-09-20T00:30:00",
+    "equipo1": "Querétaro",
+    "equipo2": "León",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "" }
+    ]
   }
 ]
