@@ -1,185 +1,134 @@
 [
   {
-    "fecha": "Por jugar | 7:30 a.m.",
-    "start": "2026-09-19T07:10:00",
-    "end": "2026-09-19T09:50:00",
-    "equipo1": "Tottenham",
-    "equipo2": "Aston Villa",
+    "fecha": "Por jugar | 8:00 a.m.",
+    "start": "2026-09-20T07:40:00",
+    "end": "2026-09-20T10:20:00",
+    "equipo1": "Getafe",
+    "equipo2": "Málaga",
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html" }
     ]
   },
   {
-    "fecha": "Por jugar | 7:30 a.m.",
-    "start": "2026-09-19T07:10:00",
-    "end": "2026-09-19T09:50:00",
-    "equipo1": "Millwall",
-    "equipo2": "West Ham",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8?imafw__fw_us_privacy=1YNY&attmas=not_determined&am.originUrl=https%3A%2F%2Fdai.google.com%2Flinear%2Fhls%2Fevent%2F7f3Wv6f7QEKfQna22jHqLQ%2Fmaster.m3u8&imafw_csid=desktop_web&imafw__fw_did=&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=&app_version=0.0.0&height=1080&ip_addr=195.179.200.80&page_url=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&width=1920" }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 8:00 a.m.",
-    "start": "2026-09-19T07:40:00",
-    "end": "2026-09-19T10:20:00",
-    "equipo1": "Osasuna",
-    "equipo2": "Rayo Vallecano",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html" }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 10:00 a.m.",
-    "start": "2026-09-19T09:40:00",
-    "end": "2026-09-19T12:20:00",
-    "equipo1": "Brighton",
-    "equipo2": "Arsenal",
+    "fecha": "Por jugar | 9:00 a.m.",
+    "start": "2026-09-20T08:40:00",
+    "end": "2026-09-20T11:20:00",
+    "equipo1": "Bournemouth",
+    "equipo2": "Liverpool",
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://183.bozztv.com/giatv/giatv-pixelchanneltv/pixelchanneltv/playlist.m3u8" }
     ]
   },
   {
-    "fecha": "Por jugar | 10:00 a.m.",
-    "start": "2026-09-19T09:40:00",
-    "end": "2026-09-19T12:20:00",
-    "equipo1": "Everton",
-    "equipo2": "Ipswich",
+    "fecha": "Por jugar | 9:00 a.m.",
+    "start": "2026-09-20T08:40:00",
+    "end": "2026-09-20T11:20:00",
+    "equipo1": "Leeds",
+    "equipo2": "Crystal Palace",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html" }
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html" }
     ]
   },
   {
-    "fecha": "Por jugar | 10:00 a.m.",
-    "start": "2026-09-19T09:40:00",
-    "end": "2026-09-19T12:20:00",
-    "equipo1": "Newcastle",
-    "equipo2": "Hull",
+    "fecha": "Por jugar | 9:00 a.m.",
+    "start": "2026-09-20T08:40:00",
+    "end": "2026-09-20T11:20:00",
+    "equipo1": "Man City",
+    "equipo2": "Sunderland",
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8" }
     ]
   },
   {
     "fecha": "Por jugar | 10:15 a.m.",
-    "start": "2026-09-19T09:55:00",
-    "end": "2026-09-19T12:35:00",
-    "equipo1": "Athletic Club",
-    "equipo2": "Deportivo Alavés",
+    "start": "2026-09-20T09:55:00",
+    "end": "2026-09-20T12:35:00",
+    "equipo1": "Atlético Madrid",
+    "equipo2": "Real Madrid",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://ev2.vtoc.live/vdc10013213/WFeadgOQCxcd2IipDBBN1w/2c3a0592ceb651560583c9/1789840211/playlist.m3u8" }
+      { "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8" },
+      { "nombre": "Opción 2", "stream": "https://sflix.today/v1/live/proxy/daddy-espn-deportes-daddylive" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 11:30 a.m.",
+    "start": "2026-09-20T11:10:00",
+    "end": "2026-09-20T13:50:00",
+    "equipo1": "Fulham",
+    "equipo2": "Man United",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html" }
     ]
   },
   {
     "fecha": "Por jugar | 12:00 p.m.",
-    "start": "2026-09-19T11:40:00",
-    "end": "2026-09-19T14:20:00",
-    "equipo1": "Roma",
-    "equipo2": "Inter",
+    "start": "2026-09-20T11:40:00",
+    "end": "2026-09-20T14:20:00",
+    "equipo1": "Juventus",
+    "equipo2": "Atalanta",
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://admin2.formaturamaxi.com.br/fubo.m3u8" }
     ]
   },
   {
     "fecha": "Por jugar | 12:30 p.m.",
-    "start": "2026-09-19T12:10:00",
-    "end": "2026-09-19T14:50:00",
-    "equipo1": "Nottm Forest",
-    "equipo2": "Coventry",
+    "start": "2026-09-20T12:10:00",
+    "end": "2026-09-20T14:50:00",
+    "equipo1": "Deportivo A Coruña",
+    "equipo2": "Real Betis",
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html" }
     ]
   },
   {
     "fecha": "Por jugar | 12:30 p.m.",
-    "start": "2026-09-19T12:10:00",
-    "end": "2026-09-19T14:50:00",
-    "equipo1": "Celta Vigo",
-    "equipo2": "Racing Santander",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://sflix.today/v1/live/proxy/daddy-espn-deportes-daddylive" }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 12:30 p.m.",
-    "start": "2026-09-19T12:10:00",
-    "end": "2026-09-19T14:50:00",
-    "equipo1": "VfB Stuttgart",
-    "equipo2": "Dortmund",
+    "start": "2026-09-20T12:10:00",
+    "end": "2026-09-20T14:50:00",
+    "equipo1": "Villarreal",
+    "equipo2": "Levante",
     "opciones": [
       { "nombre": "Opción 1", "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491456.m3u8" }
     ]
   },
   {
+    "fecha": "Por jugar | 1:45 p.m.",
+    "start": "2026-09-20T13:25:00",
+    "end": "2026-09-20T16:05:00",
+    "equipo1": "San Lorenzo",
+    "equipo2": "Boca Juniors",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8" }
+    ]
+  },
+  {
+    "fecha": "Por jugar | 2:15 p.m.",
+    "start": "2026-09-20T13:55:00",
+    "end": "2026-09-20T16:35:00",
+    "equipo1": "Lech Poznań",
+    "equipo2": "Radomiak Radom",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdsports.html" }
+    ]
+  },
+  {
     "fecha": "Por jugar | 2:45 p.m.",
-    "start": "2026-09-19T14:25:00",
-    "end": "2026-09-19T17:05:00",
-    "equipo1": "Venezia",
-    "equipo2": "Lazio",
+    "start": "2026-09-20T14:25:00",
+    "end": "2026-09-20T17:05:00",
+    "equipo1": "Milan",
+    "equipo2": "Lecce",
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8" }
     ]
   },
   {
     "fecha": "Por jugar | 3:00 p.m.",
-    "start": "2026-09-19T14:40:00",
-    "end": "2026-09-19T17:20:00",
-    "equipo1": "Sevilla",
-    "equipo2": "Barcelona",
+    "start": "2026-09-20T14:40:00",
+    "end": "2026-09-20T17:20:00",
+    "equipo1": "Valencia",
+    "equipo2": "Real Sociedad",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8" },
-      { "nombre": "Opción 2", "stream": "https://sflix.today/v1/live/proxy/daddy-espn-deportes-daddylive" },
-      { "nombre": "Opción 3", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/roxie4.html" },
-      { "nombre": "Opción 4", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdsports.html" }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 6:00 p.m.",
-    "start": "2026-09-19T17:40:00",
-    "end": "2026-09-19T20:20:00",
-    "equipo1": "River Plate",
-    "equipo2": "Huracán",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8" }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 7:00 p.m.",
-    "start": "2026-09-19T18:40:00",
-    "end": "2026-09-19T21:20:00",
-    "equipo1": "Atlas",
-    "equipo2": "Pumas",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 7:00 p.m.",
-    "start": "2026-09-19T18:40:00",
-    "end": "2026-09-19T21:20:00",
-    "equipo1": "San Luis",
-    "equipo2": "Necaxa",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8" }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 9:10 p.m.",
-    "start": "2026-09-19T20:50:00",
-    "end": "2026-09-19T23:30:00",
-    "equipo1": "Monterrey",
-    "equipo2": "Cruz Azul",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 11:15 p.m.",
-    "start": "2026-09-19T22:55:00",
-    "end": "2026-09-20T01:35:00",
-    "equipo1": "América",
-    "equipo2": "Chivas",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" }
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/roxie4.html" },
+      { "nombre": "Opción 2", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" }
     ]
   }
 ]
