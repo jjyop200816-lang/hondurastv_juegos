@@ -150,7 +150,7 @@
     "equipo1": "Toluca",
     "equipo2": "Santos",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "" }
+      { "nombre": "Opción 1", "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491522.m3u8" }
     ]
   },
   {
@@ -160,7 +160,7 @@
     "equipo1": "Querétaro",
     "equipo2": "León",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "" }
+      { "nombre": "Opción 1", "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491522.m3u8" }
     ]
   }
 ]
