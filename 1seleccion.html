@@ -1,86 +1,166 @@
-[
-  {
-    "fecha": "Por jugar | 4:00 p.m.",
-    "start": "2026-09-25T15:45:00",
-    "end": "2026-09-25T18:10:00",
-    "equipo1": "Honduras",
-    "equipo2": "Surinam",
-    "opciones": [
-      { 
-        "nombre": "Opción 1", 
-        "stream": "https://ejemplo.com/live/honduras_surinam.m3u8" 
-      },
-      { 
-        "nombre": "Opción 2", 
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html" 
-      },
-      { 
-        "nombre": "Opción 3", 
-        "stream": "https://ejemplo.com/live/honduras_surinam.mpd" 
-      }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 4:00 p.m.",
-    "start": "2026-09-28T15:45:00",
-    "end": "2026-09-28T18:10:00",
-    "equipo1": "Jamaica",
-    "equipo2": "Honduras",
-    "opciones": [
-      { 
-        "nombre": "Opción 1", 
-        "stream": "https://ejemplo.com/live/jamaica_honduras.m3u8" 
-      },
-      { 
-        "nombre": "Opción 2", 
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html" 
-      },
-      { 
-        "nombre": "Opción 3", 
-        "stream": "https://ejemplo.com/live/jamaica_honduras.mpd" 
-      }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 4:00 p.m.",
-    "start": "2026-10-02T15:45:00",
-    "end": "2026-10-02T18:10:00",
-    "equipo1": "Martinica",
-    "equipo2": "Honduras",
-    "opciones": [
-      { 
-        "nombre": "Opción 1", 
-        "stream": "https://ejemplo.com/live/martinica_honduras.m3u8" 
-      },
-      { 
-        "nombre": "Opción 2", 
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html" 
-      },
-      { 
-        "nombre": "Opción 3", 
-        "stream": "https://ejemplo.com/live/martinica_honduras.mpd" 
-      }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 4:00 p.m.",
-    "start": "2026-10-05T15:45:00",
-    "end": "2026-10-05T18:10:00",
-    "equipo1": "Honduras",
-    "equipo2": "Jamaica",
-    "opciones": [
-      { 
-        "nombre": "Opción 1", 
-        "stream": "https://ejemplo.com/live/honduras_jamaica.m3u8" 
-      },
-      { 
-        "nombre": "Opción 2", 
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html" 
-      },
-      { 
-        "nombre": "Opción 3", 
-        "stream": "https://ejemplo.com/live/honduras_jamaica.mpd" 
-      }
-    ]
-  }
-]
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Honduras</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; }
+        body { background-color: #0b1a30; color: #ffffff; padding: 12px; }
+
+        .card { 
+            background: #152943; 
+            border-radius: 12px; 
+            padding: 14px; 
+            margin-bottom: 12px; 
+            border: 1px solid #233f63;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .fecha { 
+            font-size: 0.85rem; 
+            color: #00a8ff; 
+            font-weight: bold; 
+            margin-bottom: 8px; 
+            text-transform: uppercase;
+        }
+        
+        .equipos { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            font-size: 1.05rem; 
+            font-weight: bold; 
+            margin-bottom: 14px; 
+            padding: 4px 0;
+        }
+
+        .vs { 
+            font-size: 0.8rem; 
+            color: #7f97b5; 
+            background: #0b1a30;
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+
+        .opciones { 
+            display: flex; 
+            gap: 8px; 
+            flex-wrap: wrap; 
+        }
+
+        .btn-opt { 
+            background: #0084ff; 
+            color: #ffffff; 
+            border: none; 
+            padding: 8px 14px; 
+            border-radius: 6px; 
+            font-size: 0.85rem; 
+            font-weight: bold; 
+            cursor: pointer; 
+            transition: background 0.2s;
+        }
+
+        .btn-opt:active { 
+            background: #0056b3; 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor donde se generan los partidos -->
+    <div id="partidos-container">Cargando partidos...</div>
+
+    <script>
+        // Lista de partidos en formato JSON
+        const partidos = [
+          {
+            "fecha": "Por jugar | 4:00 p.m.",
+            "start": "2026-09-25T15:45:00",
+            "end": "2026-09-25T18:10:00",
+            "equipo1": "Honduras",
+            "equipo2": "Surinam",
+            "opciones": [
+              { "nombre": "Opción 1", "stream": "https://ejemplo.com/live/honduras_surinam.m3u8" },
+              { "nombre": "Opción 2", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html" },
+              { "nombre": "Opción 3", "stream": "https://ejemplo.com/live/honduras_surinam.mpd" }
+            ]
+          },
+          {
+            "fecha": "Por jugar | 4:00 p.m.",
+            "start": "2026-09-28T15:45:00",
+            "end": "2026-09-28T18:10:00",
+            "equipo1": "Jamaica",
+            "equipo2": "Honduras",
+            "opciones": [
+              { "nombre": "Opción 1", "stream": "https://ejemplo.com/live/jamaica_honduras.m3u8" },
+              { "nombre": "Opción 2", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html" },
+              { "nombre": "Opción 3", "stream": "https://ejemplo.com/live/jamaica_honduras.mpd" }
+            ]
+          },
+          {
+            "fecha": "Por jugar | 4:00 p.m.",
+            "start": "2026-10-02T15:45:00",
+            "end": "2026-10-02T18:10:00",
+            "equipo1": "Martinica",
+            "equipo2": "Honduras",
+            "opciones": [
+              { "nombre": "Opción 1", "stream": "https://ejemplo.com/live/martinica_honduras.m3u8" },
+              { "nombre": "Opción 2", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html" },
+              { "nombre": "Opción 3", "stream": "https://ejemplo.com/live/martinica_honduras.mpd" }
+            ]
+          },
+          {
+            "fecha": "Por jugar | 4:00 p.m.",
+            "start": "2026-10-05T15:45:00",
+            "end": "2026-10-05T18:10:00",
+            "equipo1": "Honduras",
+            "equipo2": "Jamaica",
+            "opciones": [
+              { "nombre": "Opción 1", "stream": "https://ejemplo.com/live/honduras_jamaica.m3u8" },
+              { "nombre": "Opción 2", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html" },
+              { "nombre": "Opción 3", "stream": "https://ejemplo.com/live/honduras_jamaica.mpd" }
+            ]
+          }
+        ];
+
+        // Función que renderiza la interfaz gráfica
+        function cargarPartidos() {
+            const container = document.getElementById('partidos-container');
+            container.innerHTML = '';
+
+            partidos.forEach(p => {
+                let htmlOpciones = '';
+                p.opciones.forEach(opt => {
+                    const titulo = `${p.equipo1} vs ${p.equipo2}`;
+                    htmlOpciones += `<button class="btn-opt" onclick="abrirOpcion('${opt.stream}', '${titulo}')">${opt.nombre}</button>`;
+                });
+
+                const card = `
+                    <div class="card">
+                        <div class="fecha">${p.fecha}</div>
+                        <div class="equipos">
+                            <span>${p.equipo1}</span>
+                            <span class="vs">VS</span>
+                            <span>${p.equipo2}</span>
+                        </div>
+                        <div class="opciones">${htmlOpciones}</div>
+                    </div>
+                `;
+                container.innerHTML += card;
+            });
+        }
+
+        // Conexión con la app mediante la interfaz Android
+        function abrirOpcion(url, titulo) {
+            if (window.Android && window.Android.openStream) {
+                window.Android.openStream(url + '|' + titulo);
+            } else {
+                window.location.href = url;
+            }
+        }
+
+        cargarPartidos();
+    </script>
+</body>
+</html>
