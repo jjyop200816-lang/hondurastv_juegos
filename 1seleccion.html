@@ -17,12 +17,42 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.2);
         }
 
+        .header-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
         .fecha { 
             font-size: 0.85rem; 
             color: #00a8ff; 
             font-weight: bold; 
-            margin-bottom: 8px; 
             text-transform: uppercase;
+        }
+
+        .estado {
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 6px;
+        }
+
+        .estado.proximo { background: #1e3a5f; color: #a0aec0; }
+        .estado.envivo { background: #e53e3e; color: #ffffff; animation: blink 1.5s infinite; }
+        .estado.finalizado { background: #2d3748; color: #718096; }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .timer {
+            font-size: 0.8rem;
+            color: #f6ad55;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
         
         .equipos { 
@@ -61,23 +91,25 @@
             transition: background 0.2s;
         }
 
-        .btn-opt:active { 
-            background: #0056b3; 
+        .btn-opt:active { background: #0056b3; }
+
+        .btn-disabled {
+            background: #2d3748;
+            color: #718096;
+            cursor: not-allowed;
         }
     </style>
 </head>
 <body>
 
-    <!-- Contenedor donde se generan los partidos -->
     <div id="partidos-container">Cargando partidos...</div>
 
     <script>
-        // Lista de partidos en formato JSON
+        // Configuración de los partidos según las fechas y horas de la imagen
         const partidos = [
           {
-            "fecha": "Por jugar | 4:00 p.m.",
-            "start": "2026-09-25T15:45:00",
-            "end": "2026-09-25T18:10:00",
+            "fecha_txt": "Vie, 25 de Sept | 9:00 p.m.",
+            "start": "2026-09-25T21:00:00",
             "equipo1": "Honduras",
             "equipo2": "Surinam",
             "opciones": [
@@ -87,9 +119,8 @@
             ]
           },
           {
-            "fecha": "Por jugar | 4:00 p.m.",
-            "start": "2026-09-28T15:45:00",
-            "end": "2026-09-28T18:10:00",
+            "fecha_txt": "Lun, 28 de Sept | 8:00 p.m.",
+            "start": "2026-09-28T20:00:00",
             "equipo1": "Jamaica",
             "equipo2": "Honduras",
             "opciones": [
@@ -99,9 +130,8 @@
             ]
           },
           {
-            "fecha": "Por jugar | 4:00 p.m.",
-            "start": "2026-10-02T15:45:00",
-            "end": "2026-10-02T18:10:00",
+            "fecha_txt": "Vie, 2 de Oct | 8:00 p.m.",
+            "start": "2026-10-02T20:00:00",
             "equipo1": "Martinica",
             "equipo2": "Honduras",
             "opciones": [
@@ -111,9 +141,8 @@
             ]
           },
           {
-            "fecha": "Por jugar | 4:00 p.m.",
-            "start": "2026-10-05T15:45:00",
-            "end": "2026-10-05T18:10:00",
+            "fecha_txt": "Lun, 5 de Oct | 10:00 p.m.",
+            "start": "2026-10-05T22:00:00",
             "equipo1": "Honduras",
             "equipo2": "Jamaica",
             "opciones": [
@@ -124,34 +153,70 @@
           }
         ];
 
-        // Función que renderiza la interfaz gráfica
-        function cargarPartidos() {
+        function actualizarLógica() {
             const container = document.getElementById('partidos-container');
             container.innerHTML = '';
+            const ahora = new Date().getTime();
 
-            partidos.forEach(p => {
-                let htmlOpciones = '';
-                p.opciones.forEach(opt => {
-                    const titulo = `${p.equipo1} vs ${p.equipo2}`;
-                    htmlOpciones += `<button class="btn-opt" onclick="abrirOpcion('${opt.stream}', '${titulo}')">${opt.nombre}</button>`;
-                });
+            partidos.forEach((p, index) => {
+                const horaInicio = new Date(p.start).getTime();
+                const horaApertura = horaInicio - (20 * 60 * 1000); // 20 minutos antes
+                const horaCierre = horaInicio + ((105 + 20) * 60 * 1000); // Duración partido (~105 min) + 20 min extra
+
+                let estadoHtml = '';
+                let timerHtml = '';
+                let botonesHtml = '';
+                const titulo = `${p.equipo1} vs ${p.equipo2}`;
+
+                if (ahora < horaApertura) {
+                    // Estado: Por jugar / Cuenta regresiva
+                    const dif = horaApertura - ahora;
+                    const horas = Math.floor(dif / (1000 * 60 * 60));
+                    const minutos = Math.floor((dif % (1000 * 60 * 60)) / (1000 * 60));
+                    const segundos = Math.floor((dif % (1000 * 60)) / 1000);
+
+                    estadoHtml = `<span class="estado proximo">POR JUGAR</span>`;
+                    timerHtml = `<div class="timer">Abre en: ${horas}h ${minutos}m ${segundos}s</div>`;
+                    
+                    p.opciones.forEach(opt => {
+                        botonesHtml += `<button class="btn-opt btn-disabled" disabled>Transmisión no disponible</button>`;
+                    });
+
+                } else if (ahora >= horaApertura && ahora <= horaCierre) {
+                    // Estado: EN VIVO (Se abre 20 min antes y cierra 20 min después)
+                    estadoHtml = `<span class="estado envivo">● EN VIVO</span>`;
+                    timerHtml = `<div class="timer" style="color:#48bb78;"> Transmisión activada</div>`;
+
+                    p.opciones.forEach(opt => {
+                        botonesHtml += `<button class="btn-opt" onclick="abrirOpcion('${opt.stream}', '${titulo}')">${opt.nombre}</button>`;
+                    });
+
+                } else {
+                    // Estado: FINALIZADO
+                    estadoHtml = `<span class="estado finalizado">FINALIZADO</span>`;
+                    timerHtml = `<div class="timer" style="color:#a0aec0;">Partido concluido</div>`;
+                    botonesHtml = `<button class="btn-opt btn-disabled" disabled>Partido Finalizado</button>`;
+                }
 
                 const card = `
                     <div class="card">
-                        <div class="fecha">${p.fecha}</div>
+                        <div class="header-card">
+                            <div class="fecha">${p.fecha_txt}</div>
+                            ${estadoHtml}
+                        </div>
+                        ${timerHtml}
                         <div class="equipos">
                             <span>${p.equipo1}</span>
                             <span class="vs">VS</span>
                             <span>${p.equipo2}</span>
                         </div>
-                        <div class="opciones">${htmlOpciones}</div>
+                        <div class="opciones">${botonesHtml}</div>
                     </div>
                 `;
                 container.innerHTML += card;
             });
         }
 
-        // Conexión con la app mediante la interfaz Android
         function abrirOpcion(url, titulo) {
             if (window.Android && window.Android.openStream) {
                 window.Android.openStream(url + '|' + titulo);
@@ -160,7 +225,9 @@
             }
         }
 
-        cargarPartidos();
+        // Ejecutar inmediatamente y actualizar la cuenta regresiva cada segundo
+        actualizarLógica();
+        setInterval(actualizarLógica, 1000);
     </script>
 </body>
 </html>
