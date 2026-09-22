@@ -21,7 +21,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .fecha { 
@@ -29,6 +29,22 @@
             color: #00a8ff; 
             font-weight: bold; 
             text-transform: uppercase;
+        }
+
+        .torneo-badge {
+            font-size: 0.7rem;
+            background: #1e3a5f;
+            color: #a0aec0;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        .estado-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
         }
 
         .estado {
@@ -52,24 +68,48 @@
             font-size: 0.8rem;
             color: #f6ad55;
             font-weight: bold;
-            margin-bottom: 10px;
         }
         
         .equipos { 
             display: flex; 
-            justify-content: space-between; 
+            justify-content: space-around; 
             align-items: center; 
             font-size: 1.05rem; 
             font-weight: bold; 
-            margin-bottom: 14px; 
-            padding: 4px 0;
+            margin-bottom: 8px; 
+            padding: 6px 0;
+        }
+
+        .equipo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 42%;
+        }
+
+        .equipo.local {
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        .equipo.visita {
+            justify-content: flex-start;
+            text-align: left;
+        }
+
+        .flag {
+            width: 28px;
+            height: 20px;
+            object-fit: cover;
+            border-radius: 3px;
+            border: 1px solid rgba(255,255,255,0.2);
         }
 
         .vs { 
             font-size: 0.8rem; 
             color: #7f97b5; 
             background: #0b1a30;
-            padding: 2px 8px;
+            padding: 3px 10px;
             border-radius: 10px;
         }
 
@@ -77,6 +117,8 @@
             display: flex; 
             gap: 8px; 
             flex-wrap: wrap; 
+            margin-top: 10px;
+            justify-content: center;
         }
 
         .btn-opt { 
@@ -89,15 +131,12 @@
             font-weight: bold; 
             cursor: pointer; 
             transition: background 0.2s;
+            flex: 1;
+            min-width: 100px;
+            text-align: center;
         }
 
         .btn-opt:active { background: #0056b3; }
-
-        .btn-disabled {
-            background: #2d3748;
-            color: #718096;
-            cursor: not-allowed;
-        }
     </style>
 </head>
 <body>
@@ -105,7 +144,14 @@
     <div id="partidos-container">Cargando partidos...</div>
 
     <script>
-        // Configuración de los partidos según las fechas y horas de la imagen
+        // Mapeo de banderas de las selecciones
+        const banderas = {
+            "Honduras": "https://flagcdn.com/w40/hn.png",
+            "Surinam": "https://flagcdn.com/w40/sr.png",
+            "Jamaica": "https://flagcdn.com/w40/jm.png",
+            "Martinica": "https://flagcdn.com/w40/mq.png"
+        };
+
         const partidos = [
           {
             "fecha_txt": "Vie, 25 de Sept | 9:00 p.m.",
@@ -153,23 +199,23 @@
           }
         ];
 
-        function actualizarLógica() {
+        function actualizarLogica() {
             const container = document.getElementById('partidos-container');
             container.innerHTML = '';
             const ahora = new Date().getTime();
 
-            partidos.forEach((p, index) => {
+            partidos.forEach((p) => {
                 const horaInicio = new Date(p.start).getTime();
                 const horaApertura = horaInicio - (20 * 60 * 1000); // 20 minutos antes
-                const horaCierre = horaInicio + ((105 + 20) * 60 * 1000); // Duración partido (~105 min) + 20 min extra
+                const horaCierre = horaInicio + ((105 + 20) * 60 * 1000); // Duración + 20 minutos
 
                 let estadoHtml = '';
                 let timerHtml = '';
-                let botonesHtml = '';
+                let opcionesContainerHtml = '';
                 const titulo = `${p.equipo1} vs ${p.equipo2}`;
 
                 if (ahora < horaApertura) {
-                    // Estado: Por jugar / Cuenta regresiva
+                    // Estado: POR JUGAR (No se muestran opciones)
                     const dif = horaApertura - ahora;
                     const horas = Math.floor(dif / (1000 * 60 * 60));
                     const minutos = Math.floor((dif % (1000 * 60 * 60)) / (1000 * 60));
@@ -177,40 +223,51 @@
 
                     estadoHtml = `<span class="estado proximo">POR JUGAR</span>`;
                     timerHtml = `<div class="timer">Abre en: ${horas}h ${minutos}m ${segundos}s</div>`;
-                    
-                    p.opciones.forEach(opt => {
-                        botonesHtml += `<button class="btn-opt btn-disabled" disabled>Transmisión no disponible</button>`;
-                    });
+                    opcionesContainerHtml = ''; // Oculto completamente
 
                 } else if (ahora >= horaApertura && ahora <= horaCierre) {
-                    // Estado: EN VIVO (Se abre 20 min antes y cierra 20 min después)
+                    // Estado: EN VIVO (Se muestran los botones de streaming)
                     estadoHtml = `<span class="estado envivo">● EN VIVO</span>`;
-                    timerHtml = `<div class="timer" style="color:#48bb78;"> Transmisión activada</div>`;
+                    timerHtml = `<div class="timer" style="color:#48bb78;">Transmisión activada</div>`;
 
+                    let botonesHtml = '';
                     p.opciones.forEach(opt => {
                         botonesHtml += `<button class="btn-opt" onclick="abrirOpcion('${opt.stream}', '${titulo}')">${opt.nombre}</button>`;
                     });
+                    opcionesContainerHtml = `<div class="opciones">${botonesHtml}</div>`;
 
                 } else {
-                    // Estado: FINALIZADO
+                    // Estado: FINALIZADO (No se muestran opciones)
                     estadoHtml = `<span class="estado finalizado">FINALIZADO</span>`;
-                    timerHtml = `<div class="timer" style="color:#a0aec0;">Partido concluido</div>`;
-                    botonesHtml = `<button class="btn-opt btn-disabled" disabled>Partido Finalizado</button>`;
+                    timerHtml = `<div class="timer" style="color:#718096;">Partido concluido</div>`;
+                    opcionesContainerHtml = ''; // Oculto completamente
                 }
+
+                const flag1 = banderas[p.equipo1] || '';
+                const flag2 = banderas[p.equipo2] || '';
 
                 const card = `
                     <div class="card">
                         <div class="header-card">
                             <div class="fecha">${p.fecha_txt}</div>
+                            <span class="torneo-badge">CONCACAF NATIONS LEAGUE...</span>
+                        </div>
+                        <div class="estado-container">
                             ${estadoHtml}
+                            ${timerHtml}
                         </div>
-                        ${timerHtml}
                         <div class="equipos">
-                            <span>${p.equipo1}</span>
+                            <div class="equipo local">
+                                <span>${p.equipo1}</span>
+                                <img src="${flag1}" alt="${p.equipo1}" class="flag">
+                            </div>
                             <span class="vs">VS</span>
-                            <span>${p.equipo2}</span>
+                            <div class="equipo visita">
+                                <img src="${flag2}" alt="${p.equipo2}" class="flag">
+                                <span>${p.equipo2}</span>
+                            </div>
                         </div>
-                        <div class="opciones">${botonesHtml}</div>
+                        ${opcionesContainerHtml}
                     </div>
                 `;
                 container.innerHTML += card;
@@ -225,9 +282,8 @@
             }
         }
 
-        // Ejecutar inmediatamente y actualizar la cuenta regresiva cada segundo
-        actualizarLógica();
-        setInterval(actualizarLógica, 1000);
+        actualizarLogica();
+        setInterval(actualizarLogica, 1000);
     </script>
 </body>
 </html>
