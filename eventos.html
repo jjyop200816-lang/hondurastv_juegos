@@ -11,25 +11,31 @@
         .header { text-align: center; margin-bottom: 20px; }
         .header h1 { font-size: 1.6rem; color: #38bdf8; text-transform: uppercase; margin-bottom: 5px; }
         .header p { font-size: 0.95rem; color: #94a3b8; }
+        
         .card { background: #1c2541; border-radius: 12px; padding: 16px; margin-bottom: 14px; border: 1px solid #2a3a5e; transition: all 0.3s ease; }
-        .card.active { border: 2px solid #0284c7; background: linear-gradient(145deg, #1c2541, #0b2545); }
+        .card.active { border: 2px solid #00c853; background: linear-gradient(145deg, #1c2541, #0b2545); box-shadow: 0 0 12px rgba(0, 200, 83, 0.3); }
+        .card.finished { opacity: 0.6; }
+
         .match-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 8px; }
         .date-time { font-size: 0.9rem; color: #cbd5e1; font-weight: 600; }
+        
         .status-badge { font-size: 0.75rem; padding: 3px 10px; border-radius: 12px; font-weight: bold; text-transform: uppercase; display: none; }
-        .card.active .badge-live { display: inline-block; background-color: #2563eb; color: #fff; animation: pulse 2s infinite; }
-        .card.finished .badge-ended { display: inline-block; background-color: #334155; color: #94a3b8; }
+        .card.waiting .badge-wait { display: inline-block; background-color: #334155; color: #cbd5e1; }
+        .card.active .badge-live { display: inline-block; background-color: #00c853; color: #fff; animation: pulse 2s infinite; }
+        .card.finished .badge-ended { display: inline-block; background-color: #475569; color: #cbd5e1; }
+
         .teams { display: flex; justify-content: space-between; align-items: center; margin: 15px 0; }
-        .team { flex: 1; text-align: center; font-weight: bold; font-size: 1.1rem; }
-        .vs { font-size: 0.9rem; color: #64748b; font-weight: bold; padding: 0 15px; }
-        .countdown-container { text-align: center; margin-top: 10px; padding-top: 8px; border-top: 1px dashed rgba(255, 255, 255, 0.1); }
-        .countdown-label { font-size: 0.75rem; color: #94a3b8; margin-bottom: 2px; text-transform: uppercase; }
-        .timer { font-size: 1.05rem; font-weight: bold; color: #38bdf8; letter-spacing: 1px; font-family: monospace; }
+        .team { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: bold; font-size: 0.95rem; text-align: center; }
+        .flag { width: 28px; height: 20px; border-radius: 3px; object-fit: cover; box-shadow: 0 0 4px rgba(0,0,0,0.5); }
+        .vs { font-size: 0.85rem; color: #64748b; font-weight: bold; padding: 0 10px; }
+
         .actions { display: none; justify-content: center; align-items: center; margin-top: 12px; flex-direction: column; gap: 8px; }
         .card.active .actions { display: flex; }
-        .card.active .countdown-container, .card.finished .countdown-container { display: none; }
-        .play-btn { display: inline-flex; justify-content: center; align-items: center; padding: 10px 20px; border-radius: 20px; background: #0284c7; color: white; text-decoration: none; font-size: 14px; font-weight: bold; border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.5); }
-        .play-btn:active { transform: scale(0.95); background: #0369a1; }
-        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.6; } 100% { opacity: 1; } }
+
+        .play-btn { display: inline-flex; justify-content: center; align-items: center; padding: 10px 20px; border-radius: 20px; background: #00c853; color: white; text-decoration: none; font-size: 14px; font-weight: bold; border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 200, 83, 0.4); width: 100%; max-width: 200px; }
+        .play-btn:active { transform: scale(0.95); background: #00a843; }
+
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
     </style>
 </head>
 <body>
@@ -51,12 +57,12 @@
         }
     }
 
-    // Cargar datos con URL directa y prevención de caché
+    // Carga de partidos.json con timestamp para evitar caché
     const jsonUrl = 'https://jjyop200816-lang.github.io/hondurastv_juegos/partidos.json?v=' + new Date().getTime();
 
     fetch(jsonUrl)
         .then(response => {
-            if (!response.ok) throw new Error("Error en la respuesta del servidor");
+            if (!response.ok) throw new Error("No se pudo cargar el archivo partidos.json");
             return response.json();
         })
         .then(eventos => {
@@ -70,20 +76,23 @@
                 });
 
                 const cardHtml = `
-                    <div class="card" id="card-${index}" data-start="${item.start}" data-end="${item.end}">
+                    <div class="card waiting" id="card-${index}" data-start="${item.start}" data-end="${item.end}">
                         <div class="match-info">
                             <span class="date-time">📅 ${item.fecha}</span>
+                            <span class="status-badge badge-wait">PRÓXIMO</span>
                             <span class="status-badge badge-live">EN VIVO</span>
                             <span class="status-badge badge-ended">FINALIZADO</span>
                         </div>
                         <div class="teams">
-                            <div class="team">${item.equipo1}</div>
+                            <div class="team">
+                                <img src="${item.logo1}" class="flag" alt="${item.equipo1}">
+                                <span>${item.equipo1}</span>
+                            </div>
                             <div class="vs">VS</div>
-                            <div class="team">${item.equipo2}</div>
-                        </div>
-                        <div class="countdown-container">
-                            <div class="countdown-label">Inicia en:</div>
-                            <div class="timer">--:--:--</div>
+                            <div class="team">
+                                <img src="${item.logo2}" class="flag" alt="${item.equipo2}">
+                                <span>${item.equipo2}</span>
+                            </div>
                         </div>
                         <div class="actions">${btnsHtml}</div>
                     </div>
@@ -91,43 +100,31 @@
                 container.innerHTML += cardHtml;
             });
 
-            actualizarRelojes();
-            setInterval(actualizarRelojes, 1000);
+            actualizarEstados();
+            setInterval(actualizarEstados, 10000); // Revisa el estado cada 10 segundos
         })
         .catch(error => {
             console.error(error);
-            document.getElementById('matches-list').innerHTML = '<p style="text-align:center; color:#f87171;">Error al cargar los datos. Revisa partidos.json</p>';
+            document.getElementById('matches-list').innerHTML = '<p style="text-align:center; color:#f87171;">Error al cargar partidos.json</p>';
         });
 
-    function actualizarRelojes() {
+    function actualizarEstados() {
         const ahora = new Date().getTime();
-        const MARGEN_TIEMPO = 20 * 60 * 1000;
 
         document.querySelectorAll('.card').forEach((card) => {
             const inicio = new Date(card.getAttribute('data-start')).getTime();
             const fin = new Date(card.getAttribute('data-end')).getTime();
-            
-            const inicioApertura = inicio - MARGEN_TIEMPO;
-            const finCierre = fin + MARGEN_TIEMPO;
-            const timerDisplay = card.querySelector('.timer');
 
-            if (ahora < inicioApertura) {
-                card.classList.remove('active', 'finished');
-                const diferencia = inicio - ahora;
-                const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-                const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+            card.classList.remove('active', 'finished', 'waiting');
 
-                const h = horas < 10 ? '0' + horas : horas;
-                const m = minutos < 10 ? '0' + minutos : minutos;
-                const s = segundos < 10 ? '0' + segundos : segundos;
-                if (timerDisplay) timerDisplay.textContent = `${h}h ${m}m ${s}s`;
-
-            } else if (ahora >= inicioApertura && ahora <= finCierre) {
+            if (ahora < inicio) {
+                // El partido/transmisión aún no empieza
+                card.classList.add('waiting');
+            } else if (ahora >= inicio && ahora <= fin) {
+                // Transmisión activa (20 min antes hasta 20 min después)
                 card.classList.add('active');
-                card.classList.remove('finished');
             } else {
-                card.classList.remove('active');
+                // Transmisión finalizada
                 card.classList.add('finished');
             }
         });
