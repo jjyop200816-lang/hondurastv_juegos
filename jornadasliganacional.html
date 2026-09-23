@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jornada 8 - Liga de Honduras</title>
+    <title>Jornada 9 - Liga de Honduras</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
         body { background-color: #0b1120; color: #ffffff; padding: 16px; display: flex; justify-content: center; }
@@ -49,15 +49,15 @@
 <body>
 
 <div class="container">
-    <div class="header-main"><h1>Jornada 8</h1></div>
+    <div class="header-main"><h1>Jornada 9</h1></div>
 
     <div id="liveBanner" class="live-global-banner">🔴 ¡PARTIDOS EN VIVO AHORA MISMO!</div>
 
-    <!-- HOY -->
-    <div class="date-group">Viernes, 18 de sept</div>
+    <!-- VIERNES 9 DE OCTUBRE -->
+    <div class="date-group">Viernes, 9 de oct</div>
 
-    <!-- Platense FC vs Lobos UPNFM (Finalizado) -->
-    <div class="card finished" data-start="2026-09-18 17:00:00" data-end="2026-09-18 19:00:00">
+    <!-- Platense FC vs Juticalpa -->
+    <div class="card waiting" data-start="2026-10-09 17:00:00" data-end="2026-10-09 19:00:00">
         <div class="match-info">
             <span class="date-time">5:00 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
@@ -68,17 +68,17 @@
         <div class="teams">
             <div class="team">Platense FC</div>
             <div class="vs-container"><span class="vs">VS</span></div>
-            <div class="team">Lobos UPNFM</div>
+            <div class="team">Juticalpa</div>
         </div>
         <div class="actions">
-            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
-            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
-            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
+            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 1</button>
+            <button onclick="openAction('hch')" class="play-btn">▶ OPCIÓN 2</button>
+            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 3</button>
         </div>
     </div>
 
-    <!-- CD Choloma vs Estrella Roja (Finalizado) -->
-    <div class="card finished" data-start="2026-09-18 21:30:00" data-end="2026-09-18 23:30:00">
+    <!-- FC Motagua vs CD Choloma -->
+    <div class="card waiting" data-start="2026-10-09 21:30:00" data-end="2026-10-09 23:30:00">
         <div class="match-info">
             <span class="date-time">9:30 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
@@ -87,24 +87,24 @@
             <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
-            <div class="team">CD Choloma</div>
+            <div class="team">FC Motagua</div>
             <div class="vs-container"><span class="vs">VS</span></div>
-            <div class="team">Estrella Roja</div>
+            <div class="team">CD Choloma</div>
         </div>
         <div class="actions">
-            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
-            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
-            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
+            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 1</button>
+            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 2</button>
+            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 3</button>
         </div>
     </div>
 
-    <!-- MAÑANA -->
-    <div class="date-group">Sábado, 19 de sept</div>
+    <!-- SÁBADO 10 DE OCTUBRE -->
+    <div class="date-group">Sábado, 10 de oct</div>
 
-    <!-- Genesis FC vs Olancho FC (Finalizado) -->
-    <div class="card finished" data-start="2026-09-19 17:00:00" data-end="2026-09-19 19:00:00">
+    <!-- Genesis FC vs CD Olimpia -->
+    <div class="card waiting" data-start="2026-10-10 17:15:00" data-end="2026-10-10 19:15:00">
         <div class="match-info">
-            <span class="date-time">5:00 p.m.</span>
+            <span class="date-time">5:15 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
             <span class="status-badge badge-pre">PREVIA (Abierto)</span>
             <span class="status-badge badge-live">EN VIVO</span>
@@ -113,39 +113,61 @@
         <div class="teams">
             <div class="team">Genesis FC</div>
             <div class="vs-container"><span class="vs">VS</span></div>
-            <div class="team">Olancho FC</div>
+            <div class="team">CD Olimpia</div>
         </div>
         <div class="actions">
-            <button type="button" onclick="openAction('hch')" class="play-btn">▶ OPCIÓN ÚNICA</button>
+            <button type="button" onclick="openAction('hch')" class="play-btn">▶ OPCIÓN 1</button>
+            <button type="button" onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 2</button>
         </div>
     </div>
 
-    <!-- Real España vs FC Motagua (Finalizado) -->
-    <div class="card finished" data-start="2026-09-19 21:30:00" data-end="2026-09-19 23:30:00">
+    <!-- Lobos UPNFM vs CD Marathón -->
+    <div class="card waiting" data-start="2026-10-10 21:00:00" data-end="2026-10-10 23:00:00">
         <div class="match-info">
-            <span class="date-time">9:30 p.m.</span>
+            <span class="date-time">9:00 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
             <span class="status-badge badge-pre">PREVIA (Abierto)</span>
             <span class="status-badge badge-live">EN VIVO</span>
             <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
-            <div class="team">Real España</div>
+            <div class="team">Lobos UPNFM</div>
             <div class="vs-container"><span class="vs">VS</span></div>
-            <div class="team">FC Motagua</div>
+            <div class="team">CD Marathón</div>
         </div>
         <div class="actions">
             <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
             <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
-            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
+            <button onclick="openAction('hch')" class="play-btn">▶ OPCIÓN 3</button>
         </div>
     </div>
 
-    <!-- DOMINGO 20 DE SEPTIEMBRE -->
-    <div class="date-group">Dom, 20 de sept</div>
+    <!-- DOMINGO 11 DE OCTUBRE -->
+    <div class="date-group">Domingo, 11 de oct</div>
 
-    <!-- CD Olimpia vs Atletico Independiente (7:15 p.m.) -->
-    <div class="card waiting" data-start="2026-09-20 19:15:00" data-end="2026-09-20 21:15:00">
+    <!-- Estrella Roja vs Real España -->
+    <div class="card waiting" data-start="2026-10-11 17:00:00" data-end="2026-10-11 19:00:00">
+        <div class="match-info">
+            <span class="date-time">5:00 p.m.</span>
+            <span class="status-badge badge-wait">PRÓXIMO</span>
+            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
+            <span class="status-badge badge-live">EN VIVO</span>
+            <span class="status-badge badge-ended">FINALIZADO</span>
+        </div>
+        <div class="teams">
+            <div class="team">Estrella Roja</div>
+            <div class="vs-container"><span class="vs">VS</span></div>
+            <div class="team">Real España</div>
+        </div>
+        <div class="actions">
+            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 1</button>
+            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 2</button>
+            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 3</button>
+        </div>
+    </div>
+
+    <!-- Olancho FC vs Atletico Independiente -->
+    <div class="card waiting" data-start="2026-10-11 19:15:00" data-end="2026-10-11 21:15:00">
         <div class="match-info">
             <span class="date-time">7:15 p.m.</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
@@ -154,35 +176,14 @@
             <span class="status-badge badge-ended">FINALIZADO</span>
         </div>
         <div class="teams">
-            <div class="team">CD Olimpia</div>
+            <div class="team">Olancho FC</div>
             <div class="vs-container"><span class="vs">VS</span></div>
             <div class="team">Atletico Independiente</div>
         </div>
         <div class="actions">
             <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
-            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
-            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
-        </div>
-    </div>
-
-    <!-- Juticalpa vs CD Marathón (Cambio de horario a 9:30 p.m.) -->
-    <div class="card waiting" data-start="2026-09-20 21:30:00" data-end="2026-09-20 23:30:00">
-        <div class="match-info">
-            <span class="date-time">9:30 p.m.</span>
-            <span class="status-badge badge-wait">PRÓXIMO</span>
-            <span class="status-badge badge-pre">PREVIA (Abierto)</span>
-            <span class="status-badge badge-live">EN VIVO</span>
-            <span class="status-badge badge-ended">FINALIZADO</span>
-        </div>
-        <div class="teams">
-            <div class="team">Juticalpa</div>
-            <div class="vs-container"><span class="vs">VS</span></div>
-            <div class="team">CD Marathón</div>
-        </div>
-        <div class="actions">
-            <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 1</button>
-            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 2</button>
-            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
+            <button onclick="openAction('hch')" class="play-btn">▶ OPCIÓN 2</button>
+            <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 3</button>
         </div>
     </div>
 
