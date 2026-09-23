@@ -1,72 +1,114 @@
 [
   {
     "fecha": "Por jugar | 2:45 p.m.",
-    "start": "2026-09-24T14:45:00",
-    "end": "2026-09-24T16:45:00",
+    "hora": "2:45 p.m.",
+    "start": "2026-09-24T14:25:00",
+    "end": "2026-09-24T17:05:00",
     "equipo1": "Países Bajos",
+    "logo1": "https://flagcdn.com/w80/nl.png",
     "equipo2": "Alemania",
+    "logo2": "https://flagcdn.com/w80/de.png",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html" }
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
+      }
     ]
   },
   {
     "fecha": "Por jugar | 2:45 p.m.",
-    "start": "2026-09-24T14:45:00",
-    "end": "2026-09-24T16:45:00",
+    "hora": "2:45 p.m.",
+    "start": "2026-09-24T14:25:00",
+    "end": "2026-09-24T17:05:00",
     "equipo1": "Serbia",
+    "logo1": "https://flagcdn.com/w80/rs.png",
     "equipo2": "Grecia",
+    "logo2": "https://flagcdn.com/w80/gr.png",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html" }
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
+      }
     ]
   },
   {
     "fecha": "Por jugar | 2:45 p.m.",
-    "start": "2026-09-24T14:45:00",
-    "end": "2026-09-24T16:45:00",
+    "hora": "2:45 p.m.",
+    "start": "2026-09-24T14:25:00",
+    "end": "2026-09-24T17:05:00",
     "equipo1": "Noruega",
+    "logo1": "https://flagcdn.com/w80/no.png",
     "equipo2": "Dinamarca",
+    "logo2": "https://flagcdn.com/w80/dk.png",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html" }
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html"
+      }
     ]
   },
   {
     "fecha": "Por jugar | 2:45 p.m.",
-    "start": "2026-09-24T14:45:00",
-    "end": "2026-09-24T16:45:00",
+    "hora": "2:45 p.m.",
+    "start": "2026-09-24T14:25:00",
+    "end": "2026-09-24T17:05:00",
     "equipo1": "Portugal",
+    "logo1": "https://flagcdn.com/w80/pt.png",
     "equipo2": "Gales",
+    "logo2": "https://flagcdn.com/w80/gb-wls.png",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html" }
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html"
+      }
     ]
   },
   {
     "fecha": "Por jugar | 8:00 p.m.",
-    "start": "2026-09-24T20:00:00",
-    "end": "2026-09-24T22:00:00",
+    "hora": "8:00 p.m.",
+    "start": "2026-09-24T19:40:00",
+    "end": "2026-09-24T22:20:00",
     "equipo1": "República Dominicana",
+    "logo1": "https://flagcdn.com/w80/do.png",
     "equipo2": "Nicaragua",
+    "logo2": "https://flagcdn.com/w80/ni.png",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria5.html" }
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria5.html"
+      }
     ]
   },
   {
     "fecha": "Por jugar | 8:00 p.m.",
-    "start": "2026-09-24T20:00:00",
-    "end": "2026-09-24T22:00:00",
+    "hora": "8:00 p.m.",
+    "start": "2026-09-24T19:40:00",
+    "end": "2026-09-24T22:20:00",
     "equipo1": "Haití",
+    "logo1": "https://flagcdn.com/w80/ht.png",
     "equipo2": "Trinidad y Tobago",
+    "logo2": "https://flagcdn.com/w80/tt.png",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/roxie1.html" }
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/roxie1.html"
+      }
     ]
   },
   {
     "fecha": "Por jugar | 10:00 p.m.",
-    "start": "2026-09-24T22:00:00",
-    "end": "2026-09-25T00:00:00",
+    "hora": "10:00 p.m.",
+    "start": "2026-09-24T21:40:00",
+    "end": "2026-09-25T00:20:00",
     "equipo1": "Costa Rica",
+    "logo1": "https://flagcdn.com/w80/cr.png",
     "equipo2": "Curazao",
+    "logo2": "https://flagcdn.com/w80/cw.png",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/roxie2.html" }
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/roxie2.html"
+      }
     ]
   }
 ]
