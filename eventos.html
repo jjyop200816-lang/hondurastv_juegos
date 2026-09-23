@@ -39,21 +39,26 @@
         <h1>PARTIDOS DE HOY</h1>
         <p>Transmisión en Vivo</p>
     </div>
-    <div id="matches-list"></div>
+    <div id="matches-list">Cargando partidos...</div>
 </div>
 
 <script>
     function openAction(target) {
-        if (window.Android && window.Android.openStream) {
+        if (window.Android && typeof window.Android.openStream === 'function') {
             window.Android.openStream(target);
         } else {
-            window.location.href = "go:" + target;
+            window.location.href = target;
         }
     }
 
-    // Cargar datos desde partidos.json
-    fetch('partidos.json')
-        .then(response => response.json())
+    // Cargar datos con URL directa y prevención de caché
+    const jsonUrl = 'https://jjyop200816-lang.github.io/hondurastv_juegos/partidos.json?v=' + new Date().getTime();
+
+    fetch(jsonUrl)
+        .then(response => {
+            if (!response.ok) throw new Error("Error en la respuesta del servidor");
+            return response.json();
+        })
         .then(eventos => {
             const container = document.getElementById('matches-list');
             container.innerHTML = '';
@@ -90,12 +95,13 @@
             setInterval(actualizarRelojes, 1000);
         })
         .catch(error => {
-            document.getElementById('matches-list').innerHTML = '<p style="text-align:center; color:#f87171;">Error al cargar partidos.json</p>';
+            console.error(error);
+            document.getElementById('matches-list').innerHTML = '<p style="text-align:center; color:#f87171;">Error al cargar los datos. Revisa partidos.json</p>';
         });
 
     function actualizarRelojes() {
         const ahora = new Date().getTime();
-        const MARGEN_TIEMPO = 20 * 60 * 1000; // 20 minutos antes y después
+        const MARGEN_TIEMPO = 20 * 60 * 1000;
 
         document.querySelectorAll('.card').forEach((card) => {
             const inicio = new Date(card.getAttribute('data-start')).getTime();
@@ -115,7 +121,7 @@
                 const h = horas < 10 ? '0' + horas : horas;
                 const m = minutos < 10 ? '0' + minutos : minutos;
                 const s = segundos < 10 ? '0' + segundos : segundos;
-                timerDisplay.textContent = `${h}h ${m}m ${s}s`;
+                if (timerDisplay) timerDisplay.textContent = `${h}h ${m}m ${s}s`;
 
             } else if (ahora >= inicioApertura && ahora <= finCierre) {
                 card.classList.add('active');
