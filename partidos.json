@@ -1,166 +1,72 @@
 [
   {
-    "fecha": "Por jugar | 8:00 a.m.",
-    "start": "2026-09-20T07:40:00",
-    "end": "2026-09-20T10:20:00",
-    "equipo1": "Getafe",
-    "equipo2": "Málaga",
+    "fecha": "Por jugar | 2:45 p.m.",
+    "start": "2026-09-24T14:25:00",
+    "end": "2026-09-24T17:05:00",
+    "equipo1": "Países Bajos",
+    "equipo2": "Alemania",
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html" }
     ]
   },
   {
-    "fecha": "Por jugar | 9:00 a.m.",
-    "start": "2026-09-20T08:40:00",
-    "end": "2026-09-20T11:20:00",
-    "equipo1": "Bournemouth",
-    "equipo2": "Liverpool",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://183.bozztv.com/giatv/giatv-pixelchanneltv/pixelchanneltv/playlist.m3u8" }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 9:00 a.m.",
-    "start": "2026-09-20T08:40:00",
-    "end": "2026-09-20T11:20:00",
-    "equipo1": "Leeds",
-    "equipo2": "Crystal Palace",
+    "fecha": "Por jugar | 2:45 p.m.",
+    "start": "2026-09-24T14:25:00",
+    "end": "2026-09-24T17:05:00",
+    "equipo1": "Serbia",
+    "equipo2": "Grecia",
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html" }
     ]
   },
   {
-    "fecha": "Por jugar | 9:00 a.m.",
-    "start": "2026-09-20T08:40:00",
-    "end": "2026-09-20T11:20:00",
-    "equipo1": "Man City",
-    "equipo2": "Sunderland",
+    "fecha": "Por jugar | 2:45 p.m.",
+    "start": "2026-09-24T14:25:00",
+    "end": "2026-09-24T17:05:00",
+    "equipo1": "Noruega",
+    "equipo2": "Dinamarca",
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html" }
     ]
   },
   {
-    "fecha": "Por jugar | 10:15 a.m.",
-    "start": "2026-09-20T09:55:00",
-    "end": "2026-09-20T12:35:00",
-    "equipo1": "Atlético Madrid",
-    "equipo2": "Real Madrid",
+    "fecha": "Por jugar | 2:45 p.m.",
+    "start": "2026-09-24T14:25:00",
+    "end": "2026-09-24T17:05:00",
+    "equipo1": "Portugal",
+    "equipo2": "Gales",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8" },
-      { "nombre": "Opción 2", "stream": "https://sflix.today/v1/live/proxy/daddy-espn-deportes-daddylive" },
-      { "nombre": "Opción 3", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html" },
-      { "nombre": "Opción 4", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/roxie4.html" }
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html" }
     ]
   },
   {
-    "fecha": "Por jugar | 11:30 a.m.",
-    "start": "2026-09-20T11:10:00",
-    "end": "2026-09-20T13:50:00",
-    "equipo1": "Fulham",
-    "equipo2": "Man United",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://183.bozztv.com/giatv/giatv-pixelchanneltv/pixelchanneltv/playlist.m3u8" }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 12:00 p.m.",
-    "start": "2026-09-20T11:40:00",
-    "end": "2026-09-20T14:20:00",
-    "equipo1": "Juventus",
-    "equipo2": "Atalanta",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8?imafw__fw_us_privacy=1YNY&attmas=not_determined&am.originUrl=https%3A%2F%2Fdai.google.com%2Flinear%2Fhls%2Fevent%2F7f3Wv6f7QEKfQna22jHqLQ%2Fmaster.m3u8&imafw_csid=desktop_web&imafw__fw_did=&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=&app_version=0.0.0&height=1080&ip_addr=195.179.200.80&page_url=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&width=1920" }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 12:30 p.m.",
-    "start": "2026-09-20T12:10:00",
-    "end": "2026-09-20T14:50:00",
-    "equipo1": "Deportivo A Coruña",
-    "equipo2": "Real Betis",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo10/tracks-v4a1/mono.ts.m3u8" }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 12:30 p.m.",
-    "start": "2026-09-20T12:10:00",
-    "end": "2026-09-20T14:50:00",
-    "equipo1": "Villarreal",
-    "equipo2": "Levante",
+    "fecha": "Por jugar | 8:00 p.m.",
+    "start": "2026-09-24T19:40:00",
+    "end": "2026-09-24T22:20:00",
+    "equipo1": "República Dominicana",
+    "equipo2": "Nicaragua",
     "opciones": [
       { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria5.html" }
     ]
   },
   {
-    "fecha": "Por jugar | 1:45 p.m.",
-    "start": "2026-09-20T13:25:00",
-    "end": "2026-09-20T16:05:00",
-    "equipo1": "San Lorenzo",
-    "equipo2": "Boca Juniors",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8" }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 2:15 p.m.",
-    "start": "2026-09-20T13:55:00",
-    "end": "2026-09-20T16:35:00",
-    "equipo1": "Lech Poznań",
-    "equipo2": "Radomiak Radom",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://live.dyrur1.com/live/72043178_54e22cf4388be99c8f80f77c5e26d8c6_1080p.m3u8?auth_key=1789942824-0-0-c04b3572183586aca7e86e87a26b6121" }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 2:45 p.m.",
-    "start": "2026-09-20T14:25:00",
-    "end": "2026-09-20T17:05:00",
-    "equipo1": "Milan",
-    "equipo2": "Lecce",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8?imafw__fw_us_privacy=1YNY&attmas=not_determined&am.originUrl=https%3A%2F%2Fdai.google.com%2Flinear%2Fhls%2Fevent%2F7f3Wv6f7QEKfQna22jHqLQ%2Fmaster.m3u8&imafw_csid=desktop_web&imafw__fw_did=&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=&app_version=0.0.0&height=1080&ip_addr=195.179.200.80&page_url=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&width=1920" }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 3:00 p.m.",
-    "start": "2026-09-20T14:40:00",
-    "end": "2026-09-20T17:20:00",
-    "equipo1": "Valencia",
-    "equipo2": "Real Sociedad",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8" },
-      { "nombre": "Opción 2", "stream": "https://live.dyrur1.com/live/527r3i4zp9jt47e_a949c073f4422f3e0332434a3b7ba9b2_1080p.m3u8?auth_key=1789948033-0-0-7719b1f5001397de69de5c579c26b170" }
-    ]
-  },
-  {
     "fecha": "Por jugar | 8:00 p.m.",
-    "start": "2026-09-20T19:40:00",
-    "end": "2026-09-20T22:20:00",
-    "equipo1": "Pachuca",
-    "equipo2": "Tijuana",
+    "start": "2026-09-24T19:40:00",
+    "end": "2026-09-24T22:20:00",
+    "equipo1": "Haití",
+    "equipo2": "Trinidad y Tobago",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html" }
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/roxie1.html" }
     ]
   },
   {
-    "fecha": "Por jugar | 8:00 p.m.",
-    "start": "2026-09-20T19:40:00",
-    "end": "2026-09-20T22:20:00",
-    "equipo1": "Toluca",
-    "equipo2": "Santos",
+    "fecha": "Por jugar | 10:00 p.m.",
+    "start": "2026-09-24T21:40:00",
+    "end": "2026-09-25T00:20:00",
+    "equipo1": "Costa Rica",
+    "equipo2": "Curazao",
     "opciones": [
-      { "nombre": "Opción 1", "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491522.m3u8" }
-    ]
-  },
-  {
-    "fecha": "Por jugar | 10:10 p.m.",
-    "start": "2026-09-20T21:50:00",
-    "end": "2026-09-20T00:30:00",
-    "equipo1": "Querétaro",
-    "equipo2": "León",
-    "opciones": [
-      { "nombre": "Opción 1", "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491522.m3u8" }
+      { "nombre": "Opción 1", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/roxie2.html" }
     ]
   }
 ]
