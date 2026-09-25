@@ -11,7 +11,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": ""
+        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
       }
     ]
   },
@@ -27,11 +27,11 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": ""
+        "stream": "jrjrr"
       },
       {
         "nombre": "Opción 2",
-        "stream": ""
+        "stream": "https://sflix.today/v1/live/proxy/daddy-supersport-premier-league-daddylive"
       }
     ]
   },
