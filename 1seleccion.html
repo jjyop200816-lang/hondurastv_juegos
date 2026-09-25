@@ -210,8 +210,8 @@
 
             partidos.forEach((p) => {
                 const horaInicio = new Date(p.start).getTime();
-                const horaApertura = horaInicio - (20 * 60 * 1000); // 20 minutos antes
-                const horaCierre = horaInicio + ((105 + 20) * 60 * 1000); // Duración + 20 minutos
+                const horaApertura = horaInicio - (30 * 60 * 1000); // 30 minutos antes
+                const horaCierre = horaInicio + ((105 + 30) * 60 * 1000); // Duración (105 min) + 30 minutos posteriores
 
                 let estadoHtml = '';
                 let timerHtml = '';
