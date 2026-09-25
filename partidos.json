@@ -83,7 +83,7 @@
       },
       {
         "nombre": "Opción 2",
-        "stream": ""
+        "stream": "http://190.61.101.11:7050/play/a0a4/index.m3u8?hls"
       }
     ]
   },
