@@ -112,6 +112,10 @@
       {
         "nombre": "Opción 1",
         "stream": "https://d395pc32ur2dpc.cloudfront.net/out/v1/97d5c45eb4b241db9400b97215ad5531/index.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       }
     ]
   }
