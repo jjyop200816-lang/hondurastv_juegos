@@ -115,7 +115,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://efg8732dsy.luxiang.win/?url=https%3A%2F%2Flive1.dyrur1.com%2Flive%2F73220768_60adfb49a4617ed8ab5618cb0e36cf64_1080p.m3u8%3Fauth_key%3D1790406472-0-0-11712ea4020fbe817d8b32acbb9374b0&title=El+Salvador+vs+%E9%A9%AC%E6%8F%90%E5%B0%BC%E5%85%8B+-+LivePlayer"
+        "stream": "http://190.105.128.198:5800/play/a019/index.m3u8"
       },
       {
         "nombre": "Opción 2",
