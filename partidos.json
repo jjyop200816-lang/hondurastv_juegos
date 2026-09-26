@@ -155,7 +155,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://190.61.101.11:7050/play/a04g/index.m3u8?hls"
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-unimas?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       }
     ]
   },
@@ -171,7 +171,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://live4.dyrur1.com/live/68931472_c16e563939c2c0c9d221c9fca25faeec_h360p.m3u8"
+        "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8"
       }
     ]
   }
