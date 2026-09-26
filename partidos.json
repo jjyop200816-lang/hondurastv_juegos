@@ -51,7 +51,7 @@
       },
       {
         "nombre": "Opción 3",
-        "stream": "https://s2.bufaloweb.com/bufalo7/tracks-v4a1/mono.ts.m3u8"
+        "stream": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15619"
       }
     ]
   },
@@ -67,7 +67,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://d2cozakhtdw466.cloudfront.net/out/v1/0310eeeafd9a491796b23aec39fad1c4/index.m3u8"
+        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491456.m3u8"
       }
     ]
   },
@@ -83,7 +83,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://190.61.101.11:7050/play/a0a4/index.m3u8?hls"
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       }
     ]
   },
@@ -99,7 +99,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://190.105.128.198:5800/play/a019/index.m3u8"
+        "stream": "https://sflix.today/v1/live/proxy/daddy-fox-soccer-plus-daddylive"
       }
     ]
   },
@@ -115,7 +115,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://45.167.2.101:8000/play/a0qq/index.m3u8"
+        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491456.m3u8"
       }
     ]
   },
