@@ -211,7 +211,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       }
     ]
   },
@@ -227,7 +227,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491456.m3u8"
+        "stream": "http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8"
       }
     ]
   }
