@@ -1,13 +1,13 @@
 [
   {
-    "fecha": "26 de septiembre de 2026 | 9:00 a.m.",
-    "hora": "9:00 a.m.",
-    "start": "2026-09-26T08:40:00",
-    "end": "2026-09-26T11:20:00",
-    "equipo1": "Eslovenia",
-    "logo1": "https://flagcdn.com/w80/si.png",
-    "equipo2": "Escocia",
-    "logo2": "https://flagcdn.com/w80/gb-sct.png",
+    "fecha": "27 de septiembre de 2026 | 12:00 p.m.",
+    "hora": "12:00 p.m.",
+    "start": "2026-09-27T11:40:00",
+    "end": "2026-09-27T14:20:00",
+    "equipo1": "Serbia",
+    "logo1": "https://flagcdn.com/w80/rs.png",
+    "equipo2": "Países Bajos",
+    "logo2": "https://flagcdn.com/w80/nl.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -16,14 +16,46 @@
     ]
   },
   {
-    "fecha": "26 de septiembre de 2026 | 2:45 p.m.",
+    "fecha": "27 de septiembre de 2026 | 12:00 p.m.",
+    "hora": "12:00 p.m.",
+    "start": "2026-09-27T11:40:00",
+    "end": "2026-09-27T14:20:00",
+    "equipo1": "Dinamarca",
+    "logo1": "https://flagcdn.com/w80/dk.png",
+    "equipo2": "Gales",
+    "logo2": "https://flagcdn.com/w80/gb-wls.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15619"
+      }
+    ]
+  },
+  {
+    "fecha": "27 de septiembre de 2026 | 2:00 p.m.",
+    "hora": "2:00 p.m.",
+    "start": "2026-09-27T13:40:00",
+    "end": "2026-09-27T16:20:00",
+    "equipo1": "Pumas ⚽",
+    "logo1": "https://www.thesportsdb.com/images/media/team/badge/vtvyvu1534015843.png",
+    "equipo2": "San Luis ⚽",
+    "logo2": "https://www.thesportsdb.com/images/media/team/badge/uursst1534015867.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491456.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "27 de septiembre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-09-26T14:25:00",
-    "end": "2026-09-26T17:05:00",
-    "equipo1": "Chequia",
-    "logo1": "https://flagcdn.com/w80/cz.png",
-    "equipo2": "Croacia",
-    "logo2": "https://flagcdn.com/w80/hr.png",
+    "start": "2026-09-27T14:25:00",
+    "end": "2026-09-27T17:05:00",
+    "equipo1": "Alemania",
+    "logo1": "https://flagcdn.com/w80/de.png",
+    "equipo2": "Grecia",
+    "logo2": "https://flagcdn.com/w80/gr.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -32,14 +64,14 @@
     ]
   },
   {
-    "fecha": "26 de septiembre de 2026 | 2:45 p.m.",
+    "fecha": "27 de septiembre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-09-26T14:25:00",
-    "end": "2026-09-26T17:05:00",
-    "equipo1": "Inglaterra",
-    "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "España",
-    "logo2": "https://flagcdn.com/w80/es.png",
+    "start": "2026-09-27T14:25:00",
+    "end": "2026-09-27T17:05:00",
+    "equipo1": "Noruega",
+    "logo1": "https://flagcdn.com/w80/no.png",
+    "equipo2": "Portugal",
+    "logo2": "https://flagcdn.com/w80/pt.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -51,51 +83,19 @@
       },
       {
         "nombre": "Opción 3",
-        "stream": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15619"
-      }
-    ]
-  },
-  {
-    "fecha": "26 de septiembre de 2026 | 4:30 p.m.",
-    "hora": "4:30 p.m.",
-    "start": "2026-09-26T16:10:00",
-    "end": "2026-09-26T18:50:00",
-    "equipo1": "EE. UU.",
-    "logo1": "https://flagcdn.com/w80/us.png",
-    "equipo2": "Perú",
-    "logo2": "https://flagcdn.com/w80/pe.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491456.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "26 de septiembre de 2026 | 6:50 p.m.",
-    "hora": "6:50 p.m.",
-    "start": "2026-09-26T18:30:00",
-    "end": "2026-09-26T21:10:00",
-    "equipo1": "Cruz Azul ⚽",
-    "logo1": "https://www.thesportsdb.com/images/media/team/badge/vtvyvu1534015843.png",
-    "equipo2": "Toluca ⚽",
-    "logo2": "https://www.thesportsdb.com/images/media/team/badge/uursst1534015867.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
         "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       }
     ]
   },
   {
-    "fecha": "26 de septiembre de 2026 | 7:00 p.m.",
-    "hora": "7:00 p.m.",
-    "start": "2026-09-26T18:40:00",
-    "end": "2026-09-26T21:20:00",
-    "equipo1": "Canadá",
-    "logo1": "https://flagcdn.com/w80/ca.png",
-    "equipo2": "Chile",
-    "logo2": "https://flagcdn.com/w80/cl.png",
+    "fecha": "27 de septiembre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-09-27T14:25:00",
+    "end": "2026-09-27T17:05:00",
+    "equipo1": "Israel",
+    "logo1": "https://flagcdn.com/w80/il.png",
+    "equipo2": "Irlanda",
+    "logo2": "https://flagcdn.com/w80/ie.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -104,53 +104,61 @@
     ]
   },
   {
-    "fecha": "26 de septiembre de 2026 | 7:07 p.m.",
-    "hora": "7:07 p.m.",
-    "start": "2026-09-26T18:47:00",
-    "end": "2026-09-26T21:27:00",
-    "equipo1": "Chivas ⚽",
+    "fecha": "27 de septiembre de 2026 | 4:00 p.m.",
+    "hora": "4:00 p.m.",
+    "start": "2026-09-27T15:40:00",
+    "end": "2026-09-27T18:20:00",
+    "equipo1": "Racing Club ⚽",
     "logo1": "https://www.thesportsdb.com/images/media/team/badge/s2sdt31534015814.png",
-    "equipo2": "Querétaro ⚽",
+    "equipo2": "Boca Juniors ⚽",
     "logo2": "https://www.thesportsdb.com/images/media/team/badge/0tw27w1534015858.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491456.m3u8"
+        "stream": "https://s2.bufaloweb.com/bufalo22/tracks-v4a1/mono.ts.m3u8"
       }
     ]
   },
   {
-    "fecha": "26 de septiembre de 2026 | 9:00 p.m.",
-    "hora": "9:00 p.m.",
-    "start": "2026-09-26T20:40:00",
-    "end": "2026-09-26T23:20:00",
-    "equipo1": "México",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Colombia",
-    "logo2": "https://flagcdn.com/w80/co.png",
+    "fecha": "27 de septiembre de 2026 | 4:30 p.m.",
+    "hora": "4:30 p.m.",
+    "start": "2026-09-27T16:10:00",
+    "end": "2026-09-27T18:50:00",
+    "equipo1": "Bolivia",
+    "logo1": "https://flagcdn.com/w80/bo.png",
+    "equipo2": "Paraguay",
+    "logo2": "https://flagcdn.com/w80/py.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      },
+        "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "27 de septiembre de 2026 | 7:00 p.m.",
+    "hora": "7:00 p.m.",
+    "start": "2026-09-27T18:40:00",
+    "end": "2026-09-27T21:20:00",
+    "equipo1": "Haití",
+    "logo1": "https://flagcdn.com/w80/ht.png",
+    "equipo2": "Costa Rica",
+    "logo2": "https://flagcdn.com/w80/cr.png",
+    "opciones": [
       {
-        "nombre": "Opción 2",
-        "stream": "https://s2.bufaloweb.com/bufalo22/tracks-v4a1/mono.ts.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
+        "nombre": "Opción 1",
         "stream": "https://s2.bufaloweb.com/bufalo23/tracks-v4a1/mono.ts.m3u8"
       }
     ]
   },
   {
-    "fecha": "26 de septiembre de 2026 | 11:05 p.m.",
-    "hora": "11:05 p.m.",
-    "start": "2026-09-26T22:45:00",
-    "end": "2026-09-27T01:25:00",
-    "equipo1": "Santos ⚽",
+    "fecha": "27 de septiembre de 2026 | 7:00 p.m.",
+    "hora": "7:00 p.m.",
+    "start": "2026-09-27T18:40:00",
+    "end": "2026-09-27T21:20:00",
+    "equipo1": "Columbus ⚽",
     "logo1": "https://www.thesportsdb.com/images/media/team/badge/quuypx1534015822.png",
-    "equipo2": "Pachuca ⚽",
+    "equipo2": "Inter Miami CF ⚽",
     "logo2": "https://www.thesportsdb.com/images/media/team/badge/2d3n8u1534015849.png",
     "opciones": [
       {
@@ -160,18 +168,66 @@
     ]
   },
   {
-    "fecha": "26 de septiembre de 2026 | 11:10 p.m.",
-    "hora": "11:10 p.m.",
-    "start": "2026-09-26T22:50:00",
-    "end": "2026-09-27T01:30:00",
-    "equipo1": "Tigres ⚽",
+    "fecha": "27 de septiembre de 2026 | 8:00 p.m.",
+    "hora": "8:00 p.m.",
+    "start": "2026-09-27T19:40:00",
+    "end": "2026-09-27T22:20:00",
+    "equipo1": "Curazao",
+    "logo1": "https://flagcdn.com/w80/cw.png",
+    "equipo2": "Nicaragua",
+    "logo2": "https://flagcdn.com/w80/ni.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://s2.bufaloweb.com/bufalo6/tracks-v4a1/mono.ts.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "27 de septiembre de 2026 | 9:00 p.m.",
+    "hora": "9:00 p.m.",
+    "start": "2026-09-27T20:40:00",
+    "end": "2026-09-27T23:20:00",
+    "equipo1": "Trinidad y Tobago",
+    "logo1": "https://flagcdn.com/w80/tt.png",
+    "equipo2": "República Dominicana",
+    "logo2": "https://flagcdn.com/w80/do.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
+      }
+    ]
+  },
+  {
+    "fecha": "27 de septiembre de 2026 | 9:00 p.m.",
+    "hora": "9:00 p.m.",
+    "start": "2026-09-27T20:40:00",
+    "end": "2026-09-27T23:20:00",
+    "equipo1": "León ⚽",
     "logo1": "https://www.thesportsdb.com/images/media/team/badge/s40trj1534015835.png",
-    "equipo2": "Puebla ⚽",
+    "equipo2": "Juárez ⚽",
     "logo2": "https://www.thesportsdb.com/images/media/team/badge/vrvxvv1534015806.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8"
+        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "27 de septiembre de 2026 | 11:10 p.m.",
+    "hora": "11:10 p.m.",
+    "start": "2026-09-27T22:50:00",
+    "end": "2026-09-28T01:30:00",
+    "equipo1": "Necaxa ⚽",
+    "logo1": "https://www.thesportsdb.com/images/media/team/badge/vtvyvu1534015843.png",
+    "equipo2": "América ⚽",
+    "logo2": "https://www.thesportsdb.com/images/media/team/badge/uursst1534015867.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491456.m3u8"
       }
     ]
   }
