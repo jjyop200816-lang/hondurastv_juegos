@@ -1,29 +1,33 @@
 [
   {
-    "fecha": "27 de septiembre de 2026 | 12:00 p.m.",
-    "hora": "12:00 p.m.",
-    "start": "2026-09-27T11:40:00",
-    "end": "2026-09-27T14:20:00",
-    "equipo1": "Serbia",
-    "logo1": "https://flagcdn.com/w80/rs.png",
-    "equipo2": "Países Bajos",
-    "logo2": "https://flagcdn.com/w80/nl.png",
+    "fecha": "28 de septiembre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-09-28T14:25:00",
+    "end": "2026-09-28T17:05:00",
+    "equipo1": "Bélgica",
+    "logo1": "https://flagcdn.com/w80/be.png",
+    "equipo2": "Francia",
+    "logo2": "https://flagcdn.com/w80/fr.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
       }
     ]
   },
   {
-    "fecha": "27 de septiembre de 2026 | 12:00 p.m.",
-    "hora": "12:00 p.m.",
-    "start": "2026-09-27T11:40:00",
-    "end": "2026-09-27T14:20:00",
-    "equipo1": "Dinamarca",
-    "logo1": "https://flagcdn.com/w80/dk.png",
-    "equipo2": "Gales",
-    "logo2": "https://flagcdn.com/w80/gb-wls.png",
+    "fecha": "28 de septiembre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-09-28T14:25:00",
+    "end": "2026-09-28T17:05:00",
+    "equipo1": "Turquía",
+    "logo1": "https://flagcdn.com/w80/tr.png",
+    "equipo2": "Italia",
+    "logo2": "https://flagcdn.com/w80/it.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -32,118 +36,30 @@
     ]
   },
   {
-    "fecha": "27 de septiembre de 2026 | 2:00 p.m.",
-    "hora": "2:00 p.m.",
-    "start": "2026-09-27T13:40:00",
-    "end": "2026-09-27T16:20:00",
-    "equipo1": "Pumas ⚽",
-    "logo1": "https://www.thesportsdb.com/images/media/team/badge/vtvyvu1534015843.png",
-    "equipo2": "San Luis ⚽",
-    "logo2": "https://www.thesportsdb.com/images/media/team/badge/uursst1534015867.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      }
-    ]
-  },
-  {
-    "fecha": "27 de septiembre de 2026 | 2:45 p.m.",
+    "fecha": "28 de septiembre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-09-27T14:25:00",
-    "end": "2026-09-27T17:05:00",
-    "equipo1": "Alemania",
-    "logo1": "https://flagcdn.com/w80/de.png",
-    "equipo2": "Grecia",
-    "logo2": "https://flagcdn.com/w80/gr.png",
+    "start": "2026-09-28T14:25:00",
+    "end": "2026-09-28T17:05:00",
+    "equipo1": "Suecia",
+    "logo1": "https://flagcdn.com/w80/se.png",
+    "equipo2": "Polonia",
+    "logo2": "https://flagcdn.com/w80/pl.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
-      }
-    ]
-  },
-  {
-    "fecha": "27 de septiembre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-09-27T14:25:00",
-    "end": "2026-09-27T17:05:00",
-    "equipo1": "Noruega",
-    "logo1": "https://flagcdn.com/w80/no.png",
-    "equipo2": "Portugal",
-    "logo2": "https://flagcdn.com/w80/pt.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
         "stream": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15619"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html"
       }
     ]
   },
   {
-    "fecha": "27 de septiembre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-09-27T14:25:00",
-    "end": "2026-09-27T17:05:00",
-    "equipo1": "Israel",
-    "logo1": "https://flagcdn.com/w80/il.png",
-    "equipo2": "Irlanda",
-    "logo2": "https://flagcdn.com/w80/ie.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://sflix.today/v1/live/proxy/daddy-fox-soccer-plus-daddylive"
-      }
-    ]
-  },
-  {
-    "fecha": "27 de septiembre de 2026 | 4:00 p.m.",
-    "hora": "4:00 p.m.",
-    "start": "2026-09-27T15:40:00",
-    "end": "2026-09-27T18:20:00",
-    "equipo1": "Racing Club ⚽",
-    "logo1": "https://www.thesportsdb.com/images/media/team/badge/s2sdt31534015814.png",
-    "equipo2": "Boca Juniors ⚽",
-    "logo2": "https://www.thesportsdb.com/images/media/team/badge/0tw27w1534015858.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo13/tracks-v4a1/mono.ts.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "27 de septiembre de 2026 | 4:30 p.m.",
-    "hora": "4:30 p.m.",
-    "start": "2026-09-27T16:10:00",
-    "end": "2026-09-27T18:50:00",
-    "equipo1": "Bolivia",
-    "logo1": "https://flagcdn.com/w80/bo.png",
-    "equipo2": "Paraguay",
-    "logo2": "https://flagcdn.com/w80/py.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://sflix.today/v1/live/proxy/daddy-movistar-liga-de-campeones-daddylive"
-      }
-    ]
-  },
-  {
-    "fecha": "27 de septiembre de 2026 | 7:00 p.m.",
-    "hora": "7:00 p.m.",
-    "start": "2026-09-27T18:40:00",
-    "end": "2026-09-27T21:20:00",
-    "equipo1": "Haití",
-    "logo1": "https://flagcdn.com/w80/ht.png",
-    "equipo2": "Costa Rica",
-    "logo2": "https://flagcdn.com/w80/cr.png",
+    "fecha": "28 de septiembre de 2026 | 6:00 p.m.",
+    "hora": "6:00 p.m.",
+    "start": "2026-09-28T17:40:00",
+    "end": "2026-09-28T20:20:00",
+    "equipo1": "Surinam",
+    "logo1": "https://flagcdn.com/w80/sr.png",
+    "equipo2": "Martinica",
+    "logo2": "https://flagcdn.com/w80/mq.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -152,82 +68,18 @@
     ]
   },
   {
-    "fecha": "27 de septiembre de 2026 | 7:00 p.m.",
-    "hora": "7:00 p.m.",
-    "start": "2026-09-27T18:40:00",
-    "end": "2026-09-27T21:20:00",
-    "equipo1": "Columbus ⚽",
-    "logo1": "https://www.thesportsdb.com/images/media/team/badge/quuypx1534015822.png",
-    "equipo2": "Inter Miami CF ⚽",
-    "logo2": "https://www.thesportsdb.com/images/media/team/badge/2d3n8u1534015849.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
-      }
-    ]
-  },
-  {
-    "fecha": "27 de septiembre de 2026 | 8:00 p.m.",
-    "hora": "8:00 p.m.",
-    "start": "2026-09-27T19:40:00",
-    "end": "2026-09-27T22:20:00",
-    "equipo1": "Curazao",
-    "logo1": "https://flagcdn.com/w80/cw.png",
-    "equipo2": "Nicaragua",
-    "logo2": "https://flagcdn.com/w80/ni.png",
+    "fecha": "28 de septiembre de 2026 | 10:00 p.m.",
+    "hora": "10:00 p.m.",
+    "start": "2026-09-28T21:40:00",
+    "end": "2026-09-29T00:20:00",
+    "equipo1": "Guatemala",
+    "logo1": "https://flagcdn.com/w80/gt.png",
+    "equipo2": "El Salvador",
+    "logo2": "https://flagcdn.com/w80/sv.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "https://d2cozakhtdw466.cloudfront.net/out/v1/0310eeeafd9a491796b23aec39fad1c4/index.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "27 de septiembre de 2026 | 9:00 p.m.",
-    "hora": "9:00 p.m.",
-    "start": "2026-09-27T20:40:00",
-    "end": "2026-09-27T23:20:00",
-    "equipo1": "Trinidad y Tobago",
-    "logo1": "https://flagcdn.com/w80/tt.png",
-    "equipo2": "República Dominicana",
-    "logo2": "https://flagcdn.com/w80/do.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://d395pc32ur2dpc.cloudfront.net/out/v1/97d5c45eb4b241db9400b97215ad5531/index.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "27 de septiembre de 2026 | 9:00 p.m.",
-    "hora": "9:00 p.m.",
-    "start": "2026-09-27T20:40:00",
-    "end": "2026-09-27T23:20:00",
-    "equipo1": "León ⚽",
-    "logo1": "https://www.thesportsdb.com/images/media/team/badge/s40trj1534015835.png",
-    "equipo2": "Juárez ⚽",
-    "logo2": "https://www.thesportsdb.com/images/media/team/badge/vrvxvv1534015806.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      }
-    ]
-  },
-  {
-    "fecha": "27 de septiembre de 2026 | 11:10 p.m.",
-    "hora": "11:10 p.m.",
-    "start": "2026-09-27T22:50:00",
-    "end": "2026-09-28T01:30:00",
-    "equipo1": "Necaxa ⚽",
-    "logo1": "https://www.thesportsdb.com/images/media/team/badge/vtvyvu1534015843.png",
-    "equipo2": "América ⚽",
-    "logo2": "https://www.thesportsdb.com/images/media/team/badge/uursst1534015867.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8"
       }
     ]
   }
