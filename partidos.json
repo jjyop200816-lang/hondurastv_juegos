@@ -1,9 +1,9 @@
 [
   {
-    "fecha": "28 de septiembre de 2026 | 2:45 p.m.",
+    "fecha": "29 de septiembre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-09-28T14:25:00",
-    "end": "2026-09-28T17:05:00",
+    "start": "2026-09-29T18:25:00Z",
+    "end": "2026-09-29T21:05:00Z",
     "equipo1": "Bélgica",
     "logo1": "https://flagcdn.com/w80/be.png",
     "equipo2": "Francia",
@@ -20,30 +20,34 @@
     ]
   },
   {
-    "fecha": "28 de septiembre de 2026 | 2:45 p.m.",
+    "fecha": "29 de septiembre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-09-28T14:25:00",
-    "end": "2026-09-28T17:05:00",
-    "equipo1": "Turquía",
-    "logo1": "https://flagcdn.com/w80/tr.png",
-    "equipo2": "Italia",
-    "logo2": "https://flagcdn.com/w80/it.png",
+    "start": "2026-09-29T18:25:00Z",
+    "end": "2026-09-29T21:05:00Z",
+    "equipo1": "España",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "Croacia",
+    "logo2": "https://flagcdn.com/w80/hr.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://sflix.today/v1/live/proxy/daddy-ziggo-sport-4-nl-daddylive"
+        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://sflix.today/v1/live/proxy/daddy-tve-la-1-es-daddylive"
       }
     ]
   },
   {
-    "fecha": "28 de septiembre de 2026 | 2:45 p.m.",
+    "fecha": "29 de septiembre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-09-28T14:25:00",
-    "end": "2026-09-28T17:05:00",
-    "equipo1": "Suecia",
-    "logo1": "https://flagcdn.com/w80/se.png",
-    "equipo2": "Polonia",
-    "logo2": "https://flagcdn.com/w80/pl.png",
+    "start": "2026-09-29T18:25:00Z",
+    "end": "2026-09-29T21:05:00Z",
+    "equipo1": "Chequia",
+    "logo1": "https://flagcdn.com/w80/cz.png",
+    "equipo2": "Inglaterra",
+    "logo2": "https://flagcdn.com/w80/gb-eng.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -52,14 +56,30 @@
     ]
   },
   {
-    "fecha": "28 de septiembre de 2026 | 6:00 p.m.",
-    "hora": "6:00 p.m.",
-    "start": "2026-09-28T17:40:00",
-    "end": "2026-09-28T20:20:00",
-    "equipo1": "Surinam",
-    "logo1": "https://flagcdn.com/w80/sr.png",
-    "equipo2": "Martinica",
-    "logo2": "https://flagcdn.com/w80/mq.png",
+    "fecha": "29 de septiembre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-09-29T18:25:00Z",
+    "end": "2026-09-29T21:05:00Z",
+    "equipo1": "Escocia",
+    "logo1": "https://flagcdn.com/w80/gb-sct.png",
+    "equipo2": "Suiza",
+    "logo2": "https://flagcdn.com/w80/ch.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://sflix.today/v1/live/proxy/daddy-ziggo-sport-4-nl-daddylive"
+      }
+    ]
+  },
+  {
+    "fecha": "29 de septiembre de 2026 | 8:00 p.m.",
+    "hora": "8:00 p.m.",
+    "start": "2026-09-29T23:40:00Z",
+    "end": "2026-09-30T02:20:00Z",
+    "equipo1": "EE. UU.",
+    "logo1": "https://flagcdn.com/w80/us.png",
+    "equipo2": "Chile",
+    "logo2": "https://flagcdn.com/w80/cl.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -68,14 +88,14 @@
     ]
   },
   {
-    "fecha": "28 de septiembre de 2026 | 10:00 p.m.",
-    "hora": "10:00 p.m.",
-    "start": "2026-09-28T21:40:00",
-    "end": "2026-09-29T00:20:00",
-    "equipo1": "Guatemala",
-    "logo1": "https://flagcdn.com/w80/gt.png",
-    "equipo2": "El Salvador",
-    "logo2": "https://flagcdn.com/w80/sv.png",
+    "fecha": "29 de septiembre de 2026 | 9:00 p.m.",
+    "hora": "9:00 p.m.",
+    "start": "2026-09-30T00:40:00Z",
+    "end": "2026-09-30T03:20:00Z",
+    "equipo1": "México",
+    "logo1": "https://flagcdn.com/w80/mx.png",
+    "equipo2": "Perú",
+    "logo2": "https://flagcdn.com/w80/pe.png",
     "opciones": [
       {
         "nombre": "Opción 1",
