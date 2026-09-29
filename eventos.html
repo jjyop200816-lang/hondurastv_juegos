@@ -1,3 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partidos de Hoy</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; }
+        body { background-color: #0b132b; color: #ffffff; padding: 16px; display: flex; justify-content: center; }
+        .container { width: 100%; max-width: 480px; }
+        .header { text-align: center; margin-bottom: 20px; }
+        .header h1 { font-size: 1.6rem; color: #38bdf8; text-transform: uppercase; margin-bottom: 5px; }
+        .header p { font-size: 0.95rem; color: #94a3b8; }
+        
+        .card { background: #1c2541; border-radius: 12px; padding: 16px; margin-bottom: 14px; border: 1px solid #2a3a5e; transition: all 0.3s ease; }
+        .card.active { border: 2px solid #00c853; background: linear-gradient(145deg, #1c2541, #0b2545); box-shadow: 0 0 12px rgba(0, 200, 83, 0.3); }
+        .card.finished { opacity: 0.6; }
+
+        .match-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 8px; }
+        .date-time { font-size: 0.9rem; color: #cbd5e1; font-weight: 600; }
+        
+        .status-badge { font-size: 0.75rem; padding: 3px 10px; border-radius: 12px; font-weight: bold; text-transform: uppercase; display: none; }
+        .card.waiting .badge-wait { display: inline-block; background-color: #334155; color: #cbd5e1; }
+        .card.active .badge-live { display: inline-block; background-color: #00c853; color: #fff; animation: pulse 2s infinite; }
+        .card.finished .badge-ended { display: inline-block; background-color: #475569; color: #cbd5e1; }
+
+        .teams { display: flex; justify-content: space-between; align-items: center; margin: 15px 0; }
+        .team { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: bold; font-size: 0.95rem; text-align: center; }
+        .flag { width: 28px; height: 20px; border-radius: 3px; object-fit: cover; box-shadow: 0 0 4px rgba(0,0,0,0.5); }
+        .vs { font-size: 0.85rem; color: #64748b; font-weight: bold; padding: 0 10px; }
+
+        .actions { display: none; justify-content: center; align-items: center; margin-top: 12px; flex-direction: column; gap: 8px; }
+        .card.active .actions { display: flex; }
+
+        .play-btn { display: inline-flex; justify-content: center; align-items: center; padding: 10px 20px; border-radius: 20px; background: #00c853; color: white; text-decoration: none; font-size: 14px; font-weight: bold; border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 200, 83, 0.4); width: 100%; max-width: 200px; }
+        .play-btn:active { transform: scale(0.95); background: #00a843; }
+
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>PARTIDOS DE HOY</h1>
+        <p>Transmisión en Vivo</p>
+    </div>
+    <div id="matches-list">Cargando partidos...</div>
+</div>
+
 <script>
     function openAction(target) {
         if (window.Android && typeof window.Android.openStream === 'function') {
@@ -10,28 +60,34 @@
     const jsonUrl = 'https://jjyop200816-lang.github.io/hondurastv_juegos/partidos.json?v=' + new Date().getTime();
 
     fetch(jsonUrl)
-        .then(response => {
+        .then(function(response) {
             if (!response.ok) throw new Error("No se pudo cargar el archivo partidos.json");
             return response.json();
         })
-        .then(eventos => {
+        .then(function(eventos) {
             const container = document.getElementById('matches-list');
             container.innerHTML = '';
 
-            eventos.forEach((item, index) => {
+            eventos.forEach(function(item, index) {
                 let btnsHtml = '';
-                item.opciones.forEach(op => {
-                    btnsHtml += `<button class="play-btn" onclick="openAction('${op.stream}')">▶ ${op.nombre}</button>`;
-                });
+                if (item.opciones && Array.isArray(item.opciones)) {
+                    item.opciones.forEach(function(op) {
+                        btnsHtml += '<button class="play-btn" onclick="openAction(\'' + op.stream + '\')">▶ ' + op.nombre + '</button>';
+                    });
+                }
 
-                // Convertimos la hora de inicio a la hora local del dispositivo para mostrarla en pantalla
-                const fechaInicio = new Date(item.start);
-                const horaLocal = fechaInicio.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true });
+                let horaTexto = item.hora || item.fecha || '';
+                if (item.start) {
+                    const fechaInicio = new Date(item.start);
+                    if (!isNaN(fechaInicio.getTime())) {
+                        horaTexto = fechaInicio.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true });
+                    }
+                }
 
                 const cardHtml = `
                     <div class="card waiting" id="card-${index}" data-start="${item.start}" data-end="${item.end}">
                         <div class="match-info">
-                            <span class="date-time">📅 ${horaLocal}</span>
+                            <span class="date-time">📅 ${horaTexto}</span>
                             <span class="status-badge badge-wait">PRÓXIMO</span>
                             <span class="status-badge badge-live">EN VIVO</span>
                             <span class="status-badge badge-ended">FINALIZADO</span>
@@ -56,7 +112,7 @@
             actualizarEstados();
             setInterval(actualizarEstados, 10000);
         })
-        .catch(error => {
+        .catch(function(error) {
             console.error(error);
             document.getElementById('matches-list').innerHTML = '<p style="text-align:center; color:#f87171;">Error al cargar partidos.json</p>';
         });
@@ -64,9 +120,14 @@
     function actualizarEstados() {
         const ahora = new Date().getTime();
 
-        document.querySelectorAll('.card').forEach((card) => {
-            const inicio = new Date(card.getAttribute('data-start')).getTime();
-            const fin = new Date(card.getAttribute('data-end')).getTime();
+        document.querySelectorAll('.card').forEach(function(card) {
+            const startAttr = card.getAttribute('data-start');
+            const endAttr = card.getAttribute('data-end');
+
+            if (!startAttr || !endAttr) return;
+
+            const inicio = new Date(startAttr).getTime();
+            const fin = new Date(endAttr).getTime();
 
             card.classList.remove('active', 'finished', 'waiting');
 
@@ -80,3 +141,6 @@
         });
     }
 </script>
+
+</body>
+</html>
