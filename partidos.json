@@ -1,85 +1,25 @@
 [
   {
-    "fecha": "29 de septiembre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-09-29T18:25:00Z",
-    "end": "2026-09-29T21:05:00Z",
-    "equipo1": "España",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Croacia",
-    "logo2": "https://flagcdn.com/w80/hr.png",
+    "fecha": "30 de septiembre de 2026 | 7:00 p.m.",
+    "hora": "7:00 p.m.",
+    "start": "2026-09-30T22:40:00Z",
+    "end": "2026-10-01T01:30:00Z",
+    "equipo1": "Argentina",
+    "logo1": "https://flagcdn.com/w80/ar.png",
+    "equipo2": "Bolivia",
+    "logo2": "https://flagcdn.com/w80/bo.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
+        "stream": "https://live91.videxhd.sbs/latamplay/tycsports/index.m3u8?api=5678"
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15619"
-      }
-    ]
-  },
-  {
-    "fecha": "29 de septiembre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-09-29T18:25:00Z",
-    "end": "2026-09-29T21:05:00Z",
-    "equipo1": "Chequia",
-    "logo1": "https://flagcdn.com/w80/cz.png",
-    "equipo2": "Inglaterra",
-    "logo2": "https://flagcdn.com/w80/gb-eng.png",
-    "opciones": [
+        "stream": "https://cdnbarinas.tvzamora.com/tycsports/index.m3u8"
+      },
       {
-        "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "29 de septiembre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-09-29T18:25:00Z",
-    "end": "2026-09-29T21:05:00Z",
-    "equipo1": "Escocia",
-    "logo1": "https://flagcdn.com/w80/gb-sct.png",
-    "equipo2": "Suiza",
-    "logo2": "https://flagcdn.com/w80/ch.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://sflix.today/v1/live/proxy/fubo-sports-network-1080p-2"
-      }
-    ]
-  },
-  {
-    "fecha": "29 de septiembre de 2026 | 8:00 p.m.",
-    "hora": "8:00 p.m.",
-    "start": "2026-09-29T23:40:00Z",
-    "end": "2026-09-30T02:20:00Z",
-    "equipo1": "EE. UU.",
-    "logo1": "https://flagcdn.com/w80/us.png",
-    "equipo2": "Chile",
-    "logo2": "https://flagcdn.com/w80/cl.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://live91.videxhd.sbs/latamplay/universo/index.m3u8?api=1234"
-      }
-    ]
-  },
-  {
-    "fecha": "29 de septiembre de 2026 | 9:00 p.m.",
-    "hora": "9:00 p.m.",
-    "start": "2026-09-30T00:40:00Z",
-    "end": "2026-09-30T03:20:00Z",
-    "equipo1": "México",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Perú",
-    "logo2": "https://flagcdn.com/w80/pe.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+        "nombre": "Opción 3",
+        "stream": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=24819"
       }
     ]
   }
