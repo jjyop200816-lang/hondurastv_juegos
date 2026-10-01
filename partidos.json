@@ -11,7 +11,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8"
+        "stream": "https://sflix.today/v1/live/proxy/fubo-sports-network-1080p-2"
       }
     ]
   },
@@ -27,7 +27,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8"
+        "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8"
       }
     ]
   },
@@ -43,11 +43,11 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8"
+        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "http://186.33.26.18:8000/play/a0qq/index.m3u8"
+        "stream": "http://181.224.255.210:8001/play/a0sd/index.m3u8?hls"
       }
     ]
   },
