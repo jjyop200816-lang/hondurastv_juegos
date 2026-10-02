@@ -31,7 +31,7 @@
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15619"
+        "stream": "http://186.33.0.101:4430/play/espnhd/index.m3u8"
       },
       {
         "nombre": "Opción 3",
