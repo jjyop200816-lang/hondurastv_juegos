@@ -1,97 +1,53 @@
 [
   {
-    "fecha": "1 de octubre de 2026 | 2:45 p.m.",
+    "fecha": "2 de octubre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-10-01T18:25:00Z",
-    "end": "2026-10-01T21:00:00Z",
-    "equipo1": "Alemania",
-    "logo1": "https://flagcdn.com/w80/de.png",
-    "equipo2": "Serbia",
-    "logo2": "https://flagcdn.com/w80/rs.png",
+    "start": "2026-10-02T18:25:00Z",
+    "end": "2026-10-02T21:00:00Z",
+    "equipo1": "Bélgica",
+    "logo1": "https://flagcdn.com/w80/be.png",
+    "equipo2": "Turquía",
+    "logo2": "https://flagcdn.com/w80/tr.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://s2.bufaloweb.com/bufalo1/tracks-v1a1/mono.ts.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "2 de octubre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-10-02T18:25:00Z",
+    "end": "2026-10-02T21:00:00Z",
+    "equipo1": "Francia",
+    "logo1": "https://flagcdn.com/w80/fr.png",
+    "equipo2": "Italia",
+    "logo2": "https://flagcdn.com/w80/it.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
-      }
-    ]
-  },
-  {
-    "fecha": "1 de octubre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-10-01T18:25:00Z",
-    "end": "2026-10-01T21:00:00Z",
-    "equipo1": "Grecia",
-    "logo1": "https://flagcdn.com/w80/gr.png",
-    "equipo2": "Países Bajos",
-    "logo2": "https://flagcdn.com/w80/nl.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "1 de octubre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-10-01T18:25:00Z",
-    "end": "2026-10-01T21:00:00Z",
-    "equipo1": "Dinamarca",
-    "logo1": "https://flagcdn.com/w80/dk.png",
-    "equipo2": "Portugal",
-    "logo2": "https://flagcdn.com/w80/pt.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
-      }
-    ]
-  },
-  {
-    "fecha": "1 de octubre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-10-01T18:25:00Z",
-    "end": "2026-10-01T21:00:00Z",
-    "equipo1": "Gales",
-    "logo1": "https://flagcdn.com/w80/gb-wls.png",
-    "equipo2": "Noruega",
-    "logo2": "https://flagcdn.com/w80/no.png",
-    "opciones": [
+        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
+      },
       {
-        "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
+        "nombre": "Opción 3",
+        "stream": "https://sflix.today/v1/live/proxy/daddylive-fr-it"
       }
     ]
   },
   {
-    "fecha": "1 de octubre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-10-01T18:25:00Z",
-    "end": "2026-10-01T21:00:00Z",
-    "equipo1": "Irlanda",
-    "logo1": "https://flagcdn.com/w80/ie.png",
-    "equipo2": "Austria",
-    "logo2": "https://flagcdn.com/w80/at.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://sflix.today/v1/live/proxy/daddy-rte-2-daddylive"
-      }
-    ]
-  },
-  {
-    "fecha": "1 de octubre de 2026 | 6:00 p.m.",
+    "fecha": "2 de octubre de 2026 | 6:00 p.m.",
     "hora": "6:00 p.m.",
-    "start": "2026-10-01T21:40:00Z",
-    "end": "2026-10-02T00:15:00Z",
-    "equipo1": "Curazao",
-    "logo1": "https://flagcdn.com/w80/cw.png",
-    "equipo2": "Trinidad y Tobago",
-    "logo2": "https://flagcdn.com/w80/tt.png",
+    "start": "2026-10-02T21:40:00Z",
+    "end": "2026-10-03T00:15:00Z",
+    "equipo1": "Surinam",
+    "logo1": "https://flagcdn.com/w80/sr.png",
+    "equipo2": "Guatemala",
+    "logo2": "https://flagcdn.com/w80/gt.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -100,14 +56,38 @@
     ]
   },
   {
-    "fecha": "1 de octubre de 2026 | 8:00 p.m.",
+    "fecha": "2 de octubre de 2026 | 8:00 p.m.",
     "hora": "8:00 p.m.",
-    "start": "2026-10-01T23:40:00Z",
-    "end": "2026-10-02T02:15:00Z",
-    "equipo1": "República Dominicana",
-    "logo1": "https://flagcdn.com/w80/do.png",
-    "equipo2": "Haití",
-    "logo2": "https://flagcdn.com/w80/ht.png",
+    "start": "2026-10-02T23:40:00Z",
+    "end": "2026-10-03T02:15:00Z",
+    "equipo1": "Colombia",
+    "logo1": "https://flagcdn.com/w80/co.png",
+    "equipo2": "Paraguay",
+    "logo2": "https://flagcdn.com/w80/py.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://dto4p9su9kcif.cloudfront.net/out/v1/9215529a621947689739a7671e6dd0d3/index.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://sflix.today/v1/live/proxy/daddylive-col-par"
+      }
+    ]
+  },
+  {
+    "fecha": "2 de octubre de 2026 | 8:30 p.m.",
+    "hora": "8:30 p.m.",
+    "start": "2026-10-03T00:10:00Z",
+    "end": "2026-10-03T02:45:00Z",
+    "equipo1": "Boca Juniors",
+    "logo1": "https://flagcdn.com/w80/ar.png",
+    "equipo2": "Unión",
+    "logo2": "https://flagcdn.com/w80/ar.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -116,18 +96,18 @@
     ]
   },
   {
-    "fecha": "1 de octubre de 2026 | 10:00 p.m.",
+    "fecha": "2 de octubre de 2026 | 10:00 p.m.",
     "hora": "10:00 p.m.",
-    "start": "2026-10-02T01:40:00Z",
-    "end": "2026-10-02T04:15:00Z",
-    "equipo1": "Nicaragua",
-    "logo1": "https://flagcdn.com/w80/ni.png",
-    "equipo2": "Costa Rica",
-    "logo2": "https://flagcdn.com/w80/cr.png",
+    "start": "2026-10-03T01:40:00Z",
+    "end": "2026-10-03T04:15:00Z",
+    "equipo1": "El Salvador",
+    "logo1": "https://flagcdn.com/w80/sv.png",
+    "equipo2": "Jamaica",
+    "logo2": "https://flagcdn.com/w80/jm.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://dto4p9su9kcif.cloudfront.net/out/v1/9215529a621947689739a7671e6dd0d3/index.m3u8"
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
       }
     ]
   }
