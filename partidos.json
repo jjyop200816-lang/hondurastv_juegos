@@ -1,13 +1,13 @@
 [
   {
-    "fecha": "2 de octubre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-10-02T18:25:00Z",
-    "end": "2026-10-02T21:00:00Z",
-    "equipo1": "Bélgica",
-    "logo1": "https://flagcdn.com/w80/be.png",
-    "equipo2": "Turquía",
-    "logo2": "https://flagcdn.com/w80/tr.png",
+    "fecha": "3 de octubre de 2026 | 12:00 p.m.",
+    "hora": "12:00 p.m.",
+    "start": "2026-10-03T15:40:00Z",
+    "end": "2026-10-03T18:15:00Z",
+    "equipo1": "Croacia",
+    "logo1": "https://flagcdn.com/w80/hr.png",
+    "equipo2": "Inglaterra",
+    "logo2": "https://flagcdn.com/w80/gb-eng.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -16,14 +16,14 @@
     ]
   },
   {
-    "fecha": "2 de octubre de 2026 | 2:45 p.m.",
+    "fecha": "3 de octubre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-10-02T18:25:00Z",
-    "end": "2026-10-02T21:00:00Z",
-    "equipo1": "Francia",
-    "logo1": "https://flagcdn.com/w80/fr.png",
-    "equipo2": "Italia",
-    "logo2": "https://flagcdn.com/w80/it.png",
+    "start": "2026-10-03T18:25:00Z",
+    "end": "2026-10-03T21:00:00Z",
+    "equipo1": "España",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "Chequia",
+    "logo2": "https://flagcdn.com/w80/cz.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -32,38 +32,18 @@
       {
         "nombre": "Opción 2",
         "stream": "http://186.33.0.101:4430/play/espnhd/index.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
       }
     ]
   },
   {
-    "fecha": "2 de octubre de 2026 | 6:00 p.m.",
-    "hora": "6:00 p.m.",
-    "start": "2026-10-02T21:40:00Z",
-    "end": "2026-10-03T00:15:00Z",
-    "equipo1": "Surinam",
-    "logo1": "https://flagcdn.com/w80/sr.png",
-    "equipo2": "Guatemala",
-    "logo2": "https://flagcdn.com/w80/gt.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://d2cozakhtdw466.cloudfront.net/out/v1/0310eeeafd9a491796b23aec39fad1c4/index.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "2 de octubre de 2026 | 8:00 p.m.",
+    "fecha": "3 de octubre de 2026 | 8:00 p.m.",
     "hora": "8:00 p.m.",
-    "start": "2026-10-02T23:40:00Z",
-    "end": "2026-10-03T02:15:00Z",
-    "equipo1": "Colombia",
-    "logo1": "https://flagcdn.com/w80/co.png",
-    "equipo2": "Paraguay",
-    "logo2": "https://flagcdn.com/w80/py.png",
+    "start": "2026-10-03T23:40:00Z",
+    "end": "2026-10-04T02:15:00Z",
+    "equipo1": "Argentina",
+    "logo1": "https://flagcdn.com/w80/ar.png",
+    "equipo2": "Burkina Faso",
+    "logo2": "https://flagcdn.com/w80/bf.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -72,41 +52,25 @@
       {
         "nombre": "Opción 2",
         "stream": "https://s2.bufaloweb.com/bufalo23/tracks-v4a1/mono.ts.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "http://186.33.0.57:8000/play/a02o/index.m3u8"
       }
     ]
   },
   {
-    "fecha": "2 de octubre de 2026 | 8:30 p.m.",
-    "hora": "8:30 p.m.",
-    "start": "2026-10-03T00:10:00Z",
-    "end": "2026-10-03T02:45:00Z",
-    "equipo1": "Boca Juniors",
-    "logo1": "https://flagcdn.com/w80/ar.png",
-    "equipo2": "Unión",
-    "logo2": "https://flagcdn.com/w80/ar.png",
+    "fecha": "3 de octubre de 2026 | 10:00 p.m.",
+    "hora": "10:00 p.m.",
+    "start": "2026-10-04T01:40:00Z",
+    "end": "2026-10-04T04:15:00Z",
+    "equipo1": "EE. UU.",
+    "logo1": "https://flagcdn.com/w80/us.png",
+    "equipo2": "México",
+    "logo2": "https://flagcdn.com/w80/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "2 de octubre de 2026 | 10:00 p.m.",
-    "hora": "10:00 p.m.",
-    "start": "2026-10-03T01:40:00Z",
-    "end": "2026-10-03T04:15:00Z",
-    "equipo1": "El Salvador",
-    "logo1": "https://flagcdn.com/w80/sv.png",
-    "equipo2": "Jamaica",
-    "logo2": "https://flagcdn.com/w80/jm.png",
-    "opciones": [
+      },
       {
-        "nombre": "Opción 1",
+        "nombre": "Opción 2",
         "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8"
       }
     ]
