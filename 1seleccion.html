@@ -151,15 +151,10 @@
             "Martinica": "https://flagcdn.com/w40/mq.png"
         };
 
-        // Calcula el tiempo para abrir AHORA y cerrar en exactamente 2 horas (120 min)
-        const ahoraMs = Date.now();
-        // Cierre = start + 135 min. Para que Cierre = ahoraMs + 120 min, start debe ser ahoraMs - 15 min.
-        const fechaStartMartinica = new Date(ahoraMs - (15 * 60 * 1000)).toISOString();
-
         const partidos = [
           {
             "fecha_txt": "Vie, 25 de Sept | 9:00 p.m.",
-            "start": "2026-09-25T21:00:00",
+            "start": "2026-09-25T21:00:00Z",
             "equipo1": "Honduras",
             "equipo2": "Surinam",
             "opciones": [
@@ -172,7 +167,7 @@
           },
           {
             "fecha_txt": "Lun, 28 de Sept | 8:00 p.m.",
-            "start": "2026-09-28T20:00:00-04:00",
+            "start": "2026-09-28T20:00:00Z",
             "equipo1": "Jamaica",
             "equipo2": "Honduras",
             "opciones": [
@@ -184,7 +179,7 @@
           },
           {
             "fecha_txt": "Vie, 2 de Oct | 8:00 p.m.",
-            "start": fechaStartMartinica,
+            "start": "2026-10-02T20:00:00Z",
             "equipo1": "Martinica",
             "equipo2": "Honduras",
             "opciones": [
@@ -195,8 +190,8 @@
             ]
           },
           {
-            "fecha_txt": "Lun, 5 de Oct | 10:00 p.m.",
-            "start": "2026-10-05T22:00:00",
+            "fecha_txt": "Lun, 5 de Oct | 9:00 p.m.",
+            "start": "2026-10-06T03:00:00Z",
             "equipo1": "Honduras",
             "equipo2": "Jamaica",
             "opciones": [
