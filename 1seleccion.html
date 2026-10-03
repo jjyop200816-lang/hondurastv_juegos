@@ -144,13 +144,17 @@
     <div id="partidos-container">Cargando partidos...</div>
 
     <script>
-        // Mapeo de banderas de las selecciones
         const banderas = {
             "Honduras": "https://flagcdn.com/w40/hn.png",
             "Surinam": "https://flagcdn.com/w40/sr.png",
             "Jamaica": "https://flagcdn.com/w40/jm.png",
             "Martinica": "https://flagcdn.com/w40/mq.png"
         };
+
+        // Calcula el tiempo para abrir AHORA y cerrar en exactamente 2 horas (120 min)
+        const ahoraMs = Date.now();
+        // Cierre = start + 135 min. Para que Cierre = ahoraMs + 120 min, start debe ser ahoraMs - 15 min.
+        const fechaStartMartinica = new Date(ahoraMs - (15 * 60 * 1000)).toISOString();
 
         const partidos = [
           {
@@ -180,7 +184,7 @@
           },
           {
             "fecha_txt": "Vie, 2 de Oct | 8:00 p.m.",
-            "start": "2026-10-02T20:00:00",
+            "start": fechaStartMartinica,
             "equipo1": "Martinica",
             "equipo2": "Honduras",
             "opciones": [
@@ -211,8 +215,8 @@
 
             partidos.forEach((p) => {
                 const horaInicio = new Date(p.start).getTime();
-                const horaApertura = horaInicio - (30 * 60 * 1000); // 30 minutos antes
-                const horaCierre = horaInicio + ((105 + 30) * 60 * 1000); // Duración (105 min) + 30 minutos posteriores
+                const horaApertura = horaInicio - (30 * 60 * 1000); 
+                const horaCierre = horaInicio + ((105 + 30) * 60 * 1000); 
 
                 let estadoHtml = '';
                 let timerHtml = '';
@@ -220,7 +224,6 @@
                 const titulo = `${p.equipo1} vs ${p.equipo2}`;
 
                 if (ahora < horaApertura) {
-                    // Estado: POR JUGAR (No se muestran opciones)
                     const dif = horaApertura - ahora;
                     const horas = Math.floor(dif / (1000 * 60 * 60));
                     const minutos = Math.floor((dif % (1000 * 60 * 60)) / (1000 * 60));
@@ -228,10 +231,9 @@
 
                     estadoHtml = `<span class="estado proximo">POR JUGAR</span>`;
                     timerHtml = `<div class="timer">Abre en: ${horas}h ${minutos}m ${segundos}s</div>`;
-                    opcionesContainerHtml = ''; // Oculto completamente
+                    opcionesContainerHtml = '';
 
                 } else if (ahora >= horaApertura && ahora <= horaCierre) {
-                    // Estado: EN VIVO (Se muestran los botones de streaming)
                     estadoHtml = `<span class="estado envivo">● EN VIVO</span>`;
                     timerHtml = `<div class="timer" style="color:#48bb78;">Transmisión activada</div>`;
 
@@ -242,10 +244,9 @@
                     opcionesContainerHtml = `<div class="opciones">${botonesHtml}</div>`;
 
                 } else {
-                    // Estado: FINALIZADO (No se muestran opciones)
                     estadoHtml = `<span class="estado finalizado">FINALIZADO</span>`;
                     timerHtml = `<div class="timer" style="color:#718096;">Partido concluido</div>`;
-                    opcionesContainerHtml = ''; // Oculto completamente
+                    opcionesContainerHtml = '';
                 }
 
                 const flag1 = banderas[p.equipo1] || '';
