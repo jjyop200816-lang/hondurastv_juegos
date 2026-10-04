@@ -67,7 +67,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+        "stream": "http://45.5.118.152:8000/play/a03i/index.m3u8"
       },
       {
         "nombre": "Opción 2",
