@@ -1,53 +1,21 @@
 [
   {
-    "fecha": "4 de octubre de 2026 | 2:45 p.m.",
+    "fecha": "5 de octubre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-10-04T18:25:00Z",
-    "end": "2026-10-04T21:00:00Z",
-    "equipo1": "Grecia",
-    "logo1": "https://flagcdn.com/w80/gr.png",
-    "equipo2": "Alemania",
-    "logo2": "https://flagcdn.com/w80/de.png",
+    "start": "2026-10-05T18:25:00Z",
+    "end": "2026-10-05T21:00:00Z",
+    "equipo1": "Francia",
+    "logo1": "https://flagcdn.com/w80/fr.png",
+    "equipo2": "Bélgica",
+    "logo2": "https://flagcdn.com/w80/be.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "4 de octubre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-10-04T18:25:00Z",
-    "end": "2026-10-04T21:00:00Z",
-    "equipo1": "Países Bajos",
-    "logo1": "https://flagcdn.com/w80/nl.png",
-    "equipo2": "Serbia",
-    "logo2": "https://flagcdn.com/w80/rs.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo8/tracks-v4a1/mono.ts.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "4 de octubre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-10-04T18:25:00Z",
-    "end": "2026-10-04T21:00:00Z",
-    "equipo1": "Portugal",
-    "logo1": "https://flagcdn.com/w80/pt.png",
-    "equipo2": "Noruega",
-    "logo2": "https://flagcdn.com/w80/no.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
+        "stream": "https://s2.bufaloweb.com/bufalo1/tracks-v4a1/mono.ts.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "http://195.178.110.110:80/espn/index.m3u8"
+        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
       },
       {
         "nombre": "Opción 3",
@@ -56,46 +24,30 @@
     ]
   },
   {
-    "fecha": "4 de octubre de 2026 | 2:45 p.m.",
+    "fecha": "5 de octubre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-10-04T18:25:00Z",
-    "end": "2026-10-04T21:00:00Z",
-    "equipo1": "Gales",
-    "logo1": "https://flagcdn.com/w80/gb-wls.png",
-    "equipo2": "Dinamarca",
-    "logo2": "https://flagcdn.com/w80/dk.png",
+    "start": "2026-10-05T18:25:00Z",
+    "end": "2026-10-05T21:00:00Z",
+    "equipo1": "Italia",
+    "logo1": "https://flagcdn.com/w80/it.png",
+    "equipo2": "Turquía",
+    "logo2": "https://flagcdn.com/w80/tr.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://instreams.online/live3/tv401861125/index.m3u8?st=Tic_Fk-k8IpFU7eb6CTRTQ&e=1791149462"
+        "stream": "https://s2.bufaloweb.com/bufalo2/tracks-v4a1/mono.ts.m3u8"
       }
     ]
   },
   {
-    "fecha": "4 de octubre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-10-04T18:25:00Z",
-    "end": "2026-10-04T21:00:00Z",
-    "equipo1": "Irlanda",
-    "logo1": "https://flagcdn.com/w80/ie.png",
-    "equipo2": "Israel",
-    "logo2": "https://flagcdn.com/w80/il.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://instreams.pro/live3/tv401861124/index.m3u8?st=PvhjcA8S45smBex8s-V7Og&e=1791149461"
-      }
-    ]
-  },
-  {
-    "fecha": "4 de octubre de 2026 | 6:00 p.m.",
+    "fecha": "5 de octubre de 2026 | 6:00 p.m.",
     "hora": "6:00 p.m.",
-    "start": "2026-10-04T21:40:00Z",
-    "end": "2026-10-05T00:15:00Z",
-    "equipo1": "Trinidad y Tobago",
-    "logo1": "https://flagcdn.com/w80/tt.png",
-    "equipo2": "Curazao",
-    "logo2": "https://flagcdn.com/w80/cw.png",
+    "start": "2026-10-05T21:40:00Z",
+    "end": "2026-10-06T00:15:00Z",
+    "equipo1": "Martinica",
+    "logo1": "https://flagcdn.com/w80/mq.png",
+    "equipo2": "El Salvador",
+    "logo2": "https://flagcdn.com/w80/sv.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -104,34 +56,18 @@
     ]
   },
   {
-    "fecha": "4 de octubre de 2026 | 8:00 p.m.",
+    "fecha": "5 de octubre de 2026 | 8:00 p.m.",
     "hora": "8:00 p.m.",
-    "start": "2026-10-04T23:40:00Z",
-    "end": "2026-10-05T02:15:00Z",
-    "equipo1": "Costa Rica",
-    "logo1": "https://flagcdn.com/w80/cr.png",
-    "equipo2": "Haití",
-    "logo2": "https://flagcdn.com/w80/ht.png",
+    "start": "2026-10-05T23:40:00Z",
+    "end": "2026-10-06T02:15:00Z",
+    "equipo1": "Guatemala",
+    "logo1": "https://flagcdn.com/w80/gt.png",
+    "equipo2": "Surinam",
+    "logo2": "https://flagcdn.com/w80/sr.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      }
-    ]
-  },
-  {
-    "fecha": "4 de octubre de 2026 | 10:00 p.m.",
-    "hora": "10:00 p.m.",
-    "start": "2026-10-05T01:40:00Z",
-    "end": "2026-10-05T04:15:00Z",
-    "equipo1": "Nicaragua",
-    "logo1": "https://flagcdn.com/w80/ni.png",
-    "equipo2": "República Dominicana",
-    "logo2": "https://flagcdn.com/w80/do.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://d29uu6lcvq8u18.cloudfront.net/out/v1/0fc428527c0b4981900340462bc9e390/index_22.m3u8"
       }
     ]
   }
