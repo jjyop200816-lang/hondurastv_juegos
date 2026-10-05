@@ -131,7 +131,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://186.33.26.18:8000/play/a0qq/index.m3u8"
+        "stream": "https://d29uu6lcvq8u18.cloudfront.net/out/v1/0fc428527c0b4981900340462bc9e390/index_22.m3u8"
       }
     ]
   }
