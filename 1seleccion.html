@@ -141,64 +141,26 @@
 </head>
 <body>
 
-    <div id="partidos-container">Cargando partidos...</div>
+    <div id="partidos-container">Cargando partido...</div>
 
     <script>
         const banderas = {
             "Honduras": "https://flagcdn.com/w40/hn.png",
-            "Surinam": "https://flagcdn.com/w40/sr.png",
-            "Jamaica": "https://flagcdn.com/w40/jm.png",
-            "Martinica": "https://flagcdn.com/w40/mq.png"
+            "Jamaica": "https://flagcdn.com/w40/jm.png"
         };
 
         const partidos = [
           {
-            "fecha_txt": "Vie, 25 de Sept | 9:00 p.m.",
-            "start": "2026-09-25T21:00:00Z",
-            "equipo1": "Honduras",
-            "equipo2": "Surinam",
-            "opciones": [
-              { "nombre": "Opción 1", "stream": "https://d395pc32ur2dpc.cloudfront.net/out/v1/97d5c45eb4b241db9400b97215ad5531/index.m3u8" },
-              { "nombre": "Opción 2", "stream": "https://streaming.onnethn.com/TSI/playlist.m3u8" },
-              { "nombre": "Opción 3", "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8" },
-              { "nombre": "Opción 4", "stream": "http://190.105.128.198:5800/play/a021/index.m3u8" },
-              { "nombre": "Opción 5", "stream": "http://38.52.208.106:8000/play/a03d/index.m3u8" }
-            ]
-          },
-          {
-            "fecha_txt": "Lun, 28 de Sept | 8:00 p.m.",
-            "start": "2026-09-28T20:00:00Z",
-            "equipo1": "Jamaica",
-            "equipo2": "Honduras",
-            "opciones": [
-              { "nombre": "Opción 1", "stream": "https://d395pc32ur2dpc.cloudfront.net/out/v1/97d5c45eb4b241db9400b97215ad5531/index.m3u8" },
-              { "nombre": "Opción 2", "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8" },
-              { "nombre": "Opción 3", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html" },
-              { "nombre": "Opción 4", "stream": "http://186.33.0.57:8000/play/a069/index.m3u8" }
-            ]
-          },
-          {
-            "fecha_txt": "Vie, 2 de Oct | 8:00 p.m.",
-            "start": "2026-10-02T20:00:00Z",
-            "equipo1": "Martinica",
-            "equipo2": "Honduras",
-            "opciones": [
-              { "nombre": "Opción 1", "stream": "https://d395pc32ur2dpc.cloudfront.net/out/v1/97d5c45eb4b241db9400b97215ad5531/index.m3u8" },
-              { "nombre": "Opción 2", "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8" },
-              { "nombre": "Opción 3", "stream": "http://190.61.101.11:7050/play/a0a9/index.m3u8?hls" },
-              { "nombre": "Opción 4", "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491438.m3u8" }
-            ]
-          },
-          {
-            "fecha_txt": "Lun, 5 de Oct | 9:00 p.m.",
-            "start": "2026-10-06T03:00:00Z",
+            "fecha_txt": "Lun, 5 de Oct | 10:00 p.m.",
+            "start": "2026-10-06T04:00:00Z",
             "equipo1": "Honduras",
             "equipo2": "Jamaica",
             "opciones": [
-              { "nombre": "Opción 1", "stream": "https://ejemplo.com/live/honduras_jamaica.m3u8" },
+              { "nombre": "Opción 1", "stream": "https://ejemplo.com/live/honduras_jamaica_opt1.m3u8" },
               { "nombre": "Opción 2", "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html" },
-              { "nombre": "Opción 3", "stream": "https://ejemplo.com/live/honduras_jamaica.mpd" },
-              { "nombre": "Opción 4", "stream": "https://ejemplo.com/live/honduras_jamaica_opt4.m3u8" }
+              { "nombre": "Opción 3", "stream": "https://ejemplo.com/live/honduras_jamaica_opt3.m3u8" },
+              { "nombre": "Opción 4", "stream": "https://ejemplo.com/live/honduras_jamaica_opt4.m3u8" },
+              { "nombre": "Opción 5", "stream": "https://ejemplo.com/live/honduras_jamaica_opt5.m3u8" }
             ]
           }
         ];
@@ -211,7 +173,7 @@
             partidos.forEach((p) => {
                 const horaInicio = new Date(p.start).getTime();
                 const horaApertura = horaInicio - (30 * 60 * 1000); 
-                const horaCierre = horaInicio + ((105 + 30) * 60 * 1000); 
+                const horaCierre = horaInicio + ((90 + 30) * 60 * 1000); 
 
                 let estadoHtml = '';
                 let timerHtml = '';
@@ -251,7 +213,7 @@
                     <div class="card">
                         <div class="header-card">
                             <div class="fecha">${p.fecha_txt}</div>
-                            <span class="torneo-badge">CONCACAF NATIONS LEAGUE...</span>
+                            <span class="torneo-badge">CONCACAF NATIONS LEAGUE</span>
                         </div>
                         <div class="estado-container">
                             ${estadoHtml}
