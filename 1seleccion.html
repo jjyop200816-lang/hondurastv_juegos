@@ -54,9 +54,7 @@
             border-radius: 6px;
         }
 
-        .estado.proximo { background: #1e3a5f; color: #a0aec0; }
         .estado.envivo { background: #e53e3e; color: #ffffff; animation: blink 1.5s infinite; }
-        .estado.finalizado { background: #2d3748; color: #718096; }
 
         @keyframes blink {
             0% { opacity: 1; }
@@ -152,7 +150,6 @@
         const partidos = [
           {
             "fecha_txt": "Lun, 5 de Oct | 09:20 p.m.",
-            "start": "2026-10-06T04:00:00Z",
             "equipo1": "Honduras",
             "equipo2": "Jamaica",
             "opciones": [
@@ -165,46 +162,21 @@
           }
         ];
 
-        function actualizarLogica() {
+        function cargarPartidos() {
             const container = document.getElementById('partidos-container');
             container.innerHTML = '';
-            const ahora = Date.now();
 
             partidos.forEach((p) => {
-                const horaInicio = new Date(p.start).getTime();
-                const horaApertura = horaInicio - (30 * 60 * 1000); 
-                const horaCierre = horaInicio + ((90 + 30) * 60 * 1000); 
-
-                let estadoHtml = '';
-                let timerHtml = '';
-                let opcionesContainerHtml = '';
                 const titulo = `${p.equipo1} vs ${p.equipo2}`;
 
-                if (ahora < horaApertura) {
-                    const dif = horaApertura - ahora;
-                    const horas = Math.floor(dif / (1000 * 60 * 60));
-                    const minutos = Math.floor((dif % (1000 * 60 * 60)) / (1000 * 60));
-                    const segundos = Math.floor((dif % (1000 * 60)) / 1000);
+                const estadoHtml = `<span class="estado envivo">● EN VIVO</span>`;
+                const timerHtml = `<div class="timer" style="color:#48bb78;">Transmisión activada</div>`;
 
-                    estadoHtml = `<span class="estado proximo">POR JUGAR</span>`;
-                    timerHtml = `<div class="timer">Abre en: ${horas}h ${minutos}m ${segundos}s</div>`;
-                    opcionesContainerHtml = '';
-
-                } else if (ahora >= horaApertura && ahora <= horaCierre) {
-                    estadoHtml = `<span class="estado envivo">● EN VIVO</span>`;
-                    timerHtml = `<div class="timer" style="color:#48bb78;">Transmisión activada</div>`;
-
-                    let botonesHtml = '';
-                    p.opciones.forEach(opt => {
-                        botonesHtml += `<button class="btn-opt" onclick="abrirOpcion('${opt.stream}', '${titulo}')">${opt.nombre}</button>`;
-                    });
-                    opcionesContainerHtml = `<div class="opciones">${botonesHtml}</div>`;
-
-                } else {
-                    estadoHtml = `<span class="estado finalizado">FINALIZADO</span>`;
-                    timerHtml = `<div class="timer" style="color:#718096;">Partido concluido</div>`;
-                    opcionesContainerHtml = '';
-                }
+                let botonesHtml = '';
+                p.opciones.forEach(opt => {
+                    botonesHtml += `<button class="btn-opt" onclick="abrirOpcion('${opt.stream}', '${titulo}')">${opt.nombre}</button>`;
+                });
+                const opcionesContainerHtml = `<div class="opciones">${botonesHtml}</div>`;
 
                 const flag1 = banderas[p.equipo1] || '';
                 const flag2 = banderas[p.equipo2] || '';
@@ -245,8 +217,7 @@
             }
         }
 
-        actualizarLogica();
-        setInterval(actualizarLogica, 1000);
+        cargarPartidos();
     </script>
 </body>
 </html>
