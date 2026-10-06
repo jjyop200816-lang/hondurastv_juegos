@@ -75,15 +75,15 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
+        "stream": "https://s2.bufaloweb.com/bufalo22/tracks-v4a1/mono.ts.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "http://195.178.110.110:80/espn/index.m3u8"
+        "stream": "https://s2.bufaloweb.com/bufalo23/tracks-v4a1/mono.ts.m3u8"
       },
       {
         "nombre": "Opción 3",
-        "stream": "https://www.rtmpcdn.com/live/3e4f5a6b-7c8d-9e0f-a1b2-c3d4e5f6a7b8.m3u8"
+        "stream": "http://45.5.117.187:8000/play/a02v/index.m3u8"
       }
     ]
   },
@@ -99,7 +99,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://d2cozakhtdw466.cloudfront.net/out/v1/0310eeeafd9a491796b23aec39fad1c4/index.m3u8"
+        "stream": "http://195.178.110.110:80/telemundo/index.m3u8"
       }
     ]
   },
@@ -115,7 +115,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://d395pc32ur2dpc.cloudfront.net/out/v1/97d5c45eb4b241db9400b97215ad5531/index.m3u8"
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       }
     ]
   }
