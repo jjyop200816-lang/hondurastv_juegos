@@ -54,17 +54,14 @@
             border-radius: 6px;
         }
 
-        .estado.envivo { background: #e53e3e; color: #ffffff; animation: blink 1.5s infinite; }
-
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0.5; }
-            100% { opacity: 1; }
+        .estado.finalizado { 
+            background: #4a5568; 
+            color: #e2e8f0; 
         }
 
         .timer {
             font-size: 0.8rem;
-            color: #f6ad55;
+            color: #a0aec0;
             font-weight: bold;
         }
         
@@ -120,21 +117,19 @@
         }
 
         .btn-opt { 
-            background: #0084ff; 
-            color: #ffffff; 
-            border: none; 
+            background: #2d3748; 
+            color: #a0aec0; 
+            border: 1px solid #4a5568; 
             padding: 8px 14px; 
             border-radius: 6px; 
             font-size: 0.85rem; 
             font-weight: bold; 
-            cursor: pointer; 
-            transition: background 0.2s;
+            cursor: not-allowed; 
             flex: 1;
             min-width: 100px;
             text-align: center;
+            opacity: 0.6;
         }
-
-        .btn-opt:active { background: #0056b3; }
     </style>
 </head>
 <body>
@@ -149,75 +144,17 @@
 
         const partidos = [
           {
-            "fecha_txt": "Lun, 5 de Oct | 09:20 p.m.",
+            "fecha_txt": "Lun, 5 de Oct | Finalizado",
             "equipo1": "Honduras",
             "equipo2": "Jamaica",
             "opciones": [
-              { "nombre": "Opción 1", "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8" },
-              { "nombre": "Opción 2", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" },
-              { "nombre": "Opción 3", "stream": "https://mdstrm.com/live-stream-playlist/6444304a7c35450938089b24.m3u8" },
-              { "nombre": "Opción 4", "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491438.m3u8" },
-              { "nombre": "Opción 5", "stream": "https://streaming-live-fcdn.api.prd.univisionnow.com/tudn/tudn.isml/hls/tudn.m3u8" }
+              { "nombre": "Opción 1", "stream": "#" },
+              { "nombre": "Opción 2", "stream": "#" },
+              { "nombre": "Opción 3", "stream": "#" },
+              { "nombre": "Opción 4", "stream": "#" },
+              { "nombre": "Opción 5", "stream": "#" }
             ]
           }
         ];
 
-        function cargarPartidos() {
-            const container = document.getElementById('partidos-container');
-            container.innerHTML = '';
-
-            partidos.forEach((p) => {
-                const titulo = `${p.equipo1} vs ${p.equipo2}`;
-
-                const estadoHtml = `<span class="estado envivo">● EN VIVO</span>`;
-                const timerHtml = `<div class="timer" style="color:#48bb78;">Transmisión activada</div>`;
-
-                let botonesHtml = '';
-                p.opciones.forEach(opt => {
-                    botonesHtml += `<button class="btn-opt" onclick="abrirOpcion('${opt.stream}', '${titulo}')">${opt.nombre}</button>`;
-                });
-                const opcionesContainerHtml = `<div class="opciones">${botonesHtml}</div>`;
-
-                const flag1 = banderas[p.equipo1] || '';
-                const flag2 = banderas[p.equipo2] || '';
-
-                const card = `
-                    <div class="card">
-                        <div class="header-card">
-                            <div class="fecha">${p.fecha_txt}</div>
-                            <span class="torneo-badge">CONCACAF NATIONS LEAGUE</span>
-                        </div>
-                        <div class="estado-container">
-                            ${estadoHtml}
-                            ${timerHtml}
-                        </div>
-                        <div class="equipos">
-                            <div class="equipo local">
-                                <span>${p.equipo1}</span>
-                                <img src="${flag1}" alt="${p.equipo1}" class="flag">
-                            </div>
-                            <span class="vs">VS</span>
-                            <div class="equipo visita">
-                                <img src="${flag2}" alt="${p.equipo2}" class="flag">
-                                <span>${p.equipo2}</span>
-                            </div>
-                        </div>
-                        ${opcionesContainerHtml}
-                    </div>
-                `;
-                container.innerHTML += card;
-            });
-        }
-
-        function abrirOpcion(url, titulo) {
-            if (window.Android && window.Android.openStream) {
-                window.Android.openStream(url + '|' + titulo);
-            } else {
-                window.location.href = url;
-            }
-        }
-
-        cargarPartidos();
-    </script>
-</body>
-</html>
+        function cargarPartidos()
