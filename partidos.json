@@ -19,7 +19,7 @@
       },
       {
         "nombre": "Opción 3",
-        "stream": "https://www.rtmpcdn.com/live/25c5b6cf-bb3d-407c-ad06-490d59e36307.m3u8"
+        "stream": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15619"
       }
     ]
   },
@@ -35,7 +35,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://195.178.110.110:80/sportv/index.m3u8"
+        "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8"
       }
     ]
   },
@@ -51,15 +51,15 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
+        "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "http://195.178.110.110:80/espn/index.m3u8"
+        "stream": "http://186.33.26.18:8000/play/a0qq/index.m3u8"
       },
       {
         "nombre": "Opción 3",
-        "stream": "https://www.rtmpcdn.com/live/8f3a12b4-5c91-4e2a-bb01-902d18471abc.m3u8"
+        "stream": "https://gojoportaltom3u.gojosare123.workers.dev/t=eyJwb3J0YWwiOiJodHRwOi8vNGsxLm5ldzRrLmNjOjgwIiwibWFjIjoiMDA6MUE6Nzk6MDA6MDI6OTMiLCJzbiI6IjYzRDdEQzBBMTA4NkMiLCJkZXZpY2UiOiIxQTc3MzREQUM2QjM5MzJCRkZFMTA5QUNCMjY4MDU4MkExRjM0Mjg2OENCODM5OTdEQjJDREZCNUQ0ODU3MzAzIn0=/2907.m3u"
       }
     ]
   },
