@@ -1,101 +1,104 @@
-    <script>
-        const banderas = {
-            "Honduras": "https://flagcdn.com/w40/hn.png",
-            "Jamaica": "https://flagcdn.com/w40/jm.png"
-        };
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Honduras</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; }
+        body { background-color: #0b1a30; color: #ffffff; padding: 12px; }
 
-        // Guardamos el momento exacto en que la página carga
-        const horaInicioAbsoluta = Date.now();
-        // Definimos la ventana de 4 horas (en milisegundos)
-        const duracionActivaMs = 4 * 60 * 60 * 1000; 
-        const horaCierreAbsoluta = horaInicioAbsoluta + duracionActivaMs;
-
-        const partidos = [
-          {
-            "fecha_txt": "EN VIVO AHORA",
-            "equipo1": "Honduras",
-            "equipo2": "Jamaica",
-            "opciones": [
-              { "nombre": "Opción 1", "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8" },
-              { "nombre": "Opción 2", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" },
-              { "nombre": "Opción 3", "stream": "https://streaming.onnethn.com/TSI/playlist.m3u8" },
-              { "nombre": "Opción 4", "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491438.m3u8" },
-              { "nombre": "Opción 5", "stream": "https://ejemplo.com/live/honduras_jamaica_opt5.m3u8" }
-            ]
-          }
-        ];
-
-        function actualizarLogica() {
-            const container = document.getElementById('partidos-container');
-            container.innerHTML = '';
-            const ahora = Date.now();
-
-            partidos.forEach((p) => {
-                let estadoHtml = '';
-                let timerHtml = '';
-                let opcionesContainerHtml = '';
-                const titulo = `${p.equipo1} vs ${p.equipo2}`;
-
-                if (ahora <= horaCierreAbsoluta) {
-                    const tiempoRestante = horaCierreAbsoluta - ahora;
-                    const horas = Math.floor(tiempoRestante / (1000 * 60 * 60));
-                    const minutos = Math.floor((tiempoRestante % (1000 * 60 * 60)) / (1000 * 60));
-                    const segundos = Math.floor((tiempoRestante % (1000 * 60)) / 1000);
-
-                    estadoHtml = `<span class="estado envivo">● EN VIVO</span>`;
-                    timerHtml = `<div class="timer" style="color:#48bb78;">Transmisión activada (Cierra en ${horas}h ${minutos}m ${segundos}s)</div>`;
-
-                    let botonesHtml = '';
-                    p.opciones.forEach(opt => {
-                        botonesHtml += `<button class="btn-opt" onclick="abrirOpcion('${opt.stream}', '${titulo}')">${opt.nombre}</button>`;
-                    });
-                    opcionesContainerHtml = `<div class="opciones">${botonesHtml}</div>`;
-
-                } else {
-                    estadoHtml = `<span class="estado finalizado">FINALIZADO</span>`;
-                    timerHtml = `<div class="timer" style="color:#718096;">Partido concluido</div>`;
-                    opcionesContainerHtml = '';
-                }
-
-                const flag1 = banderas[p.equipo1] || '';
-                const flag2 = banderas[p.equipo2] || '';
-
-                const card = `
-                    <div class="card">
-                        <div class="header-card">
-                            <div class="fecha">${p.fecha_txt}</div>
-                            <span class="torneo-badge">CONCACAF NATIONS LEAGUE</span>
-                        </div>
-                        <div class="estado-container">
-                            ${estadoHtml}
-                            ${timerHtml}
-                        </div>
-                        <div class="equipos">
-                            <div class="equipo local">
-                                <span>${p.equipo1}</span>
-                                <img src="${flag1}" alt="${p.equipo1}" class="flag">
-                            </div>
-                            <span class="vs">VS</span>
-                            <div class="equipo visita">
-                                <img src="${flag2}" alt="${p.equipo2}" class="flag">
-                                <span>${p.equipo2}</span>
-                            </div>
-                        </div>
-                        ${opcionesContainerHtml}
-                    </div>
-                `;
-                container.innerHTML += card;
-            });
+        .card { 
+            background: #152943; 
+            border-radius: 12px; 
+            padding: 14px; 
+            margin-bottom: 12px; 
+            border: 1px solid #233f63;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
         }
 
-        function abrirOpcion(url, titulo) {
-            if (window.Android && window.Android.openStream) {
-                window.Android.openStream(url + '|' + titulo);
-            } else {
-                window.location.href = url;
-            }
+        .header-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
         }
 
-        actualizarLogica();
-        setInterval(actualizarLogica, 1000);
-    </script>
+        .fecha { 
+            font-size: 0.85rem; 
+            color: #00a8ff; 
+            font-weight: bold; 
+            text-transform: uppercase;
+        }
+
+        .torneo-badge {
+            font-size: 0.7rem;
+            background: #1e3a5f;
+            color: #a0aec0;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        .estado-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .estado {
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 6px;
+        }
+
+        .estado.proximo { background: #1e3a5f; color: #a0aec0; }
+        .estado.envivo { background: #e53e3e; color: #ffffff; animation: blink 1.5s infinite; }
+        .estado.finalizado { background: #2d3748; color: #718096; }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .timer {
+            font-size: 0.8rem;
+            color: #f6ad55;
+            font-weight: bold;
+        }
+        
+        .equipos { 
+            display: flex; 
+            justify-content: space-around; 
+            align-items: center; 
+            font-size: 1.05rem; 
+            font-weight: bold; 
+            margin-bottom: 8px; 
+            padding: 6px 0;
+        }
+
+        .equipo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 42%;
+        }
+
+        .equipo.local {
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        .equipo.visita {
+            justify-content: flex-start;
+            text-align: left;
+        }
+
+        .flag {
+            width: 28px;
+            height: 20px;
+            object-fit: cover;
+            border-radius
