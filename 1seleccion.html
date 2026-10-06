@@ -1,158 +1,18 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selección de Honduras</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; }
-        body { background-color: #0b1a30; color: #ffffff; padding: 12px; }
-
-        .card { 
-            background: #152943; 
-            border-radius: 12px; 
-            padding: 14px; 
-            margin-bottom: 12px; 
-            border: 1px solid #233f63;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-        }
-
-        .header-card {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 6px;
-        }
-
-        .fecha { 
-            font-size: 0.85rem; 
-            color: #00a8ff; 
-            font-weight: bold; 
-            text-transform: uppercase;
-        }
-
-        .torneo-badge {
-            font-size: 0.7rem;
-            background: #1e3a5f;
-            color: #a0aec0;
-            padding: 2px 8px;
-            border-radius: 10px;
-            font-weight: 600;
-        }
-
-        .estado-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 12px;
-        }
-
-        .estado {
-            font-size: 0.75rem;
-            font-weight: bold;
-            padding: 3px 8px;
-            border-radius: 6px;
-        }
-
-        .estado.proximo { background: #1e3a5f; color: #a0aec0; }
-        .estado.envivo { background: #e53e3e; color: #ffffff; animation: blink 1.5s infinite; }
-        .estado.finalizado { background: #2d3748; color: #718096; }
-
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0.5; }
-            100% { opacity: 1; }
-        }
-
-        .timer {
-            font-size: 0.8rem;
-            color: #f6ad55;
-            font-weight: bold;
-        }
-        
-        .equipos { 
-            display: flex; 
-            justify-content: space-around; 
-            align-items: center; 
-            font-size: 1.05rem; 
-            font-weight: bold; 
-            margin-bottom: 8px; 
-            padding: 6px 0;
-        }
-
-        .equipo {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            width: 42%;
-        }
-
-        .equipo.local {
-            justify-content: flex-end;
-            text-align: right;
-        }
-
-        .equipo.visita {
-            justify-content: flex-start;
-            text-align: left;
-        }
-
-        .flag {
-            width: 28px;
-            height: 20px;
-            object-fit: cover;
-            border-radius: 3px;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-
-        .vs { 
-            font-size: 0.8rem; 
-            color: #7f97b5; 
-            background: #0b1a30;
-            padding: 3px 10px;
-            border-radius: 10px;
-        }
-
-        .opciones { 
-            display: flex; 
-            gap: 8px; 
-            flex-wrap: wrap; 
-            margin-top: 10px;
-            justify-content: center;
-        }
-
-        .btn-opt { 
-            background: #0084ff; 
-            color: #ffffff; 
-            border: none; 
-            padding: 8px 14px; 
-            border-radius: 6px; 
-            font-size: 0.85rem; 
-            font-weight: bold; 
-            cursor: pointer; 
-            transition: background 0.2s;
-            flex: 1;
-            min-width: 100px;
-            text-align: center;
-        }
-
-        .btn-opt:active { background: #0056b3; }
-    </style>
-</head>
-<body>
-
-    <div id="partidos-container">Cargando partido...</div>
-
     <script>
         const banderas = {
             "Honduras": "https://flagcdn.com/w40/hn.png",
             "Jamaica": "https://flagcdn.com/w40/jm.png"
         };
 
+        // Guardamos el momento exacto en que la página carga
+        const horaInicioAbsoluta = Date.now();
+        // Definimos la ventana de 4 horas (en milisegundos)
+        const duracionActivaMs = 4 * 60 * 60 * 1000; 
+        const horaCierreAbsoluta = horaInicioAbsoluta + duracionActivaMs;
+
         const partidos = [
           {
-            "fecha_txt": "Lun, 5 de Oct | 10:00 p.m.",
-            "start": "2026-10-06T04:00:00Z",
+            "fecha_txt": "EN VIVO AHORA",
             "equipo1": "Honduras",
             "equipo2": "Jamaica",
             "opciones": [
@@ -171,28 +31,19 @@
             const ahora = Date.now();
 
             partidos.forEach((p) => {
-                const horaInicio = new Date(p.start).getTime();
-                const horaApertura = horaInicio - (30 * 60 * 1000); 
-                const horaCierre = horaInicio + ((90 + 30) * 60 * 1000); 
-
                 let estadoHtml = '';
                 let timerHtml = '';
                 let opcionesContainerHtml = '';
                 const titulo = `${p.equipo1} vs ${p.equipo2}`;
 
-                if (ahora < horaApertura) {
-                    const dif = horaApertura - ahora;
-                    const horas = Math.floor(dif / (1000 * 60 * 60));
-                    const minutos = Math.floor((dif % (1000 * 60 * 60)) / (1000 * 60));
-                    const segundos = Math.floor((dif % (1000 * 60)) / 1000);
+                if (ahora <= horaCierreAbsoluta) {
+                    const tiempoRestante = horaCierreAbsoluta - ahora;
+                    const horas = Math.floor(tiempoRestante / (1000 * 60 * 60));
+                    const minutos = Math.floor((tiempoRestante % (1000 * 60 * 60)) / (1000 * 60));
+                    const segundos = Math.floor((tiempoRestante % (1000 * 60)) / 1000);
 
-                    estadoHtml = `<span class="estado proximo">POR JUGAR</span>`;
-                    timerHtml = `<div class="timer">Abre en: ${horas}h ${minutos}m ${segundos}s</div>`;
-                    opcionesContainerHtml = '';
-
-                } else if (ahora >= horaApertura && ahora <= horaCierre) {
                     estadoHtml = `<span class="estado envivo">● EN VIVO</span>`;
-                    timerHtml = `<div class="timer" style="color:#48bb78;">Transmisión activada</div>`;
+                    timerHtml = `<div class="timer" style="color:#48bb78;">Transmisión activada (Cierra en ${horas}h ${minutos}m ${segundos}s)</div>`;
 
                     let botonesHtml = '';
                     p.opciones.forEach(opt => {
@@ -248,5 +99,3 @@
         actualizarLogica();
         setInterval(actualizarLogica, 1000);
     </script>
-</body>
-</html>
