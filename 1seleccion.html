@@ -101,4 +101,152 @@
             width: 28px;
             height: 20px;
             object-fit: cover;
-            border-radius
+            border-radius: 3px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .vs { 
+            font-size: 0.8rem; 
+            color: #7f97b5; 
+            background: #0b1a30;
+            padding: 3px 10px;
+            border-radius: 10px;
+        }
+
+        .opciones { 
+            display: flex; 
+            gap: 8px; 
+            flex-wrap: wrap; 
+            margin-top: 10px;
+            justify-content: center;
+        }
+
+        .btn-opt { 
+            background: #0084ff; 
+            color: #ffffff; 
+            border: none; 
+            padding: 8px 14px; 
+            border-radius: 6px; 
+            font-size: 0.85rem; 
+            font-weight: bold; 
+            cursor: pointer; 
+            transition: background 0.2s;
+            flex: 1;
+            min-width: 100px;
+            text-align: center;
+        }
+
+        .btn-opt:active { background: #0056b3; }
+    </style>
+</head>
+<body>
+
+    <div id="partidos-container">Cargando partido...</div>
+
+    <script>
+        const banderas = {
+            "Honduras": "https://flagcdn.com/w40/hn.png",
+            "Jamaica": "https://flagcdn.com/w40/jm.png"
+        };
+
+        const partidos = [
+          {
+            "fecha_txt": "Lun, 5 de Oct | 10:00 p.m.",
+            "start": "2026-10-06T04:00:00Z",
+            "equipo1": "Honduras",
+            "equipo2": "Jamaica",
+            "opciones": [
+              { "nombre": "Opción 1", "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8" },
+              { "nombre": "Opción 2", "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx" },
+              { "nombre": "Opción 3", "stream": "https://streaming.onnethn.com/TSI/playlist.m3u8" },
+              { "nombre": "Opción 4", "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/491438.m3u8" },
+              { "nombre": "Opción 5", "stream": "https://ejemplo.com/live/honduras_jamaica_opt5.m3u8" }
+            ]
+          }
+        ];
+
+        function actualizarLogica() {
+            const container = document.getElementById('partidos-container');
+            container.innerHTML = '';
+            const ahora = Date.now();
+
+            partidos.forEach((p) => {
+                const horaInicio = new Date(p.start).getTime();
+                const horaApertura = horaInicio - (30 * 60 * 1000); 
+                const horaCierre = horaInicio + ((90 + 30) * 60 * 1000); 
+
+                let estadoHtml = '';
+                let timerHtml = '';
+                let opcionesContainerHtml = '';
+                const titulo = `${p.equipo1} vs ${p.equipo2}`;
+
+                if (ahora < horaApertura) {
+                    const dif = horaApertura - ahora;
+                    const horas = Math.floor(dif / (1000 * 60 * 60));
+                    const minutos = Math.floor((dif % (1000 * 60 * 60)) / (1000 * 60));
+                    const segundos = Math.floor((dif % (1000 * 60)) / 1000);
+
+                    estadoHtml = `<span class="estado proximo">POR JUGAR</span>`;
+                    timerHtml = `<div class="timer">Abre en: ${horas}h ${minutos}m ${segundos}s</div>`;
+                    opcionesContainerHtml = '';
+
+                } else if (ahora >= horaApertura && ahora <= horaCierre) {
+                    estadoHtml = `<span class="estado envivo">● EN VIVO</span>`;
+                    timerHtml = `<div class="timer" style="color:#48bb78;">Transmisión activada</div>`;
+
+                    let botonesHtml = '';
+                    p.opciones.forEach(opt => {
+                        botonesHtml += `<button class="btn-opt" onclick="abrirOpcion('${opt.stream}', '${titulo}')">${opt.nombre}</button>`;
+                    });
+                    opcionesContainerHtml = `<div class="opciones">${botonesHtml}</div>`;
+
+                } else {
+                    estadoHtml = `<span class="estado finalizado">FINALIZADO</span>`;
+                    timerHtml = `<div class="timer" style="color:#718096;">Partido concluido</div>`;
+                    opcionesContainerHtml = '';
+                }
+
+                const flag1 = banderas[p.equipo1] || '';
+                const flag2 = banderas[p.equipo2] || '';
+
+                const card = `
+                    <div class="card">
+                        <div class="header-card">
+                            <div class="fecha">${p.fecha_txt}</div>
+                            <span class="torneo-badge">CONCACAF NATIONS LEAGUE</span>
+                        </div>
+                        <div class="estado-container">
+                            ${estadoHtml}
+                            ${timerHtml}
+                        </div>
+                        <div class="equipos">
+                            <div class="equipo local">
+                                <span>${p.equipo1}</span>
+                                <img src="${flag1}" alt="${p.equipo1}" class="flag">
+                            </div>
+                            <span class="vs">VS</span>
+                            <div class="equipo visita">
+                                <img src="${flag2}" alt="${p.equipo2}" class="flag">
+                                <span>${p.equipo2}</span>
+                            </div>
+                        </div>
+                        ${opcionesContainerHtml}
+                    </div>
+                `;
+                container.innerHTML += card;
+            });
+        }
+
+        function abrirOpcion(url, titulo) {
+            if (window.Android && window.Android.openStream) {
+                window.Android.openStream(url + '|' + titulo);
+            } else {
+                window.location.href = url;
+            }
+        }
+
+        actualizarLogica();
+        setInterval(actualizarLogica, 1000);
+    </script>
+</body>
+</html>
