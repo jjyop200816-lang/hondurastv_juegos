@@ -99,7 +99,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://195.178.110.110:80/telemundo/index.m3u8"
+        "stream": "https://www.rtmpcdn.com/live/f7a022c0-2874-46aa-88ab-cc421122c02c.m3u8"
       }
     ]
   },
