@@ -35,7 +35,6 @@
         .vs-container { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 50px; }
         .vs { font-size: 0.85rem; color: #64748b; font-weight: 800; }
 
-        /* Ocultar acciones si está en espera o finalizado */
         .actions { display: none; justify-content: center; align-items: center; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
         .card.active .actions { display: flex; }
         .card.finished .actions, .card.waiting .actions { display: none !important; }
@@ -56,10 +55,10 @@
     <!-- VIERNES 9 DE OCTUBRE -->
     <div class="date-group">Viernes, 9 de oct</div>
 
-    <!-- Platense FC vs Juticalpa (5:00 p.m. Honduras = 23:00 UTC) -->
-    <div class="card waiting" data-start="2026-10-09T23:00:00Z" data-end="2026-10-10T01:00:00Z">
+    <!-- Platense FC vs Juticalpa (5:04 p.m. EDT = 21:04 UTC) -->
+    <div class="card waiting" data-start="2026-10-09T21:04:00Z" data-end="2026-10-09T23:04:00Z">
         <div class="match-info">
-            <span class="date-time">5:00 p.m.</span>
+            <span class="date-time">5:04 p.m. EDT</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
             <span class="status-badge badge-pre">PREVIA (Abierto)</span>
             <span class="status-badge badge-live">EN VIVO</span>
@@ -77,10 +76,10 @@
         </div>
     </div>
 
-    <!-- FC Motagua vs CD Choloma (9:30 p.m. Honduras = 03:30 UTC del día siguiente) -->
-    <div class="card waiting" data-start="2026-10-10T03:30:00Z" data-end="2026-10-10T05:30:00Z">
+    <!-- FC Motagua vs CD Choloma (9:30 p.m. EDT = 01:30 UTC del día siguiente) -->
+    <div class="card waiting" data-start="2026-10-10T01:30:00Z" data-end="2026-10-10T03:30:00Z">
         <div class="match-info">
-            <span class="date-time">9:30 p.m.</span>
+            <span class="date-time">9:30 p.m. EDT</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
             <span class="status-badge badge-pre">PREVIA (Abierto)</span>
             <span class="status-badge badge-live">EN VIVO</span>
@@ -101,10 +100,10 @@
     <!-- SÁBADO 10 DE OCTUBRE -->
     <div class="date-group">Sábado, 10 de oct</div>
 
-    <!-- Genesis FC vs CD Olimpia (5:15 p.m. Honduras = 23:15 UTC) -->
-    <div class="card waiting" data-start="2026-10-10T23:15:00Z" data-end="2026-10-11T01:15:00Z">
+    <!-- Genesis FC vs CD Olimpia (5:15 p.m. EDT = 21:15 UTC) -->
+    <div class="card waiting" data-start="2026-10-10T21:15:00Z" data-end="2026-10-10T23:15:00Z">
         <div class="match-info">
-            <span class="date-time">5:15 p.m.</span>
+            <span class="date-time">5:15 p.m. EDT</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
             <span class="status-badge badge-pre">PREVIA (Abierto)</span>
             <span class="status-badge badge-live">EN VIVO</span>
@@ -121,10 +120,10 @@
         </div>
     </div>
 
-    <!-- Lobos UPNFM vs CD Marathón (9:00 p.m. Honduras = 03:00 UTC del día siguiente) -->
-    <div class="card waiting" data-start="2026-10-11T03:00:00Z" data-end="2026-10-11T05:00:00Z">
+    <!-- Lobos UPNFM vs CD Marathón (9:00 p.m. EDT = 01:00 UTC del día siguiente) -->
+    <div class="card waiting" data-start="2026-10-11T01:00:00Z" data-end="2026-10-11T03:00:00Z">
         <div class="match-info">
-            <span class="date-time">9:00 p.m.</span>
+            <span class="date-time">9:00 p.m. EDT</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
             <span class="status-badge badge-pre">PREVIA (Abierto)</span>
             <span class="status-badge badge-live">EN VIVO</span>
@@ -145,10 +144,10 @@
     <!-- DOMINGO 11 DE OCTUBRE -->
     <div class="date-group">Domingo, 11 de oct</div>
 
-    <!-- Estrella Roja vs Real España (5:00 p.m. Honduras = 23:00 UTC) -->
-    <div class="card waiting" data-start="2026-10-11T23:00:00Z" data-end="2026-10-12T01:00:00Z">
+    <!-- Estrella Roja vs Real España (5:00 p.m. EDT = 21:00 UTC) -->
+    <div class="card waiting" data-start="2026-10-11T21:00:00Z" data-end="2026-10-11T23:00:00Z">
         <div class="match-info">
-            <span class="date-time">5:00 p.m.</span>
+            <span class="date-time">5:00 p.m. EDT</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
             <span class="status-badge badge-pre">PREVIA (Abierto)</span>
             <span class="status-badge badge-live">EN VIVO</span>
@@ -161,15 +160,15 @@
         </div>
         <div class="actions">
             <button onclick="openAction('deportestvc_2')" class="play-btn">▶ OPCIÓN 1</button>
-            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 3</button>
+            <button onclick="openAction('deportestvc_3')" class="play-btn">▶ OPCIÓN 2</button>
             <button onclick="openAction('deportestvc_1')" class="play-btn">▶ OPCIÓN 3</button>
         </div>
     </div>
 
-    <!-- Olancho FC vs Atletico Independiente (7:15 p.m. Honduras = 01:15 UTC del día siguiente) -->
-    <div class="card waiting" data-start="2026-10-12T01:15:00Z" data-end="2026-10-12T03:15:00Z">
+    <!-- Olancho FC vs Atletico Independiente (7:15 p.m. EDT = 23:15 UTC) -->
+    <div class="card waiting" data-start="2026-10-11T23:15:00Z" data-end="2026-10-12T01:15:00Z">
         <div class="match-info">
-            <span class="date-time">7:15 p.m.</span>
+            <span class="date-time">7:15 p.m. EDT</span>
             <span class="status-badge badge-wait">PRÓXIMO</span>
             <span class="status-badge badge-pre">PREVIA (Abierto)</span>
             <span class="status-badge badge-live">EN VIVO</span>
@@ -199,10 +198,8 @@
     }
 
     function actualizarEstados() {
-        // Devuelve los milisegundos UTC universales actuales
         const ahora = Date.now();
         
-        // Ventana de 20 minutos antes y 20 minutos después
         const PREVIA_MS = 20 * 60 * 1000;
         const GRACIA_FIN_MS = 20 * 60 * 1000;
         
@@ -212,7 +209,6 @@
             const startAttr = card.getAttribute('data-start');
             const endAttr = card.getAttribute('data-end');
 
-            // Date.parse analiza la cadena ISO UTC ("YYYY-MM-DDTHH:mm:ssZ") y devuelve marcas de tiempo unix universales
             const inicio = Date.parse(startAttr);
             const finOficial = Date.parse(endAttr);
             
@@ -224,20 +220,16 @@
             card.classList.remove('active', 'finished', 'is-live', 'waiting', 'upcoming');
 
             if (ahora < inicioPrevia) {
-                // Faltan más de 20 minutos (Cerrado)
                 card.classList.add('waiting');
             } 
             else if (ahora >= inicioPrevia && ahora < inicio) {
-                // Faltan 20 minutos o menos: Abre la previa y activa botones
                 card.classList.add('active', 'upcoming');
             } 
             else if (ahora >= inicio && ahora <= finConGracia) {
-                // Partido en curso y hasta 20 min después del final: Abierto y En Vivo
                 card.classList.add('active', 'is-live');
                 hayPartidosEnVivo = true;
             } 
             else {
-                // Pasados los 20 minutos tras finalizar: Cierra y marca FINALIZADO
                 card.classList.add('finished');
             }
         });
