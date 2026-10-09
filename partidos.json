@@ -1,37 +1,13 @@
 [
   {
-    "fecha": "6 de octubre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-10-06T18:25:00Z",
-    "end": "2026-10-06T21:00:00Z",
-    "equipo1": "Croacia",
-    "logo1": "https://flagcdn.com/w80/hr.png",
-    "equipo2": "España",
-    "logo2": "https://flagcdn.com/w80/es.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "http://195.178.110.110:80/espn/index.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15619"
-      }
-    ]
-  },
-  {
-    "fecha": "6 de octubre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-10-06T18:25:00Z",
-    "end": "2026-10-06T21:00:00Z",
-    "equipo1": "Inglaterra",
-    "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "Chequia",
-    "logo2": "https://flagcdn.com/w80/cz.png",
+    "fecha": "9 de octubre de 2026 | 2:30 p.m.",
+    "hora": "2:30 p.m.",
+    "start": "2026-10-09T18:10:00Z",
+    "end": "2026-10-09T21:15:00Z",
+    "equipo1": "Dortmund",
+    "logo1": "https://flagcdn.com/w80/de.png",
+    "equipo2": "Werder Bremen",
+    "logo2": "https://flagcdn.com/w80/de.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -40,78 +16,78 @@
     ]
   },
   {
-    "fecha": "6 de octubre de 2026 | 7:00 p.m.",
-    "hora": "7:00 p.m.",
-    "start": "2026-10-06T22:40:00Z",
-    "end": "2026-10-07T01:15:00Z",
-    "equipo1": "Argentina",
-    "logo1": "https://flagcdn.com/w80/ar.png",
-    "equipo2": "Benín",
-    "logo2": "https://flagcdn.com/w80/bj.png",
+    "fecha": "9 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-09T18:40:00Z",
+    "end": "2026-10-09T21:45:00Z",
+    "equipo1": "Málaga",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "Espanyol",
+    "logo2": "https://flagcdn.com/w80/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "http://186.33.26.18:8000/play/a0qq/index.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "http://195.178.110.110:80/sportv/index.m3u8"
+        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
       }
     ]
   },
   {
-    "fecha": "6 de octubre de 2026 | 7:45 p.m.",
-    "hora": "7:45 p.m.",
-    "start": "2026-10-06T23:25:00Z",
-    "end": "2026-10-07T02:00:00Z",
-    "equipo1": "Colombia",
-    "logo1": "https://flagcdn.com/w80/co.png",
-    "equipo2": "Perú",
-    "logo2": "https://flagcdn.com/w80/pe.png",
+    "fecha": "9 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-09T18:40:00Z",
+    "end": "2026-10-09T21:45:00Z",
+    "equipo1": "West Ham",
+    "logo1": "https://flagcdn.com/w80/gb-eng.png",
+    "equipo2": "QPR",
+    "logo2": "https://flagcdn.com/w80/gb-eng.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15619"
+      }
+    ]
+  },
+  {
+    "fecha": "9 de octubre de 2026 | 6:30 p.m.",
+    "hora": "6:30 p.m.",
+    "start": "2026-10-09T22:10:00Z",
+    "end": "2026-10-10T01:15:00Z",
+    "equipo1": "Instituto",
+    "logo1": "https://flagcdn.com/w80/ar.png",
+    "equipo2": "Boca Juniors",
+    "logo2": "https://flagcdn.com/w80/ar.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "http://186.33.26.18:8000/play/a0qq/index.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "9 de octubre de 2026 | 9:00 p.m.",
+    "hora": "9:00 p.m.",
+    "start": "2026-10-10T00:40:00Z",
+    "end": "2026-10-10T03:45:00Z",
+    "equipo1": "Puebla",
+    "logo1": "https://flagcdn.com/w80/mx.png",
+    "equipo2": "León",
+    "logo2": "https://flagcdn.com/w80/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "https://s2.bufaloweb.com/bufalo22/tracks-v4a1/mono.ts.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "https://s2.bufaloweb.com/bufalo23/tracks-v4a1/mono.ts.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "http://45.5.117.187:8000/play/a02v/index.m3u8"
       }
     ]
   },
   {
-    "fecha": "6 de octubre de 2026 | 8:00 p.m.",
-    "hora": "8:00 p.m.",
-    "start": "2026-10-06T23:40:00Z",
-    "end": "2026-10-07T02:15:00Z",
-    "equipo1": "EE. UU.",
-    "logo1": "https://flagcdn.com/w80/us.png",
-    "equipo2": "Canadá",
-    "logo2": "https://flagcdn.com/w80/ca.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://www.rtmpcdn.com/live/f7a022c0-2874-46aa-88ab-cc421122c02c.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "6 de octubre de 2026 | 10:30 p.m.",
-    "hora": "10:30 p.m.",
-    "start": "2026-10-07T02:10:00Z",
-    "end": "2026-10-07T04:45:00Z",
-    "equipo1": "México",
+    "fecha": "9 de octubre de 2026 | 11:00 p.m.",
+    "hora": "11:00 p.m.",
+    "start": "2026-10-10T02:40:00Z",
+    "end": "2026-10-10T05:45:00Z",
+    "equipo1": "Tigres",
     "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Chile",
-    "logo2": "https://flagcdn.com/w80/cl.png",
+    "equipo2": "Toluca",
+    "logo2": "https://flagcdn.com/w80/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
