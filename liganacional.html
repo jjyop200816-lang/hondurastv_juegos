@@ -5,63 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liga Nacional de Honduras</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; }
-        body { background-color: #0b132b; color: #ffffff; padding: 16px; display: flex; justify-content: center; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, Helvetica, sans-serif; }
+        body { 
+            background: linear-gradient(135deg, #030712 0%, #0f172a 100%); 
+            color: #f8fafc; 
+            padding: 16px; 
+            display: flex; 
+            justify-content: center; 
+            min-height: 100vh;
+        }
         .container { width: 100%; max-width: 480px; }
-        .header { text-align: center; margin-bottom: 20px; }
-        .header h1 { font-size: 1.6rem; color: #38bdf8; text-transform: uppercase; margin-bottom: 5px; }
-        .header p { font-size: 0.95rem; color: #94a3b8; }
         
-        .card { background: #1c2541; border-radius: 12px; padding: 16px; margin-bottom: 14px; border: 1px solid #2a3a5e; transition: all 0.3s ease; }
-        .card.active { border: 2px solid #00c853; background: linear-gradient(145deg, #1c2541, #0b2545); box-shadow: 0 0 12px rgba(0, 200, 83, 0.3); }
-        .card.finished { opacity: 0.6; }
+        .header { text-align: center; margin-bottom: 24px; padding-top: 5px; }
+        .header h1 { font-size: 1.8rem; font-weight: 800; background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+        .header p { font-size: 0.9rem; color: #94a3b8; font-weight: 500; text-transform: uppercase; letter-spacing: 2px; }
+        
+        /* TARJETAS MODERNAS CON ESTILO OSCURO ELEGANTE */
+        .card { 
+            background: rgba(30, 41, 59, 0.7); 
+            backdrop-filter: blur(10px);
+            border-radius: 16px; 
+            padding: 18px; 
+            margin-bottom: 16px; 
+            border: 1px solid rgba(255, 255, 255, 0.08); 
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease; 
+        }
+        .card.active { 
+            border: 2px solid #10b981; 
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.9), rgba(6, 78, 59, 0.4)); 
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.3); 
+        }
+        .card.finished { opacity: 0.55; filter: grayscale(20%); }
 
-        .match-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 8px; }
-        .date-time { font-size: 0.9rem; color: #cbd5e1; font-weight: 600; }
+        .match-info { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid rgba(255, 255, 255, 0.06); padding-bottom: 10px; }
+        .date-time { font-size: 0.85rem; color: #cbd5e1; font-weight: 600; display: flex; align-items: center; gap: 6px; }
         
-        .status-badge { font-size: 0.75rem; padding: 3px 10px; border-radius: 12px; font-weight: bold; text-transform: uppercase; display: none; }
-        .card.waiting .badge-wait { display: inline-block; background-color: #334155; color: #cbd5e1; }
-        .card.active .badge-live { display: inline-block; background-color: #00c853; color: #fff; animation: pulse 2s infinite; }
-        .card.finished .badge-ended { display: inline-block; background-color: #475569; color: #cbd5e1; }
+        /* BADGES MODERNOS */
+        .status-badge { font-size: 0.7rem; padding: 4px 12px; border-radius: 20px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; display: none; }
+        .card.waiting .badge-wait { display: inline-block; background-color: rgba(51, 65, 85, 0.8); color: #94a3b8; border: 1px solid rgba(255,255,255,0.05); }
+        .card.active .badge-live { display: inline-block; background-color: #10b981; color: #fff; animation: pulse 2s infinite; box-shadow: 0 0 10px #10b981; }
+        .card.finished .badge-ended { display: inline-block; background-color: rgba(71, 85, 105, 0.6); color: #cbd5e1; }
 
-        .teams { display: flex; justify-content: space-between; align-items: center; margin: 15px 0; }
-        .team { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: bold; font-size: 0.90rem; text-align: center; }
+        /* EQUIPOS Y LOGOS MÁS GRANDES */
+        .teams { display: flex; justify-content: space-between; align-items: center; margin: 16px 0 8px 0; }
+        .team { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center; }
         
-        /* ESTILO UNIFORME PARA TODOS LOS ESCUDOS */
+        .team span { font-weight: 700; font-size: 0.95rem; color: #f1f5f9; line-height: 1.2; }
+        
         .flag { 
-            width: 32px; 
-            height: 32px; 
+            width: 48px; 
+            height: 48px; 
             border-radius: 50%; 
             object-fit: contain; 
-            background: #ffffff; 
-            padding: 3px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.95); 
+            padding: 4px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.2);
             flex-shrink: 0;
         }
         
-        .vs { font-size: 0.85rem; color: #64748b; font-weight: bold; padding: 0 10px; }
+        .vs { font-size: 0.8rem; color: #64748b; font-weight: 800; padding: 0 8px; font-style: italic; }
 
-        .actions { display: none; justify-content: center; align-items: center; margin-top: 12px; flex-direction: column; gap: 8px; }
+        .actions { display: none; justify-content: center; align-items: center; margin-top: 16px; flex-direction: column; gap: 8px; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 14px; }
         .card.active .actions { display: flex; }
 
-        .play-btn { display: inline-flex; justify-content: center; align-items: center; padding: 10px 20px; border-radius: 20px; background: #00c853; color: white; text-decoration: none; font-size: 14px; font-weight: bold; border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 200, 83, 0.4); width: 100%; max-width: 200px; }
-        .play-btn:active { transform: scale(0.95); background: #00a843; }
+        .play-btn { display: inline-flex; justify-content: center; align-items: center; padding: 12px 24px; border-radius: 25px; background: linear-gradient(135deg, #10b981, #059669); color: white; text-decoration: none; font-size: 0.9rem; font-weight: 700; border: none; cursor: pointer; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4); width: 100%; max-width: 220px; transition: transform 0.2s; }
+        .play-btn:active { transform: scale(0.96); }
 
-        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.6; } 100% { opacity: 1; } }
     </style>
 </head>
 <body>
 
 <div class="container">
     <div class="header">
-        <h1>LIGA NACIONAL</h1>
+        <h1>Liga Nacional</h1>
         <p>Jornada Actual</p>
     </div>
     <div id="matches-list">Cargando partidos...</div>
 </div>
 
 <script>
-    // DICCIONARIO COMPLETO CON LOS 12 EQUIPOS Y SUS ESCUDOS OFICIALES
+    // DICCIONARIO ACTUALIZADO (Motagua corregido y logos optimizados)
     const escudosEquipos = {
         "CD Olimpia": "https://escudosfc.com.br/images/olimpia_hon.png",
         "FC Motagua": "https://escudosfc.com.br/images/motagua_hon.png",
@@ -120,7 +146,7 @@
                 const cardHtml = `
                     <div class="card waiting" id="card-${index}" data-start="${item.start}" data-end="${item.end}">
                         <div class="match-info">
-                            <span class="date-time">📅 ${horaTexto}</span>
+                            <span class="date-time">🕒 ${horaTexto}</span>
                             <span class="status-badge badge-wait">PRÓXIMO</span>
                             <span class="status-badge badge-live">EN VIVO</span>
                             <span class="status-badge badge-ended">FINALIZADO</span>
