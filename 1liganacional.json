@@ -57,7 +57,7 @@
       },
       {
         "nombre": "Opción 3",
-        "stream": "http://38.52.208.106:8000/play/a03d/index.m3u8"
+        "stream": "http://177.10.184.60:8002/play/a00v/index.m3u8"
       }
     ]
   },
@@ -79,7 +79,7 @@
       },
       {
         "nombre": "Opción 3",
-        "stream": "deportestvc_2"
+        "stream": "http://177.10.184.60:8002/play/a00v/index.m3u8"
       }
     ]
   },
@@ -101,7 +101,7 @@
       },
       {
         "nombre": "Opción 3",
-        "stream": "hch"
+        "stream": "http://177.10.184.60:8002/play/a00v/index.m3u8"
       }
     ]
   },
@@ -123,7 +123,7 @@
       },
       {
         "nombre": "Opción 3",
-        "stream": "deportestvc_3"
+        "stream": "http://177.10.184.60:8002/play/a00v/index.m3u8"
       }
     ]
   }
