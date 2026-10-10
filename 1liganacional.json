@@ -1,0 +1,91 @@
+[
+  {
+    "fecha": "Viernes, 9 de oct",
+    "hora": "5:00 p.m. EDT",
+    "start": "2026-10-09T20:30:00Z",
+    "end": "2026-10-09T23:30:00Z",
+    "equipo1": "Platense FC",
+    "logo1": "https://via.placeholder.com/80",
+    "equipo2": "Juticalpa FC",
+    "logo2": "https://via.placeholder.com/80",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "deportestvc_2" },
+      { "nombre": "Opción 2", "stream": "deportestvc_3" },
+      { "nombre": "Opción 3", "stream": "deportestvc_1" }
+    ]
+  },
+  {
+    "fecha": "Sábado, 10 de oct",
+    "hora": "5:00 p.m. EDT",
+    "start": "2026-10-10T20:30:00Z",
+    "end": "2026-10-10T23:30:00Z",
+    "equipo1": "Génesis PN",
+    "logo1": "https://via.placeholder.com/80",
+    "equipo2": "CD Olimpia",
+    "logo2": "https://via.placeholder.com/80",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "hch" },
+      { "nombre": "Opción 2", "stream": "deportestvc_3" }
+    ]
+  },
+  {
+    "fecha": "Sábado, 10 de oct",
+    "hora": "7:15 p.m. EDT",
+    "start": "2026-10-10T22:45:00Z",
+    "end": "2026-10-11T01:45:00Z",
+    "equipo1": "FC Motagua",
+    "logo1": "https://via.placeholder.com/80",
+    "equipo2": "CD Choloma",
+    "logo2": "https://via.placeholder.com/80",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "deportestvc_3" },
+      { "nombre": "Opción 2", "stream": "deportestvc_1" },
+      { "nombre": "Opción 3", "stream": "deportestvc_2" }
+    ]
+  },
+  {
+    "fecha": "Sábado, 10 de oct",
+    "hora": "9:30 p.m. EDT",
+    "start": "2026-10-11T01:00:00Z",
+    "end": "2026-10-11T04:00:00Z",
+    "equipo1": "Lobos UPNFM",
+    "logo1": "https://via.placeholder.com/80",
+    "equipo2": "CD Marathón",
+    "logo2": "https://via.placeholder.com/80",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "deportestvc_1" },
+      { "nombre": "Opción 2", "stream": "deportestvc_2" },
+      { "nombre": "Opción 3", "stream": "hch" }
+    ]
+  },
+  {
+    "fecha": "Domingo, 11 de oct",
+    "hora": "5:00 p.m. EDT",
+    "start": "2026-10-11T20:30:00Z",
+    "end": "2026-10-11T23:30:00Z",
+    "equipo1": "Estrella Roja",
+    "logo1": "https://via.placeholder.com/80",
+    "equipo2": "Real España",
+    "logo2": "https://via.placeholder.com/80",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "deportestvc_2" },
+      { "nombre": "Opción 2", "stream": "deportestvc_3" },
+      { "nombre": "Opción 3", "stream": "deportestvc_1" }
+    ]
+  },
+  {
+    "fecha": "Domingo, 11 de oct",
+    "hora": "7:15 p.m. EDT",
+    "start": "2026-10-11T22:45:00Z",
+    "end": "2026-10-12T01:45:00Z",
+    "equipo1": "Olancho FC",
+    "logo1": "https://via.placeholder.com/80",
+    "equipo2": "Atlético Independiente",
+    "logo2": "https://via.placeholder.com/80",
+    "opciones": [
+      { "nombre": "Opción 1", "stream": "deportestvc_1" },
+      { "nombre": "Opción 2", "stream": "hch" },
+      { "nombre": "Opción 3", "stream": "deportestvc_2" }
+    ]
+  }
+]
