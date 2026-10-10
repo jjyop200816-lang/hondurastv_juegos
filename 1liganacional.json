@@ -2,12 +2,10 @@
   {
     "fecha": "Viernes, 9 de oct | 5:00 p.m.",
     "hora": "Viernes, 9 oct - 5:00 p.m.",
-    "start": "2026-10-09T20:30:00Z",
-    "end": "2026-10-09T23:30:00Z",
+    "start": "2026-01-01T00:00:00Z",
+    "end": "2030-12-31T23:59:59Z",
     "equipo1": "Platense FC",
-    "logo1": "https://via.placeholder.com/80",
     "equipo2": "Juticalpa FC",
-    "logo2": "https://via.placeholder.com/80",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -22,12 +20,10 @@
   {
     "fecha": "Sábado, 10 de oct | 5:00 p.m.",
     "hora": "Sábado, 10 oct - 5:00 p.m.",
-    "start": "2026-10-10T20:30:00Z",
-    "end": "2026-10-10T23:30:00Z",
+    "start": "2026-01-01T00:00:00Z",
+    "end": "2030-12-31T23:59:59Z",
     "equipo1": "Génesis PN",
-    "logo1": "https://via.placeholder.com/80",
     "equipo2": "CD Olimpia",
-    "logo2": "https://via.placeholder.com/80",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -42,12 +38,10 @@
   {
     "fecha": "Sábado, 10 de oct | 7:15 p.m.",
     "hora": "Sábado, 10 oct - 7:15 p.m.",
-    "start": "2026-10-10T22:45:00Z",
-    "end": "2026-10-11T01:45:00Z",
+    "start": "2026-01-01T00:00:00Z",
+    "end": "2030-12-31T23:59:59Z",
     "equipo1": "FC Motagua",
-    "logo1": "https://via.placeholder.com/80",
     "equipo2": "CD Choloma",
-    "logo2": "https://via.placeholder.com/80",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -62,12 +56,10 @@
   {
     "fecha": "Sábado, 10 de oct | 9:30 p.m.",
     "hora": "Sábado, 10 oct - 9:30 p.m.",
-    "start": "2026-10-11T01:00:00Z",
-    "end": "2026-10-11T04:00:00Z",
+    "start": "2026-01-01T00:00:00Z",
+    "end": "2030-12-31T23:59:59Z",
     "equipo1": "Lobos UPNFM",
-    "logo1": "https://via.placeholder.com/80",
     "equipo2": "CD Marathón",
-    "logo2": "https://via.placeholder.com/80",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -82,12 +74,10 @@
   {
     "fecha": "Domingo, 11 de oct | 5:00 p.m.",
     "hora": "Domingo, 11 oct - 5:00 p.m.",
-    "start": "2026-10-11T20:30:00Z",
-    "end": "2026-10-11T23:30:00Z",
+    "start": "2026-01-01T00:00:00Z",
+    "end": "2030-12-31T23:59:59Z",
     "equipo1": "Estrella Roja",
-    "logo1": "https://via.placeholder.com/80",
     "equipo2": "Real España",
-    "logo2": "https://via.placeholder.com/80",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -102,12 +92,10 @@
   {
     "fecha": "Domingo, 11 de oct | 7:15 p.m.",
     "hora": "Domingo, 11 oct - 7:15 p.m.",
-    "start": "2026-10-11T22:45:00Z",
-    "end": "2026-10-12T01:45:00Z",
+    "start": "2026-01-01T00:00:00Z",
+    "end": "2030-12-31T23:59:59Z",
     "equipo1": "Olancho FC",
-    "logo1": "https://via.placeholder.com/80",
     "equipo2": "Atlético Independiente",
-    "logo2": "https://via.placeholder.com/80",
     "opciones": [
       {
         "nombre": "Opción 1",
