@@ -57,23 +57,28 @@
         }
     }
 
-    // AQUÍ APUNTA AL JSON CORRECTO QUE TIENES EN GITHUB: 1liganacional.json
-    const jsonUrl = 'https://jjyop200816-lang.github.io/hondurastv_juegos/1liganacional.json?v=' + new Date().getTime();
+    // Usamos la misma estructura de ruta que eventos.html
+    const jsonUrl = '1liganacional.json?v=' + new Date().getTime();
 
     fetch(jsonUrl)
         .then(function(response) {
-            if (!response.ok) throw new Error("No se pudo cargar el archivo 1liganacional.json");
+            if (!response.ok) throw new Error("No se pudo cargar 1liganacional.json");
             return response.json();
         })
         .then(function(eventos) {
             const container = document.getElementById('matches-list');
             container.innerHTML = '';
 
+            if (!eventos || eventos.length === 0) {
+                container.innerHTML = '<p style="text-align:center; color:#94a3b8;">No hay partidos disponibles.</p>';
+                return;
+            }
+
             eventos.forEach(function(item, index) {
                 let btnsHtml = '';
                 if (item.opciones && Array.isArray(item.opciones)) {
                     item.opciones.forEach(function(op) {
-                        btnsHtml += '<button class="play-btn" onclick="openAction(\'' + op.stream + \')">▶ ' + op.nombre + '</button>';
+                        btnsHtml += '<button class="play-btn" onclick="openAction(\'' + op.stream + '\')">▶ ' + op.nombre + '</button>';
                     });
                 }
 
