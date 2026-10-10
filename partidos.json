@@ -183,19 +183,19 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo11/tracks-v4a1/mono.ts.m3u8"
+        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://admin2.formaturamaxi.com.br/one.m3u8"
+        "stream": "http://195.178.110.110:80/espn/index.m3u8"
       },
       {
         "nombre": "Opción 3",
-        "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8"
+        "stream": "http://195.178.110.110:80/dazn1/index.m3u8"
       },
       {
         "nombre": "Opción 4",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
       }
     ]
   },
