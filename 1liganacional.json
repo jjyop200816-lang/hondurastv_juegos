@@ -27,11 +27,11 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "hch"
+        "stream": "https://live.streamhch.com/live/streams/hch1.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "deportestvc_3"
+        "stream": "http://38.52.208.106:8000/play/a03d/index.m3u8"
       }
     ]
   },
