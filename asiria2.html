@@ -2,33 +2,36 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reproductor Pantalla Completa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Reproductor Stream - BeIN Sports 1</title>
   <style>
-    /* Elimina márgenes y barras de desplazamiento de la página principal */
-    html, body {
-      width: 100%;
-      height: 100%;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
       background-color: #000;
-      overflow: hidden;
     }
-
-    /* Contenedor a pantalla completa que recorta el sobrante */
-    .player-container {
+    html, body {
       width: 100vw;
       height: 100vh;
       overflow: hidden;
-      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-
-    /* Iframe ajustado para recortar la parte superior */
-    .player-container iframe {
+    .player-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #000;
+    }
+    iframe {
       width: 100%;
-      height: 130vh; /* Le damos más altura para desplazar la parte superior fuera de vista */
-      border: 0;
-      margin-top: -15vh; /* Ajuste relativo que desplaza la franja superior hacia arriba */
+      height: 100%;
+      border: none;
+      display: block;
     }
   </style>
 </head>
@@ -37,11 +40,13 @@
   <div class="player-container">
     <iframe 
       src="https://asiria.is/skypremier.php" 
-      sandbox="allow-scripts allow-same-origin allow-forms"
-      scrolling="no"
+      title="Reproductor de Deportes"
       allowfullscreen="true"
       webkitallowfullscreen="true"
-      mozallowfullscreen="true">
+      mozallowfullscreen="true"
+      scrolling="no"
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; gyro; accelerometer"
+      sandbox="allow-scripts allow-same-origin allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-presentation">
     </iframe>
   </div>
 
