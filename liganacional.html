@@ -25,8 +25,20 @@
         .card.finished .badge-ended { display: inline-block; background-color: #475569; color: #cbd5e1; }
 
         .teams { display: flex; justify-content: space-between; align-items: center; margin: 15px 0; }
-        .team { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: bold; font-size: 0.95rem; text-align: center; }
-        .flag { width: 28px; height: 28px; border-radius: 50%; object-fit: contain; }
+        .team { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: bold; font-size: 0.90rem; text-align: center; }
+        
+        /* ESTILO UNIFORME PARA TODOS LOS LOGOS */
+        .flag { 
+            width: 32px; 
+            height: 32px; 
+            border-radius: 50%; 
+            object-fit: contain; 
+            background: #ffffff; 
+            padding: 3px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            flex-shrink: 0;
+        }
+        
         .vs { font-size: 0.85rem; color: #64748b; font-weight: bold; padding: 0 10px; }
 
         .actions { display: none; justify-content: center; align-items: center; margin-top: 12px; flex-direction: column; gap: 8px; }
@@ -43,12 +55,32 @@
 <div class="container">
     <div class="header">
         <h1>LIGA NACIONAL</h1>
-        <p>Jornada 9</p>
+        <p>Jornada Actual</p>
     </div>
     <div id="matches-list">Cargando partidos...</div>
 </div>
 
 <script>
+    // DICCIONARIO DE LOGOS CON TAMAÑO ESTANDARIZADO
+    const escudosEquipos = {
+        "CD Olimpia": "https://upload.wikimedia.org/wikipedia/es/thumb/c/c5/Escudo_CD_Olimpia.svg/180px-Escudo_CD_Olimpia.svg.png",
+        "FC Motagua": "https://upload.wikimedia.org/wikipedia/es/thumb/9/9e/FC_Motagua.svg/180px-FC_Motagua.svg.png",
+        "Real España": "https://upload.wikimedia.org/wikipedia/es/thumb/5/5e/Real_Club_Deportivo_Espana.svg/180px-Real_Club_Deportivo_Espana.svg.png",
+        "CD Marathón": "https://upload.wikimedia.org/wikipedia/es/thumb/2/22/CD_Marathon.svg/180px-CD_Marathon.svg.png",
+        "Olancho FC": "https://upload.wikimedia.org/wikipedia/es/thumb/9/93/Olancho_FC.svg/180px-Olancho_FC.svg.png",
+        "Génesis PN": "https://via.placeholder.com/80",
+        "Lobos UPNFM": "https://upload.wikimedia.org/wikipedia/es/thumb/4/4c/Lobos_UPNFM.svg/180px-Lobos_UPNFM.svg.png",
+        "Platense FC": "https://upload.wikimedia.org/wikipedia/es/thumb/d/d3/Platense_FC.svg/180px-Platense_FC.svg.png",
+        "Juticalpa FC": "https://upload.wikimedia.org/wikipedia/es/thumb/5/5c/Juticalpa_FC.svg/180px-Juticalpa_FC.svg.png",
+        "CD Choloma": "https://via.placeholder.com/80",
+        "Estrella Roja": "https://via.placeholder.com/80",
+        "Atlético Independiente": "https://via.placeholder.com/80"
+    };
+
+    function obtenerLogo(nombreEquipo) {
+        return escudosEquipos[nombreEquipo] || "https://via.placeholder.com/80";
+    }
+
     function openAction(target) {
         if (window.Android && typeof window.Android.openStream === 'function') {
             window.Android.openStream(target);
@@ -57,7 +89,6 @@
         }
     }
 
-    // Usamos la misma estructura de ruta que eventos.html
     const jsonUrl = '1liganacional.json?v=' + new Date().getTime();
 
     fetch(jsonUrl)
@@ -83,6 +114,8 @@
                 }
 
                 let horaTexto = item.hora || item.fecha || '';
+                let logo1Url = obtenerLogo(item.equipo1);
+                let logo2Url = obtenerLogo(item.equipo2);
 
                 const cardHtml = `
                     <div class="card waiting" id="card-${index}" data-start="${item.start}" data-end="${item.end}">
@@ -94,12 +127,12 @@
                         </div>
                         <div class="teams">
                             <div class="team">
-                                ${item.logo1 ? '<img src="' + item.logo1 + '" class="flag" alt="' + item.equipo1 + '">' : ''}
+                                <img src="${logo1Url}" class="flag" alt="${item.equipo1}">
                                 <span>${item.equipo1}</span>
                             </div>
                             <div class="vs">VS</div>
                             <div class="team">
-                                ${item.logo2 ? '<img src="' + item.logo2 + '" class="flag" alt="' + item.equipo2 + '">' : ''}
+                                <img src="${logo2Url}" class="flag" alt="${item.equipo2}">
                                 <span>${item.equipo2}</span>
                             </div>
                         </div>
