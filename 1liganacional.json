@@ -2,8 +2,8 @@
   {
     "fecha": "Viernes, 9 de oct | 5:00 p.m.",
     "hora": "Viernes, 9 oct - 5:00 p.m.",
-    "start": "2026-01-01T00:00:00Z",
-    "end": "2030-12-31T23:59:59Z",
+    "start": "2026-10-09T15:00:00Z",
+    "end": "2026-10-09T18:00:00Z",
     "equipo1": "Platense FC",
     "equipo2": "Juticalpa FC",
     "opciones": [
@@ -14,6 +14,10 @@
       {
         "nombre": "Opción 2",
         "stream": "deportestvc_3"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "hch"
       }
     ]
   },
@@ -31,7 +35,7 @@
       },
       {
         "nombre": "Opción 2",
-        "stream": "http://38.52.208.106:8000/play/a03d/index.m3u8"
+        "stream": "deportestvc_3"
       }
     ]
   },
@@ -50,6 +54,10 @@
       {
         "nombre": "Opción 2",
         "stream": "deportestvc_1"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "hch"
       }
     ]
   },
@@ -68,6 +76,10 @@
       {
         "nombre": "Opción 2",
         "stream": "hch"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "deportestvc_2"
       }
     ]
   },
@@ -86,6 +98,10 @@
       {
         "nombre": "Opción 2",
         "stream": "deportestvc_3"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "hch"
       }
     ]
   },
@@ -104,6 +120,10 @@
       {
         "nombre": "Opción 2",
         "stream": "hch"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "deportestvc_3"
       }
     ]
   }
