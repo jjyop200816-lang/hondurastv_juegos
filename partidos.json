@@ -331,7 +331,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo18/tracks-v4a1/mono.ts.m3u8"
+        "stream": "http://195.178.110.110:80/espnpremium/index.m3u8"
       }
     ]
   },
