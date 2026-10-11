@@ -119,7 +119,7 @@
       },
       {
         "nombre": "Opción 3",
-        "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
+        "stream": "http://195.178.110.110:80/telemundo/index.m3u8"
       },
       {
         "nombre": "Opción 4",
@@ -143,7 +143,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html"
+        "stream": "http://195.178.110.110:80/sportv3/index.m3u8"
       }
     ]
   },
@@ -223,7 +223,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo15/tracks-v4a1/mono.ts.m3u8"
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       }
     ]
   },
