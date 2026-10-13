@@ -1,49 +1,201 @@
 [
   {
-    "fecha": "11 de octubre de 2026 | 2:15 p.m.",
-    "hora": "2:15 p.m.",
-    "start": "2026-10-11T17:55:00Z",
-    "end": "2026-10-11T21:00:00Z",
-    "equipo1": "Al-Nassr",
-    "logo1": "https://flagcdn.com/w80/sa.png",
-    "equipo2": "Neftchi",
-    "logo2": "https://flagcdn.com/w80/uz.png",
+    "fecha": "13 de octubre de 2026 | 12:45 p.m.",
+    "hora": "12:45 p.m.",
+    "start": "2026-10-13T16:25:00Z",
+    "end": "2026-10-13T19:35:00Z",
+    "equipo1": "Lens",
+    "logo1": "https://flagcdn.com/w80/fr.png",
+    "equipo2": "Sporting CP",
+    "logo2": "https://flagcdn.com/w80/pt.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8"
+        "stream": "https://ejemplo.com/stream1"
       }
     ]
   },
   {
-    "fecha": "11 de octubre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-10-11T18:40:00Z",
-    "end": "2026-10-11T21:45:00Z",
-    "equipo1": "Coventry City",
-    "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "Newcastle",
-    "logo2": "https://flagcdn.com/w80/gb-eng.png",
+    "fecha": "13 de octubre de 2026 | 12:45 p.m.",
+    "hora": "12:45 p.m.",
+    "start": "2026-10-13T16:25:00Z",
+    "end": "2026-10-13T19:35:00Z",
+    "equipo1": "Sabah",
+    "logo1": "https://flagcdn.com/w80/az.png",
+    "equipo2": "Slavia Praha",
+    "logo2": "https://flagcdn.com/w80/cz.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
+        "stream": "https://ejemplo.com/stream2"
       }
     ]
   },
   {
-    "fecha": "11 de octubre de 2026 | 3:00 p.m.",
+    "fecha": "13 de octubre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
-    "start": "2026-10-11T18:40:00Z",
-    "end": "2026-10-11T21:45:00Z",
-    "equipo1": "Levante",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Sevilla",
+    "start": "2026-10-13T18:40:00Z",
+    "end": "2026-10-13T21:50:00Z",
+    "equipo1": "Galatasaray SK",
+    "logo1": "https://flagcdn.com/w80/tr.png",
+    "equipo2": "Barcelona",
     "logo2": "https://flagcdn.com/w80/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": ""
+        "stream": "https://ejemplo.com/stream3"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://ejemplo.com/stream4"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://ejemplo.com/stream5"
+      },
+      {
+        "nombre": "Opción 4",
+        "stream": "https://ejemplo.com/stream6"
+      }
+    ]
+  },
+  {
+    "fecha": "13 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-13T18:40:00Z",
+    "end": "2026-10-13T21:50:00Z",
+    "equipo1": "Atlético",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "Manchester United",
+    "logo2": "https://flagcdn.com/w80/gb-eng.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://ejemplo.com/stream7"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://ejemplo.com/stream8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://ejemplo.com/stream9"
+      }
+    ]
+  },
+  {
+    "fecha": "13 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-13T18:40:00Z",
+    "end": "2026-10-13T21:50:00Z",
+    "equipo1": "Viking Stavanger",
+    "logo1": "https://flagcdn.com/w80/no.png",
+    "equipo2": "Bayern München",
+    "logo2": "https://flagcdn.com/w80/de.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://ejemplo.com/stream10"
+      }
+    ]
+  },
+  {
+    "fecha": "13 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-13T18:40:00Z",
+    "end": "2026-10-13T21:50:00Z",
+    "equipo1": "Inter",
+    "logo1": "https://flagcdn.com/w80/it.png",
+    "equipo2": "Club Brugge",
+    "logo2": "https://flagcdn.com/w80/be.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://ejemplo.com/stream11"
+      }
+    ]
+  },
+  {
+    "fecha": "13 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-13T18:40:00Z",
+    "end": "2026-10-13T21:50:00Z",
+    "equipo1": "Arsenal",
+    "logo1": "https://flagcdn.com/w80/gb-eng.png",
+    "equipo2": "Lille",
+    "logo2": "https://flagcdn.com/w80/fr.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://ejemplo.com/stream12"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://ejemplo.com/stream13"
+      }
+    ]
+  },
+  {
+    "fecha": "13 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-13T18:40:00Z",
+    "end": "2026-10-13T21:50:00Z",
+    "equipo1": "RB Leipzig",
+    "logo1": "https://flagcdn.com/w80/de.png",
+    "equipo2": "PSV",
+    "logo2": "https://flagcdn.com/w80/nl.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://ejemplo.com/stream14"
+      }
+    ]
+  },
+  {
+    "fecha": "13 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-13T18:40:00Z",
+    "end": "2026-10-13T21:50:00Z",
+    "equipo1": "Villarreal",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "Napoli",
+    "logo2": "https://flagcdn.com/w80/it.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://ejemplo.com/stream15"
+      }
+    ]
+  },
+  {
+    "fecha": "13 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-13T18:40:00Z",
+    "end": "2026-10-13T21:50:00Z",
+    "equipo1": "Stoke City",
+    "logo1": "https://flagcdn.com/w80/gb-eng.png",
+    "equipo2": "Middlesbrough",
+    "logo2": "https://flagcdn.com/w80/gb-eng.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://ejemplo.com/stream16"
+      }
+    ]
+  },
+  {
+    "fecha": "13 de octubre de 2026 | 8:30 p.m.",
+    "hora": "8:30 p.m.",
+    "start": "2026-10-14T00:10:00Z",
+    "end": "2026-10-14T03:20:00Z",
+    "equipo1": "Boca Juniors",
+    "logo1": "https://flagcdn.com/w80/ar.png",
+    "equipo2": "Vasco da Gama",
+    "logo2": "https://flagcdn.com/w80/br.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://ejemplo.com/stream17"
       }
     ]
   }
