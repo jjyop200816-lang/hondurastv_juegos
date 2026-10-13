@@ -127,11 +127,11 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://ejemplo.com/stream12"
+        "stream": "http://195.178.110.110:80/espn4/index.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://ejemplo.com/stream13"
+        "stream": "https://s2.bufaloweb.com/bufalo6/tracks-v4a1/mono.ts.m3u8"
       }
     ]
   },
@@ -147,7 +147,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://ejemplo.com/stream14"
+        "stream": "http://195.178.110.110:80/espn7/index.m3u8"
       }
     ]
   },
