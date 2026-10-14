@@ -179,7 +179,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://195.178.110.110:80/espn/index.m3u8"
+        "stream": "http://190.61.101.11:7050/play/a05c/index.m3u8?hls"
       }
     ]
   },
