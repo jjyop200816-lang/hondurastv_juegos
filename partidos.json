@@ -1,29 +1,61 @@
 [
   {
-    "fecha": "14 de octubre de 2026 | 12:45 p.m.",
+    "fecha": "15 de octubre de 2026 | 12:45 p.m.",
     "hora": "12:45 p.m.",
-    "start": "2026-10-14T16:25:00Z",
-    "end": "2026-10-14T19:15:00Z",
-    "equipo1": "LASK",
-    "logo1": "https://flagcdn.com/w80/at.png",
-    "equipo2": "Liverpool",
-    "logo2": "https://flagcdn.com/w80/gb-eng.png",
+    "start": "2026-10-15T16:25:00Z",
+    "end": "2026-10-15T19:15:00Z",
+    "equipo1": "FC Lugano",
+    "logo1": "https://flagcdn.com/w80/ch.png",
+    "equipo2": "Crvena Zvezda",
+    "logo2": "https://flagcdn.com/w80/rs.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+        "stream": "https://s2.bufaloweb.com/bufalo1/tracks-v4a1/mono.ts.m3u8"
       }
     ]
   },
   {
-    "fecha": "14 de octubre de 2026 | 12:45 p.m.",
+    "fecha": "15 de octubre de 2026 | 12:45 p.m.",
     "hora": "12:45 p.m.",
-    "start": "2026-10-14T16:25:00Z",
-    "end": "2026-10-14T19:15:00Z",
-    "equipo1": "Feyenoord",
-    "logo1": "https://flagcdn.com/w80/nl.png",
-    "equipo2": "Como",
+    "start": "2026-10-15T16:25:00Z",
+    "end": "2026-10-15T19:15:00Z",
+    "equipo1": "Olympique Lyonnais",
+    "logo1": "https://flagcdn.com/w80/fr.png",
+    "equipo2": "Crystal Palace",
+    "logo2": "https://flagcdn.com/w80/gb-eng.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://s2.bufaloweb.com/bufalo2/tracks-v4a1/mono.ts.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "15 de octubre de 2026 | 12:45 p.m.",
+    "hora": "12:45 p.m.",
+    "start": "2026-10-15T16:25:00Z",
+    "end": "2026-10-15T19:15:00Z",
+    "equipo1": "Salzburg",
+    "logo1": "https://flagcdn.com/w80/at.png",
+    "equipo2": "Milan",
     "logo2": "https://flagcdn.com/w80/it.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://s2.bufaloweb.com/bufalo3/tracks-v4a1/mono.ts.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "15 de octubre de 2026 | 12:45 p.m.",
+    "hora": "12:45 p.m.",
+    "start": "2026-10-15T16:25:00Z",
+    "end": "2026-10-15T19:15:00Z",
+    "equipo1": "Union Saint-Gilloise",
+    "logo1": "https://flagcdn.com/w80/be.png",
+    "equipo2": "Real Sociedad",
+    "logo2": "https://flagcdn.com/w80/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -32,102 +64,14 @@
     ]
   },
   {
-    "fecha": "14 de octubre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-10-14T18:40:00Z",
-    "end": "2026-10-14T21:30:00Z",
-    "equipo1": "Roma",
-    "logo1": "https://flagcdn.com/w80/it.png",
-    "equipo2": "Real Madrid",
-    "logo2": "https://flagcdn.com/w80/es.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-unimas?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      },
-      {
-        "nombre": "Opción 4",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
-      },
-      {
-        "nombre": "Opción 5",
-        "stream": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "14 de octubre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-10-14T18:40:00Z",
-    "end": "2026-10-14T21:30:00Z",
-    "equipo1": "Manchester City",
-    "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "PSG",
-    "logo2": "https://flagcdn.com/w80/fr.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "http://138.59.227.20:8000/play/a085/index.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "http://138.59.227.20:8000/play/a085/index.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
-      }
-    ]
-  },
-  {
-    "fecha": "14 de octubre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-10-14T18:40:00Z",
-    "end": "2026-10-14T21:30:00Z",
-    "equipo1": "FK Bodo Glimt",
-    "logo1": "https://flagcdn.com/w80/no.png",
-    "equipo2": "B. Dortmund",
+    "fecha": "15 de octubre de 2026 | 12:45 p.m.",
+    "hora": "12:45 p.m.",
+    "start": "2026-10-15T16:25:00Z",
+    "end": "2026-10-15T19:15:00Z",
+    "equipo1": "Lech Poznań",
+    "logo1": "https://flagcdn.com/w80/pl.png",
+    "equipo2": "B. Leverkusen",
     "logo2": "https://flagcdn.com/w80/de.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo7/tracks-v4a1/mono.ts.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "14 de octubre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-10-14T18:40:00Z",
-    "end": "2026-10-14T21:30:00Z",
-    "equipo1": "Real Betis",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Porto",
-    "logo2": "https://flagcdn.com/w80/pt.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "http://138.59.227.20:8000/play/a09b/index.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "14 de octubre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-10-14T18:40:00Z",
-    "end": "2026-10-14T21:30:00Z",
-    "equipo1": "Aston Villa",
-    "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "Fenerbahçe",
-    "logo2": "https://flagcdn.com/w80/tr.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -136,30 +80,14 @@
     ]
   },
   {
-    "fecha": "14 de octubre de 2026 | 3:00 p.m.",
+    "fecha": "15 de octubre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
-    "start": "2026-10-14T18:40:00Z",
-    "end": "2026-10-14T21:30:00Z",
-    "equipo1": "Shakhtar Donetsk",
-    "logo1": "https://flagcdn.com/w80/ua.png",
-    "equipo2": "AEK Athens",
-    "logo2": "https://flagcdn.com/w80/gr.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html"
-      }
-    ]
-  },
-  {
-    "fecha": "14 de octubre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-10-14T18:40:00Z",
-    "end": "2026-10-14T21:30:00Z",
-    "equipo1": "Slovan Bratislava",
-    "logo1": "https://flagcdn.com/w80/sk.png",
-    "equipo2": "Stuttgart",
-    "logo2": "https://flagcdn.com/w80/de.png",
+    "start": "2026-10-15T18:40:00Z",
+    "end": "2026-10-15T21:30:00Z",
+    "equipo1": "Benfica",
+    "logo1": "https://flagcdn.com/w80/pt.png",
+    "equipo2": "Celtic",
+    "logo2": "https://flagcdn.com/w80/gb-sct.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -168,50 +96,34 @@
     ]
   },
   {
-    "fecha": "14 de octubre de 2026 | 3:00 p.m.",
+    "fecha": "15 de octubre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
-    "start": "2026-10-14T18:40:00Z",
-    "end": "2026-10-14T21:30:00Z",
-    "equipo1": "Lincoln City",
-    "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "West Ham",
-    "logo2": "https://flagcdn.com/w80/gb-eng.png",
+    "start": "2026-10-15T18:40:00Z",
+    "end": "2026-10-15T21:30:00Z",
+    "equipo1": "Celta",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "Juventus",
+    "logo2": "https://flagcdn.com/w80/it.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://190.61.101.11:7050/play/a05c/index.m3u8?hls"
+        "stream": "https://s2.bufaloweb.com/bufalo7/tracks-v4a1/mono.ts.m3u8"
       }
     ]
   },
   {
-    "fecha": "14 de octubre de 2026 | 6:00 p.m.",
-    "hora": "6:00 p.m.",
-    "start": "2026-10-14T21:40:00Z",
-    "end": "2026-10-15T00:30:00Z",
-    "equipo1": "Sarmiento",
+    "fecha": "15 de octubre de 2026 | 8:30 p.m.",
+    "hora": "8:30 p.m.",
+    "start": "2026-10-16T00:10:00Z",
+    "end": "2026-10-16T03:00:00Z",
+    "equipo1": "Estudiantes La Plata",
     "logo1": "https://flagcdn.com/w80/ar.png",
-    "equipo2": "River Plate",
-    "logo2": "https://flagcdn.com/w80/ar.png",
+    "equipo2": "Flamengo",
+    "logo2": "https://flagcdn.com/w80/br.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "14 de octubre de 2026 | 7:30 p.m.",
-    "hora": "7:30 p.m.",
-    "start": "2026-10-14T23:10:00Z",
-    "end": "2026-10-15T02:00:00Z",
-    "equipo1": "Inter Miami",
-    "logo1": "https://flagcdn.com/w80/us.png",
-    "equipo2": "New York City",
-    "logo2": "https://flagcdn.com/w80/us.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html"
+        "stream": "https://s2.bufaloweb.com/bufalo8/tracks-v4a1/mono.ts.m3u8"
       }
     ]
   }
