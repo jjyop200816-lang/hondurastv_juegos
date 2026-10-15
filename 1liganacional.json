@@ -1,15 +1,59 @@
 [
   {
-    "fecha": "Viernes, 9 de oct | 5:00 p.m.",
-    "hora": "Viernes, 9 oct - 5:00 p.m.",
-    "start": "2026-10-09T20:30:00Z",
-    "end": "2026-10-09T23:30:00Z",
-    "equipo1": "Platense FC",
-    "equipo2": "Juticalpa FC",
+    "fecha": "Jueves, 15 de oct | 7:15 p.m.",
+    "hora": "Jueves, 15 oct - 7:15 p.m. EDT",
+    "start": "2026-10-15T23:15:00Z",
+    "end": "2026-10-16T02:15:00Z",
+    "equipo1": "CD Marathón",
+    "equipo2": "Olancho FC",
     "opciones": [
       {
         "nombre": "Opción 1",
+        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
         "stream": "deportestvc_2"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "hch"
+      }
+    ]
+  },
+  {
+    "fecha": "Jueves, 15 de oct | 9:30 p.m.",
+    "hora": "Jueves, 15 oct - 9:30 p.m. EDT",
+    "start": "2026-10-16T01:30:00Z",
+    "end": "2026-10-16T04:30:00Z",
+    "equipo1": "CD Olimpia",
+    "equipo2": "Real España",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://live.streamhch.com/live/streams/hch1.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "http://177.10.184.60:8002/play/a00v/index.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "Sábado, 17 de oct | 5:00 p.m.",
+    "hora": "Sábado, 17 oct - 5:00 p.m. EDT",
+    "start": "2026-10-17T21:00:00Z",
+    "end": "2026-10-18T00:00:00Z",
+    "equipo1": "Platense FC",
+    "equipo2": "FC Motagua",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
       },
       {
         "nombre": "Opción 2",
@@ -22,29 +66,11 @@
     ]
   },
   {
-    "fecha": "Sábado, 10 de oct | 5:00 p.m.",
-    "hora": "Sábado, 10 oct - 5:00 p.m.",
-    "start": "2026-10-10T20:30:00Z",
-    "end": "2026-10-10T23:30:00Z",
-    "equipo1": "Génesis PN",
-    "equipo2": "CD Olimpia",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://live.streamhch.com/live/streams/hch1.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "http://177.10.184.60:8002/play/a00j/index.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "Sábado, 10 de oct | 7:15 p.m.",
-    "hora": "Sábado, 10 oct - 7:15 p.m.",
-    "start": "2026-10-10T22:45:00Z",
-    "end": "2026-10-11T01:45:00Z",
-    "equipo1": "FC Motagua",
+    "fecha": "Sábado, 17 de oct | 7:15 p.m.",
+    "hora": "Sábado, 17 oct - 7:15 p.m. EDT",
+    "start": "2026-10-17T23:15:00Z",
+    "end": "2026-10-18T02:15:00Z",
+    "equipo1": "Juticalpa FC",
     "equipo2": "CD Choloma",
     "opciones": [
       {
@@ -53,21 +79,21 @@
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://sporio.tv/api/proxy?url=https%3A%2F%2Fstreaming.onnethn.com%2FDEPORTES_TVC%2Fplaylist.m3u8"
+        "stream": "http://177.10.184.60:8002/play/a00v/index.m3u8"
       },
       {
         "nombre": "Opción 3",
-        "stream": "http://177.10.184.60:8002/play/a00v/index.m3u8"
+        "stream": "deportestvc_2"
       }
     ]
   },
   {
-    "fecha": "Sábado, 10 de oct | 9:30 p.m.",
-    "hora": "Sábado, 10 oct - 9:30 p.m.",
-    "start": "2026-10-11T01:00:00Z",
-    "end": "2026-10-11T04:00:00Z",
-    "equipo1": "Lobos UPNFM",
-    "equipo2": "CD Marathón",
+    "fecha": "Sábado, 17 de oct | 9:30 p.m.",
+    "hora": "Sábado, 17 oct - 9:30 p.m. EDT",
+    "start": "2026-10-18T01:30:00Z",
+    "end": "2026-10-18T04:30:00Z",
+    "equipo1": "Atlético Independiente",
+    "equipo2": "Lobos UPNFM",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -75,43 +101,17 @@
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://prod-fastly-us-east-1.video.pscp.tv/Transcoding/v1/hls/TfTBG3YweG6OQ_Ruj0LZlliO4fOzizMZL_vzr2xtodkJQT0fbLyijhj0GJtwjv3o27te9pg3w9mA-sYdkA84kg/non_transcode/us-east-1/periscope-replay-direct-prod-us-east-1-public/master_dynamic_delta.m3u8?type=live"
-      },
-      {
-        "nombre": "Opción 3",
         "stream": "http://177.10.184.60:8002/play/a00v/index.m3u8"
       }
     ]
   },
   {
-    "fecha": "Domingo, 11 de oct | 5:00 p.m.",
-    "hora": "Domingo, 11 oct - 5:00 p.m.",
-    "start": "2026-10-11T20:30:00Z",
-    "end": "2026-10-11T23:30:00Z",
-    "equipo1": "Estrella Roja",
-    "equipo2": "Real España",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "http://38.52.208.106:8000/play/a03d/index.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "http://177.10.184.60:8002/play/a00v/index.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "Domingo, 11 de oct | 7:15 p.m.",
-    "hora": "Domingo, 11 oct - 7:15 p.m.",
-    "start": "2026-10-11T22:45:00Z",
-    "end": "2026-10-12T01:45:00Z",
-    "equipo1": "Olancho FC",
-    "equipo2": "Atlético Independiente",
+    "fecha": "Domingo, 18 de oct | 5:30 p.m.",
+    "hora": "Domingo, 18 oct - 5:30 p.m. EDT",
+    "start": "2026-10-18T21:30:00Z",
+    "end": "2026-10-19T00:30:00Z",
+    "equipo1": "Genesis FC",
+    "equipo2": "Estrella Roja",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -120,10 +120,6 @@
       {
         "nombre": "Opción 2",
         "stream": "http://38.52.208.106:8000/play/a03d/index.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "http://177.10.184.60:8002/play/a00v/index.m3u8"
       }
     ]
   }
