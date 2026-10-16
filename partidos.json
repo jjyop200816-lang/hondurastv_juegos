@@ -1,45 +1,13 @@
 [
   {
-    "fecha": "15 de octubre de 2026 | 12:45 p.m.",
-    "hora": "12:45 p.m.",
-    "start": "2026-10-15T16:25:00Z",
-    "end": "2026-10-15T19:15:00Z",
-    "equipo1": "FC Lugano",
-    "logo1": "https://flagcdn.com/w80/ch.png",
-    "equipo2": "Crvena Zvezda",
-    "logo2": "https://flagcdn.com/w80/rs.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria9.html"
-      }
-    ]
-  },
-  {
-    "fecha": "15 de octubre de 2026 | 12:45 p.m.",
-    "hora": "12:45 p.m.",
-    "start": "2026-10-15T16:25:00Z",
-    "end": "2026-10-15T19:15:00Z",
-    "equipo1": "Olympique Lyonnais",
-    "logo1": "https://flagcdn.com/w80/fr.png",
-    "equipo2": "Crystal Palace",
-    "logo2": "https://flagcdn.com/w80/gb-eng.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      }
-    ]
-  },
-  {
-    "fecha": "15 de octubre de 2026 | 12:45 p.m.",
-    "hora": "12:45 p.m.",
-    "start": "2026-10-15T16:25:00Z",
-    "end": "2026-10-15T19:15:00Z",
-    "equipo1": "Salzburg",
-    "logo1": "https://flagcdn.com/w80/at.png",
-    "equipo2": "Milan",
-    "logo2": "https://flagcdn.com/w80/it.png",
+    "fecha": "16 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-16T18:40:00Z",
+    "end": "2026-10-16T21:30:00Z",
+    "equipo1": "RC Deportivo",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "Levante",
+    "logo2": "https://flagcdn.com/w80/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -48,14 +16,46 @@
     ]
   },
   {
-    "fecha": "15 de octubre de 2026 | 12:45 p.m.",
-    "hora": "12:45 p.m.",
-    "start": "2026-10-15T16:25:00Z",
-    "end": "2026-10-15T19:15:00Z",
-    "equipo1": "Union Saint-Gilloise",
-    "logo1": "https://flagcdn.com/w80/be.png",
-    "equipo2": "Real Sociedad",
-    "logo2": "https://flagcdn.com/w80/es.png",
+    "fecha": "16 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-16T18:40:00Z",
+    "end": "2026-10-16T21:30:00Z",
+    "equipo1": "Burnley",
+    "logo1": "https://flagcdn.com/w80/gb-eng.png",
+    "equipo2": "Wolves",
+    "logo2": "https://flagcdn.com/w80/gb-eng.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://s2.bufaloweb.com/bufalo5/tracks-v4a1/mono.ts.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "16 de octubre de 2026 | 8:30 p.m.",
+    "hora": "8:30 p.m.",
+    "start": "2026-10-17T00:10:00Z",
+    "end": "2026-10-17T03:00:00Z",
+    "equipo1": "Boca Juniors",
+    "logo1": "https://flagcdn.com/w80/ar.png",
+    "equipo2": "Talleres Córdoba",
+    "logo2": "https://flagcdn.com/w80/ar.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+      }
+    ]
+  },
+  {
+    "fecha": "16 de octubre de 2026 | 11:00 p.m.",
+    "hora": "11:00 p.m.",
+    "start": "2026-10-17T02:40:00Z",
+    "end": "2026-10-17T05:30:00Z",
+    "equipo1": "Atlante FC",
+    "logo1": "https://flagcdn.com/w80/mx.png",
+    "equipo2": "Pumas UNAM",
+    "logo2": "https://flagcdn.com/w80/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -64,66 +64,18 @@
     ]
   },
   {
-    "fecha": "15 de octubre de 2026 | 12:45 p.m.",
-    "hora": "12:45 p.m.",
-    "start": "2026-10-15T16:25:00Z",
-    "end": "2026-10-15T19:15:00Z",
-    "equipo1": "Lech Poznań",
-    "logo1": "https://flagcdn.com/w80/pl.png",
-    "equipo2": "B. Leverkusen",
-    "logo2": "https://flagcdn.com/w80/de.png",
+    "fecha": "16 de octubre de 2026 | 11:05 p.m.",
+    "hora": "11:05 p.m.",
+    "start": "2026-10-17T02:45:00Z",
+    "end": "2026-10-17T05:35:00Z",
+    "equipo1": "Tijuana",
+    "logo1": "https://flagcdn.com/w80/mx.png",
+    "equipo2": "Puebla",
+    "logo2": "https://flagcdn.com/w80/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo5/tracks-v4a1/mono.ts.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "15 de octubre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-10-15T18:40:00Z",
-    "end": "2026-10-15T21:30:00Z",
-    "equipo1": "Benfica",
-    "logo1": "https://flagcdn.com/w80/pt.png",
-    "equipo2": "Celtic",
-    "logo2": "https://flagcdn.com/w80/gb-sct.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo5/tracks-v4a1/mono.ts.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "15 de octubre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-10-15T18:40:00Z",
-    "end": "2026-10-15T21:30:00Z",
-    "equipo1": "Celta",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Juventus",
-    "logo2": "https://flagcdn.com/w80/it.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      }
-    ]
-  },
-  {
-    "fecha": "15 de octubre de 2026 | 8:30 p.m.",
-    "hora": "8:30 p.m.",
-    "start": "2026-10-16T00:10:00Z",
-    "end": "2026-10-16T03:00:00Z",
-    "equipo1": "Estudiantes La Plata",
-    "logo1": "https://flagcdn.com/w80/ar.png",
-    "equipo2": "Flamengo",
-    "logo2": "https://flagcdn.com/w80/br.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria9.html"
       }
     ]
   }
