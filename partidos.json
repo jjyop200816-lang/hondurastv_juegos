@@ -131,7 +131,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo610/tracks-v4a1/mono.ts.m3u8"
+        "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8"
       }
     ]
   },
@@ -147,7 +147,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo658/tracks-v4a1/mono.ts.m3u8"
+        "stream": "https://s2.bufaloweb.com/bufalo5/tracks-v4a1/mono.ts.m3u8"
       }
     ]
   },
@@ -179,11 +179,11 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo519/tracks-v4a1/mono.ts.m3u8"
+        "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://s2.bufaloweb.com/bufalo789/tracks-v4a1/mono.ts.m3u8"
+        "stream": "http://200.115.120.1:8000/play/ca081"
       },
       {
         "nombre": "Opción 3",
@@ -191,7 +191,7 @@
       },
       {
         "nombre": "Opción 4",
-        "stream": "https://s2.bufaloweb.com/bufalo839/tracks-v4a1/mono.ts.m3u8"
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
       }
     ]
   },
