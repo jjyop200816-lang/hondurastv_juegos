@@ -57,11 +57,11 @@
       },
       {
         "nombre": "Opción 2",
-        "stream": "deportestvc_3"
+        "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
       },
       {
         "nombre": "Opción 3",
-        "stream": "hch"
+        "stream": "https://sporio.tv/api/proxy?url=https%3A%2F%2Fstreaming.onnethn.com%2FDEPORTES_TVC%2Fplaylist.m3u8"
       }
     ]
   },
@@ -79,11 +79,11 @@
       },
       {
         "nombre": "Opción 2",
-        "stream": "http://177.10.184.60:8002/play/a00v/index.m3u8"
+        "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
       },
       {
         "nombre": "Opción 3",
-        "stream": "deportestvc_2"
+        "stream": "https://sporio.tv/api/proxy?url=https%3A%2F%2Fstreaming.onnethn.com%2FDEPORTES_TVC%2Fplaylist.m3u8"
       }
     ]
   },
@@ -97,7 +97,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
+        "stream": "https://tv.webmedialive.com:2443/client/embed.php?user=vallevisin"
       },
       {
         "nombre": "Opción 2",
