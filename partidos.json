@@ -27,11 +27,11 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo441/tracks-v4a1/mono.ts.m3u8"
+        "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://s2.bufaloweb.com/bufalo912/tracks-v4a1/mono.ts.m3u8"
+        "stream": "http://200.115.120.1:8000/play/ca081"
       }
     ]
   },
@@ -47,7 +47,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo985/tracks-v4a1/mono.ts.m3u8"
+        "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
       }
     ]
   },
