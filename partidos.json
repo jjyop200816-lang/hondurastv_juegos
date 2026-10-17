@@ -31,7 +31,7 @@
       },
       {
         "nombre": "Opción 2",
-        "stream": "http://200.115.120.1:8000/play/ca081"
+        "stream": "http://200.115.120.1:8000/play/ca081/index.m3u8"
       }
     ]
   },
