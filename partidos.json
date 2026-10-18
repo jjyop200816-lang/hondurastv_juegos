@@ -43,7 +43,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://200.115.120.1:8000/play/ca081/index.m3u8"
+        "stream": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
       }
     ]
   },
@@ -63,7 +63,11 @@
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
+        "stream": "https://183.bozztv.com/giatv/giatv-pixelchanneltv/pixelchanneltv/playlist.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8"
       }
     ]
   },
