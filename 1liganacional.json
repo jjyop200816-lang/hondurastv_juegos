@@ -97,11 +97,11 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://tv.webmedialive.com:2443/client/embed.php?user=vallevisin"
+        "stream": "https://tv.webmedialive.com/vallevision/live/playlist.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://tv.webmedialive.com/vallevision/live/playlist.m3u8"
+        "stream": "https://tv.webmedialive.com:2443/client/embed.php?user=vallevisin"
       }
     ]
   },
