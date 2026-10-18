@@ -215,7 +215,7 @@
       },
       {
         "nombre": "Opción 5",
-        "stream": "https://streamer1.nexgen.bz/TELEMUNDO/index.m3u8"
+        "stream": "http://186.148.184.22:8000/play/a0i6/index.m3u8"
       }
     ]
   },
@@ -231,7 +231,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/643725.ts"
+        "stream": "http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8"
       }
     ]
   },
