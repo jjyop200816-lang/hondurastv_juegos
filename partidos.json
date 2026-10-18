@@ -1,64 +1,28 @@
 [
   {
-    "fecha": "17 de octubre de 2026 | 7:30 a.m.",
-    "hora": "7:30 a.m.",
-    "start": "2026-10-17T11:10:00Z",
-    "end": "2026-10-17T14:00:00Z",
-    "equipo1": "Everton",
-    "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "Chelsea",
-    "logo2": "https://flagcdn.com/w80/gb-eng.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/36765.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "17 de octubre de 2026 | 8:00 a.m.",
+    "fecha": "18 de octubre de 2026 | 8:00 a.m.",
     "hora": "8:00 a.m.",
-    "start": "2026-10-17T11:40:00Z",
-    "end": "2026-10-17T14:30:00Z",
-    "equipo1": "Espanyol",
+    "start": "2026-10-18T11:40:00Z",
+    "end": "2026-10-18T14:30:00Z",
+    "equipo1": "Osasuna",
     "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Atlético Madrid",
+    "equipo2": "Racing",
     "logo2": "https://flagcdn.com/w80/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "http://200.115.120.1:8000/play/ca081/index.m3u8"
+        "stream": "https://s2.bufaloweb.com/bufalo5/tracks-v4a1/mono.ts.m3u8"
       }
     ]
   },
   {
-    "fecha": "17 de octubre de 2026 | 9:30 a.m.",
-    "hora": "9:30 a.m.",
-    "start": "2026-10-17T13:10:00Z",
-    "end": "2026-10-17T16:00:00Z",
-    "equipo1": "Union Berlin",
-    "logo1": "https://flagcdn.com/w80/de.png",
-    "equipo2": "B. Dortmund",
-    "logo2": "https://flagcdn.com/w80/de.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/36765.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "17 de octubre de 2026 | 10:00 a.m.",
-    "hora": "10:00 a.m.",
-    "start": "2026-10-17T13:40:00Z",
-    "end": "2026-10-17T16:30:00Z",
-    "equipo1": "Brentford",
+    "fecha": "18 de octubre de 2026 | 9:00 a.m.",
+    "hora": "9:00 a.m.",
+    "start": "2026-10-18T12:40:00Z",
+    "end": "2026-10-18T15:30:00Z",
+    "equipo1": "AFC Bournemouth",
     "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "Liverpool",
+    "equipo2": "Sunderland",
     "logo2": "https://flagcdn.com/w80/gb-eng.png",
     "opciones": [
       {
@@ -68,29 +32,29 @@
     ]
   },
   {
-    "fecha": "17 de octubre de 2026 | 10:00 a.m.",
-    "hora": "10:00 a.m.",
-    "start": "2026-10-17T13:40:00Z",
-    "end": "2026-10-17T16:30:00Z",
-    "equipo1": "Fulham",
+    "fecha": "18 de octubre de 2026 | 9:00 a.m.",
+    "hora": "9:00 a.m.",
+    "start": "2026-10-18T12:40:00Z",
+    "end": "2026-10-18T15:30:00Z",
+    "equipo1": "Brighton & Hove Albion",
     "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "Hull City",
+    "equipo2": "Crystal Palace",
     "logo2": "https://flagcdn.com/w80/gb-eng.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
+        "stream": "http://200.115.120.1:8000/play/ca081/index.m3u8"
       }
     ]
   },
   {
-    "fecha": "17 de octubre de 2026 | 10:00 a.m.",
-    "hora": "10:00 a.m.",
-    "start": "2026-10-17T13:40:00Z",
-    "end": "2026-10-17T16:30:00Z",
-    "equipo1": "Manchester City",
+    "fecha": "18 de octubre de 2026 | 9:00 a.m.",
+    "hora": "9:00 a.m.",
+    "start": "2026-10-18T12:40:00Z",
+    "end": "2026-10-18T15:30:00Z",
+    "equipo1": "Leeds United",
     "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "Ipswich Town",
+    "equipo2": "Manchester United",
     "logo2": "https://flagcdn.com/w80/gb-eng.png",
     "opciones": [
       {
@@ -104,29 +68,29 @@
     ]
   },
   {
-    "fecha": "17 de octubre de 2026 | 10:00 a.m.",
-    "hora": "10:00 a.m.",
-    "start": "2026-10-17T13:40:00Z",
-    "end": "2026-10-17T16:30:00Z",
-    "equipo1": "Southampton",
-    "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "Bolton Wanderers",
-    "logo2": "https://flagcdn.com/w80/gb-eng.png",
+    "fecha": "18 de octubre de 2026 | 9:30 a.m.",
+    "hora": "9:30 a.m.",
+    "start": "2026-10-18T13:10:00Z",
+    "end": "2026-10-18T16:00:00Z",
+    "equipo1": "B. Leverkusen",
+    "logo1": "https://flagcdn.com/w80/de.png",
+    "equipo2": "SC Freiburg",
+    "logo2": "https://flagcdn.com/w80/de.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8?imafw__fw_us_privacy=1YNY&attmas=not_determined&am.originUrl=https%3A%2F%2Fdai.google.com%2Flinear%2Fhls%2Fevent%2F7f3Wv6f7QEKfQna22jHqLQ%2Fmaster.m3u8&imafw_csid=desktop_web&imafw__fw_did=&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=&app_version=0.0.0&height=1080&ip_addr=195.179.200.80&page_url=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&width=1920"
+        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/36765.m3u8"
       }
     ]
   },
   {
-    "fecha": "17 de octubre de 2026 | 10:15 a.m.",
+    "fecha": "18 de octubre de 2026 | 10:15 a.m.",
     "hora": "10:15 a.m.",
-    "start": "2026-10-17T13:55:00Z",
-    "end": "2026-10-17T16:45:00Z",
-    "equipo1": "Villarreal",
+    "start": "2026-10-18T13:55:00Z",
+    "end": "2026-10-18T16:45:00Z",
+    "equipo1": "Celta",
     "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Elche",
+    "equipo2": "Deportivo Alavés",
     "logo2": "https://flagcdn.com/w80/es.png",
     "opciones": [
       {
@@ -136,13 +100,49 @@
     ]
   },
   {
-    "fecha": "17 de octubre de 2026 | 12:00 p.m.",
+    "fecha": "18 de octubre de 2026 | 11:30 a.m.",
+    "hora": "11:30 a.m.",
+    "start": "2026-10-18T15:10:00Z",
+    "end": "2026-10-18T18:00:00Z",
+    "equipo1": "Nottingham Forest",
+    "logo1": "https://flagcdn.com/w80/gb-eng.png",
+    "equipo2": "Arsenal",
+    "logo2": "https://flagcdn.com/w80/gb-eng.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/643748.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "18 de octubre de 2026 | 11:30 a.m.",
+    "hora": "11:30 a.m.",
+    "start": "2026-10-18T15:10:00Z",
+    "end": "2026-10-18T18:00:00Z",
+    "equipo1": "B. Mönchengladbach",
+    "logo1": "https://flagcdn.com/w80/de.png",
+    "equipo2": "Hoffenheim",
+    "logo2": "https://flagcdn.com/w80/de.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://s2.bufaloweb.com/bufalo2/tracks-v4a1/mono.ts.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "18 de octubre de 2026 | 12:00 p.m.",
     "hora": "12:00 p.m.",
-    "start": "2026-10-17T15:40:00Z",
-    "end": "2026-10-17T18:30:00Z",
-    "equipo1": "Bologna",
+    "start": "2026-10-18T15:40:00Z",
+    "end": "2026-10-18T18:30:00Z",
+    "equipo1": "Milan",
     "logo1": "https://flagcdn.com/w80/it.png",
-    "equipo2": "Inter",
+    "equipo2": "Atalanta",
     "logo2": "https://flagcdn.com/w80/it.png",
     "opciones": [
       {
@@ -152,29 +152,45 @@
     ]
   },
   {
-    "fecha": "17 de octubre de 2026 | 12:30 p.m.",
+    "fecha": "18 de octubre de 2026 | 12:30 p.m.",
     "hora": "12:30 p.m.",
-    "start": "2026-10-17T16:10:00Z",
-    "end": "2026-10-17T19:00:00Z",
-    "equipo1": "Newcastle",
-    "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "Aston Villa",
-    "logo2": "https://flagcdn.com/w80/gb-eng.png",
+    "start": "2026-10-18T16:10:00Z",
+    "end": "2026-10-18T19:00:00Z",
+    "equipo1": "Málaga",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "Real Sociedad",
+    "logo2": "https://flagcdn.com/w80/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/36765.m3u8"
+        "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8"
       }
     ]
   },
   {
-    "fecha": "17 de octubre de 2026 | 12:30 p.m.",
-    "hora": "12:30 p.m.",
-    "start": "2026-10-17T16:10:00Z",
-    "end": "2026-10-17T19:00:00Z",
-    "equipo1": "Real Betis",
+    "fecha": "18 de octubre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-10-18T18:25:00Z",
+    "end": "2026-10-18T21:15:00Z",
+    "equipo1": "Juventus",
+    "logo1": "https://flagcdn.com/w80/it.png",
+    "equipo2": "Lazio",
+    "logo2": "https://flagcdn.com/w80/it.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8?imafw__fw_us_privacy=1YNY&attmas=not_determined&am.originUrl=https%3A%2F%2Fdai.google.com%2Flinear%2Fhls%2Fevent%2F7f3Wv6f7QEKfQna22jHqLQ%2Fmaster.m3u8&imafw_csid=desktop_web&imafw__fw_did=&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=&app_version=0.0.0&height=1080&ip_addr=195.179.200.80&page_url=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&width=1920"
+      }
+    ]
+  },
+  {
+    "fecha": "18 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-18T18:40:00Z",
+    "end": "2026-10-18T21:30:00Z",
+    "equipo1": "Real Madrid",
     "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Barcelona",
+    "equipo2": "Sevilla",
     "logo2": "https://flagcdn.com/w80/es.png",
     "opciones": [
       {
@@ -192,66 +208,22 @@
       {
         "nombre": "Opción 4",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
-      }
-    ]
-  },
-  {
-    "fecha": "17 de octubre de 2026 | 12:30 p.m.",
-    "hora": "12:30 p.m.",
-    "start": "2026-10-17T16:10:00Z",
-    "end": "2026-10-17T19:00:00Z",
-    "equipo1": "Bayern München",
-    "logo1": "https://flagcdn.com/w80/de.png",
-    "equipo2": "RB Leipzig",
-    "logo2": "https://flagcdn.com/w80/de.png",
-    "opciones": [
+      },
       {
-        "nombre": "Opción 1",
+        "nombre": "Opción 5",
         "stream": "https://streamer1.nexgen.bz/TELEMUNDO/index.m3u8"
       }
     ]
   },
   {
-    "fecha": "17 de octubre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-10-17T18:25:00Z",
-    "end": "2026-10-17T21:15:00Z",
-    "equipo1": "Roma",
-    "logo1": "https://flagcdn.com/w80/it.png",
-    "equipo2": "Genoa",
-    "logo2": "https://flagcdn.com/w80/it.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8?imafw__fw_us_privacy=1YNY&attmas=not_determined&am.originUrl=https%3A%2F%2Fdai.google.com%2Flinear%2Fhls%2Fevent%2F7f3Wv6f7QEKfQna22jHqLQ%2Fmaster.m3u8&imafw_csid=desktop_web&imafw__fw_did=&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=&app_version=0.0.0&height=1080&ip_addr=195.179.200.80&page_url=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&width=1920"
-      }
-    ]
-  },
-  {
-    "fecha": "17 de octubre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-10-17T18:40:00Z",
-    "end": "2026-10-17T21:30:00Z",
-    "equipo1": "Valencia",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Athletic Club",
-    "logo2": "https://flagcdn.com/w80/es.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo5/tracks-v4a1/mono.ts.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "17 de octubre de 2026 | 7:00 p.m.",
-    "hora": "7:00 p.m.",
-    "start": "2026-10-17T22:40:00Z",
-    "end": "2026-10-18T01:30:00Z",
-    "equipo1": "Santos Laguna",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Querétaro",
-    "logo2": "https://flagcdn.com/w80/mx.png",
+    "fecha": "18 de octubre de 2026 | 7:15 p.m.",
+    "hora": "7:15 p.m.",
+    "start": "2026-10-18T22:55:00Z",
+    "end": "2026-10-19T01:45:00Z",
+    "equipo1": "Belgrano",
+    "logo1": "https://flagcdn.com/w80/ar.png",
+    "equipo2": "River Plate",
+    "logo2": "https://flagcdn.com/w80/ar.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -260,61 +232,13 @@
     ]
   },
   {
-    "fecha": "17 de octubre de 2026 | 7:07 p.m.",
-    "hora": "7:07 p.m.",
-    "start": "2026-10-17T22:47:00Z",
-    "end": "2026-10-18T01:37:00Z",
-    "equipo1": "Chivas Guadalajara",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Tigres UANL",
-    "logo2": "https://flagcdn.com/w80/mx.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/36765.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "17 de octubre de 2026 | 9:00 p.m.",
+    "fecha": "18 de octubre de 2026 | 9:00 p.m.",
     "hora": "9:00 p.m.",
-    "start": "2026-10-18T00:40:00Z",
-    "end": "2026-10-18T03:30:00Z",
-    "equipo1": "León",
+    "start": "2026-10-19T00:40:00Z",
+    "end": "2026-10-19T03:30:00Z",
+    "equipo1": "Monterrey",
     "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "América",
-    "logo2": "https://flagcdn.com/w80/mx.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      }
-    ]
-  },
-  {
-    "fecha": "17 de octubre de 2026 | 9:00 p.m.",
-    "hora": "9:00 p.m.",
-    "start": "2026-10-18T00:40:00Z",
-    "end": "2026-10-18T03:30:00Z",
-    "equipo1": "Toluca",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Atl. San Luis",
-    "logo2": "https://flagcdn.com/w80/mx.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/643728.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "17 de octubre de 2026 | 11:10 p.m.",
-    "hora": "11:10 p.m.",
-    "start": "2026-10-18T02:50:00Z",
-    "end": "2026-10-18T05:40:00Z",
-    "equipo1": "Cruz Azul",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "FC Juárez",
+    "equipo2": "Pachuca",
     "logo2": "https://flagcdn.com/w80/mx.png",
     "opciones": [
       {
