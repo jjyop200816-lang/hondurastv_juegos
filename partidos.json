@@ -1,253 +1,57 @@
 [
   {
-    "fecha": "18 de octubre de 2026 | 8:00 a.m.",
-    "hora": "8:00 a.m.",
-    "start": "2026-10-18T11:40:00Z",
-    "end": "2026-10-18T14:30:00Z",
-    "equipo1": "Osasuna",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Racing",
-    "logo2": "https://flagcdn.com/w80/es.png",
+    "fecha": "19 de octubre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-10-19T18:25:00Z",
+    "end": "2026-10-19T21:15:00Z",
+    "equipo1": "Parma",
+    "logo1": "https://flagcdn.com/w80/it.png",
+    "equipo2": "Torino",
+    "logo2": "https://flagcdn.com/w80/it.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://barinaslive1.boldmss.com/ESPN_3/ESPN_3.isml/ESPN_3.m3u8"
+        "stream": "https://streamer1.nexgen.bz/TELEMUNDO/index.m3u8"
       }
     ]
   },
   {
-    "fecha": "18 de octubre de 2026 | 9:00 a.m.",
-    "hora": "9:00 a.m.",
-    "start": "2026-10-18T12:40:00Z",
-    "end": "2026-10-18T15:30:00Z",
-    "equipo1": "AFC Bournemouth",
+    "fecha": "19 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-19T18:40:00Z",
+    "end": "2026-10-19T21:30:00Z",
+    "equipo1": "Tottenham Hotspur",
     "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "Sunderland",
+    "equipo2": "Coventry City",
     "logo2": "https://flagcdn.com/w80/gb-eng.png",
     "opciones": [
       {
         "nombre": "Opción 1",
+        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/36765.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
       }
     ]
   },
   {
-    "fecha": "18 de octubre de 2026 | 9:00 a.m.",
-    "hora": "9:00 a.m.",
-    "start": "2026-10-18T12:40:00Z",
-    "end": "2026-10-18T15:30:00Z",
-    "equipo1": "Brighton & Hove Albion",
-    "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "Crystal Palace",
-    "logo2": "https://flagcdn.com/w80/gb-eng.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "18 de octubre de 2026 | 9:00 a.m.",
-    "hora": "9:00 a.m.",
-    "start": "2026-10-18T12:40:00Z",
-    "end": "2026-10-18T15:30:00Z",
-    "equipo1": "Leeds United",
-    "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "Manchester United",
-    "logo2": "https://flagcdn.com/w80/gb-eng.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://streamer1.nexgen.bz/TELEMUNDO/index.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "https://183.bozztv.com/giatv/giatv-pixelchanneltv/pixelchanneltv/playlist.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "https://edge.reedstreams.st/api/v1/hls/30299/index.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "18 de octubre de 2026 | 9:30 a.m.",
-    "hora": "9:30 a.m.",
-    "start": "2026-10-18T13:10:00Z",
-    "end": "2026-10-18T16:00:00Z",
-    "equipo1": "B. Leverkusen",
-    "logo1": "https://flagcdn.com/w80/de.png",
-    "equipo2": "SC Freiburg",
-    "logo2": "https://flagcdn.com/w80/de.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
-      }
-    ]
-  },
-  {
-    "fecha": "18 de octubre de 2026 | 10:15 a.m.",
-    "hora": "10:15 a.m.",
-    "start": "2026-10-18T13:55:00Z",
-    "end": "2026-10-18T16:45:00Z",
-    "equipo1": "Celta",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Deportivo Alavés",
-    "logo2": "https://flagcdn.com/w80/es.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "18 de octubre de 2026 | 11:30 a.m.",
-    "hora": "11:30 a.m.",
-    "start": "2026-10-18T15:10:00Z",
-    "end": "2026-10-18T18:00:00Z",
-    "equipo1": "Nottingham Forest",
-    "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "Arsenal",
-    "logo2": "https://flagcdn.com/w80/gb-eng.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://183.bozztv.com/giatv/giatv-pixelchanneltv/pixelchanneltv/playlist.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html"
-      }
-    ]
-  },
-  {
-    "fecha": "18 de octubre de 2026 | 11:30 a.m.",
-    "hora": "11:30 a.m.",
-    "start": "2026-10-18T15:10:00Z",
-    "end": "2026-10-18T18:00:00Z",
-    "equipo1": "B.Mgladbach",
-    "logo1": "https://flagcdn.com/w80/de.png",
-    "equipo2": "Hoffenheim",
-    "logo2": "https://flagcdn.com/w80/de.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/36765.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "18 de octubre de 2026 | 12:00 p.m.",
-    "hora": "12:00 p.m.",
-    "start": "2026-10-18T15:40:00Z",
-    "end": "2026-10-18T18:30:00Z",
-    "equipo1": "Milan",
-    "logo1": "https://flagcdn.com/w80/it.png",
-    "equipo2": "Atalanta",
-    "logo2": "https://flagcdn.com/w80/it.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://streamer1.nexgen.bz/TELEMUNDO/index.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "18 de octubre de 2026 | 12:30 p.m.",
-    "hora": "12:30 p.m.",
-    "start": "2026-10-18T16:10:00Z",
-    "end": "2026-10-18T19:00:00Z",
-    "equipo1": "Málaga",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Real Sociedad",
-    "logo2": "https://flagcdn.com/w80/es.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "18 de octubre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-10-18T18:25:00Z",
-    "end": "2026-10-18T21:15:00Z",
-    "equipo1": "Juventus",
-    "logo1": "https://flagcdn.com/w80/it.png",
-    "equipo2": "Lazio",
-    "logo2": "https://flagcdn.com/w80/it.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://streamer1.nexgen.bz/TELEMUNDO/index.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "18 de octubre de 2026 | 3:00 p.m.",
+    "fecha": "19 de octubre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
-    "start": "2026-10-18T18:40:00Z",
-    "end": "2026-10-18T21:30:00Z",
-    "equipo1": "Real Madrid",
+    "start": "2026-10-19T18:40:00Z",
+    "end": "2026-10-19T21:30:00Z",
+    "equipo1": "Getafe",
     "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Sevilla",
+    "equipo2": "Rayo Vallecano",
     "logo2": "https://flagcdn.com/w80/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://ak-47scan.dyndns.tv:25461/live/ATPLUSEN/ysN8PGMW9LPe/395110.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "http://7b30f9aa.tvclub.xyz/iptv/9TFHDRQVB7K6KC/1087/index.m3u8"
-      },
-      {
-        "nombre": "Opción 4",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html"
-      },
-      {
-        "nombre": "Opción 5",
-        "stream": "http://186.148.184.22:8000/play/a0i6/index.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "18 de octubre de 2026 | 7:15 p.m.",
-    "hora": "7:15 p.m.",
-    "start": "2026-10-18T22:55:00Z",
-    "end": "2026-10-19T01:45:00Z",
-    "equipo1": "Belgrano",
-    "logo1": "https://flagcdn.com/w80/ar.png",
-    "equipo2": "River Plate",
-    "logo2": "https://flagcdn.com/w80/ar.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "18 de octubre de 2026 | 9:00 p.m.",
-    "hora": "9:00 p.m.",
-    "start": "2026-10-19T00:40:00Z",
-    "end": "2026-10-19T03:30:00Z",
-    "equipo1": "Monterrey",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Pachuca",
-    "logo2": "https://flagcdn.com/w80/mx.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+        "stream": "https://barinaslive1.boldmss.com/ESPN_3/ESPN_3.isml/ESPN_3.m3u8"
       }
     ]
   }
