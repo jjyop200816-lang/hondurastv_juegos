@@ -256,6 +256,14 @@
       {
         "nombre": "Opción 1",
         "stream": "https://admin2.formaturamaxi.com.br/usa.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://s2.bufaloweb.com/bufalo10/tracks-v4a1/mono.ts.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
       }
     ]
   },
