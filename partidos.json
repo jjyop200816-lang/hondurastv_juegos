@@ -1,29 +1,221 @@
 [
   {
-    "fecha": "19 de octubre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-10-19T18:25:00Z",
-    "end": "2026-10-19T21:15:00Z",
-    "equipo1": "Parma",
-    "logo1": "https://flagcdn.com/w80/it.png",
-    "equipo2": "Torino",
-    "logo2": "https://flagcdn.com/w80/it.png",
+    "fecha": "20 de octubre de 2026 | 12:45 p.m.",
+    "hora": "12:45 p.m.",
+    "start": "2026-10-20T16:25:00Z",
+    "end": "2026-10-20T19:15:00Z",
+    "equipo1": "Sabah",
+    "logo1": "https://flagcdn.com/w80/az.png",
+    "equipo2": "B. Dortmund",
+    "logo2": "https://flagcdn.com/w80/de.png",
     "opciones": [
       {
         "nombre": "Opción 1",
+        "stream": "https://s2.bufaloweb.com/bufalo1/tracks-v4a1/mono.ts.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "20 de octubre de 2026 | 12:45 p.m.",
+    "hora": "12:45 p.m.",
+    "start": "2026-10-20T16:25:00Z",
+    "end": "2026-10-20T19:15:00Z",
+    "equipo1": "Fenerbahçe",
+    "logo1": "https://flagcdn.com/w80/tr.png",
+    "equipo2": "Slavia Praha",
+    "logo2": "https://flagcdn.com/w80/cz.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://admin2.formaturamaxi.com.br/main.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "20 de octubre de 2026 | 2:00 p.m.",
+    "hora": "2:00 p.m.",
+    "start": "2026-10-20T17:40:00Z",
+    "end": "2026-10-20T20:30:00Z",
+    "equipo1": "Al-Nassr",
+    "logo1": "https://flagcdn.com/w80/sa.png",
+    "equipo2": "Neom SC",
+    "logo2": "https://flagcdn.com/w80/sa.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "20 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-20T18:40:00Z",
+    "end": "2026-10-20T21:30:00Z",
+    "equipo1": "Manchester City",
+    "logo1": "https://flagcdn.com/w80/gb-eng.png",
+    "equipo2": "AEK Athens",
+    "logo2": "https://flagcdn.com/w80/gr.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://s2.bufaloweb.com/bufalo2/tracks-v4a1/mono.ts.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://admin2.formaturamaxi.com.br/usa.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "20 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-20T18:40:00Z",
+    "end": "2026-10-20T21:30:00Z",
+    "equipo1": "PSG",
+    "logo1": "https://flagcdn.com/w80/fr.png",
+    "equipo2": "Barcelona",
+    "logo2": "https://flagcdn.com/w80/es.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://s2.bufaloweb.com/bufalo3/tracks-v4a1/mono.ts.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://admin2.formaturamaxi.com.br/main.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
+      },
+      {
+        "nombre": "Opción 4",
+        "stream": "https://admin2.formaturamaxi.com.br/usa.m3u8"
+      },
+      {
+        "nombre": "Opción 5",
         "stream": "https://s2.bufaloweb.com/bufalo4/tracks-v4a1/mono.ts.m3u8"
       }
     ]
   },
   {
-    "fecha": "19 de octubre de 2026 | 3:00 p.m.",
+    "fecha": "20 de octubre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
-    "start": "2026-10-19T18:40:00Z",
-    "end": "2026-10-19T21:30:00Z",
-    "equipo1": "Tottenham Hotspur",
+    "start": "2026-10-20T18:40:00Z",
+    "end": "2026-10-20T21:30:00Z",
+    "equipo1": "Stuttgart",
+    "logo1": "https://flagcdn.com/w80/de.png",
+    "equipo2": "Atlético",
+    "logo2": "https://flagcdn.com/w80/es.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://s2.bufaloweb.com/bufalo5/tracks-v4a1/mono.ts.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "20 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-20T18:40:00Z",
+    "end": "2026-10-20T21:30:00Z",
+    "equipo1": "Liverpool",
     "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "Coventry City",
-    "logo2": "https://flagcdn.com/w80/gb-eng.png",
+    "equipo2": "Villarreal",
+    "logo2": "https://flagcdn.com/w80/es.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://admin2.formaturamaxi.com.br/main.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://s2.bufaloweb.com/bufalo6/tracks-v4a1/mono.ts.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "20 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-20T18:40:00Z",
+    "end": "2026-10-20T21:30:00Z",
+    "equipo1": "Roma",
+    "logo1": "https://flagcdn.com/w80/it.png",
+    "equipo2": "Slovan Bratislava",
+    "logo2": "https://flagcdn.com/w80/sk.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://s2.bufaloweb.com/bufalo7/tracks-v4a1/mono.ts.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "20 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-20T18:40:00Z",
+    "end": "2026-10-20T21:30:00Z",
+    "equipo1": "Porto",
+    "logo1": "https://flagcdn.com/w80/pt.png",
+    "equipo2": "PSV",
+    "logo2": "https://flagcdn.com/w80/nl.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://admin2.formaturamaxi.com.br/usa.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "20 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-20T18:40:00Z",
+    "end": "2026-10-20T21:30:00Z",
+    "equipo1": "Napoli",
+    "logo1": "https://flagcdn.com/w80/it.png",
+    "equipo2": "FK Bodo Glimt",
+    "logo2": "https://flagcdn.com/w80/no.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "20 de octubre de 2026 | 8:07 p.m.",
+    "hora": "8:07 p.m.",
+    "start": "2026-10-21T00:47:00Z",
+    "end": "2026-10-21T03:37:00Z",
+    "equipo1": "Chivas Guadalajara",
+    "logo1": "https://flagcdn.com/w80/mx.png",
+    "equipo2": "Necaxa",
+    "logo2": "https://flagcdn.com/w80/mx.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://s2.bufaloweb.com/bufalo8/tracks-v4a1/mono.ts.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "20 de octubre de 2026 | 8:30 p.m.",
+    "hora": "8:30 p.m.",
+    "start": "2026-10-21T01:10:00Z",
+    "end": "2026-10-21T04:00:00Z",
+    "equipo1": "Vasco da Gama",
+    "logo1": "https://flagcdn.com/w80/br.png",
+    "equipo2": "Boca Juniors",
+    "logo2": "https://flagcdn.com/w80/ar.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -32,26 +224,54 @@
       {
         "nombre": "Opción 2",
         "stream": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
-      },
+      }
+    ]
+  },
+  {
+    "fecha": "20 de octubre de 2026 | 9:00 p.m.",
+    "hora": "9:00 p.m.",
+    "start": "2026-10-21T01:40:00Z",
+    "end": "2026-10-21T04:30:00Z",
+    "equipo1": "FC Juárez",
+    "logo1": "https://flagcdn.com/w80/mx.png",
+    "equipo2": "Atlante FC",
+    "logo2": "https://flagcdn.com/w80/mx.png",
+    "opciones": [
       {
-        "nombre": "Opción 3",
+        "nombre": "Opción 1",
+        "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "20 de octubre de 2026 | 10:00 p.m.",
+    "hora": "10:00 p.m.",
+    "start": "2026-10-21T02:40:00Z",
+    "end": "2026-10-21T05:30:00Z",
+    "equipo1": "CD Marathón",
+    "logo1": "https://flagcdn.com/w80/hn.png",
+    "equipo2": "Alianza",
+    "logo2": "https://flagcdn.com/w80/sv.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
         "stream": "https://admin2.formaturamaxi.com.br/usa.m3u8"
       }
     ]
   },
   {
-    "fecha": "19 de octubre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-10-19T18:40:00Z",
-    "end": "2026-10-19T21:30:00Z",
-    "equipo1": "Getafe",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Rayo Vallecano",
-    "logo2": "https://flagcdn.com/w80/es.png",
+    "fecha": "20 de octubre de 2026 | 11:00 p.m.",
+    "hora": "11:00 p.m.",
+    "start": "2026-10-21T03:40:00Z",
+    "end": "2026-10-21T06:30:00Z",
+    "equipo1": "Tigres UANL",
+    "logo1": "https://flagcdn.com/w80/mx.png",
+    "equipo2": "León",
+    "logo2": "https://flagcdn.com/w80/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo9/tracks-v4a1/mono.ts.m3u8"
+        "stream": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
       }
     ]
   }
