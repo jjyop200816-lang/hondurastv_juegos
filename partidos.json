@@ -63,19 +63,19 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      },
-      {
-        "nombre": "Opción 2",
         "stream": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8"
       },
       {
+        "nombre": "Opción 2",
+        "stream": "https://cdnbarinas.tvzamora.com/espn/index.m3u8"
+      },
+      {
         "nombre": "Opción 3",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-unimas?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
       },
       {
         "nombre": "Opción 4",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+        "stream": "http://190.61.47.54:8000/play/a004/index.m3u8"
       },
       {
         "nombre": "Opción 5",
