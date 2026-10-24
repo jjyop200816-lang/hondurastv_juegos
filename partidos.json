@@ -1,49 +1,133 @@
 [
   {
-    "fecha": "23 de octubre de 2026 | 9:30 a.m.",
-    "hora": "9:30 a.m.",
-    "start": "2026-10-23T13:10:00Z",
-    "end": "2026-10-23T16:00:00Z",
-    "equipo1": "Al-Faisaly FC",
-    "logo1": "https://flagcdn.com/w80/sa.png",
-    "equipo2": "Al-Nassr",
-    "logo2": "https://flagcdn.com/w80/sa.png",
+    "fecha": "24 de octubre de 2026 | 7:30 a.m.",
+    "hora": "7:30 a.m.",
+    "start": "2026-10-24T11:10:00Z",
+    "end": "2026-10-24T14:00:00Z",
+    "equipo1": "Aston Villa",
+    "logo1": "https://flagcdn.com/w80/gb-eng.png",
+    "equipo2": "Manchester City",
+    "logo2": "https://flagcdn.com/w80/gb-eng.png",
     "opciones": [
       {
         "nombre": "Opción 1",
+        "stream": "https://s2.bufaloweb.com/bufalo1/tracks-v1a1/mono.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "24 de octubre de 2026 | 8:00 a.m.",
+    "hora": "8:00 a.m.",
+    "start": "2026-10-24T11:40:00Z",
+    "end": "2026-10-24T14:30:00Z",
+    "equipo1": "Rayo Vallecano",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "Elche",
+    "logo2": "https://flagcdn.com/w80/es.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/espana1.html"
+      }
+    ]
+  },
+  {
+    "fecha": "24 de octubre de 2026 | 10:00 a.m.",
+    "hora": "10:00 a.m.",
+    "start": "2026-10-24T13:40:00Z",
+    "end": "2026-10-24T16:30:00Z",
+    "equipo1": "Arsenal",
+    "logo1": "https://flagcdn.com/w80/gb-eng.png",
+    "equipo2": "Everton",
+    "logo2": "https://flagcdn.com/w80/gb-eng.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn1.html"
+      },
+      {
+        "nombre": "Opción 2",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
       }
     ]
   },
   {
-    "fecha": "23 de octubre de 2026 | 2:30 p.m.",
-    "hora": "2:30 p.m.",
-    "start": "2026-10-23T18:10:00Z",
-    "end": "2026-10-23T21:00:00Z",
-    "equipo1": "Stuttgart",
-    "logo1": "https://flagcdn.com/w80/de.png",
-    "equipo2": "B. Mögladbach",
-    "logo2": "https://flagcdn.com/w80/de.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "23 de octubre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-10-23T18:40:00Z",
-    "end": "2026-10-23T21:30:00Z",
-    "equipo1": "Ipswich Town",
+    "fecha": "24 de octubre de 2026 | 10:00 a.m.",
+    "hora": "10:00 a.m.",
+    "start": "2026-10-24T13:40:00Z",
+    "end": "2026-10-24T16:30:00Z",
+    "equipo1": "Coventry City",
     "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "Nottingham Forest",
+    "equipo2": "Fulham",
     "logo2": "https://flagcdn.com/w80/gb-eng.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+        "stream": "https://admin2.formaturamaxi.com.br/stream_cov.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "24 de octubre de 2026 | 10:00 a.m.",
+    "hora": "10:00 a.m.",
+    "start": "2026-10-24T13:40:00Z",
+    "end": "2026-10-24T16:30:00Z",
+    "equipo1": "West Ham",
+    "logo1": "https://flagcdn.com/w80/gb-eng.png",
+    "equipo2": "Southampton",
+    "logo2": "https://flagcdn.com/w80/gb-eng.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://s2.bufaloweb.com/bufalo2/tracks-v1a1/mono.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "24 de octubre de 2026 | 10:15 a.m.",
+    "hora": "10:15 a.m.",
+    "start": "2026-10-24T13:55:00Z",
+    "end": "2026-10-24T16:45:00Z",
+    "equipo1": "Racing",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "Espanyol",
+    "logo2": "https://flagcdn.com/w80/es.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/espana2.html"
+      }
+    ]
+  },
+  {
+    "fecha": "24 de octubre de 2026 | 12:00 p.m.",
+    "hora": "12:00 p.m.",
+    "start": "2026-10-24T15:40:00Z",
+    "end": "2026-10-24T18:30:00Z",
+    "equipo1": "Napoli",
+    "logo1": "https://flagcdn.com/w80/it.png",
+    "equipo2": "Roma",
+    "logo2": "https://flagcdn.com/w80/it.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/seriea1.html"
+      }
+    ]
+  },
+  {
+    "fecha": "24 de octubre de 2026 | 12:30 p.m.",
+    "hora": "12:30 p.m.",
+    "start": "2026-10-24T16:10:00Z",
+    "end": "2026-10-24T19:00:00Z",
+    "equipo1": "Chelsea",
+    "logo1": "https://flagcdn.com/w80/gb-eng.png",
+    "equipo2": "Tottenham Hotspur",
+    "logo2": "https://flagcdn.com/w80/gb-eng.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn2.html"
       },
       {
         "nombre": "Opción 2",
@@ -51,71 +135,123 @@
       },
       {
         "nombre": "Opción 3",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html"
+        "stream": "http://15.204.246.24:8080/CHELSEA/index.m3u8"
       }
     ]
   },
   {
-    "fecha": "23 de octubre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-10-23T18:40:00Z",
-    "end": "2026-10-23T21:30:00Z",
-    "equipo1": "Deportivo Alavés",
+    "fecha": "24 de octubre de 2026 | 12:30 p.m.",
+    "hora": "12:30 p.m.",
+    "start": "2026-10-24T16:10:00Z",
+    "end": "2026-10-24T19:00:00Z",
+    "equipo1": "Valencia",
     "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Málaga",
+    "equipo2": "Villarreal",
+    "logo2": "https://flagcdn.com/w80/es.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/espana3.html"
+      }
+    ]
+  },
+  {
+    "fecha": "24 de octubre de 2026 | 12:30 p.m.",
+    "hora": "12:30 p.m.",
+    "start": "2026-10-24T16:10:00Z",
+    "end": "2026-10-24T19:00:00Z",
+    "equipo1": "B. Dortmund",
+    "logo1": "https://flagcdn.com/w80/de.png",
+    "equipo2": "Eintracht Frankfurt",
+    "logo2": "https://flagcdn.com/w80/de.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://admin2.formaturamaxi.com.br/bundesliga1.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "24 de octubre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-10-24T18:25:00Z",
+    "end": "2026-10-24T21:15:00Z",
+    "equipo1": "Lazio",
+    "logo1": "https://flagcdn.com/w80/it.png",
+    "equipo2": "Parma",
+    "logo2": "https://flagcdn.com/w80/it.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/seriea2.html"
+      }
+    ]
+  },
+  {
+    "fecha": "24 de octubre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-10-24T18:40:00Z",
+    "end": "2026-10-24T21:30:00Z",
+    "equipo1": "Atlético",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "RC Deportivo",
     "logo2": "https://flagcdn.com/w80/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn3.html"
-      }
-    ]
-  },
-  {
-    "fecha": "23 de octubre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-10-23T18:40:00Z",
-    "end": "2026-10-23T21:30:00Z",
-    "equipo1": "Bolton Wanderers",
-    "logo1": "https://flagcdn.com/w80/gb-eng.png",
-    "equipo2": "Middlesbrough",
-    "logo2": "https://flagcdn.com/w80/gb-eng.png",
-    "opciones": [
+      },
       {
-        "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo7/tracks-v4a1/mono.ts.m3u8"
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html"
       }
     ]
   },
   {
-    "fecha": "23 de octubre de 2026 | 9:00 p.m.",
-    "hora": "9:00 p.m.",
-    "start": "2026-10-24T00:40:00Z",
-    "end": "2026-10-24T03:30:00Z",
-    "equipo1": "Necaxa",
+    "fecha": "24 de octubre de 2026 | 7:00 p.m.",
+    "hora": "7:00 p.m.",
+    "start": "2026-10-24T22:40:00Z",
+    "end": "2026-10-25T01:30:00Z",
+    "equipo1": "León",
     "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "FC Juárez",
+    "equipo2": "Toluca",
     "logo2": "https://flagcdn.com/w80/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://admin2.formaturamaxi.com.br/foxonemx.m3u8"
+        "stream": "https://s2.bufaloweb.com/bufalo3/tracks-v1a1/mono.m3u8"
       }
     ]
   },
   {
-    "fecha": "23 de octubre de 2026 | 11:00 p.m.",
-    "hora": "11:00 p.m.",
-    "start": "2026-10-24T02:40:00Z",
-    "end": "2026-10-24T05:30:00Z",
-    "equipo1": "Atlante FC",
+    "fecha": "24 de octubre de 2026 | 8:00 p.m.",
+    "hora": "8:00 p.m.",
+    "start": "2026-10-24T23:40:00Z",
+    "end": "2026-10-25T02:30:00Z",
+    "equipo1": "Monterrey",
     "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Atl. San Luis",
+    "equipo2": "Chivas Guadalajara",
     "logo2": "https://flagcdn.com/w80/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+        "stream": "https://admin2.formaturamaxi.com.br/ligamx1.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "24 de octubre de 2026 | 10:10 p.m.",
+    "hora": "10:10 p.m.",
+    "start": "2026-10-25T01:50:00Z",
+    "end": "2026-10-25T04:40:00Z",
+    "equipo1": "Pumas UNAM",
+    "logo1": "https://flagcdn.com/w80/mx.png",
+    "equipo2": "Tigres UANL",
+    "logo2": "https://flagcdn.com/w80/mx.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn2"
       }
     ]
   }
