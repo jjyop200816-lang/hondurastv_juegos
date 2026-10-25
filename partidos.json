@@ -75,15 +75,15 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8?imafw__fw_us_privacy=1YNY"
-      },
-      {
-        "nombre": "Opción 2",
         "stream": "https://183.bozztv.com/giatv/giatv-pixelchanneltv/pixelchanneltv/playlist.m3u8"
       },
       {
-        "nombre": "Opción 3",
+        "nombre": "Opción 2",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html"
       }
     ]
   },
