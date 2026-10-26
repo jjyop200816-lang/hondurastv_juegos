@@ -1,29 +1,13 @@
 [
   {
-    "fecha": "25 de octubre de 2026 | 3:45 p.m.",
-    "hora": "3:45 p.m.",
-    "start": "2026-10-25T19:25:00Z",
-    "end": "2026-10-25T23:15:00Z",
-    "equipo1": "Udinese",
-    "logo1": "https://flagcdn.com/w80/it.png",
-    "equipo2": "Milan",
-    "logo2": "https://flagcdn.com/w80/it.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8?imafw__fw_us_privacy=1YNY&attmas=not_determined&am.originUrl=https%3A%2F%2Fdai.google.com%2Flinear%2Fhls%2Fevent%2F7f3Wv6f7QEKfQna22jHqLQ%2Fmaster.m3u8&imafw_csid=desktop_web&imafw__fw_did=&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=&app_version=0.0.0&height=1080&ip_addr=195.179.200.80&page_url=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&width=1920"
-      }
-    ]
-  },
-  {
-    "fecha": "25 de octubre de 2026 | 4:00 p.m.",
-    "hora": "4:00 p.m.",
-    "start": "2026-10-25T19:40:00Z",
-    "end": "2026-10-25T23:50:00Z",
-    "equipo1": "Barcelona",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Real Madrid",
-    "logo2": "https://flagcdn.com/w80/es.png",
+    "fecha": "26 de octubre de 2026 | 3:30 p.m.",
+    "hora": "3:30 p.m.",
+    "start": "2026-10-26T19:10:00Z",
+    "end": "2026-10-26T23:00:00Z",
+    "equipo1": "PSG",
+    "logo1": "https://flagcdn.com/w80/fr.png",
+    "equipo2": "Olympique Lyonnais",
+    "logo2": "https://flagcdn.com/w80/fr.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -32,118 +16,26 @@
       {
         "nombre": "Opción 2",
         "stream": "https://lbgo.bozztv.com/ssh101/ssh101/elgtvmx/playlist.m3u8"
-      },
+      }
+    ]
+  },
+  {
+    "fecha": "26 de octubre de 2026 | 4:00 p.m.",
+    "hora": "4:00 p.m.",
+    "start": "2026-10-26T19:40:00Z",
+    "end": "2026-10-26T23:30:00Z",
+    "equipo1": "Sevilla",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "Osasuna",
+    "logo2": "https://flagcdn.com/w80/es.png",
+    "opciones": [
       {
-        "nombre": "Opción 3",
+        "nombre": "Opción 1",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdsports.html"
       },
       {
-        "nombre": "Opción 4",
+        "nombre": "Opción 2",
         "stream": "http://190.61.101.11:7050/play/a04g/index.m3u8?hls"
-      },
-      {
-        "nombre": "Opción 5",
-        "stream": "http://45.186.254.75:8000/play/a0en/index.m3u8"
-      },
-      {
-        "nombre": "Opción 6",
-        "stream": "https://mossbankstudio.s3-accelerate.amazonaws.com/liverpool.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "25 de octubre de 2026 | 4:00 p.m.",
-    "hora": "4:00 p.m.",
-    "start": "2026-10-25T19:40:00Z",
-    "end": "2026-10-25T23:50:00Z",
-    "equipo1": "Independiente",
-    "logo1": "https://flagcdn.com/w80/ar.png",
-    "equipo2": "Boca Juniors",
-    "logo2": "https://flagcdn.com/w80/ar.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://s2.bufaloweb.com/bufalo8/tracks-v4a1/mono.ts.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "25 de octubre de 2026 | 6:15 p.m.",
-    "hora": "6:15 p.m.",
-    "start": "2026-10-25T21:55:00Z",
-    "end": "2026-10-26T01:45:00Z",
-    "equipo1": "River Plate",
-    "logo1": "https://flagcdn.com/w80/ar.png",
-    "equipo2": "Racing Club",
-    "logo2": "https://flagcdn.com/w80/ar.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://admin.formaturamaxi.com.br/afaplay2.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "25 de octubre de 2026 | 7:00 p.m.",
-    "hora": "7:00 p.m.",
-    "start": "2026-10-25T22:40:00Z",
-    "end": "2026-10-26T02:30:00Z",
-    "equipo1": "Atlas Guadalajara",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Puebla",
-    "logo2": "https://flagcdn.com/w80/mx.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      }
-    ]
-  },
-  {
-    "fecha": "25 de octubre de 2026 | 9:00 p.m.",
-    "hora": "9:00 p.m.",
-    "start": "2026-10-26T00:40:00Z",
-    "end": "2026-10-26T04:30:00Z",
-    "equipo1": "Querétaro",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Cruz Azul",
-    "logo2": "https://flagcdn.com/w80/mx.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria7.html"
-      }
-    ]
-  },
-  {
-    "fecha": "25 de octubre de 2026 | 9:05 p.m.",
-    "hora": "9:05 p.m.",
-    "start": "2026-10-26T00:45:00Z",
-    "end": "2026-10-26T04:35:00Z",
-    "equipo1": "América",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Pachuca",
-    "logo2": "https://flagcdn.com/w80/mx.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      }
-    ]
-  },
-  {
-    "fecha": "25 de octubre de 2026 | 11:10 p.m.",
-    "hora": "11:10 p.m.",
-    "start": "2026-10-26T02:50:00Z",
-    "end": "2026-10-26T06:40:00Z",
-    "equipo1": "Tijuana",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Santos Laguna",
-    "logo2": "https://flagcdn.com/w80/mx.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       }
     ]
   }
