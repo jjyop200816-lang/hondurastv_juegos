@@ -1,60 +1,32 @@
 [
   {
-    "fecha": "27 de octubre de 2026 | 1:30 p.m.",
-    "hora": "1:30 p.m.",
-    "start": "2026-10-27T17:10:00Z",
-    "end": "2026-10-27T21:00:00Z",
-    "equipo1": "Sassuolo",
-    "logo1": "https://flagcdn.com/w80/it.png",
-    "equipo2": "Lazio",
-    "logo2": "https://flagcdn.com/w80/it.png",
+    "fecha": "28 de octubre de 2026 | 3:30 p.m.",
+    "hora": "3:30 p.m.",
+    "start": "2026-10-28T19:10:00Z",
+    "end": "2026-10-28T23:00:00Z",
+    "equipo1": "Manchester City",
+    "logo1": "https://flagcdn.com/w80/gb.png",
+    "equipo2": "Brighton & Hove Albion",
+    "logo2": "https://flagcdn.com/w80/gb.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "https://barinaslive1.boldmss.com/ESPN_2/ESPN_2.isml/ESPN_2.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "27 de octubre de 2026 | 3:45 p.m.",
-    "hora": "3:45 p.m.",
-    "start": "2026-10-27T19:25:00Z",
-    "end": "2026-10-27T23:15:00Z",
-    "equipo1": "Roma",
-    "logo1": "https://flagcdn.com/w80/it.png",
-    "equipo2": "Cagliari",
-    "logo2": "https://flagcdn.com/w80/it.png",
-    "opciones": [
+      },
       {
-        "nombre": "Opción 1",
+        "nombre": "Opción 2",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
       }
     ]
   },
   {
-    "fecha": "27 de octubre de 2026 | 3:45 p.m.",
-    "hora": "3:45 p.m.",
-    "start": "2026-10-27T19:25:00Z",
-    "end": "2026-10-27T23:15:00Z",
-    "equipo1": "Torino",
-    "logo1": "https://flagcdn.com/w80/it.png",
-    "equipo2": "Como",
-    "logo2": "https://flagcdn.com/w80/it.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
-      }
-    ]
-  },
-  {
-    "fecha": "27 de octubre de 2026 | 4:00 p.m.",
+    "fecha": "28 de octubre de 2026 | 4:00 p.m.",
     "hora": "4:00 p.m.",
-    "start": "2026-10-27T19:40:00Z",
-    "end": "2026-10-27T23:30:00Z",
-    "equipo1": "Fleetwood Town",
+    "start": "2026-10-28T19:40:00Z",
+    "end": "2026-10-28T23:30:00Z",
+    "equipo1": "Liverpool",
     "logo1": "https://flagcdn.com/w80/gb.png",
-    "equipo2": "Arsenal",
+    "equipo2": "Chelsea",
     "logo2": "https://flagcdn.com/w80/gb.png",
     "opciones": [
       {
@@ -64,14 +36,30 @@
     ]
   },
   {
-    "fecha": "27 de octubre de 2026 | 10:00 p.m.",
-    "hora": "10:00 p.m.",
-    "start": "2026-10-28T01:40:00Z",
-    "end": "2026-10-28T05:30:00Z",
-    "equipo1": "Alianza",
-    "logo1": "https://flagcdn.com/w80/sv.png",
-    "equipo2": "CD Marathón",
-    "logo2": "https://flagcdn.com/w80/hn.png",
+    "fecha": "28 de octubre de 2026 | 8:30 p.m.",
+    "hora": "8:30 p.m.",
+    "start": "2026-10-29T00:10:00Z",
+    "end": "2026-10-29T04:00:00Z",
+    "equipo1": "Deportivo Saprissa",
+    "logo1": "https://flagcdn.com/w80/cr.png",
+    "equipo2": "L.A. Firpo",
+    "logo2": "https://flagcdn.com/w80/sv.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
+      }
+    ]
+  },
+  {
+    "fecha": "28 de octubre de 2026 | 11:00 p.m.",
+    "hora": "11:00 p.m.",
+    "start": "2026-10-29T02:40:00Z",
+    "end": "2026-10-29T06:30:00Z",
+    "equipo1": "CD Olimpia",
+    "logo1": "https://flagcdn.com/w80/hn.png",
+    "equipo2": "CS Cartaginés",
+    "logo2": "https://flagcdn.com/w80/cr.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -83,6 +71,22 @@
       },
       {
         "nombre": "Opción 3",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdsports.html"
+      }
+    ]
+  },
+  {
+    "fecha": "28 de octubre de 2026 | 11:00 p.m.",
+    "hora": "11:00 p.m.",
+    "start": "2026-10-29T02:40:00Z",
+    "end": "2026-10-29T06:30:00Z",
+    "equipo1": "América",
+    "logo1": "https://flagcdn.com/w80/mx.png",
+    "equipo2": "Tijuana",
+    "logo2": "https://flagcdn.com/w80/mx.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdsports.html"
       }
     ]
