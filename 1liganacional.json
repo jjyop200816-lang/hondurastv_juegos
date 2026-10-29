@@ -1,11 +1,11 @@
 [
   {
-    "fecha": "Viernes, 23 de oct | 9:00 p.m.",
-    "hora": "Viernes, 23 oct - 9:00 p.m. EDT",
-    "start": "2026-10-24T00:30:00Z",
-    "end": "2026-10-24T03:30:00Z",
-    "equipo1": "Olancho FC",
-    "equipo2": "Estrella Roja",
+    "fecha": "Viernes, 30 de oct | 9:00 p.m.",
+    "hora": "Viernes, 30 oct - 9:00 p.m. EDT",
+    "start": "2026-10-31T00:40:00Z",
+    "end": "2026-10-31T03:20:00Z",
+    "equipo1": "Estrella Roja",
+    "equipo2": "Atlético Independiente",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -22,11 +22,11 @@
     ]
   },
   {
-    "fecha": "Sábado, 24 de oct | 5:00 p.m.",
-    "hora": "Sábado, 24 oct - 5:00 p.m. EDT",
-    "start": "2026-10-24T20:30:00Z",
-    "end": "2026-10-24T23:30:00Z",
-    "equipo1": "CD Choloma",
+    "fecha": "Sábado, 31 de oct | 5:00 p.m.",
+    "hora": "Sábado, 31 oct - 5:00 p.m. EDT",
+    "start": "2026-10-31T20:40:00Z",
+    "end": "2026-10-31T23:20:00Z",
+    "equipo1": "Lobos UPNFM",
     "equipo2": "Génesis PN",
     "opciones": [
       {
@@ -44,51 +44,11 @@
     ]
   },
   {
-    "fecha": "Sábado, 24 de oct | 7:15 p.m.",
-    "hora": "Sábado, 24 oct - 7:15 p.m. EDT",
-    "start": "2026-10-24T22:45:00Z",
-    "end": "2026-10-25T01:45:00Z",
+    "fecha": "Sábado, 31 de oct | 7:15 p.m.",
+    "hora": "Sábado, 31 oct - 7:15 p.m. EDT",
+    "start": "2026-10-31T22:55:00Z",
+    "end": "2026-11-01T01:35:00Z",
     "equipo1": "Real España",
-    "equipo2": "Platense FC",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "https://sporio.tv/api/proxy?url=https%3A%2F%2Fstreaming.onnethn.com%2FDEPORTES_TVC%2Fplaylist.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "Sábado, 24 de oct | 9:30 p.m.",
-    "hora": "Sábado, 24 oct - 9:30 p.m. EDT",
-    "start": "2026-10-25T01:00:00Z",
-    "end": "2026-10-25T04:00:00Z",
-    "equipo1": "Atlético Independiente",
-    "equipo2": "CD Marathón",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://tv.webmedialive.com/vallevision/live/playlist.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "https://tv.webmedialive.com:2443/client/embed.php?user=vallevisin"
-      }
-    ]
-  },
-  {
-    "fecha": "Domingo, 25 de oct | 5:00 p.m.",
-    "hora": "Domingo, 25 oct - 5:00 p.m. EDT",
-    "start": "2026-10-25T20:30:00Z",
-    "end": "2026-10-25T23:30:00Z",
-    "equipo1": "FC Motagua",
     "equipo2": "Juticalpa FC",
     "opciones": [
       {
@@ -106,12 +66,52 @@
     ]
   },
   {
-    "fecha": "Domingo, 25 de oct | 7:15 p.m.",
-    "hora": "🔥 Partido de Prueba en Vivo",
-    "start": "2026-10-01T00:00:00Z",
-    "end": "2026-12-31T23:59:59Z",
-    "equipo1": "Lobos UPNFM",
+    "fecha": "Sábado, 31 de oct | 9:30 p.m.",
+    "hora": "Sábado, 31 oct - 9:30 p.m. EDT",
+    "start": "2026-11-01T01:10:00Z",
+    "end": "2026-11-01T03:50:00Z",
+    "equipo1": "CD Choloma",
     "equipo2": "CD Olimpia",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://tv.webmedialive.com/vallevision/live/playlist.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://tv.webmedialive.com:2443/client/embed.php?user=vallevisin"
+      }
+    ]
+  },
+  {
+    "fecha": "Domingo, 1 de nov | 6:15 p.m.",
+    "hora": "Domingo, 1 nov - 6:15 p.m. EST",
+    "start": "2026-11-01T22:55:00Z",
+    "end": "2026-11-02T01:35:00Z",
+    "equipo1": "FC Motagua",
+    "equipo2": "CD Marathón",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://sporio.tv/api/proxy?url=https%3A%2F%2Fstreaming.onnethn.com%2FDEPORTES_TVC%2Fplaylist.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "Domingo, 1 de nov | 8:30 p.m.",
+    "hora": "Domingo, 1 nov - 8:30 p.m. EST",
+    "start": "2026-11-02T01:10:00Z",
+    "end": "2026-11-02T03:50:00Z",
+    "equipo1": "Olancho FC",
+    "equipo2": "Platense FC",
     "opciones": [
       {
         "nombre": "Opción 1",
