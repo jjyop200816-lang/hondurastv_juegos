@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Reproductor en Vivo HTML5</title>
+  <!-- hls.js para reproducción de streams M3U8/HLS -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Contenedor principal a pantalla completa */
+    .player-wrapper {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+      cursor: default;
+    }
+
+    /* Ocultar el cursor del mouse cuando los controles estén inactivos en PC */
+    .player-wrapper.hide-cursor {
+      cursor: none;
+    }
+
+    /* Elemento de Video HTML5 */
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Ajusta sin deformar. Cambia a 'cover' si quieres llenar los bordes recortando */
+      background: #000;
+    }
+
+    /* Controles emergentes flotantes (por defecto ocultos) */
+    .controls-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, transparent 20%, transparent 80%, rgba(0,0,0,0.8) 100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      pointer-events: none;
+    }
+
+    /* Clase que activa la visibilidad de los controles */
+    .controls-overlay.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    /* Indicador en vivo superior */
+    .top-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .live-dot {
+      width: 10px;
+      height: 10px;
+      background-color: #ff3b30;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #ff3b30;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 1; }
+      50% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+
+    /* Barra de botones inferior */
+    .bottom-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .controls-left, .controls-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .btn:active {
+      transform: scale(0.95);
+    }
+
+    /* Mensaje de estado */
+    .status-message {
+      position: absolute;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      background: rgba(0,0,0,0.7);
+      padding: 12px 24px;
+      border-radius: 8px;
+      display: none;
+      pointer-events: none;
+      z-index: 5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="player-wrapper" id="playerWrapper">
+    <!-- Reproductor de Video HTML5 -->
+    <video id="videoPlayer" playsinline autoplay controlslist="nodownload"></video>
+
+    <!-- Indicador de estado -->
+    <div class="status-message" id="statusMessage">Cargando transmisión...</div>
+
+    <!-- Capa de controles interactiva -->
+    <div class="controls-overlay" id="controlsOverlay">
+      <div class="top-bar">
+        <span class="live-dot"></span>
+        <span>EN VIVO</span>
+      </div>
+
+      <div class="bottom-bar">
+        <div class="controls-left">
+          <button class="btn" id="playBtn" onclick="togglePlay()">⏸ Pausa</button>
+          <button class="btn" id="reloadBtn" onclick="reloadStream()">🔄 Recargar</button>
+        </div>
+        <div class="controls-right">
+          <button class="btn" id="fullscreenBtn" onclick="toggleFullscreen()">⛶ Pantalla Completa</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Enlace directo del Stream
+    const STREAM_URL = "https://sflix.today/v1/live/proxy/deportes-tvc";
+
+    const video = document.getElementById('videoPlayer');
+    const playerWrapper = document.getElementById('playerWrapper');
+    const statusMessage = document.getElementById('statusMessage');
+    const playBtn = document.getElementById('playBtn');
+    const controlsOverlay = document.getElementById('controlsOverlay');
+
+    let hls = null;
+    let hideControlsTimeout = null;
+
+    // Inicializar reproducción de stream
+    function initPlayer() {
+      showStatus("Cargando transmisión...");
+
+      if (Hls.isSupported()) {
+        if (hls) hls.destroy();
+        
+        hls = new Hls({
+          enableWorker: true,
+          lowLatencyMode: true
+        });
+
+        hls.loadSource(STREAM_URL);
+        hls.attachMedia(video);
+
+        hls.on(Hls.Events.MANIFEST_PARSED, function() {
+          hideStatus();
+          video.play().catch(() => {
+            showStatus("Haz clic en el reproductor para iniciar audio/video");
+          });
+        });
+
+        hls.on(Hls.Events.ERROR, function(event, data) {
+          if (data.fatal) {
+            switch(data.type) {
+              case Hls.ErrorTypes.NETWORK_ERROR:
+                showStatus("Error de red. Reintentando...");
+                hls.startLoad();
+                break;
+              case Hls.ErrorTypes.MEDIA_ERROR:
+                showStatus("Error de medios. Recuperando...");
+                hls.recoverMediaError();
+                break;
+              default:
+                showStatus("No se pudo cargar la transmisión HLS");
+                hls.destroy();
+                break;
+            }
+          }
+        });
+
+      } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        // Soporte nativo para Safari / iOS
+        video.src = STREAM_URL;
+        video.addEventListener('loadedmetadata', function() {
+          hideStatus();
+          video.play();
+        });
+      } else {
+        showStatus("Tu navegador no soporta reproducción HLS");
+      }
+    }
+
+    // Control de Play/Pausa
+    function togglePlay() {
+      if (video.paused) {
+        video.play();
+        playBtn.innerHTML = "⏸ Pausa";
+      } else {
+        video.pause();
+        playBtn.innerHTML = "▶ Play";
+      }
+    }
+
+    // Recargar transmisión
+    function reloadStream() {
+      initPlayer();
+    }
+
+    // Activar/Desactivar Pantalla Completa del navegador
+    function toggleFullscreen() {
+      if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+        if (playerWrapper.requestFullscreen) {
+          playerWrapper.requestFullscreen();
+        } else if (playerWrapper.webkitRequestFullscreen) {
+          playerWrapper.webkitRequestFullscreen();
+        }
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        }
+      }
+    }
+
+    // Funciones auxiliares de estado
+    function showStatus(msg) {
+      statusMessage.textContent = msg;
+      statusMessage.style.display = "block";
+    }
+
+    function hideStatus() {
+      statusMessage.style.display = "none";
+    }
+
+    // Sistema de ocultado automático de controles por inactividad
+    function resetControlsTimer() {
+      controlsOverlay.classList.add('active');
+      playerWrapper.classList.remove('hide-cursor');
+      
+      clearTimeout(hideControlsTimeout);
+      hideControlsTimeout = setTimeout(() => {
+        // Si el video está en reproducción, se ocultan tras 2.5 segundos de inactividad
+        if (!video.paused) {
+          controlsOverlay.classList.remove('active');
+          playerWrapper.classList.add('hide-cursor');
+        }
+      }, 2500);
+    }
+
+    // Detectar movimiento del mouse o toques en la pantalla para mostrar controles
+    document.addEventListener('mousemove', resetControlsTimer);
+    document.addEventListener('touchstart', resetControlsTimer);
+    document.addEventListener('click', resetControlsTimer);
+
+    // Iniciar automáticamente al cargar la página
+    window.addEventListener('DOMContentLoaded', () => {
+      initPlayer();
+      resetControlsTimer();
+    });
+  </script>
+</body>
+</html>
