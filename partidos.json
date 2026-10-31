@@ -172,6 +172,22 @@
     ]
   },
   {
+    "fecha": "31 de octubre de 2026 | 12:30 p.m.",
+    "hora": "12:30 p.m.",
+    "start": "2026-10-31T16:10:00Z",
+    "end": "2026-10-31T19:15:00Z",
+    "equipo1": "Lech Poznań",
+    "logo1": "https://flagcdn.com/w80/pl.png",
+    "equipo2": "Wisła Kraków",
+    "logo2": "https://flagcdn.com/w80/pl.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+      }
+    ]
+  },
+  {
     "fecha": "31 de octubre de 2026 | 1:30 p.m.",
     "hora": "1:30 p.m.",
     "start": "2026-10-31T17:10:00Z",
@@ -328,7 +344,7 @@
     ]
   },
   {
-    "fecha": "31 de octubre de 2026 | 9:07 p.m.",
+    "fecha": "31 de octubre de 2026 | 12:30 p.m.",
     "hora": "9:07 p.m.",
     "start": "2026-11-01T00:47:00Z",
     "end": "2026-11-01T03:52:00Z",
