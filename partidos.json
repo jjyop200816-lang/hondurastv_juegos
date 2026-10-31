@@ -323,7 +323,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8"
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       }
     ]
   },
@@ -355,7 +355,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8"
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       }
     ]
   }
