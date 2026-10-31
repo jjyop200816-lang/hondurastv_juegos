@@ -1,13 +1,53 @@
 [
   {
-    "fecha": "30 de octubre de 2026 | 2:00 p.m.",
-    "hora": "2:00 p.m.",
-    "start": "2026-10-30T18:00:00Z",
-    "end": "2026-10-30T22:30:00Z",
-    "equipo1": "Le Havre",
-    "logo1": "https://flagcdn.com/w80/fr.png",
-    "equipo2": "PSG",
-    "logo2": "https://flagcdn.com/w80/fr.png",
+    "fecha": "31 de octubre de 2026 | 8:30 a.m.",
+    "hora": "8:30 a.m.",
+    "start": "2026-10-31T12:10:00Z",
+    "end": "2026-10-31T15:15:00Z",
+    "equipo1": "Chelsea",
+    "logo1": "https://flagcdn.com/w80/gb.png",
+    "equipo2": "Manchester United",
+    "logo2": "https://flagcdn.com/w80/gb.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdsports.html"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "31 de octubre de 2026 | 8:30 a.m.",
+    "hora": "8:30 a.m.",
+    "start": "2026-10-31T12:10:00Z",
+    "end": "2026-10-31T15:15:00Z",
+    "equipo1": "Lincoln City",
+    "logo1": "https://flagcdn.com/w80/gb.png",
+    "equipo2": "Birmingham City",
+    "logo2": "https://flagcdn.com/w80/gb.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+      }
+    ]
+  },
+  {
+    "fecha": "31 de octubre de 2026 | 9:00 a.m.",
+    "hora": "9:00 a.m.",
+    "start": "2026-10-31T12:40:00Z",
+    "end": "2026-10-31T15:45:00Z",
+    "equipo1": "Levante",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "Atlético",
+    "logo2": "https://flagcdn.com/w80/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -16,50 +56,30 @@
     ]
   },
   {
-    "fecha": "30 de octubre de 2026 | 4:00 p.m.",
-    "hora": "4:00 p.m.",
-    "start": "2026-10-30T20:00:00Z",
-    "end": "2026-10-31T00:30:00Z",
-    "equipo1": "Villarreal",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Espanyol",
-    "logo2": "https://flagcdn.com/w80/es.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdsports.html"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "http://154.12.107.98:8000/play/a08s"
-      }
-    ]
-  },
-  {
-    "fecha": "30 de octubre de 2026 | 4:00 p.m.",
-    "hora": "4:00 p.m.",
-    "start": "2026-10-30T20:00:00Z",
-    "end": "2026-10-31T00:30:00Z",
-    "equipo1": "Sheffield United",
+    "fecha": "31 de octubre de 2026 | 11:00 a.m.",
+    "hora": "11:00 a.m.",
+    "start": "2026-10-31T14:40:00Z",
+    "end": "2026-10-31T17:45:00Z",
+    "equipo1": "AFC Bournemouth",
     "logo1": "https://flagcdn.com/w80/gb.png",
-    "equipo2": "Wrexham AFC",
+    "equipo2": "Leeds United",
     "logo2": "https://flagcdn.com/w80/gb.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8?imafw__fw_us_privacy=1YNY&attmas=not_determined&am.originUrl=https%3A%2F%2Fdai.google.com%2Flinear%2Fhls%2Fevent%2F7f3Wv6f7QEKfQna22jHqLQ%2Fmaster.m3u8&imafw_csid=desktop_web&imafw__fw_did=&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=&app_version=0.0.0&height=1080&ip_addr=195.179.200.80&page_url=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&width=1920"
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdsports.html"
       }
     ]
   },
   {
-    "fecha": "30 de octubre de 2026 | 9:00 p.m.",
-    "hora": "9:00 p.m.",
-    "start": "2026-10-31T01:00:00Z",
-    "end": "2026-10-31T05:30:00Z",
-    "equipo1": "FC Juárez",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Querétaro",
-    "logo2": "https://flagcdn.com/w80/mx.png",
+    "fecha": "31 de octubre de 2026 | 11:00 a.m.",
+    "hora": "11:00 a.m.",
+    "start": "2026-10-31T14:40:00Z",
+    "end": "2026-10-31T17:45:00Z",
+    "equipo1": "Brentford",
+    "logo1": "https://flagcdn.com/w80/gb.png",
+    "equipo2": "Nottingham Forest",
+    "logo2": "https://flagcdn.com/w80/gb.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -68,18 +88,274 @@
     ]
   },
   {
-    "fecha": "30 de octubre de 2026 | 11:00 p.m.",
-    "hora": "11:00 p.m.",
-    "start": "2026-10-31T03:00:00Z",
-    "end": "2026-10-31T07:30:00Z",
-    "equipo1": "Puebla",
+    "fecha": "31 de octubre de 2026 | 11:00 a.m.",
+    "hora": "11:00 a.m.",
+    "start": "2026-10-31T14:40:00Z",
+    "end": "2026-10-31T17:45:00Z",
+    "equipo1": "Coventry City",
+    "logo1": "https://flagcdn.com/w80/gb.png",
+    "equipo2": "Sunderland",
+    "logo2": "https://flagcdn.com/w80/gb.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+      }
+    ]
+  },
+  {
+    "fecha": "31 de octubre de 2026 | 11:00 a.m.",
+    "hora": "11:00 a.m.",
+    "start": "2026-10-31T14:40:00Z",
+    "end": "2026-10-31T17:45:00Z",
+    "equipo1": "Hull City",
+    "logo1": "https://flagcdn.com/w80/gb.png",
+    "equipo2": "Ipswich Town",
+    "logo2": "https://flagcdn.com/w80/gb.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "31 de octubre de 2026 | 11:00 a.m.",
+    "hora": "11:00 a.m.",
+    "start": "2026-10-31T14:40:00Z",
+    "end": "2026-10-31T17:45:00Z",
+    "equipo1": "Manchester City",
+    "logo1": "https://flagcdn.com/w80/gb.png",
+    "equipo2": "Brighton & Hove Albion",
+    "logo2": "https://flagcdn.com/w80/gb.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdsports.html"
+      }
+    ]
+  },
+  {
+    "fecha": "31 de octubre de 2026 | 11:00 a.m.",
+    "hora": "11:00 a.m.",
+    "start": "2026-10-31T14:40:00Z",
+    "end": "2026-10-31T17:45:00Z",
+    "equipo1": "West Ham",
+    "logo1": "https://flagcdn.com/w80/gb.png",
+    "equipo2": "West Bromwich Albion",
+    "logo2": "https://flagcdn.com/w80/gb.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "31 de octubre de 2026 | 11:15 a.m.",
+    "hora": "11:15 a.m.",
+    "start": "2026-10-31T14:55:00Z",
+    "end": "2026-10-31T18:00:00Z",
+    "equipo1": "Rayo Vallecano",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "Celta",
+    "logo2": "https://flagcdn.com/w80/es.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdsports.html"
+      }
+    ]
+  },
+  {
+    "fecha": "31 de octubre de 2026 | 1:30 p.m.",
+    "hora": "1:30 p.m.",
+    "start": "2026-10-31T17:10:00Z",
+    "end": "2026-10-31T20:15:00Z",
+    "equipo1": "Tottenham Hotspur",
+    "logo1": "https://flagcdn.com/w80/gb.png",
+    "equipo2": "Crystal Palace",
+    "logo2": "https://flagcdn.com/w80/gb.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+      }
+    ]
+  },
+  {
+    "fecha": "31 de octubre de 2026 | 1:30 p.m.",
+    "hora": "1:30 p.m.",
+    "start": "2026-10-31T17:10:00Z",
+    "end": "2026-10-31T20:15:00Z",
+    "equipo1": "Real Betis",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "Málaga",
+    "logo2": "https://flagcdn.com/w80/es.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+      }
+    ]
+  },
+  {
+    "fecha": "31 de octubre de 2026 | 1:30 p.m.",
+    "hora": "1:30 p.m.",
+    "start": "2026-10-31T17:10:00Z",
+    "end": "2026-10-31T20:15:00Z",
+    "equipo1": "Bayern München",
+    "logo1": "https://flagcdn.com/w80/de.png",
+    "equipo2": "B. Dortmund",
+    "logo2": "https://flagcdn.com/w80/de.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdsports.html"
+      }
+    ]
+  },
+  {
+    "fecha": "31 de octubre de 2026 | 3:45 p.m.",
+    "hora": "3:45 p.m.",
+    "start": "2026-10-31T19:25:00Z",
+    "end": "2026-10-31T22:30:00Z",
+    "equipo1": "Milan",
+    "logo1": "https://flagcdn.com/w80/it.png",
+    "equipo2": "Inter",
+    "logo2": "https://flagcdn.com/w80/it.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdsports.html"
+      }
+    ]
+  },
+  {
+    "fecha": "31 de octubre de 2026 | 4:00 p.m.",
+    "hora": "4:00 p.m.",
+    "start": "2026-10-31T19:40:00Z",
+    "end": "2026-10-31T22:45:00Z",
+    "equipo1": "Aston Villa",
+    "logo1": "https://flagcdn.com/w80/gb.png",
+    "equipo2": "Fulham",
+    "logo2": "https://flagcdn.com/w80/gb.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdsports.html"
+      }
+    ]
+  },
+  {
+    "fecha": "31 de octubre de 2026 | 4:00 p.m.",
+    "hora": "4:00 p.m.",
+    "start": "2026-10-31T19:40:00Z",
+    "end": "2026-10-31T22:45:00Z",
+    "equipo1": "Barcelona",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "Deportivo Alavés",
+    "logo2": "https://flagcdn.com/w80/es.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdsports.html"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8"
+      },
+      {
+        "nombre": "Opción 4",
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+      },
+      {
+        "nombre": "Opción 5",
+        "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "31 de octubre de 2026 | 7:00 p.m.",
+    "hora": "7:00 p.m.",
+    "start": "2026-10-31T22:40:00Z",
+    "end": "2026-11-01T01:15:00Z",
+    "equipo1": "Pachuca",
     "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Pumas UNAM",
+    "equipo2": "Tigres UANL",
     "logo2": "https://flagcdn.com/w80/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+      }
+    ]
+  },
+  {
+    "fecha": "31 de octubre de 2026 | 9:05 p.m.",
+    "hora": "9:05 p.m.",
+    "start": "2026-11-01T00:45:00Z",
+    "end": "2026-11-01T03:50:00Z",
+    "equipo1": "Monterrey",
+    "logo1": "https://flagcdn.com/w80/mx.png",
+    "equipo2": "Tijuana",
+    "logo2": "https://flagcdn.com/w80/mx.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "31 de octubre de 2026 | 9:07 p.m.",
+    "hora": "9:07 p.m.",
+    "start": "2026-11-01T00:47:00Z",
+    "end": "2026-11-01T03:52:00Z",
+    "equipo1": "Chivas Guadalajara",
+    "logo1": "https://flagcdn.com/w80/mx.png",
+    "equipo2": "Atlante FC",
+    "logo2": "https://flagcdn.com/w80/mx.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdsports.html"
+      }
+    ]
+  },
+  {
+    "fecha": "31 de octubre de 2026 | 11:10 p.m.",
+    "hora": "11:10 p.m.",
+    "start": "2026-11-01T02:50:00Z",
+    "end": "2026-11-01T05:55:00Z",
+    "equipo1": "América",
+    "logo1": "https://flagcdn.com/w80/mx.png",
+    "equipo2": "Toluca",
+    "logo2": "https://flagcdn.com/w80/mx.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8"
       }
     ]
   }
