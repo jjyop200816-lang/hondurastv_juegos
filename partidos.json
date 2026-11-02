@@ -1,9 +1,9 @@
 [
   {
-    "fecha": "1 de noviembre de 2026 | 8:45 a.m.",
+    "fecha": "2 de noviembre de 2026 | 8:45 a.m.",
     "hora": "8:45 a.m.",
-    "start": "2026-11-01T13:25:00Z",
-    "end": "2026-11-01T16:30:00Z",
+    "start": "2026-11-02T13:25:00Z",
+    "end": "2026-11-02T16:30:00Z",
     "equipo1": "Pakhtakor",
     "logo1": "https://flagcdn.com/w80/uz.png",
     "equipo2": "Al-Nassr",
@@ -16,10 +16,10 @@
     ]
   },
   {
-    "fecha": "1 de noviembre de 2026 | 12:30 p.m.",
+    "fecha": "2 de noviembre de 2026 | 12:30 p.m.",
     "hora": "12:30 p.m.",
-    "start": "2026-11-01T17:10:00Z",
-    "end": "2026-11-01T20:15:00Z",
+    "start": "2026-11-02T17:10:00Z",
+    "end": "2026-11-02T20:15:00Z",
     "equipo1": "Sassuolo",
     "logo1": "https://flagcdn.com/w80/it.png",
     "equipo2": "Fiorentina",
@@ -32,10 +32,10 @@
     ]
   },
   {
-    "fecha": "1 de noviembre de 2026 | 3:00 p.m.",
+    "fecha": "2 de noviembre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
-    "start": "2026-11-01T19:40:00Z",
-    "end": "2026-11-01T22:45:00Z",
+    "start": "2026-11-02T19:40:00Z",
+    "end": "2026-11-02T22:45:00Z",
     "equipo1": "RC Deportivo",
     "logo1": "https://flagcdn.com/w80/es.png",
     "equipo2": "Osasuna",
@@ -48,10 +48,10 @@
     ]
   },
   {
-    "fecha": "1 de noviembre de 2026 | 3:00 p.m.",
+    "fecha": "2 de noviembre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
-    "start": "2026-11-01T19:40:00Z",
-    "end": "2026-11-01T22:45:00Z",
+    "start": "2026-11-02T19:40:00Z",
+    "end": "2026-11-02T22:45:00Z",
     "equipo1": "Newcastle",
     "logo1": "https://flagcdn.com/w80/gb.png",
     "equipo2": "Everton",
