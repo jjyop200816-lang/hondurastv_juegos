@@ -49,6 +49,20 @@
 </div>
 
 <script>
+    // Función auxiliar robusta para evitar errores de fecha en Android WebViews antiguos
+    function parseDate(dateStr) {
+        if (!dateStr) return new Date(NaN);
+        let date = new Date(dateStr);
+        if (!isNaN(date.getTime())) return date;
+        
+        // Fallback para formato ISO en navegadores móviles limitados
+        let parts = dateStr.split(/[^0-9]/);
+        if (parts.length >= 6) {
+            return new Date(parts[0], parts[1] - 1, parts[2], parts[3], parts[4], parts[5]);
+        }
+        return new Date(NaN);
+    }
+
     function openAction(target) {
         if (window.Android && typeof window.Android.openStream === 'function') {
             window.Android.openStream(target);
@@ -72,13 +86,14 @@
                 let btnsHtml = '';
                 if (item.opciones && Array.isArray(item.opciones)) {
                     item.opciones.forEach(function(op) {
-                        btnsHtml += '<button class="play-btn" onclick="openAction(\'' + op.stream + '\')">▶ ' + op.nombre + '</button>';
+                        let safeStream = op.stream.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+                        btnsHtml += '<button class="play-btn" onclick="openAction(\'' + safeStream + '\')">▶ ' + op.nombre + '</button>';
                     });
                 }
 
                 let horaTexto = item.hora || item.fecha || '';
                 if (item.start) {
-                    const fechaInicio = new Date(item.start);
+                    const fechaInicio = parseDate(item.start);
                     if (!isNaN(fechaInicio.getTime())) {
                         horaTexto = fechaInicio.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true });
                     }
@@ -126,8 +141,10 @@
 
             if (!startAttr || !endAttr) return;
 
-            const inicio = new Date(startAttr).getTime();
-            const fin = new Date(endAttr).getTime();
+            const inicio = parseDate(startAttr).getTime();
+            const fin = parseDate(endAttr).getTime();
+
+            if (isNaN(inicio) || isNaN(fin)) return;
 
             card.classList.remove('active', 'finished', 'waiting');
 
