@@ -3,19 +3,51 @@
     "fecha": "4 de noviembre de 2026 | 12:45 p.m.",
     "hora": "12:45 p.m.",
     "start": "2026-11-04T17:25:00Z",
-    "end": "2026-11-04T18:00:00Z",
-    "equipo1": "Fenerbahçe",
-    "logo1": "https://escudosfc.com.br/images/fenerbahce_tur.png",
-    "equipo2": "Liverpool",
-    "logo2": "https://escudosfc.com.br/images/liverpool.png",
+    "end": "2026-11-04T20:30:00Z",
+    "equipo1": "AEK Athens",
+    "logo1": "https://flagcdn.com/w80/gr.png",
+    "equipo2": "Real Madrid",
+    "logo2": "https://flagcdn.com/w80/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn3.html"
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://stream.example.com/fnb-liv-2"
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-unimas?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+      },
+      {
+        "nombre": "Opción 4",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
+      },
+      {
+        "nombre": "Opción 5",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
+      }
+    ]
+  },
+  {
+    "fecha": "4 de noviembre de 2026 | 12:45 p.m.",
+    "hora": "12:45 p.m.",
+    "start": "2026-11-04T17:25:00Z",
+    "end": "2026-11-04T20:30:00Z",
+    "equipo1": "Fenerbahçe",
+    "logo1": "https://flagcdn.com/w80/tr.png",
+    "equipo2": "Liverpool",
+    "logo2": "https://flagcdn.com/w80/gb.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
       }
     ]
   },
@@ -23,11 +55,11 @@
     "fecha": "4 de noviembre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
     "start": "2026-11-04T19:40:00Z",
-    "end": "2026-11-04T20:15:00Z",
+    "end": "2026-11-04T22:45:00Z",
     "equipo1": "RB Leipzig",
-    "logo1": "https://escudosfc.com.br/images/leipzig_ger.png",
+    "logo1": "https://flagcdn.com/w80/de.png",
     "equipo2": "Manchester City",
-    "logo2": "https://escudosfc.com.br/images/manchestercity.png",
+    "logo2": "https://flagcdn.com/w80/gb.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -39,7 +71,7 @@
       },
       {
         "nombre": "Opción 3",
-        "stream": "https://instreams.live/live/tv401915387/master.m3u8"
+        "stream": "https://instreams.live/live/tv401915387/master.m3u8?st=Ra_9JTn_MRf6C7cQErfXhw&e=1793745027"
       }
     ]
   },
@@ -47,31 +79,39 @@
     "fecha": "4 de noviembre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
     "start": "2026-11-04T19:40:00Z",
-    "end": "2026-11-04T20:15:00Z",
+    "end": "2026-11-04T22:45:00Z",
     "equipo1": "B. Dortmund",
-    "logo1": "https://escudosfc.com.br/images/dortmund.png",
+    "logo1": "https://flagcdn.com/w80/de.png",
     "equipo2": "Real Betis",
-    "logo2": "https://escudosfc.com.br/images/realbetis.png",
+    "logo2": "https://flagcdn.com/w80/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn"
+        "stream": "http://209.61.12.77:9000/play/a08q/index.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://instreams.live/live/tv401915309/master.m3u8?st=gRYHsrizrPOPlH36BOK8NQ&e=1793745032"
+      }
+    ]
+  },
+  {
+    "fecha": "4 de noviembre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-11-04T19:40:00Z",
+    "end": "2026-11-04T22:45:00Z",
+    "equipo1": "Slavia Praha",
+    "logo1": "https://flagcdn.com/w80/cz.png",
+    "equipo2": "Arsenal",
+    "logo2": "https://flagcdn.com/w80/gb.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       },
       {
         "nombre": "Opción 2",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria5.html"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-unimas"
-      },
-      {
-        "nombre": "Opción 4",
-        "stream": "https://gate4.st/live/tv401915386/master.m3u8"
-      },
-      {
-        "nombre": "Opción 5",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
       }
     ]
   },
@@ -79,11 +119,31 @@
     "fecha": "4 de noviembre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
     "start": "2026-11-04T19:40:00Z",
-    "end": "2026-11-04T20:15:00Z",
-    "equipo1": "Slavia Praha",
-    "logo1": "https://escudosfc.com.br/images/slaviapraha_cze.png",
-    "equipo2": "Arsenal",
-    "logo2": "https://escudosfc.com.br/images/arsenal.png",
+    "end": "2026-11-04T22:45:00Z",
+    "equipo1": "PSV",
+    "logo1": "https://flagcdn.com/w80/nl.png",
+    "equipo2": "Club Brugge",
+    "logo2": "https://flagcdn.com/w80/be.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "http://209.61.12.77:9000/play/a09m/index.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "4 de noviembre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-11-04T19:40:00Z",
+    "end": "2026-11-04T22:45:00Z",
+    "equipo1": "Porto",
+    "logo1": "https://flagcdn.com/w80/pt.png",
+    "equipo2": "Napoli",
+    "logo2": "https://flagcdn.com/w80/it.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -99,79 +159,19 @@
     "fecha": "4 de noviembre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
     "start": "2026-11-04T19:40:00Z",
-    "end": "2026-11-04T20:15:00Z",
-    "equipo1": "PSV",
-    "logo1": "https://escudosfc.com.br/images/psv.png",
-    "equipo2": "Club Brugge",
-    "logo2": "https://escudosfc.com.br/images/clubbrugge_bel.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "http://209.61.12.77:9000/play/a09m/index.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria91.html"
-      }
-    ]
-  },
-  {
-    "fecha": "4 de noviembre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-11-04T19:40:00Z",
-    "end": "2026-11-04T20:15:00Z",
-    "equipo1": "Porto",
-    "logo1": "https://escudosfc.com.br/images/porto.png",
-    "equipo2": "Napoli",
-    "logo2": "https://escudosfc.com.br/images/napoli.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://barinaslive1.boldmss.com/ESPN_3/ESPN_3.isml/ESPN_3.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn3.html"
-      }
-    ]
-  },
-  {
-    "fecha": "4 de noviembre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-11-04T19:40:00Z",
-    "end": "2026-11-04T20:15:00Z",
+    "end": "2026-11-04T22:45:00Z",
     "equipo1": "Lens",
-    "logo1": "https://escudosfc.com.br/images/lens_fra.png",
+    "logo1": "https://flagcdn.com/w80/fr.png",
     "equipo2": "Como",
-    "logo2": "https://escudosfc.com.br/images/como_ita.png",
+    "logo2": "https://flagcdn.com/w80/it.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://209.61.12.77:9000/play/a08q/index.m3u8"
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria91.html"
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://instreams.live/live/tv401915309/master.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "4 de noviembre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-11-04T19:40:00Z",
-    "end": "2026-11-04T20:15:00Z",
-    "equipo1": "Viking Stavanger",
-    "logo1": "https://escudosfc.com.br/images/viking_nor.png",
-    "equipo2": "Sabah",
-    "logo2": "https://escudosfc.com.br/images/sabah_aze.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria93.html"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "http://181.224.255.210:8001/play/a0eq/index.m3u8?hls"
+        "stream": "https://instreams.pro/live/tv401915384/master.m3u8?st=D_Hp9kwwUxtFiRZOj3OJ_w&e=1793745029"
       }
     ]
   }
