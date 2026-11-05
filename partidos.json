@@ -79,7 +79,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://181.224.255.210:8001/play/a0og"
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       }
     ]
   },
