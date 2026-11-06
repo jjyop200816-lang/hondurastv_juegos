@@ -1,11 +1,11 @@
 [
   {
-    "fecha": "Miércoles, 4 de nov | 4:00 p.m.",
-    "hora": "Miércoles, 4 nov - 4:00 p.m. EST",
-    "start": "2026-11-04T20:40:00Z",
-    "end": "2026-11-04T23:20:00Z",
-    "equipo1": "Olancho FC",
-    "equipo2": "Lobos UPNFM",
+    "fecha": "Sábado, 7 de nov | 4:00 p.m.",
+    "hora": "Sábado, 7 nov - 4:00 p.m. EST",
+    "start": "2026-11-07T21:00:00Z",
+    "end": "2026-11-07T23:40:00Z",
+    "equipo1": "Juticalpa FC",
+    "equipo2": "Estrella Roja",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -22,11 +22,11 @@
     ]
   },
   {
-    "fecha": "Miércoles, 4 de nov | 6:15 p.m.",
-    "hora": "Miércoles, 4 nov - 6:15 p.m. EST",
-    "start": "2026-11-04T22:55:00Z",
-    "end": "2026-11-05T01:35:00Z",
-    "equipo1": "Estrella Roja",
+    "fecha": "Sábado, 7 de nov | 6:15 p.m.",
+    "hora": "Sábado, 7 nov - 6:15 p.m. EST",
+    "start": "2026-11-07T23:15:00Z",
+    "end": "2026-11-08T01:55:00Z",
+    "equipo1": "Lobos UPNFM",
     "equipo2": "FC Motagua",
     "opciones": [
       {
@@ -44,12 +44,12 @@
     ]
   },
   {
-    "fecha": "Miércoles, 4 de nov | 8:30 p.m.",
-    "hora": "Miércoles, 4 nov - 8:30 p.m. EST",
-    "start": "2026-11-05T01:10:00Z",
-    "end": "2026-11-05T03:50:00Z",
+    "fecha": "Sábado, 7 de nov | 8:30 p.m.",
+    "hora": "Sábado, 7 nov - 8:30 p.m. EST",
+    "start": "2026-11-08T01:30:00Z",
+    "end": "2026-11-08T04:10:00Z",
     "equipo1": "CD Olimpia",
-    "equipo2": "Juticalpa FC",
+    "equipo2": "Olancho FC",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -66,11 +66,33 @@
     ]
   },
   {
-    "fecha": "Jueves, 5 de nov | 4:00 p.m.",
-    "hora": "Jueves, 5 nov - 4:00 p.m. EST",
-    "start": "2026-11-05T20:40:00Z",
-    "end": "2026-11-05T23:20:00Z",
-    "equipo1": "Génesis PN",
+    "fecha": "Domingo, 8 de nov | 4:00 p.m.",
+    "hora": "Domingo, 8 nov - 4:00 p.m. EST",
+    "start": "2026-11-08T21:00:00Z",
+    "end": "2026-11-08T23:40:00Z",
+    "equipo1": "Platense FC",
+    "equipo2": "Génesis PN",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://sporio.tv/api/proxy?url=https%3A%2F%2Fstreaming.onnethn.com%2FDEPORTES_TVC%2Fplaylist.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "Domingo, 8 de nov | 6:15 p.m.",
+    "hora": "Domingo, 8 nov - 6:15 p.m. EST",
+    "start": "2026-11-08T23:15:00Z",
+    "end": "2026-11-09T01:55:00Z",
+    "equipo1": "Atlético Independiente",
     "equipo2": "Real España",
     "opciones": [
       {
@@ -84,34 +106,12 @@
     ]
   },
   {
-    "fecha": "Jueves, 5 de nov | 6:15 p.m.",
-    "hora": "Jueves, 5 nov - 6:15 p.m. EST",
-    "start": "2026-11-05T22:55:00Z",
-    "end": "2026-11-06T01:35:00Z",
-    "equipo1": "CD Choloma",
-    "equipo2": "Atlético Independiente",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "https://sporio.tv/api/proxy?url=https%3A%2F%2Fstreaming.onnethn.com%2FDEPORTES_TVC%2Fplaylist.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "Jueves, 5 de nov | 8:30 p.m.",
-    "hora": "Jueves, 5 nov - 8:30 p.m. EST",
-    "start": "2026-11-06T01:10:00Z",
-    "end": "2026-11-06T03:50:00Z",
+    "fecha": "Domingo, 8 de nov | 8:30 p.m.",
+    "hora": "Domingo, 8 nov - 8:30 p.m. EST",
+    "start": "2026-11-09T01:30:00Z",
+    "end": "2026-11-09T04:10:00Z",
     "equipo1": "CD Marathón",
-    "equipo2": "Platense FC",
+    "equipo2": "CD Choloma",
     "opciones": [
       {
         "nombre": "Opción 1",
