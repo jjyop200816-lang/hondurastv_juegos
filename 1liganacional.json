@@ -2,8 +2,8 @@
   {
     "fecha": "Sábado, 7 de nov | 4:00 p.m.",
     "hora": "Sábado, 7 nov - 4:00 p.m. EST",
-    "start": "2026-11-07T21:00:00Z",
-    "end": "2026-11-07T23:40:00Z",
+    "start": "2026-11-07T20:45:00Z",
+    "end": "2026-11-07T23:10:00Z",
     "equipo1": "Juticalpa FC",
     "equipo2": "Estrella Roja",
     "opciones": [
@@ -24,8 +24,8 @@
   {
     "fecha": "Sábado, 7 de nov | 6:15 p.m.",
     "hora": "Sábado, 7 nov - 6:15 p.m. EST",
-    "start": "2026-11-07T23:15:00Z",
-    "end": "2026-11-08T01:55:00Z",
+    "start": "2026-11-07T23:00:00Z",
+    "end": "2026-11-08T01:25:00Z",
     "equipo1": "Lobos UPNFM",
     "equipo2": "FC Motagua",
     "opciones": [
@@ -46,8 +46,8 @@
   {
     "fecha": "Sábado, 7 de nov | 8:30 p.m.",
     "hora": "Sábado, 7 nov - 8:30 p.m. EST",
-    "start": "2026-11-08T01:30:00Z",
-    "end": "2026-11-08T04:10:00Z",
+    "start": "2026-11-08T01:15:00Z",
+    "end": "2026-11-08T03:40:00Z",
     "equipo1": "CD Olimpia",
     "equipo2": "Olancho FC",
     "opciones": [
@@ -68,8 +68,8 @@
   {
     "fecha": "Domingo, 8 de nov | 4:00 p.m.",
     "hora": "Domingo, 8 nov - 4:00 p.m. EST",
-    "start": "2026-11-08T21:00:00Z",
-    "end": "2026-11-08T23:40:00Z",
+    "start": "2026-11-08T20:45:00Z",
+    "end": "2026-11-08T23:10:00Z",
     "equipo1": "Platense FC",
     "equipo2": "Génesis PN",
     "opciones": [
@@ -90,8 +90,8 @@
   {
     "fecha": "Domingo, 8 de nov | 6:15 p.m.",
     "hora": "Domingo, 8 nov - 6:15 p.m. EST",
-    "start": "2026-11-08T23:15:00Z",
-    "end": "2026-11-09T01:55:00Z",
+    "start": "2026-11-08T23:00:00Z",
+    "end": "2026-11-09T01:25:00Z",
     "equipo1": "Atlético Independiente",
     "equipo2": "Real España",
     "opciones": [
@@ -108,8 +108,8 @@
   {
     "fecha": "Domingo, 8 de nov | 8:30 p.m.",
     "hora": "Domingo, 8 nov - 8:30 p.m. EST",
-    "start": "2026-11-09T01:30:00Z",
-    "end": "2026-11-09T04:10:00Z",
+    "start": "2026-11-09T01:15:00Z",
+    "end": "2026-11-09T03:40:00Z",
     "equipo1": "CD Marathón",
     "equipo2": "CD Choloma",
     "opciones": [
