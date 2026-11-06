@@ -1,9 +1,9 @@
 [
   {
-    "fecha": "5 de noviembre de 2026 | 2:30 p.m.",
+    "fecha": "6 de noviembre de 2026 | 2:30 p.m.",
     "hora": "2:30 p.m.",
-    "start": "2026-11-05T19:10:00Z",
-    "end": "2026-11-05T22:15:00Z",
+    "start": "2026-11-06T19:10:00Z",
+    "end": "2026-11-06T22:15:00Z",
     "equipo1": "Hamburger SV",
     "logo1": "https://flagcdn.com/w80/de.png",
     "equipo2": "B. Mönchengladbach",
@@ -16,10 +16,10 @@
     ]
   },
   {
-    "fecha": "5 de noviembre de 2026 | 3:00 p.m.",
+    "fecha": "6 de noviembre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
-    "start": "2026-11-05T19:40:00Z",
-    "end": "2026-11-05T22:45:00Z",
+    "start": "2026-11-06T19:40:00Z",
+    "end": "2026-11-06T22:45:00Z",
     "equipo1": "Everton",
     "logo1": "https://flagcdn.com/w80/gb.png",
     "equipo2": "Coventry City",
@@ -36,10 +36,10 @@
     ]
   },
   {
-    "fecha": "5 de noviembre de 2026 | 3:00 p.m.",
+    "fecha": "6 de noviembre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
-    "start": "2026-11-05T19:40:00Z",
-    "end": "2026-11-05T22:45:00Z",
+    "start": "2026-11-06T19:40:00Z",
+    "end": "2026-11-06T22:45:00Z",
     "equipo1": "Sevilla",
     "logo1": "https://flagcdn.com/w80/es.png",
     "equipo2": "Deportivo Alavés",
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "fecha": "5 de noviembre de 2026 | 8:00 p.m.",
+    "fecha": "6 de noviembre de 2026 | 8:00 p.m.",
     "hora": "8:00 p.m.",
     "start": "2026-11-06T00:40:00Z",
     "end": "2026-11-06T03:45:00Z",
@@ -68,7 +68,7 @@
     ]
   },
   {
-    "fecha": "5 de noviembre de 2026 | 10:00 p.m.",
+    "fecha": "6 de noviembre de 2026 | 10:00 p.m.",
     "hora": "10:00 p.m.",
     "start": "2026-11-06T02:40:00Z",
     "end": "2026-11-06T05:45:00Z",
