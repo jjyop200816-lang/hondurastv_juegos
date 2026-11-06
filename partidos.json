@@ -11,7 +11,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://181.78.12.119:16123/play/ch19"
+        "stream": "http://181.78.12.119:16123/play/ch19/index.m3u8"
       }
     ]
   },
