@@ -1,65 +1,13 @@
 [
   {
-    "fecha": "5 de noviembre de 2026 | 12:45 p.m.",
-    "hora": "12:45 p.m.",
-    "start": "2026-11-05T17:25:00Z",
-    "end": "2026-11-05T20:30:00Z",
-    "equipo1": "Real Sociedad",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Olympique Lyonnais",
-    "logo2": "https://flagcdn.com/w80/fr.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
-      }
-    ]
-  },
-  {
-    "fecha": "5 de noviembre de 2026 | 12:45 p.m.",
-    "hora": "12:45 p.m.",
-    "start": "2026-11-05T17:25:00Z",
-    "end": "2026-11-05T20:30:00Z",
-    "equipo1": "Milan",
-    "logo1": "https://flagcdn.com/w80/it.png",
-    "equipo2": "Ferencvárosi",
-    "logo2": "https://flagcdn.com/w80/hu.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "http://181.224.200.5:2277/play/aa07"
-      }
-    ]
-  },
-  {
-    "fecha": "5 de noviembre de 2026 | 12:45 p.m.",
-    "hora": "12:45 p.m.",
-    "start": "2026-11-05T17:25:00Z",
-    "end": "2026-11-05T20:30:00Z",
-    "equipo1": "Crystal Palace",
-    "logo1": "https://flagcdn.com/w80/gb.png",
-    "equipo2": "Hoffenheim",
+    "fecha": "5 de noviembre de 2026 | 2:30 p.m.",
+    "hora": "2:30 p.m.",
+    "start": "2026-11-05T19:10:00Z",
+    "end": "2026-11-05T22:15:00Z",
+    "equipo1": "Hamburger SV",
+    "logo1": "https://flagcdn.com/w80/de.png",
+    "equipo2": "B. Mönchengladbach",
     "logo2": "https://flagcdn.com/w80/de.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "http://181.224.255.210:8001/play/a0ps"
-      }
-    ]
-  },
-  {
-    "fecha": "5 de noviembre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-11-05T19:40:00Z",
-    "end": "2026-11-05T22:45:00Z",
-    "equipo1": "FC Lugano",
-    "logo1": "https://flagcdn.com/w80/ch.png",
-    "equipo2": "Kauno Žalgiris",
-    "logo2": "https://flagcdn.com/w80/lt.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -72,29 +20,17 @@
     "hora": "3:00 p.m.",
     "start": "2026-11-05T19:40:00Z",
     "end": "2026-11-05T22:45:00Z",
-    "equipo1": "B. Leverkusen",
-    "logo1": "https://flagcdn.com/w80/de.png",
-    "equipo2": "Olympique Marseille",
-    "logo2": "https://flagcdn.com/w80/fr.png",
+    "equipo1": "Everton",
+    "logo1": "https://flagcdn.com/w80/gb.png",
+    "equipo2": "Coventry City",
+    "logo2": "https://flagcdn.com/w80/gb.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      }
-    ]
-  },
-  {
-    "fecha": "5 de noviembre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-11-05T19:40:00Z",
-    "end": "2026-11-05T22:45:00Z",
-    "equipo1": "AZ Alkmaar",
-    "logo1": "https://flagcdn.com/w80/nl.png",
-    "equipo2": "Juventus",
-    "logo2": "https://flagcdn.com/w80/it.png",
-    "opciones": [
+      },
       {
-        "nombre": "Opción 1",
+        "nombre": "Opción 2",
         "stream": "http://181.224.200.5:2277/play/aa07"
       }
     ]
@@ -104,10 +40,26 @@
     "hora": "3:00 p.m.",
     "start": "2026-11-05T19:40:00Z",
     "end": "2026-11-05T22:45:00Z",
-    "equipo1": "Benfica",
-    "logo1": "https://flagcdn.com/w80/pt.png",
-    "equipo2": "Lech Poznań",
-    "logo2": "https://flagcdn.com/w80/pl.png",
+    "equipo1": "Sevilla",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "Deportivo Alavés",
+    "logo2": "https://flagcdn.com/w80/es.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
+      }
+    ]
+  },
+  {
+    "fecha": "5 de noviembre de 2026 | 8:00 p.m.",
+    "hora": "8:00 p.m.",
+    "start": "2026-11-06T00:40:00Z",
+    "end": "2026-11-06T03:45:00Z",
+    "equipo1": "Necaxa",
+    "logo1": "https://flagcdn.com/w80/mx.png",
+    "equipo2": "Tijuana",
+    "logo2": "https://flagcdn.com/w80/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -116,66 +68,18 @@
     ]
   },
   {
-    "fecha": "5 de noviembre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-11-05T19:40:00Z",
-    "end": "2026-11-05T22:45:00Z",
-    "equipo1": "Sunderland",
-    "logo1": "https://flagcdn.com/w80/gb.png",
-    "equipo2": "Dinamo Zagreb",
-    "logo2": "https://flagcdn.com/w80/hr.png",
+    "fecha": "5 de noviembre de 2026 | 10:00 p.m.",
+    "hora": "10:00 p.m.",
+    "start": "2026-11-06T02:40:00Z",
+    "end": "2026-11-06T05:45:00Z",
+    "equipo1": "Atlante FC",
+    "logo1": "https://flagcdn.com/w80/mx.png",
+    "equipo2": "Santos Laguna",
+    "logo2": "https://flagcdn.com/w80/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html"
-      }
-    ]
-  },
-  {
-    "fecha": "5 de noviembre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-11-05T19:40:00Z",
-    "end": "2026-11-05T22:45:00Z",
-    "equipo1": "Celta",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Union Saint-Gilloise",
-    "logo2": "https://flagcdn.com/w80/be.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria5.html"
-      }
-    ]
-  },
-  {
-    "fecha": "5 de noviembre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-11-05T19:40:00Z",
-    "end": "2026-11-05T22:45:00Z",
-    "equipo1": "Celtic",
-    "logo1": "https://flagcdn.com/w80/gb.png",
-    "equipo2": "Beşiktaş",
-    "logo2": "https://flagcdn.com/w80/tr.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria6.html"
-      }
-    ]
-  },
-  {
-    "fecha": "5 de noviembre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-11-05T19:40:00Z",
-    "end": "2026-11-05T22:45:00Z",
-    "equipo1": "Getafe",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Brighton & Hove Albion",
-    "logo2": "https://flagcdn.com/w80/gb.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria7.html"
       }
     ]
   }
