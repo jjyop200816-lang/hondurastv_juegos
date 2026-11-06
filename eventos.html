@@ -64,10 +64,13 @@
     }
 
     function openAction(target) {
+        // Limpiamos espacios en blanco o saltos de línea accidentales en la URL IP
+        let cleanTarget = target ? target.trim() : '';
+
         if (window.Android && typeof window.Android.openStream === 'function') {
-            window.Android.openStream(target);
+            window.Android.openStream(cleanTarget);
         } else {
-            window.location.href = target;
+            window.location.href = cleanTarget;
         }
     }
 
@@ -86,7 +89,8 @@
                 let btnsHtml = '';
                 if (item.opciones && Array.isArray(item.opciones)) {
                     item.opciones.forEach(function(op) {
-                        let safeStream = op.stream.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+                        let streamUrl = op.stream ? op.stream.trim() : '';
+                        let safeStream = streamUrl.replace(/'/g, "\\'").replace(/"/g, '&quot;');
                         btnsHtml += '<button class="play-btn" onclick="openAction(\'' + safeStream + '\')">▶ ' + op.nombre + '</button>';
                     });
                 }
