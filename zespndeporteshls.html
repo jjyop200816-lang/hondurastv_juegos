@@ -207,7 +207,7 @@
         hls.on(Hls.Events.MANIFEST_PARSED, function() {
           hideStatus();
           video.play().catch(() => {
-            showStatus("Haz clic en el recargar si no inicia inicia");
+            showStatus("Haz clic en el recargar si no inicia");
           });
         });
 
