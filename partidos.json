@@ -13,7 +13,8 @@
         "nombre": "Opción 1",
         "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
       }
-    ]
+    ],
+    "estado": "finalizado"
   },
   {
     "fecha": "8 de noviembre de 2026 | 8:00 a.m.",
@@ -29,7 +30,8 @@
         "nombre": "Opción 1",
         "stream": "http://179.60.224.196:8000/play/a0i7/index.m3u8"
       }
-    ]
+    ],
+    "estado": "finalizado"
   },
   {
     "fecha": "8 de noviembre de 2026 | 9:00 a.m.",
@@ -45,7 +47,8 @@
         "nombre": "Opción 1",
         "stream": "https://instreams.pro/live3/1u4gfzpyxp/index.m3u8?st=JxN8xqeGKzWlUCSeXWF8qQ&e=1794159213"
       }
-    ]
+    ],
+    "estado": "finalizado"
   },
   {
     "fecha": "8 de noviembre de 2026 | 9:00 a.m.",
@@ -69,7 +72,8 @@
         "nombre": "Opción 3",
         "stream": "http://stream.bottledesk.net/p/AAxBRQEBc2c/index.m3u8"
       }
-    ]
+    ],
+    "estado": "finalizado"
   },
   {
     "fecha": "8 de noviembre de 2026 | 9:00 a.m.",
@@ -85,7 +89,8 @@
         "nombre": "Opción 1",
         "stream": "https://instreams.live/live/tv401878759/master.m3u8?st=T_0H090gJM41IkkTqkYEYg&e=1794157209"
       }
-    ]
+    ],
+    "estado": "finalizado"
   },
   {
     "fecha": "8 de noviembre de 2026 | 9:00 a.m.",
@@ -105,7 +110,8 @@
         "nombre": "Opción 2",
         "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8"
       }
-    ]
+    ],
+    "estado": "finalizado"
   },
   {
     "fecha": "8 de noviembre de 2026 | 9:00 a.m.",
@@ -121,7 +127,8 @@
         "nombre": "Opción 1",
         "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
       }
-    ]
+    ],
+    "estado": "finalizado"
   },
   {
     "fecha": "8 de noviembre de 2026 | 10:15 a.m.",
@@ -137,7 +144,8 @@
         "nombre": "Opción 1",
         "stream": "https://instreams.live/live3/vx681iytvo/index.m3u8?st=WUoX9W_6fOcTww2ceTDM8A&e=1794162036"
       }
-    ]
+    ],
+    "estado": "finalizado"
   },
   {
     "fecha": "8 de noviembre de 2026 | 11:30 a.m.",
@@ -161,7 +169,8 @@
         "nombre": "Opción 3",
         "stream": "https://instreams.pro/live3/hlrhrtzbhb/index.m3u8?st=wZlxYBtT_eNqgT1yNVp6_Q&e=1794167325"
       }
-    ]
+    ],
+    "estado": "finalizado"
   },
   {
     "fecha": "8 de noviembre de 2026 | 12:00 p.m.",
@@ -177,7 +186,8 @@
         "nombre": "Opción 1",
         "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
       }
-    ]
+    ],
+    "estado": "finalizado"
   },
   {
     "fecha": "8 de noviembre de 2026 | 12:30 p.m.",
@@ -193,7 +203,8 @@
         "nombre": "Opción 1",
         "stream": "https://instreams.live/live3/vx681iytvo/index.m3u8?st=GM8gV6TiVl5oal5IJ1VQdQ&e=1794166256"
       }
-    ]
+    ],
+    "estado": "finalizado"
   },
   {
     "fecha": "8 de noviembre de 2026 | 12:30 p.m.",
@@ -209,7 +220,8 @@
         "nombre": "Opción 1",
         "stream": "https://instreams.pro/live3/oiw2swza6o/index.m3u8?st=ZHD2VDO60BlSOedNX8YzcQ&e=1794169140"
       }
-    ]
+    ],
+    "estado": "finalizado"
   },
   {
     "fecha": "8 de noviembre de 2026 | 2:15 p.m.",
@@ -225,7 +237,8 @@
         "nombre": "Opción 1",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
       }
-    ]
+    ],
+    "estado": "finalizado"
   },
   {
     "fecha": "8 de noviembre de 2026 | 2:45 p.m.",
@@ -241,7 +254,8 @@
         "nombre": "Opción 1",
         "stream": "https://streamer1.nexgen.bz/TELEMUNDO/index.m3u8"
       }
-    ]
+    ],
+    "estado": "finalizado"
   },
   {
     "fecha": "8 de noviembre de 2026 | 3:00 p.m.",
@@ -277,7 +291,8 @@
         "nombre": "Opción 6",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespndeportes.html"
       }
-    ]
+    ],
+    "estado": "finalizado"
   },
   {
     "fecha": "8 de noviembre de 2026 | 7:00 p.m.",
@@ -291,9 +306,10 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdazn1.html"
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       }
-    ]
+    ],
+    "estado": "finalizado"
   },
   {
     "fecha": "10 de noviembre de 2026 | 5:10 a.m.",
