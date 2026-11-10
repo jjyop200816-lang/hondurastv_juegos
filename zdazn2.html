@@ -1,54 +1,132 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Reproductor Stream</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      background-color: #000;
-    }
-    html, body {
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .player-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: #000;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAZN 1 Spain - Reproductor</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            height: 50vh;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+        }
+        .container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200%; 
+            border: none;
+        }
+        /* Contenedor del texto que NO bloquea los clics (pointer-events: none) */
+        .instruction-container {
+            position: absolute;
+            bottom: 25px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            z-index: 10;
+            pointer-events: none; /* Crucial: permite que los toques pasen directo al reproductor */
+        }
+        .instruction-text {
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.75);
+            padding: 6px 14px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+            user-select: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+            transition: opacity 0.3s ease;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="player-container">
-    <iframe 
-      src="https://damitv.st/player/hls/?v=542&url=/dl/446.m3u8&name=DAZN2%20Spain" 
-      title="Reproductor de Deportes"
-      allowfullscreen="true"
-      webkitallowfullscreen="true"
-      mozallowfullscreen="true"
-      scrolling="no"
-      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; gyro; accelerometer"
-      sandbox="allow-scripts allow-same-origin allow-forms">
-    </iframe>
-  </div>
+    <div class="container" id="playerContainer">
+        <iframe 
+            src="https://tim-streams.com/channel/dazn-2-spain" 
+            sandbox="allow-scripts allow-same-origin allow-presentation allow-autoplay allow-forms"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+            allowfullscreen
+            loading="lazy">
+        </iframe>
+
+        <!-- Texto indicador actualizado -->
+        <div class="instruction-container">
+            <span class="instruction-text" id="infoText">doble click para pantalla completa</span>
+        </div>
+    </div>
+
+    <script>
+        const container = document.getElementById('playerContainer');
+        const infoText = document.getElementById('infoText');
+
+        let lastTap = 0;
+
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                if (container.requestFullscreen) {
+                    container.requestFullscreen();
+                } else if (container.webkitRequestFullscreen) {
+                    container.webkitRequestFullscreen();
+                } else if (container.msRequestFullscreen) {
+                    container.msRequestFullscreen();
+                }
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+
+        // Doble clic sobre el contenedor para pantalla completa
+        container.addEventListener('dblclick', function(e) {
+            toggleFullscreen();
+        });
+
+        // Doble toque rápido en móvil sobre el contenedor
+        container.addEventListener('touchend', function(e) {
+            const currentTime = new Date().getTime();
+            const tapLength = currentTime - lastTap;
+            if (tapLength < 300 && tapLength > 0) {
+                toggleFullscreen();
+                e.preventDefault();
+            }
+            lastTap = currentTime;
+        });
+
+        // Ocultar texto al entrar en pantalla completa
+        document.addEventListener('fullscreenchange', function() {
+            if (document.fullscreenElement) {
+                infoText.style.opacity = '0';
+            } else {
+                infoText.style.opacity = '1';
+            }
+        });
+    </script>
 
 </body>
 </html>
