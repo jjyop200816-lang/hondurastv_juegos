@@ -67,6 +67,14 @@
       {
         "nombre": "Opción 1",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html?st=random1"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "http://179.60.224.196:8000/play/a0i7/index.m3u8?st=random2"
       }
     ],
     "estado": "programado"
