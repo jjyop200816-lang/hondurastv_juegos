@@ -2,12 +2,8 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="theme-color" content="#000000">
-
 <title>Stream Player</title>
 
 <style>
@@ -15,6 +11,7 @@ content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html, body {
@@ -22,6 +19,7 @@ html, body {
     height: 100%;
     overflow: hidden;
     background: #000;
+    overscroll-behavior: none;
 }
 
 body {
@@ -29,16 +27,17 @@ body {
     inset: 0;
 }
 
-.player-container {
+#player {
     position: fixed;
     inset: 0;
     width: 100%;
     height: 100%;
     background: #000;
     overflow: hidden;
+    contain: strict;
 }
 
-#streamFrame {
+#stream {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -52,53 +51,52 @@ body {
 
 <body>
 
-<div class="player-container">
-
+<div id="player">
     <iframe
-        id="streamFrame"
+        id="stream"
         src="https://playvi.org/espn.php"
-        title="Reproductor de Deportes"
-        allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+        title="Stream Player"
+        allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
         allowfullscreen
         webkitallowfullscreen
         mozallowfullscreen
         scrolling="no"
+        frameborder="0"
         sandbox="allow-scripts allow-same-origin allow-forms">
     </iframe>
-
 </div>
 
 <script>
 (function () {
+    "use strict";
 
-    const frame = document.getElementById("streamFrame");
-    let released = false;
+    const player = document.getElementById("player");
+    const stream = document.getElementById("stream");
 
-    // Liberar el reproductor al abandonar la página.
-    function releasePlayer() {
-        if (released) return;
+    let closed = false;
 
-        released = true;
+    // Evita desplazamientos accidentales.
+    document.addEventListener("touchmove", function(e) {
+        e.preventDefault();
+    }, { passive: false });
 
-        if (frame) {
-            frame.src = "about:blank";
-            frame.remove();
+    // Limpieza del reproductor al abandonar la pantalla.
+    function closePlayer() {
+        if (closed) return;
+        closed = true;
+
+        if (stream) {
+            stream.src = "about:blank";
+            stream.remove();
+        }
+
+        if (player) {
+            player.replaceChildren();
         }
     }
 
-    // Detectar cuando la página se descarga.
-    window.addEventListener("pagehide", releasePlayer);
-
-    // Compatibilidad con páginas que pasan a segundo plano.
-    document.addEventListener("visibilitychange", function () {
-        if (document.visibilityState === "hidden") {
-            // No detener el video aquí:
-            // podría interrumpir la reproducción al cambiar de aplicación.
-        }
-    });
-
-    // Liberar recursos al cerrar la página.
-    window.addEventListener("beforeunload", releasePlayer);
+    window.addEventListener("pagehide", closePlayer);
+    window.addEventListener("unload", closePlayer);
 
 })();
 </script>
