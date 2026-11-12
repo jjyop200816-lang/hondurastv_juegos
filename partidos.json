@@ -11,7 +11,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://instreams.live/live/tv401878759/master.m3u8?st=random1&e=1794157209"
+        "stream": "http://85.237.89.160:9590/usa-s/FOX-SPORTS-1/index.m3u8"
       }
     ],
     "estado": "programado"
