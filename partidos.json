@@ -1,331 +1,124 @@
 [
   {
-    "fecha": "8 de noviembre de 2026 | 6:30 a.m.",
-    "hora": "6:30 a.m.",
-    "start": "2026-11-08T11:15:00Z",
-    "end": "2026-11-08T14:15:00Z",
-    "equipo1": "Napoli",
-    "logo1": "https://flagcdn.com/w80/it.png",
-    "equipo2": "Lazio",
-    "logo2": "https://flagcdn.com/w80/it.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
-      }
-    ],
-    "estado": "finalizado"
-  },
-  {
-    "fecha": "8 de noviembre de 2026 | 8:00 a.m.",
-    "hora": "8:00 a.m.",
-    "start": "2026-11-08T12:45:00Z",
-    "end": "2026-11-08T15:45:00Z",
-    "equipo1": "Elche",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Real Betis",
-    "logo2": "https://flagcdn.com/w80/es.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "http://179.60.224.196:8000/play/a0i7/index.m3u8"
-      }
-    ],
-    "estado": "finalizado"
-  },
-  {
-    "fecha": "8 de noviembre de 2026 | 9:00 a.m.",
-    "hora": "9:00 a.m.",
-    "start": "2026-11-08T13:45:00Z",
-    "end": "2026-11-08T16:45:00Z",
-    "equipo1": "Brighton & Hove Albion",
-    "logo1": "https://flagcdn.com/w80/gb.png",
-    "equipo2": "Brentford",
-    "logo2": "https://flagcdn.com/w80/gb.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://instreams.pro/live3/1u4gfzpyxp/index.m3u8?st=JxN8xqeGKzWlUCSeXWF8qQ&e=1794159213"
-      }
-    ],
-    "estado": "finalizado"
-  },
-  {
-    "fecha": "8 de noviembre de 2026 | 9:00 a.m.",
-    "hora": "9:00 a.m.",
-    "start": "2026-11-08T13:45:00Z",
-    "end": "2026-11-08T16:45:00Z",
-    "equipo1": "Crystal Palace",
-    "logo1": "https://flagcdn.com/w80/gb.png",
-    "equipo2": "Liverpool",
-    "logo2": "https://flagcdn.com/w80/gb.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://instreams.pro/live3/okiri36y5y/index.m3u8?st=X0GS7Z4oRkef-1UeA2yCIg&e=1794163191"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "https://storage.googleapis.com/rootandrelay/liverpool/manifest.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "http://stream.bottledesk.net/p/AAxBRQEBc2c/index.m3u8"
-      }
-    ],
-    "estado": "finalizado"
-  },
-  {
-    "fecha": "8 de noviembre de 2026 | 9:00 a.m.",
-    "hora": "9:00 a.m.",
-    "start": "2026-11-08T13:45:00Z",
-    "end": "2026-11-08T16:45:00Z",
-    "equipo1": "Ipswich Town",
-    "logo1": "https://flagcdn.com/w80/gb.png",
-    "equipo2": "AFC Bournemouth",
-    "logo2": "https://flagcdn.com/w80/gb.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://instreams.live/live/tv401878759/master.m3u8?st=T_0H090gJM41IkkTqkYEYg&e=1794157209"
-      }
-    ],
-    "estado": "finalizado"
-  },
-  {
-    "fecha": "8 de noviembre de 2026 | 9:00 a.m.",
-    "hora": "9:00 a.m.",
-    "start": "2026-11-08T13:45:00Z",
-    "end": "2026-11-08T16:45:00Z",
-    "equipo1": "Sunderland",
-    "logo1": "https://flagcdn.com/w80/gb.png",
-    "equipo2": "Chelsea",
-    "logo2": "https://flagcdn.com/w80/gb.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://streamer1.nexgen.bz/TELEMUNDO/index.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8"
-      }
-    ],
-    "estado": "finalizado"
-  },
-  {
-    "fecha": "8 de noviembre de 2026 | 9:00 a.m.",
-    "hora": "9:00 a.m.",
-    "start": "2026-11-08T13:45:00Z",
-    "end": "2026-11-08T16:45:00Z",
-    "equipo1": "Genoa",
-    "logo1": "https://flagcdn.com/w80/it.png",
-    "equipo2": "Milan",
-    "logo2": "https://flagcdn.com/w80/it.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
-      }
-    ],
-    "estado": "finalizado"
-  },
-  {
-    "fecha": "8 de noviembre de 2026 | 10:15 a.m.",
-    "hora": "10:15 a.m.",
-    "start": "2026-11-08T15:00:00Z",
-    "end": "2026-11-08T18:00:00Z",
-    "equipo1": "Real Sociedad",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Rayo Vallecano",
-    "logo2": "https://flagcdn.com/w80/es.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://instreams.live/live3/vx681iytvo/index.m3u8?st=WUoX9W_6fOcTww2ceTDM8A&e=1794162036"
-      }
-    ],
-    "estado": "finalizado"
-  },
-  {
-    "fecha": "8 de noviembre de 2026 | 11:30 a.m.",
-    "hora": "11:30 a.m.",
-    "start": "2026-11-08T16:15:00Z",
-    "end": "2026-11-08T19:15:00Z",
-    "equipo1": "Manchester United",
-    "logo1": "https://flagcdn.com/w80/gb.png",
-    "equipo2": "Aston Villa",
-    "logo2": "https://flagcdn.com/w80/gb.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://streamer1.nexgen.bz/TELEMUNDO/index.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "https://183.bozztv.com/giatv/giatv-pixelchanneltv/pixelchanneltv/playlist.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "https://instreams.pro/live3/hlrhrtzbhb/index.m3u8?st=wZlxYBtT_eNqgT1yNVp6_Q&e=1794167325"
-      }
-    ],
-    "estado": "finalizado"
-  },
-  {
-    "fecha": "8 de noviembre de 2026 | 12:00 p.m.",
+    "fecha": "12 de noviembre de 2026 | 12:00 p.m.",
     "hora": "12:00 p.m.",
-    "start": "2026-11-08T16:45:00Z",
-    "end": "2026-11-08T19:45:00Z",
-    "equipo1": "Inter",
-    "logo1": "https://flagcdn.com/w80/it.png",
-    "equipo2": "Como",
-    "logo2": "https://flagcdn.com/w80/it.png",
+    "start": "2026-11-12T16:45:00Z",
+    "end": "2026-11-12T19:45:00Z",
+    "equipo1": "Turquía",
+    "logo1": "https://flagcdn.com/w80/tr.png",
+    "equipo2": "Bélgica",
+    "logo2": "https://flagcdn.com/w80/be.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
+        "stream": "https://instreams.live/live/tv401878759/master.m3u8?st=random1&e=1794157209"
       }
     ],
-    "estado": "finalizado"
+    "estado": "programado"
   },
   {
-    "fecha": "8 de noviembre de 2026 | 12:30 p.m.",
-    "hora": "12:30 p.m.",
-    "start": "2026-11-08T17:15:00Z",
-    "end": "2026-11-08T20:15:00Z",
-    "equipo1": "Celta",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Levante",
-    "logo2": "https://flagcdn.com/w80/es.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://instreams.live/live3/vx681iytvo/index.m3u8?st=GM8gV6TiVl5oal5IJ1VQdQ&e=1794166256"
-      }
-    ],
-    "estado": "finalizado"
-  },
-  {
-    "fecha": "8 de noviembre de 2026 | 12:30 p.m.",
-    "hora": "12:30 p.m.",
-    "start": "2026-11-08T17:15:00Z",
-    "end": "2026-11-08T20:15:00Z",
-    "equipo1": "Villarreal",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Getafe",
-    "logo2": "https://flagcdn.com/w80/es.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://instreams.pro/live3/oiw2swza6o/index.m3u8?st=ZHD2VDO60BlSOedNX8YzcQ&e=1794169140"
-      }
-    ],
-    "estado": "finalizado"
-  },
-  {
-    "fecha": "8 de noviembre de 2026 | 2:15 p.m.",
-    "hora": "2:15 p.m.",
-    "start": "2026-11-08T19:00:00Z",
-    "end": "2026-11-08T22:00:00Z",
-    "equipo1": "Lech Poznań",
-    "logo1": "https://flagcdn.com/w80/pl.png",
-    "equipo2": "Zaglebie Lubin",
-    "logo2": "https://flagcdn.com/w80/pl.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
-      }
-    ],
-    "estado": "finalizado"
-  },
-  {
-    "fecha": "8 de noviembre de 2026 | 2:45 p.m.",
+    "fecha": "12 de noviembre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-11-08T19:30:00Z",
-    "end": "2026-11-08T22:30:00Z",
-    "equipo1": "Fiorentina",
-    "logo1": "https://flagcdn.com/w80/it.png",
-    "equipo2": "Juventus",
-    "logo2": "https://flagcdn.com/w80/it.png",
+    "start": "2026-11-12T19:30:00Z",
+    "end": "2026-11-12T22:30:00Z",
+    "equipo1": "Albania",
+    "logo1": "https://flagcdn.com/w80/al.png",
+    "equipo2": "Finlandia",
+    "logo2": "https://flagcdn.com/w80/fi.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://streamer1.nexgen.bz/TELEMUNDO/index.m3u8"
+        "stream": "https://instreams.pro/live3/1u4gfzpyxp/index.m3u8?st=random2&e=1794159213"
       }
     ],
-    "estado": "finalizado"
+    "estado": "programado"
   },
   {
-    "fecha": "8 de noviembre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-11-08T19:45:00Z",
-    "end": "2026-11-08T22:45:00Z",
-    "equipo1": "Atlético",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Barcelona",
-    "logo2": "https://flagcdn.com/w80/es.png",
+    "fecha": "12 de noviembre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-11-12T19:30:00Z",
+    "end": "2026-11-12T22:30:00Z",
+    "equipo1": "Inglaterra",
+    "logo1": "https://flagcdn.com/w80/gb.png",
+    "equipo2": "Croacia",
+    "logo2": "https://flagcdn.com/w80/hr.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
+        "stream": "https://streamer1.nexgen.bz/TELEMUNDO/index.m3u8?st=random3"
       },
       {
         "nombre": "Opción 2",
-        "stream": "http://179.60.224.196:8000/play/a0i7/index.m3u8"
+        "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8?st=random4"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "12 de noviembre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-11-12T19:30:00Z",
+    "end": "2026-11-12T22:30:00Z",
+    "equipo1": "Italia",
+    "logo1": "https://flagcdn.com/w80/it.png",
+    "equipo2": "Francia",
+    "logo2": "https://flagcdn.com/w80/fr.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8?st=random5"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "12 de noviembre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-11-12T19:30:00Z",
+    "end": "2026-11-12T22:30:00Z",
+    "equipo1": "República Checa",
+    "logo1": "https://flagcdn.com/w80/cz.png",
+    "equipo2": "España",
+    "logo2": "https://flagcdn.com/w80/es.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html?st=random6"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "http://179.60.224.196:8000/play/a0i7/index.m3u8?st=random7"
       },
       {
         "nombre": "Opción 3",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
-      },
-      {
-        "nombre": "Opción 4",
-        "stream": "https://instreams.live/live3/tkdkvjvtnh/index.m3u8?st=ENn3P31r6u3j8cmcPJ0wcQ&e=1794181931"
-      },
-      {
-        "nombre": "Opción 5",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
-      },
-      {
-        "nombre": "Opción 6",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespndeportes.html"
+        "stream": "https://instreams.live/live3/tkdkvjvtnh/index.m3u8?st=random8"
       }
     ],
-    "estado": "finalizado"
+    "estado": "programado"
   },
   {
-    "fecha": "8 de noviembre de 2026 | 7:00 p.m.",
-    "hora": "7:00 p.m.",
-    "start": "2026-11-08T23:45:00Z",
-    "end": "2026-11-09T02:45:00Z",
-    "equipo1": "Querétaro",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Puebla",
-    "logo2": "https://flagcdn.com/w80/mx.png",
+    "fecha": "12 de noviembre de 2026 | 7:30 p.m.",
+    "hora": "7:30 p.m.",
+    "start": "2026-11-13T00:15:00Z",
+    "end": "2026-11-13T03:15:00Z",
+    "equipo1": "Curazao",
+    "logo1": "https://flagcdn.com/w80/cw.png",
+    "equipo2": "Panamá",
+    "logo2": "https://flagcdn.com/w80/pa.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      }
-    ],
-    "estado": "finalizado"
-  },
-  {
-    "fecha": "10 de noviembre de 2026 | 5:10 a.m.",
-    "hora": "5:10 a.m.",
-    "start": "2026-11-10T05:10:00Z",
-    "end": "2026-11-10T08:10:00Z",
-    "equipo1": "León",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Chivas Guadalajara",
-    "logo2": "https://flagcdn.com/w80/mx.png",
-    "opciones": [
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?st=random9"
+      },
       {
-        "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdazn1.html"
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html?st=random10"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_zuegos/asiria2.html?st=random11"
       }
     ],
-    "estado": "finalizado"
+    "estado": "programado"
   }
 ]
