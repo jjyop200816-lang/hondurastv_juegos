@@ -49,7 +49,7 @@
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8?st=random4"
+        "stream": "http://176.65.153.4:4004/play/a07n/index.m3u8"
       }
     ],
     "estado": "programado"
