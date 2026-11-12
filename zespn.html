@@ -1,54 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Reproductor Stream</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      background-color: #000;
-    }
-    html, body {
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .player-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: #000;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
-    }
-  </style>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<meta name="theme-color" content="#000000">
+
+<title>Stream Player</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+body {
+    position: fixed;
+    inset: 0;
+}
+
+.player-container {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+}
+
+#streamFrame {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+    background: #000;
+}
+</style>
 </head>
+
 <body>
 
-  <div class="player-container">
-    <iframe 
-      src="https://playvi.org/espn.php" 
-      title="Reproductor de Deportes"
-      allowfullscreen="true"
-      webkitallowfullscreen="true"
-      mozallowfullscreen="true"
-      scrolling="no"
-      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; gyro; accelerometer"
-      sandbox="allow-scripts allow-same-origin allow-forms">
+<div class="player-container">
+
+    <iframe
+        id="streamFrame"
+        src="https://playvi.org/espn.php"
+        title="Reproductor de Deportes"
+        allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+        allowfullscreen
+        webkitallowfullscreen
+        mozallowfullscreen
+        scrolling="no"
+        sandbox="allow-scripts allow-same-origin allow-forms">
     </iframe>
-  </div>
+
+</div>
+
+<script>
+(function () {
+
+    const frame = document.getElementById("streamFrame");
+    let released = false;
+
+    // Liberar el reproductor al abandonar la página.
+    function releasePlayer() {
+        if (released) return;
+
+        released = true;
+
+        if (frame) {
+            frame.src = "about:blank";
+            frame.remove();
+        }
+    }
+
+    // Detectar cuando la página se descarga.
+    window.addEventListener("pagehide", releasePlayer);
+
+    // Compatibilidad con páginas que pasan a segundo plano.
+    document.addEventListener("visibilitychange", function () {
+        if (document.visibilityState === "hidden") {
+            // No detener el video aquí:
+            // podría interrumpir la reproducción al cambiar de aplicación.
+        }
+    });
+
+    // Liberar recursos al cerrar la página.
+    window.addEventListener("beforeunload", releasePlayer);
+
+})();
+</script>
 
 </body>
 </html>
