@@ -15,11 +15,11 @@
       },
       {
         "nombre": "Opción 2",
-        "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
+        "stream": "https://mdstrm.com/live-stream-playlist/6444304a7c35450938089b24.m3u8"
       },
       {
         "nombre": "Opción 3",
-        "stream": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15619"
+        "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
       }
     ],
     "estado": "programado"
