@@ -87,7 +87,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://edge.candyshop.st/live/tv401861151/master.m3u8?st=vnLJGITC-pmQ6Y5R1z9h1g&e=1794522611"
+        "stream": "http://85.237.89.160:9590/usa-s/FOX-SPORTS-1/index.m3u8"
       }
     ],
     "estado": "programado"
