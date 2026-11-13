@@ -53,7 +53,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://edge1.candyshop.st/live/tv401861147/master.m3u8?st=Rkqj_-INDzs80-igio-iDQ&e=1794522609"
+        "stream": "http://181.224.200.5:2277/play/a02o/index.m3u8"
       }
     ],
     "estado": "programado"
