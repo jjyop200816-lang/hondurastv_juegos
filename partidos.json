@@ -11,11 +11,11 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://edge1.candyshop.st/live/tv401861147/master.m3u8?st=Rkqj_-INDzs80-igio-iDQ&e=1794522609"
+        "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
       },
       {
         "nombre": "Opción 3",
@@ -36,7 +36,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+        "stream": "http://176.65.153.4:4001/play/a08m/index.m3u8"
       }
     ],
     "estado": "programado"
