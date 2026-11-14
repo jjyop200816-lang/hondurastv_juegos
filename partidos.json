@@ -1,13 +1,13 @@
 [
   {
-    "fecha": "13 de noviembre de 2026 | 9:15 a.m.",
-    "hora": "9:15 a.m.",
-    "start": "2026-11-13T14:00:00Z",
-    "end": "2026-11-13T17:30:00Z",
-    "equipo1": "Emiratos Árabes",
-    "logo1": "https://flagcdn.com/w80/ae.png",
-    "equipo2": "Honduras",
-    "logo2": "https://flagcdn.com/w80/hn.png",
+    "fecha": "14 de noviembre de 2026 | 12:00 p.m.",
+    "hora": "12:00 p.m.",
+    "start": "2026-11-14T16:45:00Z",
+    "end": "2026-11-14T20:15:00Z",
+    "equipo1": "Noruega",
+    "logo1": "https://flagcdn.com/w80/no.png",
+    "equipo2": "Gales",
+    "logo2": "https://flagcdn.com/w80/gb-wls.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -16,23 +16,36 @@
       {
         "nombre": "Opción 2",
         "stream": "https://mdstrm.com/live-stream-playlist/6444304a7c35450938089b24.m3u8"
-      },
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "14 de noviembre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-11-14T19:30:00Z",
+    "end": "2026-11-14T23:00:00Z",
+    "equipo1": "Irlanda del Norte",
+    "logo1": "https://flagcdn.com/w80/gb-nir.png",
+    "equipo2": "Ucrania",
+    "logo2": "https://flagcdn.com/w80/ua.png",
+    "opciones": [
       {
-        "nombre": "Opción 3",
+        "nombre": "Opción 1",
         "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "13 de noviembre de 2026 | 2:45 p.m.",
+    "fecha": "14 de noviembre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-11-13T19:30:00Z",
-    "end": "2026-11-13T22:30:00Z",
-    "equipo1": "Escocia",
-    "logo1": "https://flagcdn.com/w80/gb-sct.png",
-    "equipo2": "Macedonia del Norte",
-    "logo2": "https://flagcdn.com/w80/mk.png",
+    "start": "2026-11-14T19:30:00Z",
+    "end": "2026-11-14T23:00:00Z",
+    "equipo1": "Austria",
+    "logo1": "https://flagcdn.com/w80/at.png",
+    "equipo2": "Irlanda",
+    "logo2": "https://flagcdn.com/w80/ie.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -42,14 +55,14 @@
     "estado": "programado"
   },
   {
-    "fecha": "13 de noviembre de 2026 | 2:45 p.m.",
+    "fecha": "14 de noviembre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-11-13T19:30:00Z",
-    "end": "2026-11-13T22:30:00Z",
-    "equipo1": "Eslovenia",
-    "logo1": "https://flagcdn.com/w80/si.png",
-    "equipo2": "Suiza",
-    "logo2": "https://flagcdn.com/w80/ch.png",
+    "start": "2026-11-14T19:30:00Z",
+    "end": "2026-11-14T23:00:00Z",
+    "equipo1": "Rumanía",
+    "logo1": "https://flagcdn.com/w80/ro.png",
+    "equipo2": "Polonia",
+    "logo2": "https://flagcdn.com/w80/pl.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -59,14 +72,14 @@
     "estado": "programado"
   },
   {
-    "fecha": "13 de noviembre de 2026 | 2:45 p.m.",
+    "fecha": "14 de noviembre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-11-13T19:30:00Z",
-    "end": "2026-11-13T22:30:00Z",
-    "equipo1": "Serbia",
-    "logo1": "https://flagcdn.com/w80/rs.png",
-    "equipo2": "Alemania",
-    "logo2": "https://flagcdn.com/w80/de.png",
+    "start": "2026-11-14T19:30:00Z",
+    "end": "2026-11-14T23:00:00Z",
+    "equipo1": "Suecia",
+    "logo1": "https://flagcdn.com/w80/se.png",
+    "equipo2": "Bosnia y Herzegovina",
+    "logo2": "https://flagcdn.com/w80/ba.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -76,48 +89,39 @@
     "estado": "programado"
   },
   {
-    "fecha": "13 de noviembre de 2026 | 2:45 p.m.",
+    "fecha": "14 de noviembre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-11-13T19:30:00Z",
-    "end": "2026-11-13T22:30:00Z",
-    "equipo1": "Países Bajos",
-    "logo1": "https://flagcdn.com/w80/nl.png",
-    "equipo2": "Grecia",
-    "logo2": "https://flagcdn.com/w80/gr.png",
+    "start": "2026-11-14T19:30:00Z",
+    "end": "2026-11-14T23:00:00Z",
+    "equipo1": "Portugal",
+    "logo1": "https://flagcdn.com/w80/pt.png",
+    "equipo2": "Dinamarca",
+    "logo2": "https://flagcdn.com/w80/dk.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "http://181.224.200.5:2277/play/a02c/index.m3u8"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "13 de noviembre de 2026 | 6:00 p.m.",
-    "hora": "6:00 p.m.",
-    "start": "2026-11-13T22:45:00Z",
-    "end": "2026-11-14T01:15:00Z",
-    "equipo1": "San Martín",
-    "logo1": "https://flagcdn.com/w80/mf.png",
-    "equipo2": "El Salvador",
-    "logo2": "https://flagcdn.com/w80/sv.png",
-    "opciones": [
+      },
       {
-        "nombre": "Opción 1",
+        "nombre": "Opción 2",
         "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://admin2.formaturamaxi.com.br/mega.m3u8"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "13 de noviembre de 2026 | 6:00 p.m.",
-    "hora": "6:00 p.m.",
-    "start": "2026-11-13T22:45:00Z",
-    "end": "2026-11-14T01:15:00Z",
-    "equipo1": "Argentina",
-    "logo1": "https://flagcdn.com/w80/ar.png",
-    "equipo2": "Uruguay",
-    "logo2": "https://flagcdn.com/w80/uy.png",
+    "fecha": "14 de noviembre de 2026 | 4:30 p.m.",
+    "hora": "4:30 p.m.",
+    "start": "2026-11-14T21:15:00Z",
+    "end": "2026-11-15T00:45:00Z",
+    "equipo1": "Haití",
+    "logo1": "https://flagcdn.com/w80/ht.png",
+    "equipo2": "Estados Unidos",
+    "logo2": "https://flagcdn.com/w80/us.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -126,103 +130,61 @@
       {
         "nombre": "Opción 2",
         "stream": "http://181.224.255.210:8001/play/a0s8/index.m3u8"
-      },
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "14 de noviembre de 2026 | 5:00 p.m.",
+    "hora": "5:00 p.m.",
+    "start": "2026-11-14T21:45:00Z",
+    "end": "2026-11-15T01:15:00Z",
+    "equipo1": "Banfield",
+    "logo1": "https://a.espncdn.com/i/teamlogos/soccer/500/17.png",
+    "equipo2": "Boca Juniors",
+    "logo2": "https://a.espncdn.com/i/teamlogos/soccer/500/11.png",
+    "opciones": [
       {
-        "nombre": "Opción 3",
+        "nombre": "Opción 1",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdsports.html"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "13 de noviembre de 2026 | 7:00 p.m.",
-    "hora": "7:00 p.m.",
-    "start": "2026-11-13T23:45:00Z",
-    "end": "2026-11-14T02:15:00Z",
-    "equipo1": "Montserrat",
-    "logo1": "https://flagcdn.com/w80/ms.png",
-    "equipo2": "Nicaragua",
-    "logo2": "https://flagcdn.com/w80/ni.png",
+    "fecha": "14 de noviembre de 2026 | 6:00 p.m.",
+    "hora": "6:00 p.m.",
+    "start": "2026-11-14T22:45:00Z",
+    "end": "2026-11-15T02:15:00Z",
+    "equipo1": "Querétaro",
+    "logo1": "https://a.espncdn.com/i/teamlogos/soccer/500/3507.png",
+    "equipo2": "Monterrey",
+    "logo2": "https://a.espncdn.com/i/teamlogos/soccer/500/3547.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "https://tedesco.formaturamaxi.com.br/fsp.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "http://176.65.153.4:4004/play/a07n/index.m3u8"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "13 de noviembre de 2026 | 7:00 p.m.",
-    "hora": "7:00 p.m.",
-    "start": "2026-11-13T23:45:00Z",
-    "end": "2026-11-14T02:15:00Z",
-    "equipo1": "Colombia",
-    "logo1": "https://flagcdn.com/w80/co.png",
-    "equipo2": "Chile",
-    "logo2": "https://flagcdn.com/w80/cl.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://admin2.formaturamaxi.com.br/mega.m3u8"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "13 de noviembre de 2026 | 7:00 p.m.",
-    "hora": "7:00 p.m.",
-    "start": "2026-11-13T23:45:00Z",
-    "end": "2026-11-14T02:15:00Z",
-    "equipo1": "Ecuador",
-    "logo1": "https://flagcdn.com/w80/ec.png",
-    "equipo2": "Costa Rica",
-    "logo2": "https://flagcdn.com/w80/cr.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://edge2.candyshop.st/live/tv401930898/master.m3u8?st=btIqrk1hRfx2p5Slum_yvQ&e=1794623412"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "13 de noviembre de 2026 | 8:00 p.m.",
-    "hora": "8:00 p.m.",
-    "start": "2026-11-14T00:45:00Z",
-    "end": "2026-11-14T03:15:00Z",
-    "equipo1": "Perú",
-    "logo1": "https://flagcdn.com/w80/pe.png",
-    "equipo2": "Bolivia",
-    "logo2": "https://flagcdn.com/w80/bo.png",
+    "fecha": "14 de noviembre de 2026 | 8:00 p.m.",
+    "hora": "8:00 p.00",
+    "start": "2026-11-15T00:45:00Z",
+    "end": "2026-11-15T04:15:00Z",
+    "equipo1": "Jamaica",
+    "logo1": "https://flagcdn.com/w80/jm.png",
+    "equipo2": "México",
+    "logo2": "https://flagcdn.com/w80/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "https://admin2.formaturamaxi.com.br/atv.m3u8"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "13 de noviembre de 2026 | 9:00 p.m.",
-    "hora": "9:00 p.m.",
-    "start": "2026-11-14T01:45:00Z",
-    "end": "2026-11-14T04:15:00Z",
-    "equipo1": "Guatemala",
-    "logo1": "https://flagcdn.com/w80/gt.png",
-    "equipo2": "Canadá",
-    "logo2": "https://flagcdn.com/w80/ca.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8"
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       },
       {
         "nombre": "Opción 3",
