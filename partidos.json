@@ -11,7 +11,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://186.33.0.101:4430/play/espnhd/index.m3u8"
+        "stream": "http://181.224.200.5:2277/play/aa07/index.m3u8"
       },
       {
         "nombre": "Opción 2",
