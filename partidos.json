@@ -11,11 +11,11 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
+        "stream": "http://186.33.0.101:4430/play/espnhd/index.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://mdstrm.com/live-stream-playlist/6444304a7c35450938089b24.m3u8"
+        "stream": "http://176.65.153.4:4001/play/a08m/index.m3u8"
       }
     ],
     "estado": "programado"
