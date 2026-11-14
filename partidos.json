@@ -167,7 +167,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://181.78.211.244:8005/play/a0al/index.m3u8"
+        "stream": "http://190.61.43.117:45000/play/a02v"
       }
     ],
     "estado": "programado"
