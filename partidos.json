@@ -167,7 +167,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://190.61.43.117:45000/play/a02v/index.m3u8"
+        "stream": "https://admin2.formaturamaxi.com.br/mega.m3u8"
       }
     ],
     "estado": "programado"
