@@ -1,85 +1,38 @@
 [
   {
-    "fecha": "14 de noviembre de 2026 | 12:00 p.m.",
-    "hora": "12:00 p.m.",
-    "start": "2026-11-14T16:45:00Z",
-    "end": "2026-11-14T20:15:00Z",
-    "equipo1": "Noruega",
-    "logo1": "https://flagcdn.com/w80/no.png",
-    "equipo2": "Gales",
-    "logo2": "https://flagcdn.com/w80/gb-wls.png",
+    "fecha": "15 de noviembre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-11-15T19:30:00Z",
+    "end": "2026-11-15T23:00:00Z",
+    "equipo1": "Bélgica",
+    "logo1": "https://flagcdn.com/w80/be.png",
+    "equipo2": "Italia",
+    "logo2": "https://flagcdn.com/w80/it.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://181.224.200.5:2277/play/aa07/index.m3u8"
+        "stream": "https://admin2.formaturamaxi.com.br/fubo.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "http://176.65.153.4:4001/play/a08m/index.m3u8"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "14 de noviembre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-11-14T19:30:00Z",
-    "end": "2026-11-14T23:00:00Z",
-    "equipo1": "Irlanda del Norte",
-    "logo1": "https://flagcdn.com/w80/gb-nir.png",
-    "equipo2": "Ucrania",
-    "logo2": "https://flagcdn.com/w80/ua.png",
-    "opciones": [
+        "stream": "http://181.224.200.5:2277/play/aa07/index.m3u8"
+      },
       {
-        "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "14 de noviembre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-11-14T19:30:00Z",
-    "end": "2026-11-14T23:00:00Z",
-    "equipo1": "Austria",
-    "logo1": "https://flagcdn.com/w80/at.png",
-    "equipo2": "Irlanda",
-    "logo2": "https://flagcdn.com/w80/ie.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
+        "nombre": "Opción 3",
         "stream": "https://admin2.formaturamaxi.com.br/ireland.m3u8"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "14 de noviembre de 2026 | 2:45 p.m.",
+    "fecha": "15 de noviembre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-11-14T19:30:00Z",
-    "end": "2026-11-14T23:00:00Z",
-    "equipo1": "Rumanía",
-    "logo1": "https://flagcdn.com/w80/ro.png",
-    "equipo2": "Polonia",
-    "logo2": "https://flagcdn.com/w80/pl.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://tedesco.formaturamaxi.com.br/fubo.m3u8"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "14 de noviembre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-11-14T19:30:00Z",
-    "end": "2026-11-14T23:00:00Z",
-    "equipo1": "Suecia",
-    "logo1": "https://flagcdn.com/w80/se.png",
-    "equipo2": "Bosnia y Herzegovina",
-    "logo2": "https://flagcdn.com/w80/ba.png",
+    "start": "2026-11-15T19:30:00Z",
+    "end": "2026-11-15T23:00:00Z",
+    "equipo1": "Croacia",
+    "logo1": "https://flagcdn.com/w80/hr.png",
+    "equipo2": "República Checa",
+    "logo2": "https://flagcdn.com/w80/cz.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -89,14 +42,39 @@
     "estado": "programado"
   },
   {
-    "fecha": "14 de noviembre de 2026 | 2:45 p.m.",
+    "fecha": "15 de noviembre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-11-14T19:30:00Z",
-    "end": "2026-11-14T23:00:00Z",
-    "equipo1": "Portugal",
-    "logo1": "https://flagcdn.com/w80/pt.png",
-    "equipo2": "Dinamarca",
-    "logo2": "https://flagcdn.com/w80/dk.png",
+    "start": "2026-11-15T19:30:00Z",
+    "end": "2026-11-15T23:00:00Z",
+    "equipo1": "Francia",
+    "logo1": "https://flagcdn.com/w80/fr.png",
+    "equipo2": "Turquía",
+    "logo2": "https://flagcdn.com/w80/tr.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "http://176.65.153.4:4001/play/a08m/index.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://admin2.formaturamaxi.com.br/fs2.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "15 de noviembre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-11-15T19:30:00Z",
+    "end": "2026-11-15T23:00:00Z",
+    "equipo1": "España",
+    "logo1": "https://flagcdn.com/w80/es.png",
+    "equipo2": "Inglaterra",
+    "logo2": "https://flagcdn.com/w80/gb-eng.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -108,87 +86,36 @@
       },
       {
         "nombre": "Opción 3",
-        "stream": "https://admin2.formaturamaxi.com.br/fs2.m3u8"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "14 de noviembre de 2026 | 4:30 p.m.",
-    "hora": "4:30 p.m.",
-    "start": "2026-11-14T21:15:00Z",
-    "end": "2026-11-15T00:45:00Z",
-    "equipo1": "Haití",
-    "logo1": "https://flagcdn.com/w80/ht.png",
-    "equipo2": "Estados Unidos",
-    "logo2": "https://flagcdn.com/w80/us.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://streamer1.nexgen.bz/TELEMUNDO/index.m3u8"
+        "stream": "https://admin2.formaturamaxi.com.br/primemx.m3u8"
       },
       {
-        "nombre": "Opción 2",
-        "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
+        "nombre": "Opción 4",
+        "stream": "https://streamer1.nexgen.bz/TELEMUNDO/index.m3u8"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "14 de noviembre de 2026 | 5:00 p.m.",
-    "hora": "5:00 p.m.",
-    "start": "2026-11-14T21:45:00Z",
-    "end": "2026-11-15T01:15:00Z",
-    "equipo1": "Banfield",
-    "logo1": "https://flagcdn.com/w80/ar.png",
-    "equipo2": "Boca Juniors",
-    "logo2": "https://flagcdn.com/w80/ar.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://admin.formaturamaxi.com.br/tyc.m3u8"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "14 de noviembre de 2026 | 6:00 p.m.",
+    "fecha": "15 de noviembre de 2026 | 6:00 p.m.",
     "hora": "6:00 p.m.",
-    "start": "2026-11-14T22:45:00Z",
-    "end": "2026-11-15T02:15:00Z",
-    "equipo1": "Querétaro",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Monterrey",
-    "logo2": "https://flagcdn.com/w80/mx.png",
+    "start": "2026-11-15T22:45:00Z",
+    "end": "2026-11-16T02:15:00Z",
+    "equipo1": "Panamá",
+    "logo1": "https://flagcdn.com/w80/pa.png",
+    "equipo2": "Curazao",
+    "logo2": "https://flagcdn.com/w80/cw.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria5.html"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "14 de noviembre de 2026 | 8:00 p.m.",
-    "hora": "8:00 p.00",
-    "start": "2026-11-15T00:45:00Z",
-    "end": "2026-11-15T04:15:00Z",
-    "equipo1": "Jamaica",
-    "logo1": "https://flagcdn.com/w80/jm.png",
-    "equipo2": "México",
-    "logo2": "https://flagcdn.com/w80/mx.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       },
       {
         "nombre": "Opción 2",
-        "stream": "http://38.59.135.250:8001/play/a0ll/index.m3u8"
+        "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
       },
       {
         "nombre": "Opción 3",
-        "stream": "https://admin2.formaturamaxi.com.br/primemx.m3u8"
+        "stream": "http://38.59.135.250:8001/play/a0ll/index.m3u8"
       }
     ],
     "estado": "programado"
