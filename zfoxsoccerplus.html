@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#000000">
+<title>Stream Player</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    overscroll-behavior: none;
+}
+
+body {
+    position: fixed;
+    inset: 0;
+}
+
+#player {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+    contain: strict;
+}
+
+#stream {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+    background: #000;
+}
+</style>
+</head>
+
+<body>
+
+<div id="player">
+    <iframe
+        id="stream"
+        src="https://futbolxs.vercel.app/?channel=fox-soccer-plus"
+        title="Stream Player"
+        allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+        allowfullscreen
+        webkitallowfullscreen
+        mozallowfullscreen
+        scrolling="no"
+        frameborder="0"
+        sandbox="allow-scripts allow-same-origin allow-forms">
+    </iframe>
+</div>
+
+<script>
+(function () {
+    "use strict";
+
+    const player = document.getElementById("player");
+    const stream = document.getElementById("stream");
+
+    let closed = false;
+
+    // Evita desplazamientos accidentales.
+    document.addEventListener("touchmove", function(e) {
+        e.preventDefault();
+    }, { passive: false });
+
+    // Limpieza del reproductor al abandonar la pantalla.
+    function closePlayer() {
+        if (closed) return;
+        closed = true;
+
+        if (stream) {
+            stream.src = "about:blank";
+            stream.remove();
+        }
+
+        if (player) {
+            player.replaceChildren();
+        }
+    }
+
+    window.addEventListener("pagehide", closePlayer);
+    window.addEventListener("unload", closePlayer);
+
+})();
+</script>
+
+</body>
+</html>
