@@ -1,80 +1,30 @@
 [
   {
-    "fecha": "15 de noviembre de 2026 | 2:45 p.m.",
+    "fecha": "16 de noviembre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-11-15T19:30:00Z",
-    "end": "2026-11-15T23:00:00Z",
-    "equipo1": "Bélgica",
-    "logo1": "https://flagcdn.com/w80/be.png",
-    "equipo2": "Italia",
-    "logo2": "https://flagcdn.com/w80/it.png",
+    "start": "2026-11-16T19:30:00Z",
+    "end": "2026-11-16T23:00:00Z",
+    "equipo1": "Suiza",
+    "logo1": "https://flagcdn.com/w80/ch.png",
+    "equipo2": "Escocia",
+    "logo2": "https://flagcdn.com/w80/gb-sct.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://205.235.6.29:8000/play/a0zv/index.m3u8?hls"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "https://candyshop.st/live/tv401861176/master.m3u8?st=qZNBATzS1JGcbdKoF15Ehg&e=1794781809"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
+        "stream": "https://edge1.candyshop.st/live/tv401861176/master.m3u8?st=qZNBATzS1JGcbdKoF15Ehg&e=1794781809"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "15 de noviembre de 2026 | 2:45 p.m.",
+    "fecha": "16 de noviembre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-11-15T19:30:00Z",
-    "end": "2026-11-15T23:00:00Z",
-    "equipo1": "Croacia",
-    "logo1": "https://flagcdn.com/w80/hr.png",
-    "equipo2": "República Checa",
-    "logo2": "https://flagcdn.com/w80/cz.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://edge1.candyshop.st/live/tv401861178/master.m3u8?st=tWkVb8H3FIE24ItcAINl-g&e=1794781811"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "15 de noviembre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-11-15T19:30:00Z",
-    "end": "2026-11-15T23:00:00Z",
-    "equipo1": "Francia",
-    "logo1": "https://flagcdn.com/w80/fr.png",
-    "equipo2": "Turquía",
-    "logo2": "https://flagcdn.com/w80/tr.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://edge2.candyshop.st/live/tv401861177/master.m3u8?st=3fRh6JgxfcnGNjjX_1DgHA&e=1794781812"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "https://www.rtmpcdn.com/live/e6f4983f-3b82-4660-8c44-7a3b91b9e983.m3u8"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "15 de noviembre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-11-15T19:30:00Z",
-    "end": "2026-11-15T23:00:00Z",
-    "equipo1": "España",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Inglaterra",
-    "logo2": "https://flagcdn.com/w80/gb-eng.png",
+    "start": "2026-11-16T19:30:00Z",
+    "end": "2026-11-16T23:00:00Z",
+    "equipo1": "Alemania",
+    "logo1": "https://flagcdn.com/w80/de.png",
+    "equipo2": "Países Bajos",
+    "logo2": "https://flagcdn.com/w80/nl.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -87,23 +37,36 @@
       {
         "nombre": "Opción 3",
         "stream": "https://edge2.candyshop.st/live/tv401861175/master.m3u8?st=FOdzl2ZOqc0YD9rIUZdhZQ&e=1794781813"
-      },
-      {
-        "nombre": "Opción 4",
-        "stream": "http://176.65.153.4:4004/play/a07n/index.m3u8"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "15 de noviembre de 2026 | 6:00 p.m.",
-    "hora": "6:00 p.m.",
-    "start": "2026-11-15T22:45:00Z",
-    "end": "2026-11-16T02:15:00Z",
-    "equipo1": "Panamá",
-    "logo1": "https://flagcdn.com/w80/pa.png",
-    "equipo2": "Curazao",
-    "logo2": "https://flagcdn.com/w80/cw.png",
+    "fecha": "16 de noviembre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-11-16T19:30:00Z",
+    "end": "2026-11-16T23:00:00Z",
+    "equipo1": "Grecia",
+    "logo1": "https://flagcdn.com/w80/gr.png",
+    "equipo2": "Serbia",
+    "logo2": "https://flagcdn.com/w80/rs.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://edge2.candyshop.st/live/tv401861177/master.m3u8?st=3fRh6JgxfcnGNjjX_1DgHA&e=1794781812"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "16 de noviembre de 2026 | 8:00 p.m.",
+    "hora": "8:00 p.m.",
+    "start": "2026-11-17T00:45:00Z",
+    "end": "2026-11-17T04:15:00Z",
+    "equipo1": "Canadá",
+    "logo1": "https://flagcdn.com/w80/ca.png",
+    "equipo2": "Guatemala",
+    "logo2": "https://flagcdn.com/w80/gt.png",
     "opciones": [
       {
         "nombre": "Opción 1",
