@@ -1,38 +1,21 @@
 [
   {
-    "fecha": "16 de noviembre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-11-16T19:30:00Z",
-    "end": "2026-11-16T23:00:00Z",
-    "equipo1": "Suiza",
-    "logo1": "https://flagcdn.com/w80/ch.png",
-    "equipo2": "Escocia",
-    "logo2": "https://flagcdn.com/w80/gb-sct.png",
+    "fecha": "17 de noviembre de 2026 | 11:30 a.m.",
+    "hora": "11:30 a.m.",
+    "start": "2026-11-17T16:15:00Z",
+    "end": "2026-11-17T19:40:00Z",
+    "equipo1": "Kuwait",
+    "logo1": "https://flagcdn.com/w80/kw.png",
+    "equipo2": "Honduras",
+    "logo2": "https://flagcdn.com/w80/hn.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://176.65.153.4:4001/play/a08m/index.m3u8"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "16 de noviembre de 2026 | 2:45 p.m.",
-    "hora": "2:45 p.m.",
-    "start": "2026-11-16T19:30:00Z",
-    "end": "2026-11-16T23:00:00Z",
-    "equipo1": "Alemania",
-    "logo1": "https://flagcdn.com/w80/de.png",
-    "equipo2": "Países Bajos",
-    "logo2": "https://flagcdn.com/w80/nl.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15619"
+        "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "http://85.237.89.160:9590/usa-s/FOX-SPORTS-1/index.m3u8"
+        "stream": "https://dto4p9su9kcif.cloudfront.net/out/v1/9215529a621947689739a7671e6dd0d3/index.m3u8"
       },
       {
         "nombre": "Opción 3",
@@ -42,31 +25,48 @@
     "estado": "programado"
   },
   {
-    "fecha": "16 de noviembre de 2026 | 2:45 p.m.",
+    "fecha": "17 de noviembre de 2026 | 2:45 p.m.",
     "hora": "2:45 p.m.",
-    "start": "2026-11-16T19:30:00Z",
-    "end": "2026-11-16T23:00:00Z",
-    "equipo1": "Grecia",
-    "logo1": "https://flagcdn.com/w80/gr.png",
-    "equipo2": "Serbia",
-    "logo2": "https://flagcdn.com/w80/rs.png",
+    "start": "2026-11-17T19:30:00Z",
+    "end": "2026-11-17T23:00:00Z",
+    "equipo1": "Polonia",
+    "logo1": "https://flagcdn.com/w80/pl.png",
+    "equipo2": "Suecia",
+    "logo2": "https://flagcdn.com/w80/se.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
+        "stream": "http://176.65.153.4:4001/play/a08m/index.m3u8"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "16 de noviembre de 2026 | 8:00 p.m.",
-    "hora": "8:00 p.m.",
-    "start": "2026-11-17T00:45:00Z",
-    "end": "2026-11-17T04:15:00Z",
-    "equipo1": "Canadá",
-    "logo1": "https://flagcdn.com/w80/ca.png",
-    "equipo2": "Guatemala",
-    "logo2": "https://flagcdn.com/w80/gt.png",
+    "fecha": "17 de noviembre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-11-17T19:30:00Z",
+    "end": "2026-11-17T23:00:00Z",
+    "equipo1": "Dinamarca",
+    "logo1": "https://flagcdn.com/w80/dk.png",
+    "equipo2": "Noruega",
+    "logo2": "https://flagcdn.com/w80/no.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15619"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "17 de noviembre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-11-17T19:30:00Z",
+    "end": "2026-11-17T23:00:00Z",
+    "equipo1": "Gales",
+    "logo1": "https://flagcdn.com/w80/gb-wls.png",
+    "equipo2": "Portugal",
+    "logo2": "https://flagcdn.com/w80/pt.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -78,6 +78,213 @@
       },
       {
         "nombre": "Opción 3",
+        "stream": "http://85.237.89.160:9590/usa-s/FOX-SPORTS-1/index.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "17 de noviembre de 2026 | 2:45 p.m.",
+    "hora": "2:45 p.m.",
+    "start": "2026-11-17T19:30:00Z",
+    "end": "2026-11-17T23:00:00Z",
+    "equipo1": "Hungría",
+    "logo1": "https://flagcdn.com/w80/hu.png",
+    "equipo2": "Irlanda del Norte",
+    "logo2": "https://flagcdn.com/w80/gb-nir.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "17 de noviembre de 2026 | 5:00 a.m.",
+    "hora": "5:00 a.m.",
+    "start": "2026-11-17T09:45:00Z",
+    "end": "2026-11-17T13:10:00Z",
+    "equipo1": "Singapur",
+    "logo1": "https://flagcdn.com/w80/sg.png",
+    "equipo2": "Brasil",
+    "logo2": "https://flagcdn.com/w80/br.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "17 de noviembre de 2026 | 6:00 p.m.",
+    "hora": "6:00 p.m.",
+    "start": "2026-11-17T22:45:00Z",
+    "end": "2026-11-18T02:15:00Z",
+    "equipo1": "Chile",
+    "logo1": "https://flagcdn.com/w80/cl.png",
+    "equipo2": "Colombia",
+    "logo2": "https://flagcdn.com/w80/co.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "http://176.65.153.4:4001/play/a08m/index.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "17 de noviembre de 2026 | 6:00 p.m.",
+    "hora": "6:00 p.m.",
+    "start": "2026-11-17T22:45:00Z",
+    "end": "2026-11-18T02:15:00Z",
+    "equipo1": "Argentina",
+    "logo1": "https://flagcdn.com/w80/ar.png",
+    "equipo2": "Costa Rica",
+    "logo2": "https://flagcdn.com/w80/cr.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=15619"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "http://85.237.89.160:9590/usa-s/FOX-SPORTS-1/index.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "17 de noviembre de 2026 | 6:30 p.m.",
+    "hora": "6:30 p.m.",
+    "start": "2026-11-17T23:15:00Z",
+    "end": "2026-11-18T02:45:00Z",
+    "equipo1": "Ecuador",
+    "logo1": "https://flagcdn.com/w80/ec.png",
+    "equipo2": "Bolivia",
+    "logo2": "https://flagcdn.com/w80/bo.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "17 de noviembre de 2026 | 6:30 p.m.",
+    "hora": "6:30 p.m.",
+    "start": "2026-11-17T23:15:00Z",
+    "end": "2026-11-18T02:45:00Z",
+    "equipo1": "Uruguay",
+    "logo1": "https://flagcdn.com/w80/uy.png",
+    "equipo2": "República Dominicana",
+    "logo2": "https://flagcdn.com/w80/do.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "17 de noviembre de 2026 | 7:00 p.m.",
+    "hora": "7:00 p.m.",
+    "start": "2026-11-17T23:45:00Z",
+    "end": "2026-11-18T03:15:00Z",
+    "equipo1": "Estados Unidos",
+    "logo1": "https://flagcdn.com/w80/us.png",
+    "equipo2": "Haití",
+    "logo2": "https://flagcdn.com/w80/ht.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://dto4p9su9kcif.cloudfront.net/out/v1/9215529a621947689739a7671e6dd0d3/index.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "17 de noviembre de 2026 | 8:00 p.m.",
+    "hora": "8:00 p.m.",
+    "start": "2026-11-18T00:45:00Z",
+    "end": "2026-11-18T04:15:00Z",
+    "equipo1": "El Salvador",
+    "logo1": "https://flagcdn.com/w80/sv.png",
+    "equipo2": "San Martín",
+    "logo2": "https://flagcdn.com/w80/mf.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "17 de noviembre de 2026 | 8:10 a.m.",
+    "hora": "8:10 a.m.",
+    "start": "2026-11-17T12:55:00Z",
+    "end": "2026-11-17T16:25:00Z",
+    "equipo1": "Japón",
+    "logo1": "https://flagcdn.com/w80/jp.png",
+    "equipo2": "Paraguay",
+    "logo2": "https://flagcdn.com/w80/py.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "http://176.65.153.4:4001/play/a08m/index.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "17 de noviembre de 2026 | 9:30 p.m.",
+    "hora": "9:30 p.m.",
+    "start": "2026-11-18T02:15:00Z",
+    "end": "2026-11-18T05:45:00Z",
+    "equipo1": "México",
+    "logo1": "https://flagcdn.com/w80/mx.png",
+    "equipo2": "Jamaica",
+    "logo2": "https://flagcdn.com/w80/jm.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://dto4p9su9kcif.cloudfront.net/out/v1/9215529a621947689739a7671e6dd0d3/index.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "17 de noviembre de 2026 | 10:00 p.m.",
+    "hora": "10:00 p.m.",
+    "start": "2026-11-18T02:45:00Z",
+    "end": "2026-11-18T06:15:00Z",
+    "equipo1": "Nicaragua",
+    "logo1": "https://flagcdn.com/w80/ni.png",
+    "equipo2": "Montserrat",
+    "logo2": "https://flagcdn.com/w80/ms.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
         "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8"
       }
     ],
