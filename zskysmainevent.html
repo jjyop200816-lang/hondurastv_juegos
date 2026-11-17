@@ -3,34 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Reproductor Stream - BeIN Sports 1</title>
+  <title>Reproductor Stream - Sin Publicidad</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      background-color: #000;
     }
     html, body {
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
       overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
     .player-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
       background: #000;
     }
     iframe {
       width: 100%;
       height: 100%;
-      border: none;
+      border: 0;
       display: block;
     }
   </style>
@@ -39,14 +35,11 @@
 
   <div class="player-container">
     <iframe 
-      src="https://play.damitv.st/player/hls/?v=542&url=/c/4a2c801ab2.m3u8&name=Sky%20Sports%20Main%20Event" 
+      src="https://play.damitv.st/player/hls/?v=542&url=/c/4a2c801ab2.m3u8&name=Sky%20Sports%20Main%20Event&autoplay=1&muted=1" 
       title="Reproductor de Deportes"
-      allowfullscreen="true"
-      webkitallowfullscreen="true"
-      mozallowfullscreen="true"
-      scrolling="no"
-      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; gyro; accelerometer"
-      sandbox="allow-scripts allow-same-origin allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-presentation">
+      allowfullscreen
+      allow="autoplay; fullscreen; picture-in-picture"
+      sandbox="allow-scripts allow-same-origin allow-presentation">
     </iframe>
   </div>
 
