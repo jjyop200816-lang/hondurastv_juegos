@@ -1,5 +1,39 @@
 [
   {
+    "fecha": "17 de noviembre de 2026 | 5:00 a.m.",
+    "hora": "5:00 a.m.",
+    "start": "2026-11-17T09:45:00Z",
+    "end": "2026-11-17T13:10:00Z",
+    "equipo1": "Singapur",
+    "logo1": "https://flagcdn.com/w80/sg.png",
+    "equipo2": "Brasil",
+    "logo2": "https://flagcdn.com/w80/br.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "17 de noviembre de 2026 | 8:10 a.m.",
+    "hora": "8:10 a.m.",
+    "start": "2026-11-17T12:55:00Z",
+    "end": "2026-11-17T16:25:00Z",
+    "equipo1": "Japón",
+    "logo1": "https://flagcdn.com/w80/jp.png",
+    "equipo2": "Paraguay",
+    "logo2": "https://flagcdn.com/w80/py.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "http://176.65.153.4:4001/play/a08m/index.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
     "fecha": "17 de noviembre de 2026 | 11:30 a.m.",
     "hora": "11:30 a.m.",
     "start": "2026-11-17T16:15:00Z",
@@ -96,23 +130,6 @@
       {
         "nombre": "Opción 1",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "17 de noviembre de 2026 | 5:00 a.m.",
-    "hora": "5:00 a.m.",
-    "start": "2026-11-17T09:45:00Z",
-    "end": "2026-11-17T13:10:00Z",
-    "equipo1": "Singapur",
-    "logo1": "https://flagcdn.com/w80/sg.png",
-    "equipo2": "Brasil",
-    "logo2": "https://flagcdn.com/w80/br.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8"
       }
     ],
     "estado": "programado"
@@ -227,23 +244,6 @@
       {
         "nombre": "Opción 2",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "17 de noviembre de 2026 | 8:10 a.m.",
-    "hora": "8:10 a.m.",
-    "start": "2026-11-17T12:55:00Z",
-    "end": "2026-11-17T16:25:00Z",
-    "equipo1": "Japón",
-    "logo1": "https://flagcdn.com/w80/jp.png",
-    "equipo2": "Paraguay",
-    "logo2": "https://flagcdn.com/w80/py.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "http://176.65.153.4:4001/play/a08m/index.m3u8"
       }
     ],
     "estado": "programado"
