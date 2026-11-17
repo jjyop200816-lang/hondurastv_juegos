@@ -104,11 +104,11 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://candyshop.st/live/tv401861189/master.m3u8?st=PnUVqna6L_FlgAajof0a8w&e=1794954899&_=1794944100769"
+        "stream": "http://181.78.211.244:8005/play/a0b4/index.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "http://181.78.211.244:8005/play/a0b4/index.m3u8"
+        "stream": "https://candyshop.st/live/tv401861189/master.m3u8?st=PnUVqna6L_FlgAajof0a8w&e=1794954899&_=1794944100769"
       },
       {
         "nombre": "Opción 3",
