@@ -243,11 +243,11 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://85.237.89.160:9590/usa-s/FOX-SPORTS-1/index.m3u8"
+        "stream": "https://www.rtmpcdn.com/live/29abbc77-a5a8-4306-9ac9-4d765933cc18.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://www.rtmpcdn.com/live/29abbc77-a5a8-4306-9ac9-4d765933cc18.m3u8"
+        "stream": "http://85.237.89.160:9590/usa-s/FOX-SPORTS-1/index.m3u8"
       }
     ],
     "estado": "programado"
