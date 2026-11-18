@@ -188,7 +188,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://181.78.211.244:8005/play/a0ay/index.m3u8"
+        "stream": "https://edge1.candyshop.st/live/tv401930899/master.m3u8?st=ASj58b3EMTsX4k0bd3rXnQ&e=1794967214"
       }
     ],
     "estado": "programado"
@@ -222,11 +222,11 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8"
+        "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
+        "stream": "https://admin2.formaturamaxi.com.br/concacaf1.m3u8"
       }
     ],
     "estado": "programado"
