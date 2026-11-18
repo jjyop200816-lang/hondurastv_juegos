@@ -1,99 +1,11 @@
 [
   {
-    "fecha": "Sábado, 7 de nov | 4:00 p.m.",
-    "hora": "Sábado, 7 nov - 4:00 p.m. EST",
-    "start": "2026-11-07T20:45:00Z",
-    "end": "2026-11-07T23:10:00Z",
-    "equipo1": "Juticalpa FC",
-    "equipo2": "Estrella Roja",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "https://sporio.tv/api/proxy?url=https%3A%2F%2Fstreaming.onnethn.com%2FDEPORTES_TVC%2Fplaylist.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "Sábado, 7 de nov | 6:15 p.m.",
-    "hora": "Sábado, 7 nov - 6:15 p.m. EST",
-    "start": "2026-11-07T23:00:00Z",
-    "end": "2026-11-08T01:25:00Z",
-    "equipo1": "Lobos UPNFM",
-    "equipo2": "FC Motagua",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "https://sporio.tv/api/proxy?url=https%3A%2F%2Fstreaming.onnethn.com%2FDEPORTES_TVC%2Fplaylist.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "Sábado, 7 de nov | 8:30 p.m.",
-    "hora": "Sábado, 7 nov - 8:30 p.m. EST",
-    "start": "2026-11-08T01:15:00Z",
-    "end": "2026-11-08T03:40:00Z",
-    "equipo1": "CD Olimpia",
-    "equipo2": "Olancho FC",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "https://sporio.tv/api/proxy?url=https%3A%2F%2Fstreaming.onnethn.com%2FDEPORTES_TVC%2Fplaylist.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "Domingo, 8 de nov | 4:00 p.m.",
-    "hora": "Domingo, 8 nov - 4:00 p.m. EST",
-    "start": "2026-11-08T20:45:00Z",
-    "end": "2026-11-08T23:10:00Z",
-    "equipo1": "Platense FC",
-    "equipo2": "Génesis PN",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "https://sporio.tv/api/proxy?url=https%3A%2F%2Fstreaming.onnethn.com%2FDEPORTES_TVC%2Fplaylist.m3u8"
-      }
-    ]
-  },
-  {
-    "fecha": "Domingo, 8 de nov | 6:15 p.m.",
-    "hora": "Domingo, 8 nov - 6:15 p.m. EST",
-    "start": "2026-11-08T23:00:00Z",
-    "end": "2026-11-09T01:25:00Z",
-    "equipo1": "Atlético Independiente",
-    "equipo2": "Real España",
+    "fecha": "Sábado, 21 de nov | 4:00 p.m.",
+    "hora": "Sábado, 21 nov - 4:00 p.m. EST",
+    "start": "2026-11-21T20:45:00Z",
+    "end": "2026-11-21T23:10:00Z",
+    "equipo1": "Génesis PN",
+    "equipo2": "Atlético Independiente",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -106,12 +18,100 @@
     ]
   },
   {
-    "fecha": "Domingo, 8 de nov | 8:30 p.m.",
-    "hora": "Domingo, 8 nov - 8:30 p.m. EST",
-    "start": "2026-11-09T01:15:00Z",
-    "end": "2026-11-09T03:40:00Z",
-    "equipo1": "CD Marathón",
+    "fecha": "Sábado, 21 de nov | 6:15 p.m.",
+    "hora": "Sábado, 21 nov - 6:15 p.m. EST",
+    "start": "2026-11-21T23:00:00Z",
+    "end": "2026-11-22T01:25:00Z",
+    "equipo1": "Estrella Roja",
+    "equipo2": "Lobos UPNFM",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://sporio.tv/api/proxy?url=https%3A%2F%2Fstreaming.onnethn.com%2FDEPORTES_TVC%2Fplaylist.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "Sábado, 21 de nov | 8:30 p.m.",
+    "hora": "Sábado, 21 nov - 8:30 p.m. EST",
+    "start": "2026-11-22T01:15:00Z",
+    "end": "2026-11-22T03:40:00Z",
+    "equipo1": "Real España",
+    "equipo2": "CD Marathón",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://sporio.tv/api/proxy?url=https%3A%2F%2Fstreaming.onnethn.com%2FDEPORTES_TVC%2Fplaylist.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "Domingo, 22 de nov | 4:00 p.m.",
+    "hora": "Domingo, 22 nov - 4:00 p.m. EST",
+    "start": "2026-11-22T20:45:00Z",
+    "end": "2026-11-22T23:10:00Z",
+    "equipo1": "Platense FC",
     "equipo2": "CD Choloma",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://sporio.tv/api/proxy?url=https%3A%2F%2Fstreaming.onnethn.com%2FDEPORTES_TVC%2Fplaylist.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "Domingo, 22 de nov | 6:15 p.m.",
+    "hora": "Domingo, 22 nov - 6:15 p.m. EST",
+    "start": "2026-11-22T23:00:00Z",
+    "end": "2026-11-23T01:25:00Z",
+    "equipo1": "FC Motagua",
+    "equipo2": "CD Olimpia",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://streaming.onnethn.com/DEPORTES_TVC/playlist.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "http://181.119.215.61:8000/play/a061/index.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://sporio.tv/api/proxy?url=https%3A%2F%2Fstreaming.onnethn.com%2FDEPORTES_TVC%2Fplaylist.m3u8"
+      }
+    ]
+  },
+  {
+    "fecha": "Domingo, 22 de nov | 8:30 p.m.",
+    "hora": "Domingo, 22 nov - 8:30 p.m. EST",
+    "start": "2026-11-23T01:15:00Z",
+    "end": "2026-11-23T03:40:00Z",
+    "equipo1": "Juticalpa FC",
+    "equipo2": "Olancho FC",
     "opciones": [
       {
         "nombre": "Opción 1",
