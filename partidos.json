@@ -53,7 +53,7 @@
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://d29uu6lcvq8u18.cloudfront.net/out/v1/3a7b9c1d2e4f5a6b7c8d9e0f1a2b3c4d/index_14.m3u8"
+        "stream": "http://38.188.186.47:4000/play/a015/index.m3u8"
       }
     ],
     "estado": "programado"
