@@ -5,9 +5,9 @@
     "start": "2026-11-20T17:15:00Z",
     "end": "2026-11-20T19:40:00Z",
     "equipo1": "Al-Ahli SFC",
-    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/al-ahli-sfc.png",
+    "logo1": "https://flagcdn.com/w80/sa.png",
     "equipo2": "Al-Nassr",
-    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/al-nassr.png",
+    "logo2": "https://flagcdn.com/w80/sa.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -22,9 +22,9 @@
     "start": "2026-11-20T19:15:00Z",
     "end": "2026-11-20T21:40:00Z",
     "equipo1": "Bayern München",
-    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/-_cmntP5q_pHL7g5LfkRiw_500x500.png",
+    "logo1": "https://flagcdn.com/w80/de.png",
     "equipo2": "Köln",
-    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/W94hx-q1SdXOZBrW6RSSVg_500x500.png",
+    "logo2": "https://flagcdn.com/w80/de.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -43,9 +43,9 @@
     "start": "2026-11-20T19:45:00Z",
     "end": "2026-11-20T22:10:00Z",
     "equipo1": "Athletic Club",
-    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/WnwStUjLyaWfqWoT2gpX-w_500x500.png",
+    "logo1": "https://flagcdn.com/w80/es.png",
     "equipo2": "Espanyol",
-    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/TKitIqelDyN6M-kYt4Uc0g_500x500.png",
+    "logo2": "https://flagcdn.com/w80/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -64,9 +64,9 @@
     "start": "2026-11-21T00:45:00Z",
     "end": "2026-11-21T03:10:00Z",
     "equipo1": "Puebla",
-    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/puebla.png",
+    "logo1": "https://flagcdn.com/w80/mx.png",
     "equipo2": "Atl. San Luis",
-    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/atletico-san-luis.png",
+    "logo2": "https://flagcdn.com/w80/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -81,9 +81,9 @@
     "start": "2026-11-21T02:45:00Z",
     "end": "2026-11-21T05:10:00Z",
     "equipo1": "FC Juárez",
-    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/85-dl3QydggPuQl-kc2mtA_500x500.png",
+    "logo1": "https://flagcdn.com/w80/mx.png",
     "equipo2": "Atlas Guadalajara",
-    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/pl3U9pi7AYOBuIDiyl7vTg_500x500.png",
+    "logo2": "https://flagcdn.com/w80/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -98,9 +98,9 @@
     "start": "2026-11-21T02:55:00Z",
     "end": "2026-11-21T05:20:00Z",
     "equipo1": "Tijuana",
-    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/tijuana.png",
+    "logo1": "https://flagcdn.com/w80/mx.png",
     "equipo2": "Atlante FC",
-    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/atlante.png",
+    "logo2": "https://flagcdn.com/w80/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
