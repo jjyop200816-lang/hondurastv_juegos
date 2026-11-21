@@ -1,89 +1,72 @@
 [
   {
-    "fecha": "20 de noviembre de 2026 | 12:30 p.m.",
-    "hora": "12:30 p.m.",
-    "start": "2026-11-20T17:15:00Z",
-    "end": "2026-11-20T19:40:00Z",
-    "equipo1": "Al-Ahli SFC",
-    "logo1": "https://flagcdn.com/w80/sa.png",
-    "equipo2": "Al-Nassr",
-    "logo2": "https://flagcdn.com/w80/sa.png",
+    "fecha": "21 de noviembre de 2026 | 7:30 a.m.",
+    "hora": "7:30 a.m.",
+    "start": "2026-11-21T12:15:00Z",
+    "end": "2026-11-21T14:40:00Z",
+    "equipo1": "Manchester City",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/z44l-a0W1v5FmgPnemV6Xw_500x500.png",
+    "equipo2": "Fulham",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/Gh7_5p3n364p4vxeM8FhNg_500x500.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "20 de noviembre de 2026 | 2:30 p.m.",
-    "hora": "2:30 p.m.",
-    "start": "2026-11-20T19:15:00Z",
-    "end": "2026-11-20T21:40:00Z",
-    "equipo1": "Bayern München",
-    "logo1": "https://flagcdn.com/w80/de.png",
-    "equipo2": "Köln",
-    "logo2": "https://flagcdn.com/w80/de.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
       },
       {
         "nombre": "Opción 2",
+        "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "20 de noviembre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-11-20T19:45:00Z",
-    "end": "2026-11-20T22:10:00Z",
-    "equipo1": "Athletic Club",
-    "logo1": "https://flagcdn.com/w80/es.png",
-    "equipo2": "Espanyol",
-    "logo2": "https://flagcdn.com/w80/es.png",
+    "fecha": "21 de noviembre de 2026 | 8:00 a.m.",
+    "hora": "8:00 a.m.",
+    "start": "2026-11-21T12:45:00Z",
+    "end": "2026-11-21T15:10:00Z",
+    "equipo1": "Deportivo Alavés",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/RUcTOeFcBc7q7uku1nR_iQ_500x500.png",
+    "equipo2": "RC Deportivo",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/24AIbS9gqrkm2oS_PKqKEw_500x500.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespndeportes.html"
-      },
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "21 de noviembre de 2026 | 9:30 a.m.",
+    "hora": "9:30 a.m.",
+    "start": "2026-11-21T14:15:00Z",
+    "end": "2026-11-21T16:40:00Z",
+    "equipo1": "B. Mönchengladbach",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/HFg_gp-vbuL7z1Othoa0ZA_500x500.png",
+    "equipo2": "B. Dortmund",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/FZnTSH2rbHFos4BnlWAItw_500x500.png",
+    "opciones": [
       {
-        "nombre": "Opción 2",
+        "nombre": "Opción 1",
         "stream": "http://38.188.186.47:4000/play/a015/index.m3u8"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "20 de noviembre de 2026 | 8:00 p.m.",
-    "hora": "8:00 p.m.",
-    "start": "2026-11-21T00:45:00Z",
-    "end": "2026-11-21T03:10:00Z",
-    "equipo1": "Puebla",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Atl. San Luis",
-    "logo2": "https://flagcdn.com/w80/mx.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "20 de noviembre de 2026 | 10:00 p.m.",
-    "hora": "10:00 p.m.",
-    "start": "2026-11-21T02:45:00Z",
-    "end": "2026-11-21T05:10:00Z",
-    "equipo1": "FC Juárez",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Atlas Guadalajara",
-    "logo2": "https://flagcdn.com/w80/mx.png",
+    "fecha": "21 de noviembre de 2026 | 10:00 a.m.",
+    "hora": "10:00 a.m.",
+    "start": "2026-11-21T14:45:00Z",
+    "end": "2026-11-21T17:10:00Z",
+    "equipo1": "AFC Bournemouth",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/IcOt-hrK04B-RlRwI3R0yA_500x500.png",
+    "equipo2": "Nottingham Forest",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/Zr6FbE-8pDH7UBpWCO8U9A_500x500.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -93,18 +76,279 @@
     "estado": "programado"
   },
   {
-    "fecha": "20 de noviembre de 2026 | 10:10 p.m.",
-    "hora": "10:10 p.m.",
-    "start": "2026-11-21T02:55:00Z",
-    "end": "2026-11-21T05:20:00Z",
-    "equipo1": "Tijuana",
-    "logo1": "https://flagcdn.com/w80/mx.png",
-    "equipo2": "Atlante FC",
-    "logo2": "https://flagcdn.com/w80/mx.png",
+    "fecha": "21 de noviembre de 2026 | 10:00 a.m.",
+    "hora": "10:00 a.m.",
+    "start": "2026-11-21T14:45:00Z",
+    "end": "2026-11-21T17:10:00Z",
+    "equipo1": "Aston Villa",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/uyNNelfnFvCEnsLrUL-j2Q_500x500.png",
+    "equipo2": "Sunderland",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/CQFeTfHrtxqgr3VKWtTwfA_500x500.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "21 de noviembre de 2026 | 10:00 a.m.",
+    "hora": "10:00 a.m.",
+    "start": "2026-11-21T14:45:00Z",
+    "end": "2026-11-21T17:10:00Z",
+    "equipo1": "Chelsea",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/fhBITrIlbQxhVB6IjxUO6Q_500x500.png",
+    "equipo2": "Leeds United",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/5dqfOKpjjW6EwTAx_FysKQ_500x500.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespndeportes.html"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "21 de noviembre de 2026 | 10:00 a.m.",
+    "hora": "10:00 a.m.",
+    "start": "2026-11-21T14:45:00Z",
+    "end": "2026-11-21T17:10:00Z",
+    "equipo1": "Coventry City",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/KHpmY4tIwqiutl8Cfl0MAw_500x500.png",
+    "equipo2": "Crystal Palace",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/8piQOzndGmApKYTcvyN9vA_500x500.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "21 de noviembre de 2026 | 10:00 a.m.",
+    "hora": "10:00 a.m.",
+    "start": "2026-11-21T14:45:00Z",
+    "end": "2026-11-21T17:10:00Z",
+    "equipo1": "Tottenham Hotspur",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/k3Q_mKE98Dnohrcea0JFgQ_500x500.png",
+    "equipo2": "Ipswich Town",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/56vquJBk5U16Dng7txLXCw_500x500.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "21 de noviembre de 2026 | 10:15 a.m.",
+    "hora": "10:15 a.m.",
+    "start": "2026-11-21T15:00:00Z",
+    "end": "2026-11-21T17:25:00Z",
+    "equipo1": "Rayo Vallecano",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/WVBerNAwvOewUNzDJKnuww_500x500.png",
+    "equipo2": "Valencia",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/QPbjvDwI_0Wuu4tCS2O6uw_500x500.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "http://38.188.186.47:4000/play/a015/index.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "21 de noviembre de 2026 | 12:30 p.m.",
+    "hora": "12:30 p.m.",
+    "start": "2026-11-21T17:15:00Z",
+    "end": "2026-11-21T19:40:00Z",
+    "equipo1": "Newcastle",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/96CcNNQ0AYDAbssP0V9LuQ_500x500.png",
+    "equipo2": "Arsenal",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/4us2nCgl6kgZc0t3hpW75Q_500x500.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "21 de noviembre de 2026 | 12:30 p.m.",
+    "hora": "12:30 p.m.",
+    "start": "2026-11-21T17:15:00Z",
+    "end": "2026-11-21T19:40:00Z",
+    "equipo1": "Sevilla",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/hCTs5EX3WjCMC5Jl3QE4Rw_500x500.png",
+    "equipo2": "Real Betis",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/XDClkrMKtkm3UTP2YKN6oQ_500x500.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "21 de noviembre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-11-21T19:45:00Z",
+    "end": "2026-11-21T22:10:00Z",
+    "equipo1": "Real Madrid",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/Th4fAVAZeCJWRcKoLW7koA_500x500.png",
+    "equipo2": "Celta",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/wpdhixHP_sloegfP0UlwAw_500x500.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+      },
+      {
+        "nombre": "Opción 4",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespndeportes.html"
+      },
+      {
+        "nombre": "Opción 5",
+        "stream": "http://38.188.186.47:4000/play/a015/index.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "21 de noviembre de 2026 | 5:30 p.m.",
+    "hora": "5:30 p.m.",
+    "start": "2026-11-21T22:15:00Z",
+    "end": "2026-11-22T00:40:00Z",
+    "equipo1": "Atlético Mineiro",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/q9fhEsgpuyRq58OgmSndcQ_500x500.png",
+    "equipo2": "Boca Juniors",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/JRPDcAEL-xBNBQNaGnEixQ_500x500.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "http://38.188.186.47:4000/play/a015/index.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "21 de noviembre de 2026 | 5:50 p.m.",
+    "hora": "5:50 p.m.",
+    "start": "2026-11-21T22:35:00Z",
+    "end": "2026-11-22T01:00:00Z",
+    "equipo1": "Pachuca",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/9dscoX8iYhzbjSNxXVp2gQ_500x500.png",
+    "equipo2": "Toluca",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/ycTgfmECsg0S-aVXCOPXcA_500x500.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "21 de noviembre de 2026 | 6:00 p.m.",
+    "hora": "6:00 p.m.",
+    "start": "2026-11-21T22:45:00Z",
+    "end": "2026-11-22T01:10:00Z",
+    "equipo1": "Santos Laguna",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/A7Np6PvBdRqYbaHYcVecyg_500x500.png",
+    "equipo2": "León",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/IR3AyUUEoSWoeTmicHAlKA_500x500.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://streaming.onnethn.com/FOX/playlist.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "21 de noviembre de 2026 | 6:00 p.m.",
+    "hora": "6:00 p.m.",
+    "start": "2026-11-21T22:45:00Z",
+    "end": "2026-11-22T01:10:00Z",
+    "equipo1": "Inter Miami",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/qbqMtgzKCYVxZMzcB4iQqQ_500x500.png",
+    "equipo2": "Columbus Crew",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/IBLXsZ5cwR0GOtUheJm2Cw_500x500.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "http://15.204.246.24:8080/UNIVERSO/index.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "21 de noviembre de 2026 | 8:00 p.m.",
+    "hora": "8:00 p.m.",
+    "start": "2026-11-22T00:45:00Z",
+    "end": "2026-11-22T03:10:00Z",
+    "equipo1": "Pumas UNAM",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/EfPJSBOmHePNwgl6_FOuHA_500x500.png",
+    "equipo2": "Monterrey",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/LXZ8fEgzf0_FwSyq15buPw_500x500.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespndeportes.html"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "21 de noviembre de 2026 | 10:00 p.m.",
+    "hora": "10:00 p.m.",
+    "start": "2026-11-22T02:45:00Z",
+    "end": "2026-11-22T05:10:00Z",
+    "equipo1": "Tigres UANL",
+    "logo1": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/SUJAIkxhbnmFXDpJY2gSww_500x500.png",
+    "equipo2": "América",
+    "logo2": "https://ssl.gstatic.com/onebox/media/sports/logos/optimized/QKZVogU66ByvZRqIAIVtmA_500x500.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://estrellatv-plex.amagi.tv/playlist.m3u8"
       }
     ],
     "estado": "programado"
