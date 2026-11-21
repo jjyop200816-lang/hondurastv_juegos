@@ -13,7 +13,7 @@
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://tv.webmedialive.com:2443/client/embed.php?user=vallevisin"
+        "stream": "http://45.228.234.9:8000/play/a06t/index.m3u8"
       }
     ]
   },
