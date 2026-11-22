@@ -5,9 +5,9 @@
     "start": "2026-11-22T12:45:00Z",
     "end": "2026-11-22T15:10:00Z",
     "equipo1": "Barcelona",
-    "logo1": "",
+    "logo1": "https://flagcdn.com/w160/es.png",
     "equipo2": "Villarreal",
-    "logo2": "",
+    "logo2": "https://flagcdn.com/w160/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -38,9 +38,9 @@
     "start": "2026-11-22T13:30:00Z",
     "end": "2026-11-22T15:55:00Z",
     "equipo1": "GKS Katowice",
-    "logo1": "",
+    "logo1": "https://flagcdn.com/w160/pl.png",
     "equipo2": "Lech Poznań",
-    "logo2": "",
+    "logo2": "https://flagcdn.com/w160/pl.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -55,9 +55,9 @@
     "start": "2026-11-22T13:45:00Z",
     "end": "2026-11-22T16:10:00Z",
     "equipo1": "Hull City",
-    "logo1": "",
+    "logo1": "https://flagcdn.com/w160/gb-eng.png",
     "equipo2": "Brighton & Hove Albion",
-    "logo2": "",
+    "logo2": "https://flagcdn.com/w160/gb-eng.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -72,9 +72,9 @@
     "start": "2026-11-22T15:00:00Z",
     "end": "2026-11-22T17:25:00Z",
     "equipo1": "Racing",
-    "logo1": "",
+    "logo1": "https://flagcdn.com/w160/es.png",
     "equipo2": "Real Sociedad",
-    "logo2": "",
+    "logo2": "https://flagcdn.com/w160/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -89,9 +89,9 @@
     "start": "2026-11-22T16:15:00Z",
     "end": "2026-11-22T18:40:00Z",
     "equipo1": "Liverpool",
-    "logo1": "",
+    "logo1": "https://flagcdn.com/w160/gb-eng.png",
     "equipo2": "Manchester United",
-    "logo2": "",
+    "logo2": "https://flagcdn.com/w160/gb-eng.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -122,9 +122,9 @@
     "start": "2026-11-22T16:45:00Z",
     "end": "2026-11-22T19:10:00Z",
     "equipo1": "Milan",
-    "logo1": "",
+    "logo1": "https://flagcdn.com/w160/it.png",
     "equipo2": "Frosinone",
-    "logo2": "",
+    "logo2": "https://flagcdn.com/w160/it.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -139,9 +139,9 @@
     "start": "2026-11-22T17:15:00Z",
     "end": "2026-11-22T19:40:00Z",
     "equipo1": "Osasuna",
-    "logo1": "",
+    "logo1": "https://flagcdn.com/w160/es.png",
     "equipo2": "Málaga",
-    "logo2": "",
+    "logo2": "https://flagcdn.com/w160/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -156,9 +156,9 @@
     "start": "2026-11-22T19:30:00Z",
     "end": "2026-11-22T21:55:00Z",
     "equipo1": "Atalanta",
-    "logo1": "",
+    "logo1": "https://flagcdn.com/w160/it.png",
     "equipo2": "Inter",
-    "logo2": "",
+    "logo2": "https://flagcdn.com/w160/it.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -173,9 +173,9 @@
     "start": "2026-11-22T19:45:00Z",
     "end": "2026-11-22T22:10:00Z",
     "equipo1": "Getafe",
-    "logo1": "",
+    "logo1": "https://flagcdn.com/w160/es.png",
     "equipo2": "Atlético",
-    "logo2": "",
+    "logo2": "https://flagcdn.com/w160/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -190,9 +190,9 @@
     "start": "2026-11-22T22:52:00Z",
     "end": "2026-11-23T01:17:00Z",
     "equipo1": "Chivas Guadalajara",
-    "logo1": "",
+    "logo1": "https://flagcdn.com/w160/mx.png",
     "equipo2": "Cruz Azul",
-    "logo2": "",
+    "logo2": "https://flagcdn.com/w160/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -207,9 +207,9 @@
     "start": "2026-11-23T00:55:00Z",
     "end": "2026-11-23T03:20:00Z",
     "equipo1": "Querétaro",
-    "logo1": "",
+    "logo1": "https://flagcdn.com/w160/mx.png",
     "equipo2": "Necaxa",
-    "logo2": "",
+    "logo2": "https://flagcdn.com/w160/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
