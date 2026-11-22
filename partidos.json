@@ -19,15 +19,15 @@
       },
       {
         "nombre": "Opción 3",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdazn1.html"
+        "stream": "http://38.188.186.47:4000/play/a015/index.m3u8"
       },
       {
         "nombre": "Opción 4",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
       },
       {
         "nombre": "Opción 5",
-        "stream": "https://sflix.today/v1/live/proxy/daddy-dazn-1-spain-daddylive"
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
       }
     ],
     "estado": "programado"
