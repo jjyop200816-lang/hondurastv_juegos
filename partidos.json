@@ -1,13 +1,102 @@
 [
   {
-    "fecha": "23 de noviembre de 2026 | 3:00 p.m.",
+    "fecha": "24 de noviembre de 2026 | 10:30 a.m.",
+    "hora": "10:30 a.m.",
+    "start": "2026-11-24T15:15:00Z",
+    "end": "2026-11-24T17:40:00Z",
+    "equipo1": "Honduras Sub 17",
+    "logo1": "https://flagcdn.com/w160/hn.png",
+    "equipo2": "Colombia Sub 17",
+    "logo2": "https://flagcdn.com/w160/co.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespndeportes.html"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdazn1.html"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "24 de noviembre de 2026 | 12:45 p.m.",
+    "hora": "12:45 p.m.",
+    "start": "2026-11-24T17:30:00Z",
+    "end": "2026-11-24T19:55:00Z",
+    "equipo1": "Galatasaray SK",
+    "logo1": "https://flagcdn.com/w160/tr.png",
+    "equipo2": "Aston Villa",
+    "logo2": "https://flagcdn.com/w160/gb-eng.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdazn1.html"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "24 de noviembre de 2026 | 12:45 p.m.",
+    "hora": "12:45 p.m.",
+    "start": "2026-11-24T17:30:00Z",
+    "end": "2026-11-24T19:55:00Z",
+    "equipo1": "FK Bodo Glimt",
+    "logo1": "https://flagcdn.com/w160/no.png",
+    "equipo2": "LASK",
+    "logo2": "https://flagcdn.com/w160/at.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "http://38.188.186.47:4000/play/a015/index.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "24 de noviembre de 2026 | 1:15 p.m.",
+    "hora": "1:15 p.m.",
+    "start": "2026-11-24T18:00:00Z",
+    "end": "2026-11-24T20:25:00Z",
+    "equipo1": "Al-Nassr",
+    "logo1": "https://flagcdn.com/w160/sa.png",
+    "equipo2": "Al-Sadd",
+    "logo2": "https://flagcdn.com/w160/qa.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://tvsen3.aynaott.com/dbbcY6NG/index.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "24 de noviembre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
-    "start": "2026-11-23T19:45:00Z",
-    "end": "2026-11-23T22:10:00Z",
-    "equipo1": "Levante",
+    "start": "2026-11-24T19:45:00Z",
+    "end": "2026-11-24T22:10:00Z",
+    "equipo1": "Wolves",
+    "logo1": "https://flagcdn.com/w160/gb-eng.png",
+    "equipo2": "Derby County",
+    "logo2": "https://flagcdn.com/w160/gb-eng.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "http://stream.bottledesk.net/p/AAxBRQEBc2c/index.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "24 de noviembre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-11-24T19:45:00Z",
+    "end": "2026-11-24T22:10:00Z",
+    "equipo1": "Real Madrid",
     "logo1": "https://flagcdn.com/w160/es.png",
-    "equipo2": "Elche",
-    "logo2": "https://flagcdn.com/w160/es.png",
+    "equipo2": "PSV",
+    "logo2": "https://flagcdn.com/w160/nl.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -19,20 +108,28 @@
       },
       {
         "nombre": "Opción 3",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdazn1.html"
+      },
+      {
+        "nombre": "Opción 4",
         "stream": "http://38.188.186.47:4000/play/a015/index.m3u8"
+      },
+      {
+        "nombre": "Opción 5",
+        "stream": "https://tvsen3.aynaott.com/dbbcY6NG/index.m3u8"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "23 de noviembre de 2026 | 3:00 p.m.",
+    "fecha": "24 de noviembre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
-    "start": "2026-11-23T19:45:00Z",
-    "end": "2026-11-23T22:10:00Z",
-    "equipo1": "Brentford",
+    "start": "2026-11-24T19:45:00Z",
+    "end": "2026-11-24T22:10:00Z",
+    "equipo1": "Manchester City",
     "logo1": "https://flagcdn.com/w160/gb-eng.png",
-    "equipo2": "Everton",
-    "logo2": "https://flagcdn.com/w160/gb-eng.png",
+    "equipo2": "Napoli",
+    "logo2": "https://flagcdn.com/w160/it.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -45,6 +142,99 @@
       {
         "nombre": "Opción 3",
         "stream": "https://tvsen3.aynaott.com/dbbcY6NG/index.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "24 de noviembre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-11-24T19:45:00Z",
+    "end": "2026-11-24T22:10:00Z",
+    "equipo1": "Arsenal",
+    "logo1": "https://flagcdn.com/w160/gb-eng.png",
+    "equipo2": "B. Dortmund",
+    "logo2": "https://flagcdn.com/w160/de.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespndeportes.html"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "http://38.188.186.47:4000/play/a015/index.m3u8"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdaznlaliga.html"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "24 de noviembre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-11-24T19:45:00Z",
+    "end": "2026-11-24T22:10:00Z",
+    "equipo1": "Slovan Bratislava",
+    "logo1": "https://flagcdn.com/w160/sk.png",
+    "equipo2": "Real Betis",
+    "logo2": "https://flagcdn.com/w160/es.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zdaznlaliga.html"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "24 de noviembre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-11-24T19:45:00Z",
+    "end": "2026-11-24T22:10:00Z",
+    "equipo1": "Feyenoord",
+    "logo1": "https://flagcdn.com/w160/nl.png",
+    "equipo2": "Porto",
+    "logo2": "https://flagcdn.com/w160/pt.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespndeportes.html"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "24 de noviembre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-11-24T19:45:00Z",
+    "end": "2026-11-24T22:10:00Z",
+    "equipo1": "RB Leipzig",
+    "logo1": "https://flagcdn.com/w160/de.png",
+    "equipo2": "Lens",
+    "logo2": "https://flagcdn.com/w160/fr.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "https://tvsen3.aynaott.com/dbbcY6NG/index.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "24 de noviembre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-11-24T19:45:00Z",
+    "end": "2026-11-24T22:10:00Z",
+    "equipo1": "Como",
+    "logo1": "https://flagcdn.com/w160/it.png",
+    "equipo2": "AEK Athens",
+    "logo2": "https://flagcdn.com/w160/gr.png",
+    "opciones": [
+      {
+        "nombre": "Opción 1",
+        "stream": "http://stream.bottledesk.net/p/AAxBRQEBc2c/index.m3u8"
       }
     ],
     "estado": "programado"
