@@ -83,7 +83,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://stream.bottledesk.net/p/AAxBRQEBc2c/index.m3u8"
+        "stream": "https://cdnlivetv.tv/secure/api/v1/6add40ae2d4a99e07363c855/playlist.m3u8?token=NmFkZDQwYWUyZDRhOTllMDczNjNjODU1OjE3OTU1MzA2MDY5MTc6Y2RubGl2ZXR2LnR2Ojg5YzkyZTIyMGJkZTgxNDkuNWExODBhNzE1OWJiZjI1NTI3MTA4ZjJiNWZmNTQyZTdkZTEyNzEwZTRkMzg4NmRmNDA2YjA2MjE0Y2FmMGJmNQ|User-Agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/111.0.0.0%20Safari/537.36"
       }
     ],
     "estado": "programado"
