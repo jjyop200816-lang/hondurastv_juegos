@@ -1,68 +1,46 @@
 [
   {
-    "fecha": "24 de noviembre de 2026 | 10:30 a.m.",
-    "hora": "10:30 a.m.",
-    "start": "2026-11-24T15:15:00Z",
-    "end": "2026-11-24T17:40:00Z",
-    "equipo1": "Honduras Sub 17",
-    "logo1": "https://flagcdn.com/w160/hn.png",
-    "equipo2": "Colombia Sub 17",
-    "logo2": "https://flagcdn.com/w160/co.png",
-    "opciones": [
-      {
-        "nombre": "Opción 1",
-        "stream": "https://cdnlivetv.tv/secure/api/v1/6add40af2d4a99e07363cf26/playlist.m3u8?token=NmFkZDQwYWYyZDRhOTllMDczNjNjZjI2OjE3OTU1MzA2MDQ3Njk6Y2RubGl2ZXR2LnR2OmU0Y2JlMzc4YjcxMWNkZDMuYmExNjBiOWRkM2Y4MDA0MzRhYjRjYjEzNzIwMDc0ZjBkNjNlYTdjMTE0NGUzNjg3YWFhYTgwODM5MmQzNGNiNg|User-Agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/111.0.0.0%20Safari/537.36"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "24 de noviembre de 2026 | 12:45 p.m.",
+    "fecha": "25 de noviembre de 2026 | 12:45 p.m.",
     "hora": "12:45 p.m.",
-    "start": "2026-11-24T17:30:00Z",
-    "end": "2026-11-24T19:55:00Z",
-    "equipo1": "Galatasaray SK",
-    "logo1": "https://flagcdn.com/w160/tr.png",
-    "equipo2": "Aston Villa",
-    "logo2": "https://flagcdn.com/w160/gb-eng.png",
+    "start": "2026-11-25T17:30:00Z",
+    "end": "2026-11-25T19:55:00Z",
+    "equipo1": "Sabah",
+    "logo1": "https://flagcdn.com/w160/az.png",
+    "equipo2": "Barcelona",
+    "logo2": "https://flagcdn.com/w160/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
         "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "24 de noviembre de 2026 | 12:45 p.m.",
-    "hora": "12:45 p.m.",
-    "start": "2026-11-24T17:30:00Z",
-    "end": "2026-11-24T19:55:00Z",
-    "equipo1": "FK Bodo Glimt",
-    "logo1": "https://flagcdn.com/w160/no.png",
-    "equipo2": "LASK",
-    "logo2": "https://flagcdn.com/w160/at.png",
-    "opciones": [
+      },
       {
-        "nombre": "Opción 1",
-        "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8?imafw__fw_us_privacy=1YNY&attmas=not_determined&am.originUrl=https%3A%2F%2Fdai.google.com%2Flinear%2Fhls%2Fevent%2F7f3Wv6f7QEKfQna22jHqLQ%2Fmaster.m3u8&imafw_csid=desktop_web&imafw__fw_did=&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=&app_version=0.0.0&height=1080&ip_addr=195.179.200.80&page_url=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&width=1920"
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria1.html"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-unimas?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+      },
+      {
+        "nombre": "Opción 4",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
+      },
+      {
+        "nombre": "Opción 5",
+        "stream": "http://181.224.200.5:2277/play/a02h/index.m3u8"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "24 de noviembre de 2026 | 1:15 p.m.",
-    "hora": "1:15 p.m.",
-    "start": "2026-11-24T18:00:00Z",
-    "end": "2026-11-24T20:25:00Z",
-    "equipo1": "Al-Nassr",
-    "logo1": "https://flagcdn.com/w160/sa.png",
-    "equipo2": "Al-Sadd",
-    "logo2": "https://flagcdn.com/w160/qa.png",
+    "fecha": "25 de noviembre de 2026 | 12:45 p.m.",
+    "hora": "12:45 p.m.",
+    "start": "2026-11-25T17:30:00Z",
+    "end": "2026-11-25T19:55:00Z",
+    "equipo1": "Slavia Praha",
+    "logo1": "https://flagcdn.com/w160/cz.png",
+    "equipo2": "Villarreal",
+    "logo2": "https://flagcdn.com/w160/es.png",
     "opciones": [
       {
         "nombre": "Opción 1",
@@ -72,93 +50,111 @@
     "estado": "programado"
   },
   {
-    "fecha": "24 de noviembre de 2026 | 3:00 p.m.",
+    "fecha": "25 de noviembre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
-    "start": "2026-11-24T19:45:00Z",
-    "end": "2026-11-24T22:10:00Z",
-    "equipo1": "Wolves",
-    "logo1": "https://flagcdn.com/w160/gb-eng.png",
-    "equipo2": "Derby County",
-    "logo2": "https://flagcdn.com/w160/gb-eng.png",
+    "start": "2026-11-25T19:45:00Z",
+    "end": "2026-11-25T22:10:00Z",
+    "equipo1": "PSG",
+    "logo1": "https://flagcdn.com/w160/fr.png",
+    "equipo2": "Roma",
+    "logo2": "https://flagcdn.com/w160/it.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://cdnlivetv.tv/secure/api/v1/6add40ae2d4a99e07363c855/playlist.m3u8?token=NmFkZDQwYWUyZDRhOTllMDczNjNjODU1OjE3OTU1MzA2MDY5MTc6Y2RubGl2ZXR2LnR2Ojg5YzkyZTIyMGJkZTgxNDkuNWExODBhNzE1OWJiZjI1NTI3MTA4ZjJiNWZmNTQyZTdkZTEyNzEwZTRkMzg4NmRmNDA2YjA2MjE0Y2FmMGJmNQ|User-Agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/111.0.0.0%20Safari/537.36"
+        "stream": "https://cdnlivetv.tv/secure/api/v1/3c91b4e27a085f6d194e7a2b/playlist.m3u8?token=M2M5MWI0ZTI3YTA4NWY2ZDE5NGU3YTJiOjE3OTU1MzA2MDY5MTc6Y2RubGl2ZXR2LnR2OjU3MjE4YzliMTM0YTZmZWQzY2Q5MWE0ZWI4Zjc2YTlkYzQ1ZThkYjMxNGEwYzdkOTQzMjc4ZmEyMWE1YjY0MWI"
+      },
+      {
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-unimas?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "24 de noviembre de 2026 | 3:00 p.m.",
+    "fecha": "25 de noviembre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
-    "start": "2026-11-24T19:45:00Z",
-    "end": "2026-11-24T22:10:00Z",
-    "equipo1": "Real Madrid",
-    "logo1": "https://flagcdn.com/w160/es.png",
-    "equipo2": "PSV",
-    "logo2": "https://flagcdn.com/w160/nl.png",
+    "start": "2026-11-25T19:45:00Z",
+    "end": "2026-11-25T22:10:00Z",
+    "equipo1": "Lille",
+    "logo1": "https://flagcdn.com/w160/fr.png",
+    "equipo2": "Bayern München",
+    "logo2": "https://flagcdn.com/w160/de.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      },
-      {
-        "nombre": "Opción 2",
-        "stream": "https://cdnlivetv.tv/secure/api/v1/6add40ae2d4a99e07363c892/playlist.m3u8?token=NmFkZDQwYWUyZDRhOTllMDczNjNjODkyOjE3OTU1MzA2MDgzNTM6Y2RubGl2ZXR2LnR2OjMzNWNkMTdmYWQwMzIxMGYuNDcyMmE2NWFjYmUyZWRiNDQ1YmIxNjBhYzc5YmRjMzBkZDNiY2I5MmQ3NzUwMmZlZmVhMGNkN2YyYTk5MTg2MA|User-Agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/111.0.0.0%20Safari/537.36"
-      },
-      {
-        "nombre": "Opción 3",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-unimas?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
-      },
-      {
-        "nombre": "Opción 4",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html"
-      },
-      {
-        "nombre": "Opción 5",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria4.html"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "24 de noviembre de 2026 | 3:00 p.m.",
+    "fecha": "25 de noviembre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
-    "start": "2026-11-24T19:45:00Z",
-    "end": "2026-11-24T22:10:00Z",
-    "equipo1": "Manchester City",
-    "logo1": "https://flagcdn.com/w160/gb-eng.png",
-    "equipo2": "Napoli",
-    "logo2": "https://flagcdn.com/w160/it.png",
+    "start": "2026-11-25T19:45:00Z",
+    "end": "2026-11-25T22:10:00Z",
+    "equipo1": "Atlético",
+    "logo1": "https://flagcdn.com/w160/es.png",
+    "equipo2": "Viking Stavanger",
+    "logo2": "https://flagcdn.com/w160/no.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
-      },
+        "stream": "http://45.228.234.30:16000/play/a02o/index.m3u8"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "25 de noviembre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-11-25T19:45:00Z",
+    "end": "2026-11-25T22:10:00Z",
+    "equipo1": "Club Brugge",
+    "logo1": "https://flagcdn.com/w160/be.png",
+    "equipo2": "Liverpool",
+    "logo2": "https://flagcdn.com/w160/gb-eng.png",
+    "opciones": [
       {
-        "nombre": "Opción 2",
-        "stream": "https://cdnlivetv.tv/secure/api/v1/6add40ae2d4a99e07363c88f/playlist.m3u8?token=NmFkZDQwYWUyZDRhOTllMDczNjNjODhmOjE3OTU1MzA2MDgxNjI6Y2RubGl2ZXR2LnR2OjExYjNlNGE4YTRhM2FiYWYuNDFkNjQwMGE0ZDg0NzYwOGM1NTJkMDg5Y2M1YTAwNzY1M2M3MTA3N2U1YmUxZTYxZTA0MmRlZjgxMDFiYWIwNg|User-Agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/111.0.0.0%20Safari/537.36"
-      },
+        "nombre": "Opción 1",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn3.html"
+      }
+    ],
+    "estado": "programado"
+  },
+  {
+    "fecha": "25 de noviembre de 2026 | 3:00 p.m.",
+    "hora": "3:00 p.m.",
+    "start": "2026-11-25T19:45:00Z",
+    "end": "2026-11-25T22:10:00Z",
+    "equipo1": "Inter",
+    "logo1": "https://flagcdn.com/w160/it.png",
+    "equipo2": "Stuttgart",
+    "logo2": "https://flagcdn.com/w160/de.png",
+    "opciones": [
       {
-        "nombre": "Opción 3",
+        "nombre": "Opción 1",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria5.html"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "24 de noviembre de 2026 | 3:00 p.m.",
+    "fecha": "25 de noviembre de 2026 | 3:00 p.m.",
     "hora": "3:00 p.m.",
-    "start": "2026-11-24T19:45:00Z",
-    "end": "2026-11-24T22:10:00Z",
-    "equipo1": "Arsenal",
-    "logo1": "https://flagcdn.com/w160/gb-eng.png",
-    "equipo2": "B. Dortmund",
-    "logo2": "https://flagcdn.com/w160/de.png",
+    "start": "2026-11-25T19:45:00Z",
+    "end": "2026-11-25T22:10:00Z",
+    "equipo1": "Sporting CP",
+    "logo1": "https://flagcdn.com/w160/pt.png",
+    "equipo2": "Manchester United",
+    "logo2": "https://flagcdn.com/w160/gb-eng.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn3.html"
+        "stream": "https://cdnlivetv.tv/secure/api/v1/5d72a419e0834b2c619e4a10/playlist.m3u8?token=NWQ3MmE0MTllMDgzNGIyYzYxOWU0YTEwOjE3OTU1MzA2MDgzNTM6Y2RubGl2ZXR2LnR2OjcxYjI0YzhhOWNlZDMwNDhiMTk2ZTdkNGQ3YTg1YWIxNjI5ZDJmMDNkMTdlMWY4MzE1MmQ4M2ExY2U5N2U1N2Q"
       },
       {
         "nombre": "Opción 2",
@@ -172,69 +168,64 @@
     "estado": "programado"
   },
   {
-    "fecha": "24 de noviembre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-11-24T19:45:00Z",
-    "end": "2026-11-24T22:10:00Z",
-    "equipo1": "Slovan Bratislava",
-    "logo1": "https://flagcdn.com/w160/sk.png",
-    "equipo2": "Real Betis",
-    "logo2": "https://flagcdn.com/w160/es.png",
+    "fecha": "25 de noviembre de 2026 | 7:00 p.m.",
+    "hora": "7:00 p.m.",
+    "start": "2026-11-26T00:00:00Z",
+    "end": "2026-11-26T02:25:00Z",
+    "equipo1": "Boca Juniors",
+    "logo1": "https://flagcdn.com/w160/ar.png",
+    "equipo2": "Indep. Rivadavia",
+    "logo2": "https://flagcdn.com/w160/ar.png",
     "opciones": [
       {
         "nombre": "Opción 1",
+        "stream": "https://cdnlivetv.tv/secure/api/v1/7e4b910c3d825a6f209c8e41/playlist.m3u8?token=N2U0YjkxMGMzZDgyNWE2ZjIwOWM4ZTQxOjE3OTU1MzA2MDgxNjI6Y2RubGl2ZXR2LnR2Ojg0ZDFhZWMzNzliMTY0ZWIyOWEzNjgxZjU0N2MzOWU5MzE5Y2U4M2E1ZjM0NzY5ZWIyNTE4YzM1OWY0Zjg5Mjc"
+      },
+      {
+        "nombre": "Opción 2",
         "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria8.html"
+      },
+      {
+        "nombre": "Opción 3",
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "24 de noviembre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-11-24T19:45:00Z",
-    "end": "2026-11-24T22:10:00Z",
-    "equipo1": "Feyenoord",
-    "logo1": "https://flagcdn.com/w160/nl.png",
-    "equipo2": "Porto",
-    "logo2": "https://flagcdn.com/w160/pt.png",
+    "fecha": "25 de noviembre de 2026 | 8:00 p.m.",
+    "hora": "8:00 p.m.",
+    "start": "2026-11-26T01:00:00Z",
+    "end": "2026-11-26T03:25:00Z",
+    "equipo1": "Toluca",
+    "logo1": "https://flagcdn.com/w160/mx.png",
+    "equipo2": "Atlas Guadalajara",
+    "logo2": "https://flagcdn.com/w160/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://amd-mediator-eolq3tk4la-uk.a.run.app/cbs/map.m3u8?imafw__fw_us_privacy=1YNY&attmas=not_determined&am.originUrl=https%3A%2F%2Fdai.google.com%2Flinear%2Fhls%2Fevent%2F7f3Wv6f7QEKfQna22jHqLQ%2Fmaster.m3u8&imafw_csid=desktop_web&imafw__fw_did=&imafw__fw_is_lat=&imafw__fw_vcid2=&imafw__fw_app_bundle=&app_version=0.0.0&height=1080&ip_addr=195.179.200.80&page_url=https%25253A%25252F%25252Flocalnow.com%25252Fchannels%25252Fcbs-news-chicago-hyperlocal&ua=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F122.0.0.0%20Safari%2F537.36&width=1920"
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-tudn?anvack=NVQrq6a3aZfdBzkefWT1rvdRCoj9XOyx"
       }
     ],
     "estado": "programado"
   },
   {
-    "fecha": "24 de noviembre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-11-24T19:45:00Z",
-    "end": "2026-11-24T22:10:00Z",
-    "equipo1": "RB Leipzig",
-    "logo1": "https://flagcdn.com/w160/de.png",
-    "equipo2": "Lens",
-    "logo2": "https://flagcdn.com/w160/fr.png",
+    "fecha": "25 de noviembre de 2026 | 10:10 p.m.",
+    "hora": "10:10 p.m.",
+    "start": "2026-11-26T03:10:00Z",
+    "end": "2026-11-26T05:35:00Z",
+    "equipo1": "Monterrey",
+    "logo1": "https://flagcdn.com/w160/mx.png",
+    "equipo2": "América",
+    "logo2": "https://flagcdn.com/w160/mx.png",
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "http://181.224.200.5:2277/play/a02h/index.m3u8"
-      }
-    ],
-    "estado": "programado"
-  },
-  {
-    "fecha": "24 de noviembre de 2026 | 3:00 p.m.",
-    "hora": "3:00 p.m.",
-    "start": "2026-11-24T19:45:00Z",
-    "end": "2026-11-24T22:10:00Z",
-    "equipo1": "Como",
-    "logo1": "https://flagcdn.com/w160/it.png",
-    "equipo2": "AEK Athens",
-    "logo2": "https://flagcdn.com/w160/gr.png",
-    "opciones": [
+        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-unimas?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+      },
       {
-        "nombre": "Opción 1",
-        "stream": "http://45.228.234.30:16000/play/a02o/index.m3u8"
+        "nombre": "Opción 2",
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/zespn.html"
       }
     ],
     "estado": "programado"
