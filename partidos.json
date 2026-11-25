@@ -154,15 +154,15 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://cdnlivetv.tv/secure/api/v1/5d72a419e0834b2c619e4a10/playlist.m3u8?token=NWQ3MmE0MTllMDgzNGIyYzYxOWU0YTEwOjE3OTU1MzA2MDgzNTM6Y2RubGl2ZXR2LnR2OjcxYjI0YzhhOWNlZDMwNDhiMTk2ZTdkNGQ3YTg1YWIxNjI5ZDJmMDNkMTdlMWY4MzE1MmQ4M2ExY2U5N2U1N2Q"
+        "stream": "http://181.78.211.244:8005/play/a0c7/index.m3u8"
       },
       {
         "nombre": "Opción 2",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria6.html"
+        "stream": "https://cdnlivetv.tv/secure/api/v1/6add40ae2d4a99e07363c88f/playlist.m3u8?token=NmFkZDQwYWUyZDRhOTllMDczNjNjODhmOjE3OTU2MjA2MDgyNzE6Y2RubGl2ZXR2LnR2OjAyMDI0Nzg0YWZiM2UxYjAuNDc3ODg4YWEyNTcyYTA1Y2M0ZjJmMDYzMmUzZmNlZDBmNDk3YTQxOGFiYmUyODRkOWY5MDJhODU0MmIxOGEwMA"
       },
       {
         "nombre": "Opción 3",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria7.html"
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria5.html"
       }
     ],
     "estado": "programado"
