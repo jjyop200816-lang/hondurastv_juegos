@@ -62,7 +62,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
+        "stream": "https://cdnlivetv.tv/secure/api/v1/6add40ae2d4a99e07363c892/playlist.m3u8?token=NmFkZDQwYWUyZDRhOTllMDczNjNjODkyOjE3OTU2ODE4MDY3ODQ6Y2RubGl2ZXR2LnR2OjVlMjVmZjhiZjY0NmUxZjcuMjI5NjE1YzE5M2MxYTIyN2UxZDk1ODBmZDZiZjA0OTNhMjEzNmZkMDY0YzBmMmRmMGUwYmI4ZTQwNTRmYzAxZA"
       }
     ],
     "estado": "programado"
@@ -79,7 +79,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria3.html"
+        "stream": "https://jjyop200816-lang.github.io/hondurastv_juegos/asiria2.html"
       }
     ],
     "estado": "programado"
