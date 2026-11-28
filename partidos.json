@@ -62,7 +62,7 @@
     "opciones": [
       {
         "nombre": "Opción 1",
-        "stream": "https://tkx.mp.lura.live/rest/v2/mcp/video/univision-unimas?anvack=NVQrq6a3oZfdBzkefWT1rvdRCoj9XOyx"
+        "stream": "https://cdnlivetv.tv/secure/api/v1/6add40af2d4a99e07363cf63/playlist.m3u8?token=NmFkZDQwYWYyZDRhOTllMDczNjNjZjYzOjE3OTU4NzA4MTEyMTg6Y2RubGl2ZXR2LnR2OjYxZmM5YWVkMTY5NjM1N2MuMDRlZDE0MDYzNGU0OWQyOWJhNjUxOGY5MWY1ZTFjZjYxYThkMjVkYTBlOTQwMzcwNDEyZTAzMmQ1YTFiZDNkNQ|User-Agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/111.0.0.0%20Safari/537.36"
       }
     ],
     "estado": "programado"
